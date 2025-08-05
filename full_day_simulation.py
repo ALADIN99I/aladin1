@@ -729,6 +729,80 @@ class FullDayTradingSimulation:
             self.log_event(f"❌ Fund authorization error: {e}")
             return "REJECT: Authorization error"
     
+    def validate_and_correct_currency_pair(self, pair):
+        """Validate and correct currency pair format
+        
+        Handles cases like:
+        - CADUSD -> USDCAD (inverted)
+        - CHFUSD -> USDCHF (inverted)
+        - USDGBP -> GBPUSD (inverted)
+        - Invalid pairs return None
+        """
+        # Define valid currency pairs available in MT5
+        valid_pairs = [
+            'EURUSD', 'GBPUSD', 'USDJPY', 'AUDUSD', 'USDCAD', 'USDCHF',
+            'EURAUD', 'EURCAD', 'EURCHF', 'EURGBP', 'EURJPY', 'EURNZD',
+            'GBPAUD', 'GBPCAD', 'GBPCHF', 'GBPJPY', 'GBPNZD',
+            'AUDCAD', 'AUDCHF', 'AUDJPY', 'AUDNZD', 'AUDGBP',
+            'CADCHF', 'CADJPY', 'CHFJPY', 'NZDCAD', 'NZDCHF', 'NZDJPY',
+            'NZDUSD'
+        ]
+        
+        # Clean the pair (remove suffix, slashes, etc.)
+        clean_pair = pair.replace('-ECN', '').replace('/', '').upper()
+        
+        # If already valid, return it
+        if clean_pair in valid_pairs:
+            return clean_pair
+        
+        # Try to extract base and quote currencies
+        if len(clean_pair) >= 6:
+            base = clean_pair[:3]
+            quote = clean_pair[3:6]
+            
+            # Check if inverted pair exists
+            inverted = quote + base
+            if inverted in valid_pairs:
+                self.log_event(f"⚠️ Correcting inverted pair: {clean_pair} -> {inverted}")
+                return inverted
+            
+            # Special handling for common inversions
+            inversion_map = {
+                'CADUSD': 'USDCAD',
+                'CHFUSD': 'USDCHF',
+                'CHFEUR': 'EURCHF',
+                'CHFGBP': 'GBPCHF',
+                'JPYUSD': 'USDJPY',
+                'JPYEUR': 'EURJPY',
+                'JPYGBP': 'GBPJPY',
+                'JPYAUD': 'AUDJPY',
+                'JPYCAD': 'CADJPY',
+                'JPYCHF': 'CHFJPY',
+                'JPYNZD': 'NZDJPY',
+                'NZDEUR': 'EURNZD',
+                'NZDGBP': 'GBPNZD',
+                'NZDAUD': 'AUDNZD',
+                'CADEUR': 'EURCAD',
+                'CADGBP': 'GBPCAD',
+                'CADAUD': 'AUDCAD',
+                'USDEUR': 'EURUSD',
+                'USDGBP': 'GBPUSD',
+                'USDAUD': 'AUDUSD',
+                'USDNZD': 'NZDUSD',
+                'GBPEUR': 'EURGBP',
+                'AUDEUR': 'EURAUD',
+                'AUDGBP': 'GBPAUD'
+            }
+            
+            if clean_pair in inversion_map:
+                corrected = inversion_map[clean_pair]
+                self.log_event(f"⚠️ Correcting known inverted pair: {clean_pair} -> {corrected}")
+                return corrected
+        
+        # If we can't fix it, log error and return None
+        self.log_event(f"❌ Invalid currency pair: {pair} (cleaned: {clean_pair})")
+        return None
+    
     def execute_approved_trades(self, authorization, trade_decisions, current_positions, ufo_data, current_time=None):
         """Execute trades if approved"""
         executed_count = 0
@@ -791,13 +865,30 @@ class FullDayTradingSimulation:
                             direction = action.get('direction', '').upper()
                             volume = action.get('volume') or action.get('lot_size', 0.1)
                             
-                            # Add symbol suffix if it doesn't exist
+                            # Validate and correct currency pair format
                             base_symbol = symbol.replace("/", "")
+                            corrected_symbol = self.validate_and_correct_currency_pair(base_symbol)
+                            
+                            if corrected_symbol is None:
+                                self.log_event(f"⚠️ Skipping invalid currency pair: {symbol}")
+                                continue  # Skip this trade
+                            
+                            # Also handle direction inversion if pair was inverted
+                            if base_symbol != corrected_symbol and len(base_symbol) >= 6:
+                                # Check if we need to invert the direction
+                                original_base = base_symbol[:3]
+                                corrected_base = corrected_symbol[:3]
+                                if original_base != corrected_base:
+                                    # Pair was inverted, so invert the direction
+                                    direction = 'SELL' if direction == 'BUY' else 'BUY'
+                                    self.log_event(f"⚠️ Direction inverted due to pair correction: {direction}")
+                            
+                            # Add symbol suffix if it doesn't exist
                             suffix = self.config['mt5'].get('symbol_suffix', '')
-                            if not base_symbol.endswith(suffix):
-                                full_symbol = base_symbol + suffix
+                            if not corrected_symbol.endswith(suffix):
+                                full_symbol = corrected_symbol + suffix
                             else:
-                                full_symbol = base_symbol
+                                full_symbol = corrected_symbol
                             
                             # Generate realistic entry price based on symbol
                             base_prices = {
@@ -1434,13 +1525,13 @@ class FullDayTradingSimulation:
 def main():
     """Main function to run the full day simulation"""
     print("🚀 Starting UFO Forex Agent v3 - FULL DAY SIMULATION")
-    print("📅 Target Date: Monday, August 4th, 2025")
+    print("📅 Target Date: Tuesday, August 5th, 2025")
     print("🕐 Trading Hours: 0:00 GMT to 18:00 GMT (Every 30 minutes)")
     print("-" * 60)
     
     try:
-        # Create and run simulation for August 4th, 2025
-        simulation = FullDayTradingSimulation(datetime.datetime(2025, 8, 4))
+        # Create and run simulation for August 5th, 2025
+        simulation = FullDayTradingSimulation(datetime.datetime(2025, 8, 5))
         simulation.run_full_day_simulation()
         
         print(f"\n✅ Full day simulation completed successfully!")
