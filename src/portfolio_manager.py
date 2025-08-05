@@ -7,7 +7,10 @@ except ImportError:
 class PortfolioManager:
     def __init__(self, mt5_connection):
         self.mt5_connection = mt5_connection
-        self.equity_curve = pd.DataFrame(columns=['time', 'equity'])
+        self.equity_curve = pd.DataFrame({
+            'time': pd.Series(dtype='datetime64[ns]'),
+            'equity': pd.Series(dtype='float64')
+        })
 
     def get_account_info(self):
         """Gets the account information."""
