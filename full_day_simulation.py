@@ -843,13 +843,17 @@ class FullDayTradingSimulation:
                         elif action.get('action') == 'close_trade':
                             trade_id = action.get('trade_id')
                             if trade_id:
-                                position_to_close = next((p for p in self.open_positions if p.get('ticket') == trade_id), None)
-                                if position_to_close:
-                                    self.open_positions.remove(position_to_close)
-                                    self.realized_pnl += position_to_close.get('pnl', 0.0)
-                                    self.closed_trades.append(position_to_close)
-                                    self.log_event(f"🔹 Trade closed by LLM: {position_to_close['symbol']} P&L: ${position_to_close.get('pnl', 0.0):.2f}")
-                                    executed_count += 1
+                                try:
+                                    trade_id = int(trade_id)
+                                    position_to_close = next((p for p in self.open_positions if p.get('ticket') == trade_id), None)
+                                    if position_to_close:
+                                        self.open_positions.remove(position_to_close)
+                                        self.realized_pnl += position_to_close.get('pnl', 0.0)
+                                        self.closed_trades.append(position_to_close)
+                                        self.log_event(f"🔹 Trade closed by LLM: {position_to_close['symbol']} P&L: ${position_to_close.get('pnl', 0.0):.2f}")
+                                        executed_count += 1
+                                except (ValueError, TypeError):
+                                    self.log_event(f"❌ Invalid trade_id format for close_trade: {trade_id}")
                             continue # Continue to next action
                             
             except Exception as e:
