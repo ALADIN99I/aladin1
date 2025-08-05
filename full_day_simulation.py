@@ -916,7 +916,7 @@ class FullDayTradingSimulation:
         
         # Start simulation with continuous monitoring
         current_time = datetime.datetime(self.simulation_date.year, self.simulation_date.month, self.simulation_date.day, 0, 0)
-        end_time = datetime.datetime(self.simulation_date.year, self.simulation_date.month, self.simulation_date.day, 4, 0)
+        end_time = datetime.datetime(self.simulation_date.year, self.simulation_date.month, self.simulation_date.day, 18, 0)
         
         while current_time <= end_time:
             # Continuous position monitoring between cycles
