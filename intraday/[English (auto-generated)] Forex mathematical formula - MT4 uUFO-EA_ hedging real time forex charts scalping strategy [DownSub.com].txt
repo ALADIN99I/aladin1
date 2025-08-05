@@ -1,0 +1,420 @@
+hello everybody
+as usual brief update for those who are
+following my methodology and system and
+theories applied also with my own
+beloved expert advisor
+Metatrader which is you with folk and as
+usual I go straightly to the point and
+of course I invite you to always compare
+your data from your meta trader platform
+and follow also the previous videos on
+which I give more informations about how
+I designed the behavior of my algorithm
+that tried somehow to read the markets
+and the different conditions and then
+provides for one of traders availability
+of reading the whole markets by breeding
+very few charts and in a blink of an eye
+actually you're seeing here I have a
+trade running just the last one of a
+quiet enough serious this week while I
+was also testing some improvements on
+the graphical module of this algorithm
+therefore now as usual I will do
+my last statement before before closing
+the orders then we will have also a
+brief recap okay this is it as for a
+while so I made different trades this
+week and also summer times and
+forecasting based on some possible
+evolution of the currencies some of them
+they were not very well but in the
+overall at performance as usual the
+reading of the markets helped me to
+focus on the most profitable currencies
+which is the beginning of the week were
+more euro against all Z and insulin
+tolerant can but then in turn turn allow
+other currencies to to be more likely to
+be trade as in this case GBP needs even
+lower as you may see this last currency
+which is GBP currency pair which is GDP
+and second dollar in body I've been
+trading that with more lots and let's
+just give a look to that chart just to
+wake up on when I entered astray that
+you can see there is a swap so in this
+in this day's I was also implementing
+this graphical module that you may see
+here is
+projecting at least three days of chart
+analysis and anyway this swap condition
+suggests that the trade has been taken
+today before right in this area so and
+sometimes it gives this part on okay so
+let's grab it again sometimes because
+it's taking data in real time let's see
+if I do it this way
+[Music]
+seems I have a little problem with
+internet connection and it doesn't allow
+me to do that anyway no problem
+this is nothing to do with that okay so
+basically that was the projection that I
+got in this point I don't know what it's
+happening today are some issues probably
+have to make the Windows updates first
+and I didn't because I just got home and
+as usual there will I contoured a
+retrace of this currency
+anyway the trade that I have injected
+was let's do let's see that's again of
+course it will around 8 o clock on the
+chart as you may see here at the time
+that I made this trade so at this price
+level and there was this movement of the
+GBP New Zealand dollar suggested by
+let's let me show you in the Euro okay
+as usual you know I analyzed nine
+timeframes and despite the fact that
+there is a negative position in the
+monthly for the GBP and as well as a
+negative position on the New Zealand
+dollar this value was much lower in the
+previous days so then he it went up to
+a better level so it was a kind of
+bumping up of the GDP and in fact in the
+weekly chart we can see that GBP has
+been positive and quite strong while New
+Zealand dollar was the most negative and
+even euro dollar was positive this or a
+euro was positive in the weekly but in
+the daily euro has not that much
+strength and now even GBP is losing some
+strength and I wanted to keep this
+button way stronger than New Zealand
+dollar that's why GBP by New Zealand
+dollar so please see the previous videos
+on where I explained and where I see the
+threshold values I tried to make some
+experiments also with Aussie GDP was it
+up on his yen and other currencies that
+were not a much successful but I was
+also kind of trying to anticipate the
+move that that didn't happen but I was
+already positive balance without a trade
+so was a kind of experiment even because
+I was testing what I'm about to show you
+a bit today in detail on the graphical
+side of this expert advisor which is a
+kind of feature that should help somehow
+the mono traders to make some kind of
+sculpting or anyway try to find a better
+level or positioning in in in regards to
+the trading action that we want to take
+so let's even if there would be probably
+some opportunities of retracing again I
+would like to show you that for example
+in the four hour time frame
+the GDP New Zealand dollar now is
+recovery computing making different
+computations let me just put this way
+and let's see if it works
+there is some issues with internet
+connection so sometimes it's a bit
+slower today but it's fine let's check
+anyway the euro dollar always four hours
+so it's quite the same we see that gdb
+is beam has become negative and New
+Zealand dollar has become positive okay
+and if we take a look here is the same
+seed to be negative and these are not
+all positive in the four hour time frame
+okay so basically no matter the chart
+the values that we see and that we can
+appreciate here are the values of the
+whole market of your time tick bites it
+so because of this we have this
+retracement so GBP negative an incident
+or a positive is self okay
+but since yesterday evening and for all
+the day until the beginning of the
+London session there was this positivity
+case of the TPP and negativity of New
+Zealand are over for by border injected
+in the currency pair GDP New Zealand
+dollar okay so let's close also this
+position which can we avoid me 170 pips
+and let's do a final save it details
+before
+okay the Swart
+probably me too soon but it's fine
+problem okay and then we will analyze
+this in a while what I am working on at
+this moment let's see in the case of the
+GBP is completely you can see here we
+have this lines that are related to a
+main channel with a third price
+calculator for each and every currency
+pair that we are visualizing and that we
+are applying our expert advisor and so
+we can have kind of line of support
+resistance for the very long period this
+pilot once the medium period which is
+more in detail the gray ones which seems
+to be some kind aligned and there is a
+third expression that now is almost in
+the same lining is a bit going up you
+can see here this magenta dark magenta
+lines of support from resistors based on
+a lower timeframe but always related to
+the third price of a lower timeframe
+this way we have a kind of channeling of
+the price action that we can read no
+matter the movement of the price by the
+calculation of the highs and lows of
+these things okay here I completely got
+rid of some other lies that were anyway
+noising and that can be represented
+anyway by this yellow bar which is very
+simple to be lying well here we have the
+s priced and here we have the bid price
+so basically with this bar we can see me
+askin the beard without having too much
+extra lines that are somehow messing
+around with our eyes and with our
+reading of the charts so this case is
+quite you know this is the channeling of
+the price embedded in the possible
+projections of the lines that are
+coherent with the movement of the price
+and with the highs and the lows of the
+price that we got in the day I'm
+stressing here the fact that the only
+possible indicator if we can call it
+that way but it's not an indicator is
+the volumes that normally I do represent
+in this way but here I put it at this
+kind of representation just because I am
+analyzing the support resistance level
+and the formulations that are encoding
+at this moment so I'm still in testing
+of this feature but it's almost finished
+and also we can see this main channel
+represented by this gray line that is
+going out up and then correcting and
+this is the actual
+elevation of the pride that the price
+had in this very Friday Friday today
+markets are quite about close so we
+should stop the trades and think about
+getting some profit and leave the next
+trades for next week without leaving too
+much money to our brokers or into the
+market okay
+I've passed many videos explaining how
+to read this chart and also in the very
+previous ones also to have an idea on
+how to use them properly with the
+hedging strategy module and also I have
+explained in the previous videos about
+this in charts evaluation so in this
+case we are on a GBP New Zealand dollar
+and here we have some evaluations about
+the base and the quote so bases GBP in
+this case of both is New Zealand dollar
+with some evaluations and the fact that
+if the base is falling and the port is
+ranging / rising we can have a expecting
+a fall but we must be all swing must be
+aware of the fact that at this moment in
+this time we are about some hours before
+closing the market so that can be a lot
+of manipulations games or okay so let's
+also give a brief analysis of what I did
+and as you may see there are many trades
+injected also some little projections or
+mistakes that are cancelled but no
+problem
+in the very first trades developed went
+afraid this was the result okay so with
+some losing trades I'd rather not use
+stop losses but I prefer to analyze the
+charts and if this values are telling me
+that there is something going wrong
+against my predictions because I was too
+much rushing or probably because life in
+certain days I had no time to be there
+at the proper moment so I tried to
+anticipate move or to guess in move base
+it on some values that were not anyway
+completely developed so I was trying to
+guess with values that were like 200 250
+so not that much stronger or weaker I
+prefer to close the trade and normally I
+do attend this kind of extra guessing
+based on probability only if I ever I am
+already in a positive lock balance like
+in this case or even if I lose a bit
+it's not that much problem and I can
+always recover that ok so this was the
+first projection of the trade that I
+made and as usual I invite you to take a
+look and check on your meta trader
+platform the values and the prices that
+are listed here so you can stop the
+video and take note and check on the
+other side
+ok this was the first one then let's go
+further and after this brief movement
+I got also this improvement of my
+balance to almost 3000
+okay on a base of 10,000 currency units
+and thousand euros and with the leverage
+of 500 in this case then I traded you
+know the GBP did $7 and I basically left
+only one position open that was floating
+around this point probably this is quite
+the same graphic now it's another one
+okay so we have that they are quite
+similar anyway this is the improvement
+that I got of course I did over traded
+this week but I was also in a testing
+phase so it's fine and it's normal to
+have some more tense and finally this is
+the very last one so I realized 500 and
+almost 500 5000 600 euros from an
+account of 10000 euros okay so this kind
+of simulations provided me anyway a very
+nice person - of profitable trades
+against the wrong ones that you can see
+that was completely wrong okay
+I'm also I also like to show that not
+always I do a hundred percent of
+positive trades but in this case is more
+easy to make mistakes or make
+evaluations that then the markets are
+manipulating even because I was trading
+based on assumptions that were related
+to values that were not completely
+stabilized as weak as strong but they
+were going toward that direction
+so sometimes we try also to do that way
+the important thing is that well we make
+mistakes they are very little and they
+are anyway covered by already a profit
+that we have and when we make profit
+that profit and the game is very higher
+compared to the losses okay so to recap
+from an initial balance and just 1700
+euros gain now we arrive to almost 5,600
+okay and this is quite anyway a positive
+balance that I'm happy to show and
+resolve that is positive and everybody
+would like to have something like that
+by the end of the week coming back on
+the module as you can see the
+projections of the fair price that Here
+I am see how the market it's behaving
+fine to retracing and retracing and in
+this case we have a five minutes chart
+on which we have a very weak GDP and
+anyway positive
+New Zealand dollar and the base GBP is
+fallen and the quote it's even dollar is
+rising so if we have something above
+that is falling and something that is
+ranging rising okay we can guess a cell
+of the currency pair but I'm not trading
+anymore
+even because I'm explaining to you this
+video I made of course and I use this
+demo for instructional purposes I have
+my own real account separated from that
+and my analysis anyway can be done
+easily on every chart on a very easy and
+broker on which all the currency pairs
+are provided with honesty from the
+broker and the fact is that I was also
+coding but you may see now is getting a
+different development and we can see
+that despite the main the main support
+and resistance which are these two lines
+here of a surprise that there is this
+one for an enough longer time period
+timeframe sorry we have another
+channeling which is the great one with
+relative surprise and support resistance
+and we are also having a smaller time
+frame channel with surprise calculator
+and this comeback can be very useful for
+position in our cells in our trades
+especially if used combined to one
+indicator at maximum if I have to
+suggest something at the suggest RSI but
+I like to do that with the volumes with
+the Bartok volume anyway tick volume not
+because it's a volume but because
+provides me a kind of idea of activity
+of training okay
+nothing more nothing less and I use the
+line of clothes instead of the bars bar
+chart because it reduces significantly
+the noise in the reading and because it
+at the end is more accurate and markets
+rely on on the clothes of the price this
+is quite important nevertheless it can
+be used as you can see there is a kind
+of sense with with the candlesticks and
+with
+volumes so a very simple setup with some
+trend lines let's say your channel lines
+that can help us to analyze the flux of
+the price without much effort I think
+that the goal also of implementing the
+graphical module it's almost done
+so for those who have already this ei
+that would this will be a release that
+they will get as soon as the phase of
+testing is done and this of course even
+if we change the timeframe this lines of
+support resistance and channel
+they won't change they will stay in
+accordance with with what is computed at
+least this main channel every half an
+hour ok so it's a quite enough time for
+considering considering
+- tray even for scalping even if I don't
+like scalping I have to admit also by
+some humans I received that were asking
+me about creating something in regards
+to scalping that when we position
+ourselves for our trade we do a kind of
+scalping action ok so that would have
+been the only thing that would have been
+implemented in the algorithm because
+this part is already completely
+functional and free of error because
+what you see here is a tick by tick
+analysis and computation of all the data
+that your broker provides you in regards
+to the pieman open/close then put all
+together from all the at least 28
+currency pairs there is some more but we
+can trade these currency pairs only and
+that complicated tick by tick okay so
+with this brief recap and with this very
+nice final result I say hi to you I
+thank you for watching and for your
+emails of support and for your positive
+words that I would receive and gives me
+some motivation to provide even more
+examples and tutorials and so thanks for
+watching and supporting and for any need
+you can always write a comment or write
+me an email and let's keep it covered
+that way or to skype for those of you
+who like to have more
+direct confrontation and I wish you a
+very good weekend and as usual at the
+time and with space ok bye

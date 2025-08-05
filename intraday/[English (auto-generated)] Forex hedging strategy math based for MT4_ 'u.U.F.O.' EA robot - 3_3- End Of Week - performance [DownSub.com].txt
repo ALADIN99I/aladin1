@@ -1,0 +1,307 @@
+yeah hi everybody and welcome to this
+brief addendum let's call it this way so
+something that will be an integration of
+the two previous videos that I just
+produced so what you're what you will be
+watching in this few minutes I would not
+make it that long it was an on vacation
+and I was not even supposed to do this
+trade to do this but to be honest in
+after last two videos that I have shown
+you that I published I was receiving
+even emails and contact while I was
+preparing my luggages for making my trip
+okay so I had anyway because also I like
+this to know show some other functions
+of my algorithm share some screens and
+some information so I had anyway on the
+day of Tuesday evening and Friday and
+sorry
+Thursday and Friday to to keep open my
+platform to keep open my algorithm to
+explain it to some of you add in in
+private session of course and the result
+was that I couldn't avoid to notice that
+were some behaviors changing in the
+markets exactly in those hours so I was
+following that no matter what even if I
+was preparing you know my peg to go and
+so was a kind of bit of being around and
+making anyway some predictions or some
+outlooking based on the very fresh data
+that were coming from the computations
+that I usually do with my expert advisor
+you UFO so I created also on Friday I go
+on Thursday and Friday and of course I
+copied also my trades on a personal
+account real account but at the same
+time I produce it also a continuation of
+the very same account that you saw in
+the previous two videos and which is the
+goal my channel annual
+give enough to give a look to these two
+videos before because they were anyway
+representing the all the workflow and
+all the explanation of the strategy the
+hedging strategy that I used and why
+that now are ending with the final
+result and performance of my portfolio
+that I will show you in a minute
+so we were starting from this we were
+ending here with this graphic that of
+course if you go in the video you will
+see it who screen although the
+informations can also be the banker with
+the account that I used for this
+particular example and as we see this is
+the situation that you can easily check
+and compare is exactly the same the same
+amount the same performance the same
+trait everything is exactly for you I am
+going a bit up and down but I live
+sometimes so you can stop and check by
+yourself if you want to go and detail
+each and every operation see the stop
+losses that the her not the last we let
+the broker know the better we trade and
+of course a we were at this point so
+what I did on the Friday so at the
+ending I'd between the day of Friday
+here it was when I just arrived from the
+airport and I took a statement on at
+this hour then I decided to close some
+trades and then to make another
+statement at come hours after and then I
+made a final statement when the markets
+are closed today is Sunday and so this
+is very recent I made it an hour ago but
+so with the final balance of my account
+that it's always you can check is always
+the same so let's proceed by grace we
+were starting with this situation and
+then I told you while I was observing my
+algorithm in this in this very to last
+two days of the week I started to notice
+area we trace of the GBP Australian
+dollar while in the week
+in the weekly timeframe was anyway
+projected as a week GBP and a strong
+Australian dollar so was still in a cell
+mood for me okay and after a big
+retracement I decided to enter at a
+certain point because it was clear that
+it should have complete a move short
+okay so this is the first thing that I
+noticed with my algo and the second one
+I was noticing that from the Australian
+dollar as strong currency of the week
+the shift was going towards young
+Japanese yen started to take courage and
+strength in the market and this
+determinate in my algorithm
+visualization of higher and positive
+values of Japanese yen against the
+majority of the currency pair starting
+from GBP that I was already in short
+with Australian dollar so kind of week
+and GBP Japanese yen were the first two
+to appear with the Japanese yen very
+strong and GBP very weak so I decided
+okay let's see how the policy on behaves
+towards the other consumers and by
+seeing the values I noticed that the
+majority of them were weak particularly
+weak against the Japanese yen so I
+decided also to enter an edge in trade
+considering Japanese yen and let me show
+you here so at the certain point after
+investing in GBP will be very strong
+because it was confirmed in that short
+direction to herself then I closed of
+course GBP Australian dollar because it
+was too much then in a range of movement
+and we were in the Friday so I didn't
+want to leave my money in the market I
+want to take them for them take them out
+so I closed all the GBP Australian
+dollar position leaving just a few of
+and the most profitable that I would
+have anyway close at the very last move
+of the Friday that I would have intended
+but with some profit already gained and
+in my balance instead of being in my
+equity and of course as you can see also
+I took the major trader they were
+important with Australian dollar in sell
+against Japanese yen and I and this is
+the same for CAD euro and GBP and US
+dollar okay so these were the last
+trades running in this hour you can
+click the hours okay some of them were
+fresh of the day some of them were from
+the previous day so you can also see
+there is a swap condition so it means
+that I swing traded even in this case
+and also they trade it okay so just to
+make it brief you can have a comparison
+after here we have a 28 total trades
+then with some we doublet the trades but
+we important upload the balance and of
+course I always invite you to read all
+these values that you already know very
+well as I so because the most of you
+that are contacting me are analyzing the
+special of these values and the profit
+factor here we have a perfect factor
+there increase it of more than 50% from
+22 to 59 and then what else I got
+another statement screenshot that I made
+a couple of hours later as you see here
+I closed also the other GBP Australian
+dollar position taking just one and I
+don't know why it was this stop-loss
+anyway but it was probably accidentally
+but anyway it was very far from the Oh
+probably I put this in the sense that I
+would like to leave it open for the next
+week but at the end I decided to close
+everything so that stop-loss was the way
+it was anyway in a break-even position
+or with some profit but then I decided
+of course to closes the position that
+you can see that in the very last hours
+of the market the only positions that
+were meaning in
+accordingly with my algorithm where the
+positions against the Yanks strong yen
+and we be all the other currencies and
+this is again a new update with some
+trades that were running so within
+equity that were about 300% okay and a
+profit factor of 81 reaching same
+consecutive losses consecutive wins and
+all the statistics is up to you to read
+them and give your interpretation and at
+the very end of the market then I closed
+all the positions and of course my
+Metatrader platform here so I'm sorry if
+this is not the normally format or that
+I produce my videos but I meant I am
+with the laptop I am on vacation and so
+I have some limitations but anyway a
+little office is always with me then
+what I would be back in my office I will
+be even more operative and clean but
+anyway as you as you may notice this is
+the final balance that I reach it in in
+this very account with profit loss of in
+this case a profit only the profit of
+twenty thousand euros and 208 and this
+matches exactly the values that I have
+in this very last screenshot of
+statement that I made but everything is
+closed or the same balance the same
+profit and of course let's look at the
+profit factor and the trade this is the
+result of manual trading but as you can
+guess when we have to manually trade we
+have to mentally predict and outlook but
+how can we do that based on figures
+based on price action based on do
+certain currency pairs that we think we
+have to trade them because they are the
+most liquid they're the most volatile
+whatever we have to trade what in the
+market moves in that day / days / is
+week and we have to start trading after
+reading the markets on the mound
+then maybe Monday evening or afternoon
+if is the case of the wise wait on the
+Tuesday and then on the Friday we know
+we have anyway already to have closed
+and we have to expect that probably in
+the middle of the week there will be
+some shift in the majors currencies to
+be strong a week so we had this ship
+from Australian dollar to Japanese yen
+but with some reverbs in the longer time
+frame so weekly fold as regard to BP
+Australian dollar and you can check
+everything in your charts and your
+Metatrader what I'm saying is just a
+week that has passed in the third week
+of August and so I wanted also you know
+now that I am a bit relaxed with some
+days of vacation still to have and of
+course I will anyway ride me if you have
+to find me no problem because I will
+anyway read in the evening your emails
+and I thank you for your support and for
+your words a lot of you are having very
+good words for me and I thank you very
+much time I do appreciate your interest
+and passion and I hoped was given
+another opportunity to evaluate how my
+algorithm can Han Hance positively the
+vision of the market and directors only
+to the very currency pairs that for that
+day if we wanted a trading solution we
+have to trade leaving all the rest to
+another day another session or whatever
+they will reveal the strength of the
+week again weakest weakness against all
+the other currency pairs this is the way
+professional straight so we have to
+align on them but we must have something
+that reads the whole market not only one
+chart and with my solution that is an in
+market reading and an in chart reading
+to combine it together the analysis can
+be very sharp and detailed and of course
+we have always to be careful of certain
+actions of the market that occur a
+specific moments or events or that can
+be for us a signal to stay out of the
+markets but at the same time we have any
+way to have a vision always or at a
+vision not to trade because they are all
+balanced
+at the moment none of them has revealed
+strength or weak escape so I hope that
+this brief integration of my previous
+video that shows the whole week of an
+account that then at the end we have to
+close take the profit in our rear bank
+account and make it as gain and then
+realized only the 10,000 so that the
+starting deposit this way we can gain
+every week something more or less
+depending on our ability to trade on our
+exposure to risk and all this stuff it's
+also true that this way trading without
+stop losses manually will have an impact
+on our broker that will know only our
+opening trades but will know anything
+about the take profit the stop loss so
+their algorithms will not have this
+information so they will they cannot run
+against that and the more with this
+situation we can also understand how to
+properly hedge and what currency pairs
+to H so I hope this gives a
+comprehensive vision of the work that
+can be done with this with this
+integration and I thank you very much
+for watching for watching and for
+subscribing my channel and for all your
+remains and comments and I invite you to
+follow me also in the future I wish you
+good time good space good location good
+trades all the best that can come to you
+and let's have a new contract probably
+the moment I will be back in my office
+in Amsterdam and I will then perform
+maybe some other videos or some upgrades
+of my software
+okay so we should you again very good
+and peaceful time I say also Bobby

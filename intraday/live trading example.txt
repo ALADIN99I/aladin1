@@ -1,0 +1,4136 @@
+
+
+hello fellow Traders and welcome to this
+
+hello fellow Traders and welcome to this
+new
+
+new
+
+new
+episode of my video series on
+
+episode of my video series on
+
+episode of my video series on
+unconventional Forex
+
+unconventional Forex
+
+unconventional Forex
+Trading uh the topic of this video will
+
+Trading uh the topic of this video will
+
+Trading uh the topic of this video will
+be uh live trading example with
+
+be uh live trading example with
+
+be uh  with
+analysis so please I invite you as usual
+
+analysis so please I invite you as usual
+
+analysis so please I invite you as usual
+to stay straight to the video from the
+
+to stay straight to the video from the
+
+to stay straight to the video from the
+beginning to the very end not only to
+
+beginning to the very end not only to
+
+beginning to the very end not only to
+this video but also to the previous
+
+this video but also to the previous
+
+this video but also to the previous
+videos the moment you have some
+
+videos the moment you have some
+
+videos the moment you have some
+questions uh because there is a lot of
+
+questions uh because there is a lot of
+
+questions uh because there is a lot of
+knowledge in my previous videos that
+
+knowledge in my previous videos that
+
+knowledge in my previous videos that
+must be accurately um examinated by you
+
+must be accurately um examinated by you
+
+must be accurately um examinated by you
+if you are interested of course in the
+
+if you are interested of course in the
+
+if you are interested of course in the
+topic of Forex related to
+
+topic of Forex related to
+
+topic of Forex related to
+math so let's dive
+
+math so let's dive
+
+math so let's dive
+into the
+
+into the
+
+into the
+concept uh that I will the concepts that
+
+concept uh that I will the concepts that
+
+concept uh that I will the concepts that
+I will explain today and today is the
+
+I will explain today and today is the
+
+I will explain today and today is the
+24th of February
+
+24th of February
+
+24th of February
+2022 is
+
+2022 is
+
+2022 is
+734 more or less I just updated my sator
+
+734 more or less I just updated my sator
+
+734 more or less I just updated my sator
+effects spreadsheets in
+
+effects spreadsheets in
+
+effects spreadsheets in
+Excel and
+
+Excel and
+
+Excel and
+um the result of the update provided me
+
+um the result of the update provided me
+
+um the result of the update provided me
+this scenario in the Forex market so
+
+this scenario in the Forex market so
+
+this scenario in the Forex market so
+let's give a brief
+
+let's give a brief
+
+let's give a brief
+examination actually we see from the
+
+examination actually we see from the
+
+examination actually we see from the
+market
+
+market
+
+market
+performance that
+
+performance that
+
+performance that
+apparently JPY
+
+apparently JPY
+
+apparently JPY
+USD CHF are
+
+
+
+
+
+
+
+
+
+o Euro Canadian and
+
+o Euro Canadian and
+GBP seems to be on the other side weak
+
+GBP seems to be on the other side weak
+
+GBP seems to be on the other side weak
+this is the
+
+this is the
+
+this is the
+first
+
+first
+
+first
+element and because of this let me
+
+
+
+
+
+just adjust the point this should
+
+just adjust the point this should
+be the initial performance
+
+be the initial performance
+
+be the initial performance
+okay on the other hand I see here of
+
+okay on the other hand I see here of
+
+okay on the other hand I see here of
+course a confirmation of an oscillation
+
+course a confirmation of an oscillation
+
+course a confirmation of an oscillation
+that is strong for as regard dollar
+
+that is strong for as regard dollar
+
+that is strong for as regard dollar
+CHF
+
+CHF
+
+CHF
+JPY I see also in this case a strength
+
+JPY I see also in this case a strength
+
+JPY I see also in this case a strength
+that are getting AUD and NCD and also
+
+that are getting AUD and NCD and also
+
+that are getting AUD and NCD and also
+Euro so there is a bit of
+
+Euro so there is a bit of
+
+Euro so there is a bit of
+difference so
+
+difference so
+
+difference so
+in this scenario I can say more regard
+
+in this scenario I can say more regard
+
+in this scenario I can say more regard
+these three currencies but let's now go
+
+these three currencies but let's now go
+
+these three currencies but let's now go
+into something that helps me to
+
+into something that helps me to
+
+into something that helps me to
+refine uh my
+
+
+
+
+
+analysis from the perspective of the
+
+analysis from the perspective of the
+cartisian first of all I observe the
+
+cartisian first of all I observe the
+
+cartisian first of all I observe the
+currencies that are
+
+currencies that are
+
+currencies that are
+not involved directly that I can see
+
+not involved directly that I can see
+
+not involved directly that I can see
+them directly which
+
+them directly which
+
+them directly which
+are Euro and
+
+are Euro and
+
+are Euro and
+dollar and as far as I can see there is
+
+dollar and as far as I can see there is
+
+dollar and as far as I can see there is
+an
+
+an
+
+an
+oscillation when there is an oscillation
+
+oscillation when there is an oscillation
+
+oscillation when there is an oscillation
+and not a
+
+and not a
+
+and not a
+trend uh it could be that both
+
+trend uh it could be that both
+
+trend uh it could be that both
+currencies can be strong or weak this is
+
+currencies can be strong or weak this is
+
+currencies can be strong or weak this is
+the first thing to
+
+the first thing to
+
+the first thing to
+understand so euro
+
+understand so euro
+
+understand so euro
+dollar as also in the previous days I
+
+dollar as also in the previous days I
+
+dollar as also in the previous days I
+would rather think in terms of one of
+
+would rather think in terms of one of
+
+would rather think in terms of one of
+them is St in the sense that one is
+
+them is St in the sense that one is
+
+them is St in the sense that one is
+getting weak for then getting strong or
+
+getting weak for then getting strong or
+
+getting weak for then getting strong or
+one is getting strong for getting weak I
+
+one is getting strong for getting weak I
+
+one is getting strong for getting weak I
+have to be careful on that because think
+
+have to be careful on that because think
+
+have to be careful on that because think
+in terms of
+
+in terms of
+
+in terms of
+liquidity majority of currencies are
+
+liquidity majority of currencies are
+
+liquidity majority of currencies are
+traded against Euro and dollar in the
+
+traded against Euro and dollar in the
+
+traded against Euro and dollar in the
+same
+
+same
+
+same
+way but these are extra Concepts that I
+
+way but these are extra Concepts that I
+
+way but these are extra Concepts that I
+cannot stay further otherwise there will
+
+cannot stay further otherwise there will
+
+cannot stay further otherwise there will
+be will be a very long video but anyway
+
+be will be a very long video but anyway
+
+be will be a very long video but anyway
+keep my words for what is my own
+
+keep my words for what is my own
+
+keep my words for what is my own
+experience and my own understanding that
+
+experience and my own understanding that
+
+experience and my own understanding that
+can also be wrong sometimes it's not
+
+can also be wrong sometimes it's not
+
+can also be wrong sometimes it's not
+that I am right 100% of
+
+that I am right 100% of
+
+that I am right 100% of
+course okay let's also
+
+course okay let's also
+
+course okay let's also
+check the different
+
+check the different
+
+check the different
+currencies okay this is Canadian dollar
+
+currencies okay this is Canadian dollar
+
+currencies okay this is Canadian dollar
+is developing through the first second
+
+is developing through the first second
+
+is developing through the first second
+third the thir the fourth quadrant of
+
+third the thir the fourth quadrant of
+
+third the thir the fourth quadrant of
+this uh represent station
+
+this uh represent station
+
+this uh represent station
+which looks
+
+which looks
+
+which looks
+like a kind of uh
+
+like a kind of uh
+
+like a kind of uh
+neutrality okay and is not at this
+
+neutrality okay and is not at this
+
+neutrality okay and is not at this
+moment something that leads but I see
+
+moment something that leads but I see
+
+moment something that leads but I see
+that this currency
+
+that this currency
+
+that this currency
+went uh in the first in the fourth
+
+went uh in the first in the fourth
+
+went uh in the first in the fourth
+quadrant then went weak then regain some
+
+quadrant then went weak then regain some
+
+quadrant then went weak then regain some
+strength then G weak again got weak
+
+strength then G weak again got weak
+
+strength then G weak again got weak
+again okay so this is the behavior of
+
+again okay so this is the behavior of
+
+again okay so this is the behavior of
+Canadian let's see the
+
+Canadian let's see the
+
+Canadian let's see the
+CHF I don't know if you can see that
+
+CHF I don't know if you can see that
+
+CHF I don't know if you can see that
+much because the points are very
+
+much because the points are very
+
+much because the points are very
+tiny CF went strong went weak went
+
+tiny CF went strong went weak went
+
+tiny CF went strong went weak went
+strong went strong went strong and then
+
+strong went strong went strong and then
+
+strong went strong went strong and then
+came back and went strong so
+
+came back and went strong so
+
+came back and went strong so
+confirmation of strength GBP
+
+confirmation of strength GBP
+
+confirmation of strength GBP
+GBP is of course in the four in the
+
+GBP is of course in the four in the
+
+GBP is of course in the four in the
+fourth quadrant as well and
+
+fourth quadrant as well and
+
+fourth quadrant as well and
+weak again weak
+
+weak again weak
+
+weak again weak
+strong
+
+strong
+
+strong
+weak Australian
+
+weak Australian
+
+weak Australian
+dollar
+
+dollar
+
+dollar
+weak strong
+
+weak strong
+
+weak strong
+but below above the 45° line so more
+
+but below above the 45° line so more
+
+but below above the 45° line so more
+weak than strong
+
+
+
+
+
+and New Zealand dollar weak
+
+and New Zealand dollar weak
+indeed first quadrant of the cartisian
+
+indeed first quadrant of the cartisian
+
+indeed first quadrant of the cartisian
+plane weak weak a little bit strong but
+
+plane weak weak a little bit strong but
+
+plane weak weak a little bit strong but
+still in the weak side of
+
+still in the weak side of
+
+still in the weak side of
+the quadrant and JPY indeed weak and
+
+the quadrant and JPY indeed weak and
+
+the quadrant and JPY indeed weak and
+then
+
+then
+
+then
+strong so putting all together
+
+
+
+
+
+okay so let's determine
+
+okay so let's determine
+that JPY and CHF
+
+
+
+
+
+
+
+
+
+buy nzd Australian dollar
+
+buy nzd Australian dollar
+Canadian and
+
+Canadian and
+
+Canadian and
+also GBP I can put them weak okay uh
+
+also GBP I can put them weak okay uh
+
+also GBP I can put them weak okay uh
+this is is the middle point of the the
+
+this is is the middle point of the the
+
+this is is the middle point of the the
+intersection between the maximum and the
+
+intersection between the maximum and the
+
+intersection between the maximum and the
+minimum of the Euro and dollar
+
+minimum of the Euro and dollar
+
+minimum of the Euro and dollar
+coordinates so I can say that this four
+
+coordinates so I can say that this four
+
+coordinates so I can say that this four
+currencies can be settled as weak so in
+
+currencies can be settled as weak so in
+
+currencies can be settled as weak so in
+a Cell
+
+a Cell
+
+a Cell
+modood in order to balance my equation I
+
+modood in order to balance my equation I
+
+modood in order to balance my equation I
+have to Dume to to presume
+
+
+
+
+
+to put my clue on the fact that also
+
+to put my clue on the fact that also
+Euro that at this moment is
+
+Euro that at this moment is
+
+Euro that at this moment is
+getting uh weak and then is getting some
+
+getting uh weak and then is getting some
+
+getting uh weak and then is getting some
+strength also here is revealing some
+
+strength also here is revealing some
+
+strength also here is revealing some
+strength so there is a kind of
+
+strength so there is a kind of
+
+strength so there is a kind of
+convergence comparing the oscillator
+
+convergence comparing the oscillator
+
+convergence comparing the oscillator
+with
+
+with
+
+with
+the uh market performance so let's try
+
+the uh market performance so let's try
+
+the uh market performance so let's try
+to put
+
+to put
+
+to put
+Euro in buy and I got this curve pretty
+
+Euro in buy and I got this curve pretty
+
+Euro in buy and I got this curve pretty
+similar Also let's also see the
+
+similar Also let's also see the
+
+similar Also let's also see the
+correlation between
+
+correlation between
+
+correlation between
+euro dollar and Australian dollar Yen we
+
+euro dollar and Australian dollar Yen we
+
+euro dollar and Australian dollar Yen we
+have this line let's
+
+have this line let's
+
+have this line let's
+say more than this and
+
+
+
+
+
+zdn and we obtain something
+
+zdn and we obtain something
+similar so at
+
+similar so at
+
+similar so at
+the
+
+the
+
+the
+decreasing of um euro dollar there is a
+
+decreasing of um euro dollar there is a
+
+decreasing of um euro dollar there is a
+decreasing of New Zealand dollar
+
+decreasing of New Zealand dollar
+
+decreasing of New Zealand dollar
+Y and when at now euro dollar is rising
+
+Y and when at now euro dollar is rising
+
+Y and when at now euro dollar is rising
+so from this point
+
+so from this point
+
+so from this point
+here
+
+here
+
+here
+uh New Zealand dollar Yen doesn't seem
+
+uh New Zealand dollar Yen doesn't seem
+
+uh New Zealand dollar Yen doesn't seem
+to go up but seem to stay in this case
+
+to go up but seem to stay in this case
+
+to go up but seem to stay in this case
+so no matter what no matter if euro
+
+so no matter what no matter if euro
+
+so no matter what no matter if euro
+dollar is going uh up or down New
+
+dollar is going uh up or down New
+
+dollar is going uh up or down New
+Zealand dollar Yen keeps kind of uh
+
+Zealand dollar Yen keeps kind of uh
+
+Zealand dollar Yen keeps kind of uh
+weakness so New Zealand dollar weak and
+
+weakness so New Zealand dollar weak and
+
+weakness so New Zealand dollar weak and
+and and Yen strong so euro dollar can be
+
+and and Yen strong so euro dollar can be
+
+and and Yen strong so euro dollar can be
+sideways okay so in this case I can
+
+sideways okay so in this case I can
+
+sideways okay so in this case I can
+consider this
+
+
+
+
+
+
+
+
+
+so at this
+
+so at this
+point I'm considering this setup in
+
+point I'm considering this setup in
+
+point I'm considering this setup in
+trading and let me just grab
+
+
+
+
+
+the this one for setting up my TR and I
+
+the this one for setting up my TR and I
+consider
+
+
+
+
+
+
+
+
+
+can okay let's just set
+
+can okay let's just set
+up this
+
+
+
+
+
+way
+
+way
+okay Al here
+
+okay Al here
+
+okay Al here
+so it's more
+
+
+
+
+
+okay okay so we have this situation on
+
+okay okay so we have this situation on
+which I have a demo account for
+
+which I have a demo account for
+
+which I have a demo account for
+educational purposes now doesn't matter
+
+educational purposes now doesn't matter
+
+educational purposes now doesn't matter
+I have an a balance of
+
+
+
+
+
+
+
+
+
+8,479 or units of
+
+8,479 or units of
+currency uh of course this is all only
+
+currency uh of course this is all only
+
+currency uh of course this is all only
+for
+
+for
+
+for
+educational purposes and um to show you
+
+educational purposes and um to show you
+
+educational purposes and um to show you
+the way one of the way that it can you
+
+the way one of the way that it can you
+
+the way one of the way that it can you
+can possibly trade so we were saying to
+
+can possibly trade so we were saying to
+
+can possibly trade so we were saying to
+combine these four elements that I
+
+
+
+
+
+am that I have created here so I will do
+
+am that I have created here so I will do
+a kind of uh thing like this
+
+
+
+
+
+uh and so I will combine for example
+
+uh and so I will combine for example
+Euro card USD
+
+
+
+
+
+GBP uh then I will combine CHF and O and
+
+GBP uh then I will combine CHF and O and
+let's say ncdn okay I will create
+
+let's say ncdn okay I will create
+
+let's say ncdn okay I will create
+this I can have 16 possible
+
+this I can have 16 possible
+
+this I can have 16 possible
+combinations because if I have four in I
+
+combinations because if I have four in I
+
+combinations because if I have four in I
+for inel four by four per four is
+
+for inel four by four per four is
+
+for inel four by four per four is
+16 but by using just four
+
+16 but by using just four
+
+16 but by using just four
+currencies I can have the same line of
+
+currencies I can have the same line of
+
+currencies I can have the same line of
+equity of
+
+equity of
+
+equity of
+my um synthetic
+
+my um synthetic
+
+my um synthetic
+combination and remember that by using
+
+combination and remember that by using
+
+combination and remember that by using
+this uh four uh currencies four crosses
+
+this uh four uh currencies four crosses
+
+this uh four uh currencies four crosses
+that now will create I will have the A +
+
+that now will create I will have the A +
+
+that now will create I will have the A +
+B + C +
+
+
+
+
+
+D with the goal
+
+D with the goal
+of being major to zero okay
+
+of being major to zero okay
+
+of being major to zero okay
+so
+
+so
+
+so
+um let's do this job and let's first of
+
+um let's do this job and let's first of
+
+um let's do this job and let's first of
+all
+
+all
+
+all
+create the spot for this so I open Euro
+
+create the spot for this so I open Euro
+
+create the spot for this so I open Euro
+CAD I open uh
+
+
+
+
+
+gbpusd
+
+gbpusd
+window then I open Australia dollar
+
+
+
+
+
+
+
+
+
+is now let's go get rid of this so we
+
+is now let's go get rid of this so we
+have more space
+
+have more space
+
+have more space
+okay now I have to decide for the
+
+okay now I have to decide for the
+
+okay now I have to decide for the
+balance that I have the money
+
+balance that I have the money
+
+balance that I have the money
+management okay for doing
+
+management okay for doing
+
+management okay for doing
+this I have created this tool this
+
+this I have created this tool this
+
+this I have created this tool this
+approximation is not a very spec very
+
+approximation is not a very spec very
+
+approximation is not a very spec very
+precise tool but it's enough for me so
+
+precise tool but it's enough for me so
+
+precise tool but it's enough for me so
+let's say I have what we had here um
+
+
+
+
+
+
+
+
+
+is more or less this it could be $100 it
+
+is more or less this it could be $100 it
+could be
+
+could be
+
+could be
+$1,000 everything will
+
+$1,000 everything will
+
+$1,000 everything will
+be
+
+be
+
+be
+consequently by calculation I say this
+
+consequently by calculation I say this
+
+consequently by calculation I say this
+this tool says to me that I can trade a
+
+this tool says to me that I can trade a
+
+this tool says to me that I can trade a
+maximum lots of $200
+
+maximum lots of $200
+
+maximum lots of $200
+71 which is absurd in the sense that if
+
+71 which is absurd in the sense that if
+
+71 which is absurd in the sense that if
+I want really to trade 271
+
+I want really to trade 271
+
+I want really to trade 271
+trades uh this tool warns me about the
+
+trades uh this tool warns me about the
+
+trades uh this tool warns me about the
+fact that I can be crazy because I'm
+
+fact that I can be crazy because I'm
+
+fact that I can be crazy because I'm
+using 100% of my leverage and this is
+
+using 100% of my leverage and this is
+
+using 100% of my leverage and this is
+wrong in terms of money management so my
+
+wrong in terms of money management so my
+
+wrong in terms of money management so my
+goal is to stay very low by using just a
+
+goal is to stay very low by using just a
+
+goal is to stay very low by using just a
+little bit of this
+
+little bit of this
+
+little bit of this
+leverage and working therefore with a
+
+leverage and working therefore with a
+
+leverage and working therefore with a
+different virtual uh synthetic I
+
+different virtual uh synthetic I
+
+different virtual uh synthetic I
+leverage so let's say I have four
+
+leverage so let's say I have four
+
+leverage so let's say I have four
+crosses if what if I expose Myself by
+
+crosses if what if I expose Myself by
+
+crosses if what if I expose Myself by
+trading two lots per crosses in
+
+trading two lots per crosses in
+
+trading two lots per crosses in
+proportion to my balance so if you have
+
+proportion to my balance so if you have
+
+proportion to my balance so if you have
+a th000 dollar for example you don't go
+
+a th000 dollar for example you don't go
+
+a th000 dollar for example you don't go
+for uh eight Lots because if you
+
+for uh eight Lots because if you
+
+for uh eight Lots because if you
+have let's say $1,000 of balance you can
+
+have let's say $1,000 of balance you can
+
+have let's say $1,000 of balance you can
+trade a maximum of two lots and a half
+
+trade a maximum of two lots and a half
+
+trade a maximum of two lots and a half
+okay so it's all related to your initial
+
+
+
+
+
+balance so I want to trade two lots per
+
+balance so I want to trade two lots per
+in this case I can trade easily two lots
+
+in this case I can trade easily two lots
+
+in this case I can trade easily two lots
+per cross that I have so it's a total of
+
+per cross that I have so it's a total of
+
+per cross that I have so it's a total of
+eight
+
+eight
+
+eight
+Lots eight Lots it's a lowrisk
+
+Lots eight Lots it's a lowrisk
+
+Lots eight Lots it's a lowrisk
+investment or trading with a l average
+
+investment or trading with a l average
+
+investment or trading with a l average
+of 15 to1 from the initial
+
+of 15 to1 from the initial
+
+of 15 to1 from the initial
+um set up that I have by having a 500 to
+
+um set up that I have by having a 500 to
+
+um set up that I have by having a 500 to
+one
+
+one
+
+one
+leverage and in real I'm using just the
+
+leverage and in real I'm using just the
+
+leverage and in real I'm using just the
+3% of this so this is very conservative
+
+3% of this so this is very conservative
+
+3% of this so this is very conservative
+and I'm not putting at risk too much I
+
+and I'm not putting at risk too much I
+
+and I'm not putting at risk too much I
+can have a draw down without suffering
+
+can have a draw down without suffering
+
+can have a draw down without suffering
+that much okay so this could be
+
+that much okay so this could be
+
+that much okay so this could be
+ideal and for example if I am having a
+
+ideal and for example if I am having a
+
+ideal and for example if I am having a
+draw down but but I still think that my
+
+draw down but but I still think that my
+
+draw down but but I still think that my
+position are right I can also Place
+
+position are right I can also Place
+
+position are right I can also Place
+another set of Trades let's say so not
+
+another set of Trades let's say so not
+
+another set of Trades let's say so not
+eight but 16 and by 16 anyway I am still
+
+eight but 16 and by 16 anyway I am still
+
+eight but 16 and by 16 anyway I am still
+in a lowrisk area with just by using the
+
+in a lowrisk area with just by using the
+
+in a lowrisk area with just by using the
+6% of my leverage and working with a
+
+6% of my leverage and working with a
+
+6% of my leverage and working with a
+real leverage of 29 to1 but for now
+
+real leverage of 29 to1 but for now
+
+real leverage of 29 to1 but for now
+let's stay Stak to eight Lots in
+
+let's stay Stak to eight Lots in
+
+let's stay Stak to eight Lots in
+total
+
+total
+
+total
+so I will place these orders this way
+
+so I will place these orders this way
+
+so I will place these orders this way
+and by doing
+
+and by doing
+
+and by doing
+this remember we have this situation so
+
+this remember we have this situation so
+
+this remember we have this situation so
+Euro CAD will be in buy gbpusd will be
+
+Euro CAD will be in buy gbpusd will be
+
+Euro CAD will be in buy gbpusd will be
+in
+
+in
+
+in
+cell o CHF and NCD JPY will be in
+
+cell o CHF and NCD JPY will be in
+
+cell o CHF and NCD JPY will be in
+cell okay so let's proceed Euro CAD I
+
+cell okay so let's proceed Euro CAD I
+
+cell okay so let's proceed Euro CAD I
+set a buy GBP USD I set a cell NCD
+
+set a buy GBP USD I set a cell NCD
+
+set a buy GBP USD I set a cell NCD
+JPY I set a cell and O CHF I set a cell
+
+JPY I set a cell and O CHF I set a cell
+
+JPY I set a cell and O CHF I set a cell
+that's it
+
+that's it
+
+that's it
+done at this moment I'm not doing
+
+done at this moment I'm not doing
+
+done at this moment I'm not doing
+anything else
+
+anything else
+
+anything else
+that let the the trades
+
+that let the the trades
+
+that let the the trades
+go and
+
+go and
+
+go and
+um basically what I did to create this
+
+um basically what I did to create this
+
+um basically what I did to create this
+formula that you also
+
+formula that you also
+
+formula that you also
+see in my free webinars uh
+
+see in my free webinars uh
+
+see in my free webinars uh
+explanations and this is just a one of
+
+explanations and this is just a one of
+
+explanations and this is just a one of
+the possible ways to trade where I place
+
+the possible ways to trade where I place
+
+the possible ways to trade where I place
+all
+
+all
+
+all
+the combinations that I think they can
+
+the combinations that I think they can
+
+the combinations that I think they can
+be uh reliable for a a positive
+
+be uh reliable for a a positive
+
+be uh reliable for a a positive
+result and I use this formul it can be
+
+result and I use this formul it can be
+
+result and I use this formul it can be
+that one of them can be negative but I
+
+that one of them can be negative but I
+
+that one of them can be negative but I
+don't care or one or two I don't care
+
+don't care or one or two I don't care
+
+don't care or one or two I don't care
+but the point that I care is that this
+
+but the point that I care is that this
+
+but the point that I care is that this
+synthetic tool has to be major to zero
+
+synthetic tool has to be major to zero
+
+synthetic tool has to be major to zero
+and uh of course what I I will do then
+
+and uh of course what I I will do then
+
+and uh of course what I I will do then
+is to would be
+
+
+
+
+
+to consider this fact at this moment by
+
+to consider this fact at this moment by
+trading this set up from the beginning
+
+trading this set up from the beginning
+
+trading this set up from the beginning
+of the
+
+of the
+
+of the
+day I'm having a positive
+
+day I'm having a positive
+
+day I'm having a positive
+um result in fact is Major to zero it's
+
+um result in fact is Major to zero it's
+
+um result in fact is Major to zero it's
+not negative it's not going below okay
+
+not negative it's not going below okay
+
+not negative it's not going below okay
+the point is that now from this point it
+
+the point is that now from this point it
+
+the point is that now from this point it
+has to go it should
+
+has to go it should
+
+has to go it should
+go
+
+go
+
+go
+higher um now I will stop the video
+
+higher um now I will stop the video
+
+higher um now I will stop the video
+pause the video and then I will retake
+
+pause the video and then I will retake
+
+pause the video and then I will retake
+on the moment something is moving is
+
+on the moment something is moving is
+
+on the moment something is moving is
+around it's almost close to the
+
+around it's almost close to the
+
+around it's almost close to the
+beginning of the the European session
+
+beginning of the the European session
+
+beginning of the the European session
+and then London session so let's see
+
+and then London session so let's see
+
+and then London session so let's see
+what happened and I will re retake the
+
+what happened and I will re retake the
+
+what happened and I will re retake the
+video on later so stay strict in a
+
+video on later so stay strict in a
+
+video on later so stay strict in a
+second I will put together the videos
+
+second I will put together the videos
+
+second I will put together the videos
+and then you will have just one huge
+
+and then you will have just one huge
+
+and then you will have just one huge
+video splitted by two or three events
+
+video splitted by two or three events
+
+video splitted by two or three events
+let's see now how the market development
+
+let's see now how the market development
+
+let's see now how the market development
+so stay
+
+
+
+
+
+tuned okay
+
+tuned okay
+we are back finally today it's a very
+
+we are back finally today it's a very
+
+we are back finally today it's a very
+complicated
+
+complicated
+
+complicated
+day and not all
+
+day and not all
+
+day and not all
+the forecasters I got
+
+the forecasters I got
+
+the forecasters I got
+were totally as
+
+were totally as
+
+were totally as
+expected despite the fact that by
+
+expected despite the fact that by
+
+expected despite the fact that by
+hedging the currencies uh we got anyway
+
+hedging the currencies uh we got anyway
+
+hedging the currencies uh we got anyway
+some results that I will show you in a
+
+some results that I will show you in a
+
+some results that I will show you in a
+moment now it's
+
+moment now it's
+
+moment now it's
+about 3
+
+about 3
+
+about 3
+p.m. so the almost at the beginning of
+
+p.m. so the almost at the beginning of
+
+p.m. so the almost at the beginning of
+the New York
+
+the New York
+
+the New York
+session let's remember that today is a
+
+session let's remember that today is a
+
+session let's remember that today is a
+very critical day because we have Russia
+
+very critical day because we have Russia
+
+very critical day because we have Russia
+that invaded
+
+that invaded
+
+that invaded
+Ukraine and all the markets are getting
+
+Ukraine and all the markets are getting
+
+Ukraine and all the markets are getting
+crazy markets Commodities
+
+crazy markets Commodities
+
+crazy markets Commodities
+are so volatile and rising in prices
+
+are so volatile and rising in prices
+
+are so volatile and rising in prices
+it's a big big mess and honestly I would
+
+it's a big big mess and honestly I would
+
+it's a big big mess and honestly I would
+have not expected by these
+
+have not expected by these
+
+have not expected by these
+situations also in regards the fact that
+
+situations also in regards the fact that
+
+situations also in regards the fact that
+we have a lot of
+
+we have a lot of
+
+we have a lot of
+fundamentals uh news that I don't trade
+
+fundamentals uh news that I don't trade
+
+fundamentals uh news that I don't trade
+of course but I keep in attention anyway
+
+of course but I keep in attention anyway
+
+of course but I keep in attention anyway
+so just to be just to be clear if we are
+
+so just to be just to be clear if we are
+
+so just to be just to be clear if we are
+observing the news
+
+
+
+
+
+today okay we have all these news we had
+
+today okay we have all these news we had
+cross domestic product and issue jobless
+
+cross domestic product and issue jobless
+
+cross domestic product and issue jobless
+claims a lot of news regarding the
+
+claims a lot of news regarding the
+
+claims a lot of news regarding the
+dollar and a lot of news more to
+
+dollar and a lot of news more to
+
+dollar and a lot of news more to
+come and also the
+
+come and also the
+
+come and also the
+FC uh news on New Zealand in the late of
+
+FC uh news on New Zealand in the late of
+
+FC uh news on New Zealand in the late of
+the day so it's very an important day
+
+the day so it's very an important day
+
+the day so it's very an important day
+even for as regard the the
+
+even for as regard the the
+
+even for as regard the the
+trading uh of the dollar in particular
+
+trading uh of the dollar in particular
+
+trading uh of the dollar in particular
+that behaved very
+
+that behaved very
+
+that behaved very
+strong as well as
+
+strong as well as
+
+strong as well as
+JPY I was expecting for
+
+JPY I was expecting for
+
+JPY I was expecting for
+Real uh a euro dollar
+
+Real uh a euro dollar
+
+Real uh a euro dollar
+ranging but the euro dollar went in
+
+ranging but the euro dollar went in
+
+ranging but the euro dollar went in
+favor of the dollar and against the Euro
+
+favor of the dollar and against the Euro
+
+favor of the dollar and against the Euro
+that decided again to fall down and go
+
+that decided again to fall down and go
+
+that decided again to fall down and go
+back up
+
+back up
+
+back up
+only in this part of the day anyway by
+
+only in this part of the day anyway by
+
+only in this part of the day anyway by
+my trading which is hedging a two
+
+my trading which is hedging a two
+
+my trading which is hedging a two
+positions around this
+
+positions around this
+
+positions around this
+area and after a lot of sideways but
+
+area and after a lot of sideways but
+
+area and after a lot of sideways but
+ascending now we arrived at this point
+
+ascending now we arrived at this point
+
+ascending now we arrived at this point
+if we go and check my trades again let
+
+if we go and check my trades again let
+
+if we go and check my trades again let
+me just adjust the platform
+
+me just adjust the platform
+
+me just adjust the platform
+better uh if I
+
+better uh if I
+
+better uh if I
+go on the TR I see anyway that I had has
+
+go on the TR I see anyway that I had has
+
+go on the TR I see anyway that I had has
+explained uh not all the ab c d in
+
+explained uh not all the ab c d in
+
+explained uh not all the ab c d in
+positive but the overall is is in
+
+positive but the overall is is in
+
+positive but the overall is is in
+positive okay so I have this
+
+positive okay so I have this
+
+positive okay so I have this
+situation uh the majority of the trade I
+
+situation uh the majority of the trade I
+
+situation uh the majority of the trade I
+got in in in profit was because of the
+
+got in in in profit was because of the
+
+got in in in profit was because of the
+gpp USD and Euro CAD of course because
+
+gpp USD and Euro CAD of course because
+
+gpp USD and Euro CAD of course because
+of the Euro uh weakness that developed
+
+of the Euro uh weakness that developed
+
+of the Euro uh weakness that developed
+through the they went in
+
+through the they went in
+
+through the they went in
+um against my position then we got uh
+
+um against my position then we got uh
+
+um against my position then we got uh
+ocf that just recovered you know a sell
+
+ocf that just recovered you know a sell
+
+ocf that just recovered you know a sell
+so almost to break even and a little bit
+
+so almost to break even and a little bit
+
+so almost to break even and a little bit
+of uh gain here in the nzd JPY so anyway
+
+of uh gain here in the nzd JPY so anyway
+
+of uh gain here in the nzd JPY so anyway
+an overall performance that could be
+
+an overall performance that could be
+
+an overall performance that could be
+fine now it's almost the time for US
+
+fine now it's almost the time for US
+
+fine now it's almost the time for US
+market to come and in my opinion
+
+market to come and in my opinion
+
+market to come and in my opinion
+maybe I I can be wrong but this could be
+
+maybe I I can be wrong but this could be
+
+maybe I I can be wrong but this could be
+almost the ending of the move and then
+
+almost the ending of the move and then
+
+almost the ending of the move and then
+there could be a potential
+
+there could be a potential
+
+there could be a potential
+reversal um also we saw that
+
+reversal um also we saw that
+
+reversal um also we saw that
+by the euro dollar than anyway went in
+
+by the euro dollar than anyway went in
+
+by the euro dollar than anyway went in
+the negative direction also nzdjpy went
+
+the negative direction also nzdjpy went
+
+the negative direction also nzdjpy went
+into the negative
+
+into the negative
+
+into the negative
+Direction but also GBP was the the move
+
+Direction but also GBP was the the move
+
+Direction but also GBP was the the move
+that gave the best G
+
+that gave the best G
+
+that gave the best G
+in fact we see that GBP went in this
+
+in fact we see that GBP went in this
+
+in fact we see that GBP went in this
+direction and USD and JPY went in the
+
+direction and USD and JPY went in the
+
+direction and USD and JPY went in the
+opposite direction so what I'm about to
+
+opposite direction so what I'm about to
+
+opposite direction so what I'm about to
+do anyway no matter what is to close the
+
+do anyway no matter what is to close the
+
+do anyway no matter what is to close the
+trades okay so let's close the
+
+
+
+
+
+trades and anyway we got uh a
+
+trades and anyway we got uh a
+profit okay of
+
+profit okay of
+
+profit okay of
+1,000 and almost
+
+1,000 and almost
+
+1,000 and almost
+800 it would be a case also of
+
+800 it would be a case also of
+
+800 it would be a case also of
+reversal and I am about
+
+reversal and I am about
+
+reversal and I am about
+to do that let's see I will study for a
+
+to do that let's see I will study for a
+
+to do that let's see I will study for a
+moment the situation but for now as you
+
+moment the situation but for now as you
+
+moment the situation but for now as you
+can see despite the fact that we got
+
+can see despite the fact that we got
+
+can see despite the fact that we got
+anyway
+
+anyway
+
+anyway
+um some currency some crosses that went
+
+um some currency some crosses that went
+
+um some currency some crosses that went
+in the opposite direction the over all
+
+in the opposite direction the over all
+
+in the opposite direction the over all
+performance was positive okay so thanks
+
+performance was positive okay so thanks
+
+performance was positive okay so thanks
+for watching till now and I hope this
+
+for watching till now and I hope this
+
+for watching till now and I hope this
+could be one of the more examples that I
+
+could be one of the more examples that I
+
+could be one of the more examples that I
+will do but I hope that this is clear
+
+will do but I hope that this is clear
+
+will do but I hope that this is clear
+that by trading just one currency and
+
+that by trading just one currency and
+
+that by trading just one currency and
+without having um an overall vision of
+
+without having um an overall vision of
+
+without having um an overall vision of
+the
+
+the
+
+the
+market uh that could be very upsetting
+
+market uh that could be very upsetting
+
+market uh that could be very upsetting
+but the moment we are balancing the
+
+but the moment we are balancing the
+
+but the moment we are balancing the
+currencies together we don't care if we
+
+currencies together we don't care if we
+
+currencies together we don't care if we
+have a loss in one
+
+have a loss in one
+
+have a loss in one
+cross but we do care that the overall
+
+cross but we do care that the overall
+
+cross but we do care that the overall
+portfolio that we are choosing provides
+
+portfolio that we are choosing provides
+
+portfolio that we are choosing provides
+a positive
+
+a positive
+
+a positive
+result and believe it or not today is a
+
+result and believe it or not today is a
+
+result and believe it or not today is a
+historic a day that could be in history
+
+historic a day that could be in history
+
+historic a day that could be in history
+will be in the history books because of
+
+will be in the history books because of
+
+will be in the history books because of
+this war between Russia and Ukraine and
+
+this war between Russia and Ukraine and
+
+this war between Russia and Ukraine and
+we don't know know if there will be
+
+we don't know know if there will be
+
+we don't know know if there will be
+future
+
+future
+
+future
+involvements but it's very critical day
+
+involvements but it's very critical day
+
+involvements but it's very critical day
+and of course the markets are are having
+
+and of course the markets are are having
+
+and of course the markets are are having
+an impact from this that provided at
+
+an impact from this that provided at
+
+an impact from this that provided at
+this very
+
+this very
+
+this very
+annoying uh sequence of up and downs
+
+annoying uh sequence of up and downs
+
+annoying uh sequence of up and downs
+with not that much interest
+
+with not that much interest
+
+with not that much interest
+in in
+
+in in
+
+in in
+um in trading the moment you were
+
+um in trading the moment you were
+
+um in trading the moment you were
+trading long you were going short the
+
+trading long you were going short the
+
+trading long you were going short the
+moment you were trading short you were
+
+moment you were trading short you were
+
+moment you were trading short you were
+going long so I think this is the
+
+going long so I think this is the
+
+going long so I think this is the
+situation for the most of you I decided
+
+situation for the most of you I decided
+
+situation for the most of you I decided
+to take my let me just show you
+
+to take my let me just show you
+
+to take my let me just show you
+this uh to take my
+
+
+
+
+
+
+
+
+
+new so I can sketch a bit so basically
+
+new so I can sketch a bit so basically
+the what I'm saying is that technical
+
+the what I'm saying is that technical
+
+the what I'm saying is that technical
+analysis can be easily done on a
+
+analysis can be easily done on a
+
+analysis can be easily done on a
+portfolio which is a
+
+portfolio which is a
+
+portfolio which is a
+synthetic um a synthetic instrument
+
+synthetic um a synthetic instrument
+
+synthetic um a synthetic instrument
+rather than just a single cross that
+
+rather than just a single cross that
+
+rather than just a single cross that
+doesn't mean nothing because no matter
+
+doesn't mean nothing because no matter
+
+doesn't mean nothing because no matter
+what this synthetic instrument embeds uh
+
+what this synthetic instrument embeds uh
+
+what this synthetic instrument embeds uh
+the the overall vision of the market
+
+the the overall vision of the market
+
+the the overall vision of the market
+then could be right or wrong and this is
+
+then could be right or wrong and this is
+
+then could be right or wrong and this is
+another story but no matter what here
+
+another story but no matter what here
+
+another story but no matter what here
+are Incorporated all the eight
+
+are Incorporated all the eight
+
+are Incorporated all the eight
+currencies in a direction or the other
+
+currencies in a direction or the other
+
+currencies in a direction or the other
+so when I took my trade I was probably
+
+so when I took my trade I was probably
+
+so when I took my trade I was probably
+in in this area and so in a good
+
+in in this area and so in a good
+
+in in this area and so in a good
+retracement this would have been you
+
+retracement this would have been you
+
+retracement this would have been you
+know good good areas for taking uh the
+
+know good good areas for taking uh the
+
+know good good areas for taking uh the
+positions but also if you can see these
+
+positions but also if you can see these
+
+positions but also if you can see these
+are good these are good these are good
+
+are good these are good these are good
+
+are good these are good these are good
+below know this yellow line and
+
+below know this yellow line and
+
+below know this yellow line and
+um we can do technical analysis in this
+
+um we can do technical analysis in this
+
+um we can do technical analysis in this
+case so representing kind of channel
+
+case so representing kind of channel
+
+case so representing kind of channel
+that we are working maybe the price will
+
+that we are working maybe the price will
+
+that we are working maybe the price will
+go above this line a bit but
+
+go above this line a bit but
+
+go above this line a bit but
+then we'll do in the opposite direction
+
+then we'll do in the opposite direction
+
+then we'll do in the opposite direction
+which means
+
+which means
+
+which means
+basically which means basically that uh
+
+basically which means basically that uh
+
+basically which means basically that uh
+that we need to have uh a
+
+that we need to have uh a
+
+that we need to have uh a
+reversal of this curreny so we trade in
+
+reversal of this curreny so we trade in
+
+reversal of this curreny so we trade in
+sell euro dollar CHF JPY and we trade in
+
+sell euro dollar CHF JPY and we trade in
+
+sell euro dollar CHF JPY and we trade in
+buy Canadian GBP o and
+
+buy Canadian GBP o and
+
+buy Canadian GBP o and
+nzd I will see now I will check I will
+
+nzd I will see now I will check I will
+
+nzd I will see now I will check I will
+make some analysis waiting for the
+
+make some analysis waiting for the
+
+make some analysis waiting for the
+American
+
+
+
+
+
+session okay we are arrived to the third
+
+session okay we are arrived to the third
+part put it in sequence of
+
+part put it in sequence of
+
+part put it in sequence of
+this day
+
+this day
+
+this day
+trading that I was really hoping to be
+
+
+
+
+
+more not more less roller coaster but
+
+more not more less roller coaster but
+um is a very particular day
+
+
+
+
+
+today Russia is in war or at least for
+
+today Russia is in war or at least for
+now is in war and the impact to
+
+now is in war and the impact to
+
+now is in war and the impact to
+the toward wors the market it's
+
+the toward wors the market it's
+
+the toward wors the market it's
+very
+
+very
+
+very
+noticeable take a look to all the assets
+
+noticeable take a look to all the assets
+
+noticeable take a look to all the assets
+everything as I said
+
+everything as I said
+
+everything as I said
+um the previous
+
+um the previous
+
+um the previous
+part um they they moved a lot okay so
+
+part um they they moved a lot okay so
+
+part um they they moved a lot okay so
+maybe it's not the
+
+maybe it's not the
+
+maybe it's not the
+only endogenous fact EX enous Factor but
+
+only endogenous fact EX enous Factor but
+
+only endogenous fact EX enous Factor but
+um is one of the most relevant
+
+um is one of the most relevant
+
+um is one of the most relevant
+today
+
+today
+
+today
+so we were at the point in which I was
+
+so we were at the point in which I was
+
+so we were at the point in which I was
+expecting remember this scheme I
+
+expecting remember this scheme I
+
+expecting remember this scheme I
+made and I was expecting around this
+
+made and I was expecting around this
+
+made and I was expecting around this
+area normally I not normally I noticed
+
+area normally I not normally I noticed
+
+area normally I not normally I noticed
+that
+
+that
+
+that
+when my portfolio arrive arrives towards
+
+when my portfolio arrive arrives towards
+
+when my portfolio arrive arrives towards
+these values of
+
+these values of
+
+these values of
+36 37 3
+
+36 37 3
+
+36 37 3
+34 there's always a and and we are at
+
+34 there's always a and and we are at
+
+34 there's always a and and we are at
+the end of the day there's always a kind
+
+the end of the day there's always a kind
+
+the end of the day there's always a kind
+of reversal because we are also entering
+
+of reversal because we are also entering
+
+of reversal because we are also entering
+the the American
+
+the the American
+
+the the American
+session so I reported this here so
+
+session so I reported this here so
+
+session so I reported this here so
+basically I was expecting
+
+basically I was expecting
+
+basically I was expecting
+that after a bit of extra movement up
+
+that after a bit of extra movement up
+
+that after a bit of extra movement up
+that
+
+that
+
+that
+I would have found a movement towards
+
+I would have found a movement towards
+
+I would have found a movement towards
+the the down side of this portfolio so
+
+the the down side of this portfolio so
+
+the the down side of this portfolio so
+of the setup that we
+
+
+
+
+
+were uh
+
+were uh
+assessing with euro dollar CHF and JPY
+
+assessing with euro dollar CHF and JPY
+
+assessing with euro dollar CHF and JPY
+in long and Canadian GBP o and nzd in
+
+in long and Canadian GBP o and nzd in
+
+in long and Canadian GBP o and nzd in
+short so basically uh reverse
+
+short so basically uh reverse
+
+short so basically uh reverse
+okay um I made an
+
+okay um I made an
+
+okay um I made an
+update now it's 5:30 pm
+
+update now it's 5:30 pm
+
+update now it's 5:30 pm
+updated and markets at least have moved
+
+updated and markets at least have moved
+
+updated and markets at least have moved
+a bit in my direction in this case I was
+
+a bit in my direction in this case I was
+
+a bit in my direction in this case I was
+expecting less of this roller coaster
+
+expecting less of this roller coaster
+
+expecting less of this roller coaster
+more a direction like that but it was
+
+more a direction like that but it was
+
+more a direction like that but it was
+not it was only up and down up and down
+
+not it was only up and down up and down
+
+not it was only up and down up and down
+so what happened next
+
+so what happened next
+
+so what happened next
+happen this okay so let's do another I
+
+happen this okay so let's do another I
+
+happen this okay so let's do another I
+we have this screenshot
+
+we have this screenshot
+
+we have this screenshot
+we and and then I tell you what I did
+
+we and and then I tell you what I did
+
+we and and then I tell you what I did
+after an analysis that of course I
+
+after an analysis that of course I
+
+after an analysis that of course I
+prefer always to do with a bit of
+
+prefer always to do with a bit of
+
+prefer always to do with a bit of
+more I going to say being solitary or
+
+more I going to say being solitary or
+
+more I going to say being solitary or
+somehow have the time for making
+
+somehow have the time for making
+
+somehow have the time for making
+my readings okay
+
+my readings okay
+
+my readings okay
+so what did I I do new let's grab this
+
+so what did I I do new let's grab this
+
+so what did I I do new let's grab this
+portfolio
+
+
+
+
+
+so in
+
+so in
+this
+
+
+
+
+
+
+
+
+
+it when when we were here at level 32 at
+
+it when when we were here at level 32 at
+this point on which I stopped the trades
+
+this point on which I stopped the trades
+
+this point on which I stopped the trades
+and
+
+and
+
+and
+hypo uh made an hypothesis of a
+
+hypo uh made an hypothesis of a
+
+hypo uh made an hypothesis of a
+reversal uh basically I was at this
+
+
+
+
+
+
+
+
+
+here
+
+here
+here
+
+
+
+
+
+okay this time probably due to the high
+
+okay this time probably due to the high
+volatility liity and high liquidity
+
+volatility liity and high liquidity
+
+volatility liity and high liquidity
+and the market
+
+and the market
+
+and the market
+uncertainty there was a move upwards
+
+uncertainty there was a move upwards
+
+uncertainty there was a move upwards
+till 44 45 level but that wasn't the
+
+till 44 45 level but that wasn't the
+
+till 44 45 level but that wasn't the
+goal the goal I was expecting the at a
+
+goal the goal I was expecting the at a
+
+goal the goal I was expecting the at a
+certain point to have a move down like
+
+certain point to have a move down like
+
+certain point to have a move down like
+like this one okay so what did I do I
+
+like this one okay so what did I do I
+
+like this one okay so what did I do I
+placed an order of reversal here another
+
+placed an order of reversal here another
+
+placed an order of reversal here another
+one here and another one
+
+
+
+
+
+here of two lots each one for four
+
+here of two lots each one for four
+currencies okay so stating to my money
+
+currencies okay so stating to my money
+
+currencies okay so stating to my money
+management tool by
+
+management tool by
+
+management tool by
+placing um
+
+placing um
+
+placing um
+three
+
+three
+
+three
+uh three time 8
+
+uh three time 8
+
+uh three time 8
+Lots it's 24
+
+Lots it's 24
+
+Lots it's 24
+Lots I was anyway
+
+Lots I was anyway
+
+Lots I was anyway
+working with just a 9% of my
+
+working with just a 9% of my
+
+working with just a 9% of my
+leverage and so acting with a new risk
+
+leverage and so acting with a new risk
+
+leverage and so acting with a new risk
+and of course this was in the intention
+
+and of course this was in the intention
+
+and of course this was in the intention
+to get the best positioning for
+
+to get the best positioning for
+
+to get the best positioning for
+then closing the the ones the positions
+
+then closing the the ones the positions
+
+then closing the the ones the positions
+that were less profitable and keep only
+
+that were less profitable and keep only
+
+that were less profitable and keep only
+the best positioning and no one can
+
+the best positioning and no one can
+
+the best positioning and no one can
+determine a high or a low whatever of a
+
+determine a high or a low whatever of a
+
+determine a high or a low whatever of a
+movement and especially in this market
+
+movement and especially in this market
+
+movement and especially in this market
+conditions okay
+
+
+
+
+
+so the point is
+
+so the point is
+that let's see my account
+
+that let's see my account
+
+that let's see my account
+history I open other three trades in the
+
+history I open other three trades in the
+
+history I open other three trades in the
+opposite direction okay so in sell for
+
+opposite direction okay so in sell for
+
+opposite direction okay so in sell for
+Euro Cab in buy for GBP USD in buy for
+
+Euro Cab in buy for GBP USD in buy for
+
+Euro Cab in buy for GBP USD in buy for
+uh NCD J p y and in by for
+
+
+
+
+
+
+
+
+
+uh two of the these three
+
+uh two of the these three
+um two of these three uh positions as
+
+um two of these three uh positions as
+
+um two of these three uh positions as
+been closed some moments ago leaving
+
+been closed some moments ago leaving
+
+been closed some moments ago leaving
+only the best
+
+only the best
+
+only the best
+ones so let me do uh
+
+ones so let me do uh
+
+ones so let me do uh
+a detailed report because anyway I'm not
+
+a detailed report because anyway I'm not
+
+a detailed report because anyway I'm not
+about to keep this uh trades for very
+
+about to keep this uh trades for very
+
+about to keep this uh trades for very
+long because we are having uh a war at
+
+long because we are having uh a war at
+
+long because we are having uh a war at
+the doors of
+
+the doors of
+
+the doors of
+Europe and this war can impact
+
+Europe and this war can impact
+
+Europe and this war can impact
+also other other
+
+also other other
+
+also other other
+um other countries and we don't know
+
+um other countries and we don't know
+
+um other countries and we don't know
+what is going on so my intention anyway
+
+what is going on so my intention anyway
+
+what is going on so my intention anyway
+is to close the
+
+is to close the
+
+is to close the
+trades
+
+trades
+
+trades
+um at the end of the markets at the end
+
+um at the end of the markets at the end
+
+um at the end of the markets at the end
+of the day or soon not to go to bed
+
+of the day or soon not to go to bed
+
+of the day or soon not to go to bed
+let's say with
+
+let's say with
+
+let's say with
+with positions open especially today or
+
+with positions open especially today or
+
+with positions open especially today or
+in the next days it's better to see day
+
+in the next days it's better to see day
+
+in the next days it's better to see day
+by day what the markets are offering for
+
+by day what the markets are offering for
+
+by day what the markets are offering for
+trading
+
+trading
+
+trading
+so let's create
+
+so let's create
+
+so let's create
+this statement
+
+this statement
+
+this statement
+and as you can see there are one two
+
+and as you can see there are one two
+
+and as you can see there are one two
+three four the first first four
+
+three four the first first four
+
+three four the first first four
+positions then one two 3 4 and 1 2 3 4
+
+positions then one two 3 4 and 1 2 3 4
+
+positions then one two 3 4 and 1 2 3 4
+so I have only opened my trades exactly
+
+so I have only opened my trades exactly
+
+so I have only opened my trades exactly
+this
+
+this
+
+this
+once and left the other closed so this
+
+once and left the other closed so this
+
+once and left the other closed so this
+these ones were the first trades of the
+
+these ones were the first trades of the
+
+these ones were the first trades of the
+day the first four trades of the day and
+
+day the first four trades of the day and
+
+day the first four trades of the day and
+then I got this extra bonus let's say
+
+
+
+
+
+okay so you can check by yourself and go
+
+okay so you can check by yourself and go
+and check the the time the direction the
+
+and check the the time the direction the
+
+and check the the time the direction the
+asset whatever you want okay
+
+asset whatever you want okay
+
+asset whatever you want okay
+so despite
+
+so despite
+
+so despite
+this draw down okay relative draw down
+
+this draw down okay relative draw down
+
+this draw down okay relative draw down
+was anyway below the
+
+was anyway below the
+
+was anyway below the
+1%
+
+1%
+
+1%
+and now I have open only this four
+
+and now I have open only this four
+
+and now I have open only this four
+remaining that I am about as well to
+
+remaining that I am about as well to
+
+remaining that I am about as well to
+decide if to close or not but just to
+
+decide if to close or not but just to
+
+decide if to close or not but just to
+show you anyway that by having a kind of
+
+show you anyway that by having a kind of
+
+show you anyway that by having a kind of
+view of the markets and creating always
+
+view of the markets and creating always
+
+view of the markets and creating always
+um um a
+
+um um a
+
+um um a
+combination of
+
+combination of
+
+combination of
+uh a plus b plus C plus d the important
+
+uh a plus b plus C plus d the important
+
+uh a plus b plus C plus d the important
+thing thing is that if we are reading
+
+thing thing is that if we are reading
+
+thing thing is that if we are reading
+quite enough right the market we can
+
+quite enough right the market we can
+
+quite enough right the market we can
+expect any way to to have a positive
+
+expect any way to to have a positive
+
+expect any way to to have a positive
+profit given by the sum of the portfolio
+
+profit given by the sum of the portfolio
+
+profit given by the sum of the portfolio
+is by differentiating the portfolio that
+
+is by differentiating the portfolio that
+
+is by differentiating the portfolio that
+we gain something rather than focusing
+
+we gain something rather than focusing
+
+we gain something rather than focusing
+on just one single currency because we
+
+on just one single currency because we
+
+on just one single currency because we
+can be so lucky like this case with the
+
+can be so lucky like this case with the
+
+can be so lucky like this case with the
+gbpusd that made the the retrace the the
+
+gbpusd that made the the retrace the the
+
+gbpusd that made the the retrace the the
+bounce or less lucky like in NCD JPY or
+
+bounce or less lucky like in NCD JPY or
+
+bounce or less lucky like in NCD JPY or
+in Euro CAD but in this case we have two
+
+in Euro CAD but in this case we have two
+
+in Euro CAD but in this case we have two
+and four now it's getting another
+
+and four now it's getting another
+
+and four now it's getting another
+retrace
+
+retrace
+
+retrace
+and let's see also what is going on we
+
+and let's see also what is going on we
+
+and let's see also what is going on we
+got the
+
+
+
+
+
+news and in the news we see we got the
+
+news and in the news we see we got the
+fomc we got the gasoline inventories we
+
+fomc we got the gasoline inventories we
+
+fomc we got the gasoline inventories we
+got the crude oil
+
+got the crude oil
+
+got the crude oil
+inventories that impacted the dollar uh
+
+inventories that impacted the dollar uh
+
+inventories that impacted the dollar uh
+we got the new home sales we got this
+
+we got the new home sales we got this
+
+we got the new home sales we got this
+all
+
+
+
+
+
+this uh all this news
+
+this uh all this news
+that
+
+that
+
+that
+somehow gave a stimulus for for
+
+somehow gave a stimulus for for
+
+somehow gave a stimulus for for
+Traders and somehow helped it to move
+
+Traders and somehow helped it to move
+
+Traders and somehow helped it to move
+the market in a direction or the other
+
+the market in a direction or the other
+
+the market in a direction or the other
+but I didn't trade upon them I just I
+
+but I didn't trade upon them I just I
+
+but I didn't trade upon them I just I
+was just aware of the fact that there
+
+was just aware of the fact that there
+
+was just aware of the fact that there
+were there would have been in the day a
+
+were there would have been in the day a
+
+were there would have been in the day a
+lot of
+
+lot of
+
+lot of
+moments
+
+moments
+
+moments
+where Market could have significantly uh
+
+where Market could have significantly uh
+
+where Market could have significantly uh
+been moved
+
+been moved
+
+been moved
+by operativity of any kind okay so but
+
+by operativity of any kind okay so but
+
+by operativity of any kind okay so but
+the important thing is to stay on this
+
+the important thing is to stay on this
+
+the important thing is to stay on this
+concept at the end because at the end of
+
+concept at the end because at the end of
+
+concept at the end because at the end of
+the concept is more my balance that it's
+
+the concept is more my balance that it's
+
+the concept is more my balance that it's
+important than the news or what else I
+
+important than the news or what else I
+
+important than the news or what else I
+trade with by using math and math is a
+
+trade with by using math and math is a
+
+trade with by using math and math is a
+good
+
+good
+
+good
+compromise
+
+compromise
+
+compromise
+for giving me the ability to
+
+for giving me the ability to
+
+for giving me the ability to
+somehow uh know what to expect despite
+
+somehow uh know what to expect despite
+
+somehow uh know what to expect despite
+the fact that now we are having another
+
+the fact that now we are having another
+
+the fact that now we are having another
+retracement in this direction
+
+retracement in this direction
+
+retracement in this direction
+but I am pretty confident in somehow for
+
+but I am pretty confident in somehow for
+
+but I am pretty confident in somehow for
+the market to to
+
+the market to to
+
+the market to to
+to prosecute this move despite we are
+
+to prosecute this move despite we are
+
+to prosecute this move despite we are
+ared at this moment exactly in the
+
+ared at this moment exactly in the
+
+ared at this moment exactly in the
+middle
+
+middle
+
+middle
+line that it's a kind
+
+line that it's a kind
+
+line that it's a kind
+of
+
+
+
+
+
+uh fair price let's say of my
+
+uh fair price let's say of my
+portfolio Okay and it's calculated from
+
+portfolio Okay and it's calculated from
+
+portfolio Okay and it's calculated from
+the zero of the
+
+the zero of the
+
+the zero of the
+day
+
+day
+
+day
+so I was really expecting maybe to
+
+so I was really expecting maybe to
+
+so I was really expecting maybe to
+be higher and not to re retake the video
+
+be higher and not to re retake the video
+
+be higher and not to re retake the video
+during a retrace that it was going again
+
+during a retrace that it was going again
+
+during a retrace that it was going again
+against me
+
+
+
+
+
+but it's quite enough you know for for
+
+but it's quite enough you know for for
+showing and I will now
+
+showing and I will now
+
+showing and I will now
+close my
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+so at the end of the day today and you
+
+so at the end of the day today and you
+can check with your statements if you
+
+can check with your statements if you
+
+can check with your statements if you
+like um this was anyway the
+
+like um this was anyway the
+
+like um this was anyway the
+performance
+
+performance
+
+performance
+very difficult at this moment but by
+
+very difficult at this moment but by
+
+very difficult at this moment but by
+hedging the
+
+hedging the
+
+hedging the
+portfolio uh thinking in terms of all
+
+portfolio uh thinking in terms of all
+
+portfolio uh thinking in terms of all
+the eight currencies plac it together
+
+the eight currencies plac it together
+
+the eight currencies plac it together
+this was the final
+
+this was the final
+
+this was the final
+result and um this could be pretty
+
+result and um this could be pretty
+
+result and um this could be pretty
+pretty nice anyway no matter the day and
+
+pretty nice anyway no matter the day and
+
+pretty nice anyway no matter the day and
+we have to be careful also in the next
+
+
+
+
+
+days because of the
+
+days because of the
+situation the macroeconomic
+
+situation the macroeconomic
+
+situation the macroeconomic
+situation
+
+situation
+
+situation
+so
+
+so
+
+so
+um to
+
+um to
+
+um to
+conclude this
+
+conclude this
+
+conclude this
+uh three parts video
+
+uh three parts video
+
+uh three parts video
+I will anyway I want to anyway to remind
+
+I will anyway I want to anyway to remind
+
+I will anyway I want to anyway to remind
+you that
+
+you that
+
+you that
+um what I'm doing here is just for
+
+um what I'm doing here is just for
+
+um what I'm doing here is just for
+educational purposes not meant for
+
+educational purposes not meant for
+
+educational purposes not meant for
+suggesting to trade that's your own
+
+suggesting to trade that's your own
+
+suggesting to trade that's your own
+decision not suggesting what to trade or
+
+decision not suggesting what to trade or
+
+decision not suggesting what to trade or
+when to trade or whatever that's your
+
+when to trade or whatever that's your
+
+when to trade or whatever that's your
+ability that you have to develop by
+
+ability that you have to develop by
+
+ability that you have to develop by
+studying and applying and of course as I
+
+studying and applying and of course as I
+
+studying and applying and of course as I
+always suggest do this on a demo account
+
+always suggest do this on a demo account
+
+always suggest do this on a demo account
+and I am using a demo account for for uh
+
+and I am using a demo account for for uh
+
+and I am using a demo account for for uh
+uh for this purposes for the purposes
+
+uh for this purposes for the purposes
+
+uh for this purposes for the purposes
+of explaining my
+
+of explaining my
+
+of explaining my
+theories but
+
+theories but
+
+theories but
+the foundation of your knowledge it's up
+
+the foundation of your knowledge it's up
+
+the foundation of your knowledge it's up
+to your study and practice daily every
+
+to your study and practice daily every
+
+to your study and practice daily every
+day you have to study and practice some
+
+day you have to study and practice some
+
+day you have to study and practice some
+days days the market performs better
+
+days days the market performs better
+
+days days the market performs better
+like a straight line other days it's not
+
+like a straight line other days it's not
+
+like a straight line other days it's not
+performing that that well but anyway a
+
+performing that that well but anyway a
+
+performing that that well but anyway a
+result is a result even if you don't
+
+result is a result even if you don't
+
+result is a result even if you don't
+take 100% but you take
+
+take 100% but you take
+
+take 100% but you take
+70% that's anyway a plus
+
+70% that's anyway a plus
+
+70% that's anyway a plus
+70% and that it's good you know in order
+
+70% and that it's good you know in order
+
+70% and that it's good you know in order
+to accumulate uh
+
+to accumulate uh
+
+to accumulate uh
+profits um
+
+profits um
+
+profits um
+all this said I really thank you for
+
+all this said I really thank you for
+
+all this said I really thank you for
+watching for subscribing the channel I
+
+watching for subscribing the channel I
+
+watching for subscribing the channel I
+know if you have questions of course
+
+know if you have questions of course
+
+know if you have questions of course
+post of course post them below the
+
+post of course post them below the
+
+post of course post them below the
+video but
+
+video but
+
+video but
+also please if you have maybe questions
+
+also please if you have maybe questions
+
+also please if you have maybe questions
+about the theory or about the the
+
+about the theory or about the the
+
+about the theory or about the the
+concept that I then used for for um
+
+concept that I then used for for um
+
+concept that I then used for for um
+explaining for example the action of
+
+explaining for example the action of
+
+explaining for example the action of
+today remember that there are a lot of
+
+today remember that there are a lot of
+
+today remember that there are a lot of
+videos in this channel majority of them
+
+videos in this channel majority of them
+
+videos in this channel majority of them
+are posted as free webinars in their
+
+are posted as free webinars in their
+
+are posted as free webinars in their
+title on which I
+
+title on which I
+
+title on which I
+explain my theory even if they are a bit
+
+explain my theory even if they are a bit
+
+explain my theory even if they are a bit
+old in terms of time they anyway keep a
+
+old in terms of time they anyway keep a
+
+old in terms of time they anyway keep a
+lot of
+
+lot of
+
+lot of
+concepts of course I can update them uh
+
+concepts of course I can update them uh
+
+concepts of course I can update them uh
+with more inform information in the
+
+with more inform information in the
+
+with more inform information in the
+future but the basics are
+
+future but the basics are
+
+future but the basics are
+there so it could be very easy that
+
+there so it could be very easy that
+
+there so it could be very easy that
+majority of your
+
+majority of your
+
+majority of your
+questions can find an answer in those
+
+questions can find an answer in those
+
+questions can find an answer in those
+webinars so please I beg you to watch
+
+webinars so please I beg you to watch
+
+webinars so please I beg you to watch
+them and watch them from the beginning
+
+them and watch them from the beginning
+
+them and watch them from the beginning
+till the end not at the beginning and
+
+till the end not at the beginning and
+
+till the end not at the beginning and
+then you stop because you're tired if
+
+then you stop because you're tired if
+
+then you stop because you're tired if
+you're tired I understand understand
+
+you're tired I understand understand
+
+you're tired I understand understand
+that but you can always pae and watch
+
+that but you can always pae and watch
+
+that but you can always pae and watch
+them later if you're tired because you
+
+them later if you're tired because you
+
+them later if you're tired because you
+would like to have everything done very
+
+would like to have everything done very
+
+would like to have everything done very
+fast without studying without anything
+
+fast without studying without anything
+
+fast without studying without anything
+probably this is
+
+probably this is
+
+probably this is
+not the the trading is not the activity
+
+not the the trading is not the activity
+
+not the the trading is not the activity
+that is meant for you or you are not
+
+that is meant for you or you are not
+
+that is meant for you or you are not
+meant to be a Trader a Trader must to be
+
+meant to be a Trader a Trader must to be
+
+meant to be a Trader a Trader must to be
+disciplin especially if he does manual
+
+disciplin especially if he does manual
+
+disciplin especially if he does manual
+trading and not automated trading has to
+
+trading and not automated trading has to
+
+trading and not automated trading has to
+be disciplin and know what he doing and
+
+be disciplin and know what he doing and
+
+be disciplin and know what he doing and
+be capable also to face
+
+be capable also to face
+
+be capable also to face
+um inconvenience of the market anyway
+
+um inconvenience of the market anyway
+
+um inconvenience of the market anyway
+have an understanding of what it's
+
+have an understanding of what it's
+
+have an understanding of what it's
+happening okay so thank you for all this
+
+happening okay so thank you for all this
+
+happening okay so thank you for all this
+thank you for anyway all your comments
+
+thank you for anyway all your comments
+
+thank you for anyway all your comments
+your likes I really appreciate that and
+
+your likes I really appreciate that and
+
+your likes I really appreciate that and
+they give me motivation for doing more
+
+they give me motivation for doing more
+
+they give me motivation for doing more
+videos and probably there will be other
+
+videos and probably there will be other
+
+videos and probably there will be other
+videos hopefully in better day better
+
+videos hopefully in better day better
+
+videos hopefully in better day better
+days with with more fluid
+
+days with with more fluid
+
+days with with more fluid
+trading uh but I think that this as I've
+
+trading uh but I think that this as I've
+
+trading uh but I think that this as I've
+been asked to make a kind of U report of
+
+been asked to make a kind of U report of
+
+been asked to make a kind of U report of
+how to how do I face a a trading day and
+
+how to how do I face a a trading day and
+
+how to how do I face a a trading day and
+I think that I choose maybe the worst
+
+I think that I choose maybe the worst
+
+I think that I choose maybe the worst
+day ever with the
+
+day ever with the
+
+day ever with the
+War uh at at the backs of Europe but
+
+War uh at at the backs of Europe but
+
+War uh at at the backs of Europe but
+anyway we cannot we we don't know what
+
+anyway we cannot we we don't know what
+
+anyway we cannot we we don't know what
+is the best moment to do the things we
+
+is the best moment to do the things we
+
+is the best moment to do the things we
+just simply you know have to do them and
+
+just simply you know have to do them and
+
+just simply you know have to do them and
+see what happens probably in this case
+
+see what happens probably in this case
+
+see what happens probably in this case
+also uh the worse the day the
+
+also uh the worse the day the
+
+also uh the worse the day the
+[Music]
+
+[Music]
+
+[Music]
+more uh sweet is the result no matter
+
+more uh sweet is the result no matter
+
+more uh sweet is the result no matter
+what because it was pretty hard today
+
+what because it was pretty hard today
+
+what because it was pretty hard today
+and if you have traded today and you
+
+and if you have traded today and you
+
+and if you have traded today and you
+have your opinion your results
+
+have your opinion your results
+
+have your opinion your results
+your also your
+
+your also your
+
+your also your
+experience I think it's a good idea also
+
+experience I think it's a good idea also
+
+experience I think it's a good idea also
+if you want to share it in your
+
+if you want to share it in your
+
+if you want to share it in your
+comments uh also remember please to
+
+comments uh also remember please to
+
+comments uh also remember please to
+participate to the pools that I have uh
+
+participate to the pools that I have uh
+
+participate to the pools that I have uh
+started in my community spot on this
+
+started in my community spot on this
+
+started in my community spot on this
+YouTube channel because it's useful to
+
+YouTube channel because it's useful to
+
+YouTube channel because it's useful to
+know each other know
+
+know each other know
+
+know each other know
+the our qualities and also
+
+the our qualities and also
+
+the our qualities and also
+our
+
+our
+
+our
+our you know you know the the pools I
+
+our you know you know the the pools I
+
+our you know you know the the pools I
+made some questions very simple
+
+made some questions very simple
+
+made some questions very simple
+questions so it's good to know each
+
+questions so it's good to know each
+
+questions so it's good to know each
+other and the pools are a good way to do
+
+other and the pools are a good way to do
+
+other and the pools are a good way to do
+that okay all this said I really thank
+
+that okay all this said I really thank
+
+that okay all this said I really thank
+you for watching and
+
+you for watching and
+
+you for watching and
+again good space and time to
+
+again good space and time to
+
+again good space and time to
+all bye
+

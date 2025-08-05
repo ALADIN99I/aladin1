@@ -1,0 +1,462 @@
+hi everybody and welcome to this new
+video tutorial
+attempting to give another example on
+how to analyze the markets
+in this third week of
+December
+today is Wednesday and
+let's go straight for to our
+situation
+I have an initial report
+to show because on Monday I was
+completely missing an opportunity with
+New Zealand dollar against other
+currencies New Zealand dollar was that
+is strong and
+big move has already happened in the
+very first hours of the morning so I
+decided to put songs and buy limits that
+were not hit and also this is why I had
+this
+standing orders that that I decided to
+cancel because
+they were already gone and
+on Tuesday anyway it happened this is a
+balancer town made for the example as
+usual as I do always in my videos and
+what happened on Tuesday
+is that another currency came out quite
+strong while New Zealand dollar was
+retracing and now New Zealand dollar is
+getting
+has become strong again
+against Australia which was
+Australian dollar so I decided on
+Tuesday morning the 12th as you can see
+here to compare the values analyzed on a
+daily basis and on a weekly basis as
+well
+about
+how to hedge
+Australian dollar which was strong
+against some characters that appear at
+wind
+even if I was not a much confident I
+decided also to trade against Swiss
+franc as you can see here
+Japanese yen that was quite Upton and in
+fact these are the ones with lowest
+values let's also do this
+and
+undoubtedly there was a correlation to
+be traded with palm and with Canadian
+dollar
+so it's also swing trading situation you
+may notice your swap condition and
+now we are at the point as you may
+notice on weekly basis that Australian
+dollar and New Zealand dollar are quite
+strong the same and there is this battle
+between the two of them against
+GBP Swiss franc and CAD
+quite negative and
+Japanese yen a new robot normally euro
+and dollar at this moment I'm not
+focusing that much the more on other
+crosses so what I decided to do as I was
+saying on
+Tuesday morning to inject some trades
+to hedge in this case so to lower the
+risk by
+differentiating
+financial instruments and trading
+Australian dollar as strong New Zealand
+dollar was retracing so in that case
+there was a kind of
+change of element in the market set up
+and
+now they're quite
+similar on a weekly basis but in a daily
+as we may notice New Zealand dollar has
+got has got more strength than
+Australian dollars so I'm almost about
+to close the Straits now and
+so let's do this
+because I got enough profit from
+more than one day of trading and let's
+do again another detailed report
+okay so as usual by
+analyzing the markets very quickly
+on a longer on the longer time frames
+I mean monthly weekly and daily
+and also focusing sometimes on the four
+hours chart
+if we notice a kind of coherence
+on the values of the currencies there
+can be the opportunity
+evaluate only few charts
+above the 28 charts that we normally can
+trade and therefore we have to observe
+first
+as usual some of you made me notice that
+I don't put stop losses I
+have developed this kind of
+way to analyze the markets but this
+doesn't mean that I'm perfect and that I
+can
+have a cutting edge on all the things
+and be very precise
+but I prefer to rely to the fact that by
+analyzing the markets they're in the
+whole
+assets that are given
+that can be an element of
+high probability then provided to my
+broker
+levels of stop loss and take profit
+I take profit the moment is enough for
+me and or probably then I
+have an intuition that currency from
+that point on might retrace so it's
+better to get out of the markets
+sometimes I'm right sometimes I get
+enough profit but then I could have
+taken a little bit more that we know
+always that after a big move there are
+that can be even days of
+ranging and
+consolidation so I
+don't like to
+leave my
+currencies to Moorhead and leave my
+trades two more days of
+swap conditions
+spread that then can rise all of a
+sudden and things like that so it's
+always a probability game there is no
+certainty uncertain on this
+forecasts there's only a better vision
+of the things a little bit more clear
+vision of the things and
+we can do this also by taking all the
+charts and
+getting them one by one or
+analyzing
+only the few charts in this case it was
+osseous frank
+jose yen
+GBP Australian dollar and
+Aussie card okay
+here I have a foreign dollar New Zealand
+dollar and as you can see from the
+ending of the other session and the
+overlapping
+with the London session
+there was a
+decay
+which was meaning the
+the would distract the weakness of
+Australian dollar against New Zealand
+dollar so this kind of uncertainty and
+breaking of some levels for example this
+line yellow line we are not box as you
+was for me a kind of alert to decide not
+to go further
+yeah there are some issues that some of
+you
+requested me to clarify because some of
+you are saying well but I how can I do
+that if I don't have your active advisor
+you can always analyze the charts or
+analyze the data on higher time frame
+and making some computations on Excel
+which was from the beginning of my
+studies was in Excel
+then what I did was to
+try to shape the formulas as much as
+possible to be
+embedded on an expert advisor that could
+have calculated by take the values on
+every time frame and the moment that
+trick was made that for me was possible
+to analyze the charts
+almost instantly and decide if it was
+would have been a good moment for
+trading or not and the fact that I'm
+doing this brief
+videos
+it's also because no matter what that at
+this moment we are the 30 the 30th of
+December I am showing you anyway some
+values you can take notice of them on a
+monthly basis on a weekly basis and you
+can stop the video for a while and take
+notice of them and on a daily basis
+of course now we are at the ending of
+the day
+there are some market configurations
+that are accomplishing the
+the American session and probably there
+will be another job see here how the
+volumes are
+are displayed but that's not the only
+thing that we must see we must also see
+a kind of correlation between currency
+pairs and what we are analyzing here for
+example this work is happening in the
+1-minute chart
+so
+sometimes I had only two currencies
+because they are there are only two
+currencies well defined in this in this
+panel but other times
+there are maybe two currencies that can
+be traded and we're talking about not
+very long-term
+trading but
+just they trade
+but we can achieve enough pips
+that we might then have that with only
+one
+two three four trades
+we can have this kind of results and
+this is very simple math to apply and
+once you have identified that
+Australian dollar is strong and it's
+quite strong and at the same time there
+are more currencies that are weak it
+means that
+Australian dollar is long and
+going long in Australian dollars they're
+going short with Swiss franc in this
+case
+with
+Japanese yen
+with
+palm and with cap
+or at least this were the values that at
+this hour okay
+857 849 8:15 in the morning
+there were the more
+evident the more relevant
+so
+at that point I decided that I should
+have distributed the risk of my trade
+instead of putting stop losses that
+could have been probably kept
+avoiding
+the possible profit and
+let the market breathe a bit
+also because there are there is the
+component of the spread that we always
+have to deal with
+and
+the longer you see the more we are
+analyzing the longer time frame the
+higher time frames the more these
+results which are correlation between
+currencies
+are stable at least for enough time to
+make some tips I
+am thinking if there are some other
+questions but I received a lot of emails
+and
+also I got a lot of Skype conversations
+with some of you and
+[Music]
+actually I think that
+to have a better understanding of what
+I'm saying you can also refer to
+the other videos the previous videos I
+made and
+see what values are displayed and
+understand that trick
+in the Forex the difficult part is that
+this values are very hard to detect by
+only taking a couple of currency pairs
+just because you think that the majority
+of liquidity is in euro and yen and
+gbp/usd
+so you are always focusing on those
+charts but
+you have to understand that Forex is
+like just one big number and all these
+are fractions of this number
+the fact that we are having a page and a
+port where euro is at the top and
+nominator and denominator is USD it's
+ready
+a
+suggestion that we are talking about a
+fraction of something and
+the hole is
+the zero sum that comes from all these
+values put together
+so analyzing only specific charts
+doesn't mean that we are analyzing the
+whole market and
+the calculations that we can do now of
+course I'm also using the lower
+timeframes especially
+for the
+graphical module that I am developing
+when I have time of course because it's
+very
+tiring sometimes to code for hours
+but
+and in this case of course I I am
+applying the same algorithm to a lower
+timeframe and I can afford also to have
+a vision of a very short time frame
+analysis but from a larger view
+we may notice let's see let's look at
+five minutes we may notice the
+channeling that it's occurring at this
+moment and we also can see how the price
+actions is distributing along the main
+market sessions in the world every day
+and
+we can do some assumptions also on
+the fact that we can compare
+the
+reckon session of today with the
+American session of yesterday and
+yesterday before and the same for the
+European session and the other session
+so
+the evaluation of what to trade is not
+given only and exclusively
+by
+this values and stop it in fact as as
+you saw in my
+my
+balancier and report I
+was so
+eager to
+also trade New Zealand dollar that even
+if the move has been
+was done I decided to put some pending
+orders hoping in a very fast retracement
+and then proceeding in that direction
+but that didn't occur so I made
+sometimes also evaluations that are not
+responding or maybe we don't know what
+kind of money
+institutions are moving we can alway
+always know after
+but
+when we assume that we are analyzing the
+overall strength and weakness and we see
+that in the monthly New Zealand dollar
+is strong and also strallan dollar is
+quite strong and GBP is very weak for
+example and in the weekly there is also
+this coherence
+and in the daily there is also this
+coherence even if the values are a bit
+different
+but even we know you know that every
+currency has its own range of
+oscillation and
+then we can make some assumptions for
+the long term that can be hours and
+wait for the moon if the moon
+didn't occurred yet okay
+so
+even in this example
+the person Taj was quite
+positive and
+satisfied with satisfaction I can say
+that
+realizing this profit and
+in
+36 40 hours
+it can be even enough for the whole week
+by only trading at the end for assets
+and
+let the market go without any
+problem on the stop-loss because
+if for example I would have noticed that
+the value of Australian dollar was
+decaying like he's doing now this is why
+I am closing the trades but on a daily
+basis and
+that my balance would have been negative
+I would have closed the trades and take
+the little loss instead of
+hoping on something that would have
+happened but the moment I saw that the
+Australian dollar was getting even
+stronger than the New Zealand dollar for
+at least the day of
+yesterday evening I decided to let the
+trade evolve to this evening and then
+close with this decent profit okay so I
+thank you for
+watching this video and also the videos
+before for subscribe in my channel and
+for your emails and feedbacks and
+I of course invite you if you're curious
+because a lot of you are asking me about
+how to achieve this kind of approach
+to watch my previous videos on which
+also I show in some webinars I'll turn
+on eyes
+with the charts bar and
+some currency pairs and make us some ins
+assumptions even if it
+restricted way but
+personally I developed this for my own
+strategy and
+what I can do for those who are
+interested of course to have it you have
+always to contact me privately but
+for those who are willing anyway to have
+an insight in the markets what can I do
+by making this video because of course
+today
+tomorrow can be different ok but
+for us to guard the weekly and monthly
+these values are still some meaning and
+if you can get some information from
+these values I follow the tutorials that
+I've made they can be also good for you
+and for your evaluation and of course
+I'm not suggesting to trade anything and
+in the sense that
+trading is very a personal thing I
+can tell you to this to that because I
+am doing this on my time training on my
+daily
+cycle that can be different from you it
+can be on other part of the world you
+can work while I am in front of the
+trading platform or vice versa and I can
+give you an information
+that for me is in time and when you get
+it it's out of time so
+what I'm showing here is an example on
+how to do the things but of course if
+you have seen my previous videos and got
+some
+understanding and of this values in
+themselves then of course this monthly
+weekly and daily values that I am we
+showing you again can be useful for
+adding a point of
+evaluation along with your methodology
+of trading because there are many
+methodologies for achieving results in
+trading and I'm not saying that this is
+the only one but this is mine so this is
+my own way to approach the markets and
+what we see here for sure is not
+forecast but it's what is happening in
+real time
+an evaluation of real-time evaluation
+of
+what is going on in the markets okay so
+as usual
+take care thanks for everything for
+supporting and
+have a good time and good space

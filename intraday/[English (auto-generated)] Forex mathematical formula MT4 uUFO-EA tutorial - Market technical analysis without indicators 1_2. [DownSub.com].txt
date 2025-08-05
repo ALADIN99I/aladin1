@@ -1,0 +1,580 @@
+hi everybody and welcome to this new
+video tutorial for us regard my way to
+analyze the forex market
+without the use of an indicator but
+rather using my own expert advisor which
+analyzes smooth honestly multiple
+currency pairs
+receiving as final report
+the flow of
+currencies for the day
+as usual I injected some trades today
+and
+at this moment we are having this
+situation
+in a while I will go
+through this elements as usual just to
+give a brief report and also to
+share some values in a way that can be
+usable for your analysis you you decide
+yourself how to trade but I think that I
+already explained
+quite extensively in my previous videos
+in regards to how to analyze and read
+the charts at least what is my
+approach to forex once I decided not to
+follow any more any kind of indicator or
+automated expert advisor the analysis
+comes
+to the reading of
+multiple charts alternately real at
+least 28 currency pairs on different
+time frames and
+these are the results so as usual I'll
+show you also
+this
+actual report of this account for
+example purposes as usual on which I
+made some trades already taking some
+profit which were the very first one as
+I started very early to place my orders
+but then having a confirmation of the
+trend I decided to load a bit the charge
+of the
+of the trades as I was
+pretty sure with with a very high
+probability that my analysis was correct
+for this day
+these are traits actually running in
+this moment that's - also a brief
+table report so now we have the actual
+situation at this moment
+so
+okay so as you can see we have
+two thousand seven hundred and eighty
+and something which is
+and these are the transactions that I
+decided to take profit and these are the
+transaction already still running and at
+this moment I have take this profit
+from nineteen trades okay
+in regards the analysis I decided to
+trade today
+this is the first week of January
+2018 and
+his first day and
+we come from
+raging situation of certain currency
+pairs and tragic situation of some
+others
+briefly I
+take took some trades in this area that
+I kept and I'm about of course to close
+at the end to show the final report as
+usual
+on GBP Australian dollar which we see
+here and a five minutes charts was a
+ranging situation between the three main
+sessions of the markets and
+these are actually the two
+trades
+realizing about 100 pips
+sorry yes 62 peeps here 54 sofa like
+that hundred
+110 pips then the GBP New Zealand dollar
+which was instead New Zealand dollar was
+quite
+strong today and
+therefore
+taking the trade more or less in the
+same area of time on the other lapping
+of the
+American session with the local session
+and
+then therefore New Zealand dollar was
+strong against the dollar so
+we may see that in this area I took also
+New Zealand dollar US dollar in by in
+this case and
+also was a bit captured by yen which I
+decided to
+take a trade
+let's put on five minute charts though
+in this area and of course there are
+some elements of my algorithm that are
+coming out on specific time and not all
+the times occur but it depends on the
+market so in this area and taking this
+profit and also New Zealand dollar which
+was strong against the US dollar was
+also strong against the weakest currency
+at least for today which was yen and of
+course there are always
+possible retracements that we can
+cysts so the important thing is that we
+the moment we understand what are the
+most weak and strong currencies as you
+can see rosy and New Zealand dollar
+worth quite strong it was a kind of
+split in situation this is the monthly
+view okay
+Australian dollar and New Zealand dollar
+appeared to be strong for today yen very
+weak US dollar very weak compared to
+euro that I prefer not to touch
+Swiss franc I decided not to touch and
+GBP
+very
+neutral but in some how negatives of how
+in anaphase of raging mode which combine
+it with Australian dollar with New
+Zealand dollar with yen and I'm sorry an
+Aussie and New Zealand dollar with yen
+and US dollars I could have injected
+some trade that made sense together in
+fact as you may see I
+went longer on OC yen also goes in thigh
+and yang was himself and GBP was to be
+short and Aussie long again and also New
+Zealand dollar long again and New
+Zealand dollar long again PI and PI here
+again Stevens US dollar and Japanese yen
+and these are the points realize or pips
+in / time it's up to you it's the same
+condition of course here we are
+analyzing a multi time frame also for
+your
+for your help and of course I always
+invite you to
+make a comparison with your Metatrader
+platform with your broker I use my
+specific broker on which I designed this
+algorithm and that works the best in my
+opinion
+this is the also the weekly situation
+and we see that even in the weekly
+situation we got Australian dollar New
+Zealand aura with the same values of
+course is the first week and is the
+first month so they collide together
+they are the same for us regard the
+daily
+situation we have a GBP negative
+Palsy
+somehow positive but we are looking at
+the day
+situation at this moment New Zealand
+dollar very strong Japanese yen again
+very weak and US dollar week
+okay so based on these values that you
+can
+pause the video for a second and then
+somehow
+make your assumptions on the trades
+these are the results that if we go and
+take
+the positive kurtosis are these elements
+that now I am about to trade so we cap
+in at the moment New Zealand dollar was
+taken in this area New Zealand dollar
+against yen in body and
+so this were
+the dips accordingly to also this
+the presentation of profit and
+I'm doing this also working and
+enhancing because I got new ideas and
+new formulas that are represented also
+by this we are older now come appears in
+my in my algorithm and suggest the
+possible probability of movement of this
+of the specific currency pair and as
+well I unanswered also the channeling
+that is composing why the price action
+is doing this movie
+was the yen
+this was
+the result and now we're seeing a kind
+of decay of the channeling so we better
+be careful about possible other
+retracement even if the situation now
+it's almost the end of the market and I
+always suggest a daily
+day trading and every day
+try to understand what are the current
+system are going to move okay and we
+have needs even dollar US dollar can buy
+as well and
+that was
+the result
+GBP need $7 himself got two positions
+left and
+GBP Australian dollar in sell of course
+in a very nice point of
+attachment of course there is no swap so
+or trades made today and
+so let's do the final
+statement for today
+only true statement but it's quite
+enough because I also want to
+give some answers and this is the very
+nice curve
+that has been obtained at with this
+trades and this
+profit
+okay and that can be given of course i
+over traded a bit but the moment I was
+having confirmation that my trades were
+in the right direction I decided to take
+multiple positions in order to enhance
+my the effectiveness of my trade and
+this is a personal way to approach the
+trade so every one has its own way more
+conservative more aggressive this this
+depends on you the only important thing
+is that markets are read in a proper way
+okay
+some words about okay so this is the
+final balance as you can see fourteen
+thousand three hundred and eighty-two
+8.24
+fourteen hundred
+3.24 okay and these are the trades that
+I have executed okay so
+I
+said I was almost finished with my
+graphical module that that can be
+probably implemented also for other
+instruments financial instruments but at
+the moment it's only available and in
+this case I am replying to some
+questions I got the email so bear with
+me for those who have made these
+questions
+at this moment is available only for
+the forex market
+some of you were asking me about if
+there are any PDFs or books that I can
+suggest to read or if I created any the
+for boat
+to explain this I don't have time for
+this
+because I am working on my algorithm
+almost every day
+and enhancing this this graphical module
+with formulas that are then creating the
+lines okay so what we normally do by for
+example doing this even if we think we
+are painting in real we are making a
+graphical representation of a
+mathematical formula okay so this is
+very obvious that
+in order to create this kind of
+zigzagging and other stuff that you may
+see even if you don't understand what
+it's about but the more
+Garrido is used the more revealeth
+reveals itself
+what can I suggest to read I
+wonder how many of you are
+passing the majority of their time
+by reading the charts
+the system your book you all must read
+if you want to
+if you want to have some
+information about Forex
+there is a lot of out there I'm
+not saying that I am the perfect person
+which gives the
+magic formula there is no magic formula
+at all there is only an interpretation
+that can have a variation from the
+person to person but indeed I
+can surely tell you that the book I read
+every day
+trying to decipher what
+the book is telling is the charts itself
+the price action
+the volumes that
+suggest me some kind of activity and
+the currencies taken as a single unit
+some of you are also asking if they can
+have this algorithm and given me as a
+support
+thing in Bitcoin
+so a few words about Bitcoin
+Bitcoin for me is exactly nothing it's
+okay
+you see this this is a euro coin and
+this is something tangible physical okay
+you can touch it
+so what is Bitcoin
+it's a digit
+even you wrong card Swiss franc and so
+on those are digits in the actual
+electronic markets but they have a
+counterpart
+almost close to a commodity
+in fact when I'm trading or analyzing
+the markets this is the suggestion that
+I can give to you as well and also that
+you can find in my previous videos and
+especially in the webinars I
+tend to treat
+Forex and the currencies as commodity as
+as the commodity market so like oil
+sugar it's only that the commodity is a
+currency that exported in another
+currency like oil is put in dollars or
+sugary sport in dollars or
+[Music]
+even the pays and the quote that we had
+in every car superlight usd/cad is us
+east bay's and carries the court all
+seek add new ROC is the base and carries
+the court USD and Ozzy can be seen can
+be perceived as commodities and
+that are quoted in a
+in another chorus and the game the
+probability game that we have to face
+every day
+is to
+win the challenge to
+analyse if which currencies for that
+they are the strongest and the weakest
+so that
+reasoning in
+in
+speculative way by having something very
+strong against something very weak or
+vice-versa we can have
+enough profit or pips that are
+translated that improv
+so for me the questions about Bitcoin
+you can
+you can somehow
+asked someone else because I'm not very
+skilled on that and I refuse totally the
+idea of all the crypto part currencies
+that are
+even more manipulated than the forex
+market which is a semi regulated market
+so already with some
+sometimes tough money food manipulations
+by institutions and central banks but
+that on the other hand has shown as a
+physical counterpart that
+makes it somehow tangible and
+with probability predictable
+another thing is cryptocurrencies or
+this vr-12
+virtual assets that to me probably
+because I belong to a different era
+makes notes make no sense and give even
+more confusion even because I can
+somehow
+make a correlation
+between the currency pairs because each
+currency is related to another mrs.
+price in another currency so there is a
+inter relation correlation and in this
+case to me is fair enough
+to proceed with an analysis
+but this
+this kind of
+[Music]
+approach fails the moment we are
+discussing about cryptocurrencies so for
+me when you want to speak about Bitcoin
+as well when you want to speak about any
+other cryptocurrency
+another person
+for that topic okay I'm sorry but
+already forex market is a very huge
+element
+then sometimes it's more easy to read
+other times is more difficult
+depending on the way we approach to that
+but really if you really want to
+have a a
+better vision of the thing what I
+suggested to read is to read the chart
+every day every chart that it's possible
+okay in this case I just selected one
+two three four and five five charts on
+which I decided to differentiate my risk
+trading multiple assets coherently
+so
+if I think that million dollar is strong
+Japanese yen is weak and GBP New Zealand
+dollar the sorry and GBP is weed of
+course there has to be a coherency that
+I buy when insulin tolerance varies and
+I sell one needs in another squad of
+course Japanese yen is always quote so
+in this case i buy i buy but at the same
+time GBP is weak and also is strong so
+GBP is base I sell and
+Posie is strong bye bye okay so this
+kind of approach they buy they maybe
+can can be not very familiar at the
+beginning but we must consider the
+currency is like
+giving and taking something okay we have
+to have another currency to trade with
+the currency that we are buying or
+selling
+for this reason and the fact that they
+are
+the part of a whole
+big number altogether
+this is the way I do approach to this
+analysis and
+no other
+even even commodities or index indexes
+for me are a topic that at this moment
+I'm not about to touch a roll or to give
+any kind of suggestions of approach
+anyway the graphical module is almost
+finished I'm taking some extra time we
+find some formulas and
+experiment their coherency through time
+and understand what is the best
+timeframe to apply them even if some of
+them are applied on a daily timeframe
+and I always suggest you to have a bold
+vision of at least the day if not the
+week and even the month is good to know
+for
+sometimes swing trading of a couple of
+days other times for having more
+confirmation of
+the trade of an intraday trading of some
+hours
+there are also some elements that I have
+just implemented like this line this one
+and this one
+which are related to the previous day
+activity of the price action and as you
+may notice in this case the moment the
+price
+broke this level there was a treatment
+and a kind of really support or sorry
+resistant resistance area that confirmed
+that I was right to sell Japan sell GBP
+and buy New Zealand dollar as well as
+for example this other
+let me see is this one the face yes as
+you may notice we have also here
+this line which was the same as in the
+the GBP here okay we have this brown
+line and this blue line and here again
+we have this brown line and this blue
+line is - these are coming from a
+profusely activity and I love the high
+and the low as you see the higher the
+lower the produce they are something
+else
+but it's always made by calculation and
+even in this case the price
+found support of this area and by the
+fact that was rejected above this this
+line
+suggested mean a coherence with these
+values in regards of trading because
+sometimes we have very huge values
+let's bring the monthly like for example
+hard on this case let's say the maximum
+the minimum value is Japanese yen okay
+but how can I tell if this is the
+minimum value reached or if this value
+is about to continue to decrease
+this we don't know because every every
+day and every week there are different
+values values are not the same this is
+why Forex is quite complex to trade but
+the fact that
+some levels are
+broken like in this case see here same
+example in this case on the New Zealand
+dollar Japanese yen we have this blue
+line
+and we just
+I
+have this blue line and this brown line
+orange line
+calculated from the day before and the
+price went up there it rejected but
+stating this area that rejected but
+arrived this threshold and then bump it
+up again breaking this area so I got a
+confirmation that
+needs even tolerate Japanese yen were
+confirmed in their daily it's even
+dollar and Japanese yen values of plus
+five hundred and minus 400 in this case
+so and even in the weekly
+plus three hundred and - almost four
+hundred so
+by reading the chart
+the first act to produce at least to
+read and give an interpretation to the
+Pharisees that solves the debate
+components of the major 28 currency
+pairs or crosses that we can trade so
+this is the first step
+then from the step we
+we take out the strongest and the
+weakest currency or currencies it
+depends that can be just one for strong
+and one for week or two for strong and
+two for weak it depends on the assets of
+the day
+once we had
+analyzed and taken the currency pairs
+that are the result of the crossing of
+these currencies sometimes we have the
+base in the quote we apply the same
+algorithm which provide us in the time
+frame that we are observing the values
+of the currencies themselves that are no
+matter the chart and simple that we're
+using they're always related to a market
+view and then we go and this is why it's
+important also to have a graphical
+vision of the of the markets and see
+also how the price behaved in proximity
+of the overlapping of the
+major
+market sessions and how and see the
+development this is fundamental
+information inside technical analysis
+believe me for me I'm not
+fundamental
+analyst but for me it's very fundamental
+to when when
+when markets overlap and give some kind
+of signal that that can be confirmed
+okay so
+what has to say
+by doing this kind of activity the
+result of today was
+this
+graphic
+totally in profit and
+you may as usual make your
+considerations about
+all these elements that are giving you
+better insight of how
+the trades developed
+so for today it's all I thank you for
+watching and always for subscribing and
+supporting my channel and your questions
+and your contacts and
+while
+hoping to produce another video based
+also on some of the questions that you
+are
+providing me almost daily I wish you a
+very good time and space and a very good
+trade activity okay
+bye

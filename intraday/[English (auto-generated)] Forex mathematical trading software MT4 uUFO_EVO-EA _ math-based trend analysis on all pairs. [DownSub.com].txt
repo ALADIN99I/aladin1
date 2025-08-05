@@ -1,0 +1,483 @@
+hi everybody and welcome to this new
+pío tutorial webinar call it whatever
+you want today I will present another
+module that I am separately developing
+along with the UFO project which has
+sums likely variants but basically it's
+based on the same core of formulation my
+own formulation in regards to Forex many
+were the questions that I received the
+email regard the fact that then after
+determining the strength and the
+weakness and the overbought and oversold
+conditions of each currency and then
+from the currency and combining the
+currencies we target the currency pairs
+that we want to trade it's obvious that
+the next step is to get into the chart
+and somehow figure out how to position
+ourselves what when it is the right
+moment if to put some stop losses want
+to take profit all this stuff
+when we go into the charm we usually
+have to have a vision of what is the
+trend and that's why a module that I
+built with the UFO has some involvements
+in trying to in given a chart
+interpretation so the graphical module I
+have to say that how you to approach to
+charts it's also reason of the
+currencies that you are trading and the
+way you are making hedging there are
+some situations like I showed in my
+previous videos that I strongly invite
+you to to watch and now in a brief I
+will also show something here of course
+in the other videos you saw different
+ways to head to the currencies together
+in the currency pairs together creating
+a portfolio with the balance equal to
+zero or major at zero and these formulas
+you can find them along the videos here
+and there so I strongly suggest you
+before making questions which are anyway
+very welcome to have a look on a
+previous videos where I do always
+explain something different so there are
+situations where you create portfolio in
+a way that doesn't matter that much when
+you enter the trade there's no total
+high or low B that you will or might get
+because you rely on the combination that
+you put together off the more currencies
+so that they start to balance themselves
+quite immediately and you get always
+unless los loros regard the Commission's
+or the spread but then you start to go
+in a situation around zero and then
+positive so in this way doesn't matter
+that much if you enter a top or a bottom
+because you combine them together when
+some some pairs move in a direction
+other they will move in the opposite
+this is the way of Reggie so you get a
+balance there anyway goes towards
+positive this is your goal okay so let's
+go a little bit deep in Warren about to
+showing you today
+normally you were so in the very last
+videos I was showing the UFO algorithm
+with this computation okay on different
+time frames that can be completely
+neatly so now we are in an hour I'm
+showing you a full screen now of the UFO
+on which again some graphical elements
+of the other version of UFO which is the
+same of this only with different
+features as I had to clean the graphics
+leaving only a few modules just to help
+the calculations to become more rich and
+precise but we have to a get a
+compromise also with the CPU that is in
+the average we have and computational
+capabilities related to metal
+which is very effective
+also by Microsoft Windows so it's it's a
+compromise that I cannot go too much
+further so I decided to sacrifice some
+graphical modules but anyway I have the
+sessions of the markets and some other
+information so you know this very well
+if you saw my previous videos in this
+channel but today I will show you also a
+module that I am developing is under
+development since Mountain Health on
+which I tried to make some little
+insider of the UFO for a level of single
+charts so just one symbol so only one
+Basin code so it has to be applied than
+228 currency pairs ok and like this our
+goal because let's start very briefly
+the very first statement it's a
+statement on which I made a test the day
+before that was starting well and I
+could have closed in a better moment
+with more positive profit but was
+something that was occurring during the
+night when the markets were handing so
+very unstable and what I did I simply
+decided to close in this case we'll see
+a kind of behavior on which if you are
+not very right by hedging
+you get anyway situation on where your
+start point and ending point so this is
+another color experiment so basically
+make this okay
+so you had some losing positions some
+win winner
+positions and the result was equal to
+zero right was equal to zero
+you should have expected to have a major
+of zero okay so this very first bunch of
+trades that you may notice year in a
+team account that I made for sample
+proposes an explanation proposes had
+this kind of behavior they something
+that sometimes can happen is no it's a
+situation that anyway we didn't lose
+okay so at the end you just lost lost
+some time maybe learning something
+because you are always to learn for
+something that you can call a mistake
+which is not a mistake
+it's just not complete understanding or
+not enough data to determine so you are
+more guessing than trying to calculate
+okay so this is the initial situation of
+the balance of this account okay which
+of course you may notice is this one but
+then what happened then I went to bed
+and then the day after so today at this
+hour 9:00 in the morning at the
+beginning of the longer session let me
+just clean effect I
+[Music]
+I got a situation that somehow if we
+take a look on a daily basis that's just
+recalculate okay on a daily basis we see
+that cap is negative okay let's just
+assume this that was in the morning with
+some different values but anyway they
+were that those values okay and now we
+see if there's something that I have to
+change because there is a negative
+position which is incident over card
+okay so card is negative and here we are
+selling up here Scott negative okay okay
+here we're buying card which is should
+be wrong what with one of them is wrong
+but we are selling New Zealand dollar
+would think that New Zealand dollar is
+weaker than that which is not a current
+right now this morning they were
+different is Dylan dollar was extremely
+strength is 3 milli week sorry
+weaker Dan card now the situation has
+compensated okay so in this reading this
+is the the trade the trading that I was
+making not very right wrong but let's
+start from here now New Zealand dollar
+okay is still negative less than card so
+card is the weakest but is still
+negative New Zealand dollar would find
+here against yen in sell New Zealand
+dollar is negative and yen is positive
+okay young is positive
+then what what else we have with New
+Zealand dollar New Zealand dollar is in
+sell its negative and here is his self
+as well because we are buying pound GBP
+so GBP is by and GBP is still positive
+here okay
+distel positive here here we have GBP
+palsy in buy so we buy gbto sell palsy
+and all this negative and GBP is
+positive so positive means strong and
+oversold and vice-versa negative is weak
+and over both then we have also again we
+are buying and we are son Swiss franc
+and Swiss franc is still negative okay
+and then we are also buying yen selling
+palsy which is oszi in sell and Japanese
+yen in buy and not only by the fact that
+I should have avoid to make this and
+it's even dollar cad movement anyway
+there were kind of other situations that
+I read on the chart that is suggested
+being also to attended three okay which
+even if you may notice I took a while to
+take it because I took it seven minutes
+after this bunch of trades that were
+injected at the same time one of the we
+are okay
+so if I woulda stopped and not me this
+needs another cat there is a time to
+diversify my portfolio for today I would
+have probably get a hundred percent
+positive on this bunch of trades okay so
+with this clear in mind you can always
+go back and watch it again the situation
+what I decided and then of course I also
+base it on this readings that were
+anyway leading me on a multiple
+timeframes and also these computations
+okay so I didn't touch your own dollar
+okay
+only these currency pairs and if we make
+just to have a snapshot of the account
+history
+yeah
+okay we're having also this situation
+now that I still have to close my trades
+but before doing this I'm going to show
+you what I was talking about so what I
+was talking about making an indeed
+reading of the trend of each and every
+single pair so 28 currency pairs we have
+here that we can trade and then we have
+to select something days on the market
+performance of the day this was what is
+the next step what comes next
+so let me just get rid of this I can
+close it and let's also minimize this
+wait
+so what is this and of course below my
+behind my face there's also usd/cad and
+at the usd/cad but where I'm not trading
+usd/cad actually so what you see here
+and then I will show you a chart that I
+would like to explain and you see the
+calculation based on the on the formulas
+of UFO this is a different this is a UFO
+cross for now I'm calling it cross
+analyzer but basically the the most
+important thing that analyzes in
+mathematical basic concept is the trend
+or when there can be some turns and it's
+always based on the same principle of
+the UFO but the UFO has a vision of the
+whole market and provides a currency
+analysis here we are in a currency
+against another currency so we are in
+baseball situation and from what comes
+out of the screening of the market for
+the day so the balance is between the
+different currencies then we have to
+analyze the strong and the weak or at
+least what they are in the relation that
+is based to code so Euro against dollar
+Europe against yen and so on okay
+so let's take for example I was having
+my crazier
+okay so these are my trades
+oh yeah take a yawn and cut the end I
+have a cell situation okay actually what
+I have in this algorithm it's just this
+for now because it's under development
+but basically it's a kind of splitting
+of the things of the of the elements of
+a currency pair just to be precise that
+I will do anyway
+mentally and the kind of equation that I
+built for trying to represent that
+process it's something that goes very
+close to this and also helps me to think
+less and be more somehow
+calm in my decisions because I have also
+saw certain things to evaluate in
+mathematical terms rather than just an
+intuition pen or a mathematical
+intuition so kudiyan we are having a
+cell situation but we see that this is
+still negative but in this time frame in
+sorry in this yeah in this moment this
+is the situation at five minutes fifteen
+thirty sixty two hundred and forty one
+day one week and one month the overall
+and the interpretation of the main
+friend one time frame before so this is
+five minutes ago this is fifteen minutes
+ago this is thirty minutes ago sixty
+four hours ago one day ago one week ago
+one month ago okay so we are two because
+then we have to cross them somehow and
+this is the 10 minutes before 30 minutes
+before and then we have sixty one hour
+before sorry two hours before here's two
+hours before here is one hour before
+here is four hours with these eight
+hours before this is two days before
+this is two weeks before and this is two
+months before so this can be a kind of
+trying understanding of a reasonable
+medium term okay
+and in fact for example cut yen was
+gaining more
+some minutes ago and ours had still this
+persistent negative situation that goes
+any way towards a positive situation
+because they are decreasing this is now
+this is in the previews of overall and
+this is in the previews and previews of
+overall so this is the addition of all
+this ones so this is now so is from up
+minus 138 to minus 172 50-50 anyway is
+going towards something okay so it seems
+like retracing we can analyze GBP New
+Zealand dollar
+by here Jane
+in the spy level this is the resolved
+and the GBP New Zealand dollar now I see
+it's going from negative positive now
+still negative and I have to read this
+values both horizontally and vertically
+but it seems quite obvious that this is
+the trend of the five minutes this is a
+kind of trend or it's a trend at least
+if we see all negatives and this is
+probably a second lap this way it's all
+describing what is in real time so tick
+by tick okay so New Zealand dollar in
+yen we have a cell condition and we
+still sell but it's getting some
+strength GBP Australian dollar I
+and he's going negative so sweet Racine
+and we see that we had to 2600 now we
+have two thousand and two hundred or
+something like that now we have both the
+yen plus one
+which is going in the sole direction and
+here is a cell line and it's still
+negative but getting strong and then we
+have New Zealand dollar Canada which is
+the bigger traces the big mistake
+somehow okay anyway now I'm going to
+close the trades okay and I will do an
+account history
+okay much better
+[Music]
+the only gas I want to to attend as an
+extra to diversify my portfolio was
+negative but was the less of them so was
+a kind of ranging face okay that could
+it be positive by the same value okay
+the others are quite quite more
+significant of a permanent reading of
+the values that we
+may consider also in a separate profile
+of your Metatrader so that you can
+switch between the profile where you
+have the UFO and the other one water is
+more a whole market analysis this way so
+now I want to close the trade because
+some events now are making the
+chemistry's retracing somehow and the
+goal is also to close the trades on a
+reasonable time which is a reasonable
+profit when you have it and restart
+tomorrow reading the market performance
+and decide when or what to trade I'm
+saying this because a lot of times we
+don't get the overall situation even if
+we have instruments because there are
+other hands other than algorithms hands
+that are manipulating the market so
+leaving the money into the market for a
+long time unless you are very covered or
+a different kind of policies can be a
+negative condition because it's very
+easy to be detected by positions that
+are taking longer than 1 2 days and as
+forex it's a zero-sum game with a little
+bit of
+plus or minus
+it's always very easy to get we trace it
+or to after investing one day and having
+a profitable balance we have to wait two
+days because there is a day of almost
+without retracement unless we have a
+plan of more long-term which is another
+story so let's grab for example and now
+I'm finishing but just to understand if
+I can show you some values that can be
+they should be anyway passed by the UFO
+first okay so this is critical but then
+from the UFO I can go to a graphical
+chart or oral to another mathematical
+chart
+let's grab some usd/cad the one that was
+taken out from my teacher here so use
+the cab
+you must the cat was very nice um almost
+like this curve anyway this is the
+market performance okay for the
+currencies that I
+that I decided to represent the markets
+okay so we see progressive and keeping
+in positions of strength situation of
+this currency pair usd/cad and actually
+we have in the timeframes here now is
+getting some negative reading not five
+minutes ago but yes ten minutes ago and
+also we have the creaseman at this level
+we have an increase meant on thirty
+minutes we have an increase Minh on one
+hour increasing and now it's probably
+the start of the last four hours or
+three I don't know so we are having a
+value that now it has to reveal at four
+hours and today we were oscillating
+then getting a little bit of week in the
+week chart and from the negative to in
+two months before and the month before
+positive and this time still this month
+even more positive so that could have
+been also a nice reading I took out of
+trades other situations because in the
+day before in the reading this chart was
+not suggested or I decided to avoid to
+trade euro so to trade dollar and euro
+dollar even if I think you wrote was
+something like 400 you can go back and
+check at the beginning of the video so
+good at being also could try to trade
+long dollar against this case cat that
+was anyway one of my choices okay so for
+each trade for each currency pairs there
+is a probability of trade that should be
+somehow taken by this computations and
+the results of them that must be read in
+this way instead of having graphical
+things and we can do all the graphics
+that we want at the moment we see a
+graphic which sometimes are very
+important to to do they are always
+subjective they're not objective they
+are they must be interpreted accordingly
+anyway to reading that it that is much
+more clear
+when is when is related to numbers
+because numbers are unquestionable this
+line can be here or questionably here so
+and there's a lot of difference
+yeah okay so finally anyway this was the
+result with some lost ratings of course
+which artist in any way with and in
+result of the choice of the portfolio of
+assets that I've been put together you
+know hedging trade was this okay bit of
+the beginning and then a reading when
+the London session was open was opening
+or just opened so anyway that around
+that time okay so with this it's over
+for now and thank you for being so
+patient to arrive is so this Muslim
+following my explanation and for those
+who have answers anyway at least first
+take a look at some videos before where
+maybe you can find explanation on what
+I'm saying
+this situation is under testing now
+again but it's quite easy testing
+because it's always based on the same
+computations of the UFO it tests the
+core module of the UFO so results are
+acquire and are like in that propagation
+but the mathematical principles are the
+same that you can find in some webinars
+that I have explained the way I have an
+interpretation of forex and with this
+thank you all for watching for
+subscribing and for supporting this
+channel and as usual have a good time
+and good space

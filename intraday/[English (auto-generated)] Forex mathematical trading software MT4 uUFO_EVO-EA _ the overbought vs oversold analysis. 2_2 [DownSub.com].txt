@@ -1,0 +1,276 @@
+hi everybody and welcome to another
+persecution of the results of the
+testing of the evolution of the
+algorithm UFO this video it's occurring
+two days after my previous one so I
+strongly suggest you to take a look also
+produce videos so that can be a kind of
+continuation and let's go directly to
+see how things are developing in at this
+moment
+well just to remind you what was before
+and also you can go and check by
+yourself and make your all your
+comparisons with your Metatrader
+platform I was making some trades today
+is the 7th of February 2018 and I was
+making some trades on Gd Japanese yen
+going short and I was reaching more or
+less this this level then by reading by
+the reading of the values of the UFO and
+different timeframes
+I was supposing a kind of situation for
+the day after of some kind of ranging
+and retracing and in fact that
+it was the thing that happened that day
+as you can see maybe it could have left
+a bit more and reached this level or
+even now but there was this kind of
+situation then of ranging phase after
+the decay and then retracing to this
+very limit and in this situation the
+values that were displayed in different
+time frames were somehow contradicting
+in the sense that even now we are
+observing that if here Japanese yen is
+in by on the majority of on the major
+time frames we are also serving that
+they are going also in in a sound
+direction on the 15 minutes 30 minutes
+not one hour but anyway it's a kind of
+oscillation another kind of fluctuation
+so it could be a good moment also to
+take off my trailer was even realizing a
+bit more but I took myself a bit late on
+putting myself on the charts ok so what
+basically what happened this morning I
+was having the values of GBP Japanese
+yen and also other currencies like Ozzy
+and CAD anyway as we trace it and in
+fact is the most little results here
+that they were aligned combining
+Japanese yen which was the the leading
+currency let's say this way whereas
+regard strong and
+so that was leading me to make the
+decision this very morning of the
+seventh - to take this positions I took
+a couple of them and let's do first
+thing so that we can make a conjunction
+with what we see in the previous video
+let's make an account statement okay so
+this is the statement now and the fact
+we have this previous balance if you go
+on a previous video you will see that
+exactly it's the same statement please
+take a look at this and verify that all
+the values are corresponding and that
+was the final situation on the end of
+Monday then Tuesday I didn't trade
+because of this values that were
+unbalancing on a different time frames
+and then today this morning I decided to
+inject these trades in the very morning
+okay - for each of these currency pairs
+in going short actually these are open
+trades okay and let's do a first first
+we've done by symbol so that would make
+easy that so grab one of them each so we
+get some initial profit anyway so let's
+put this also in points so not that very
+much but anyway a positive result in
+terms of pips and let's make another
+detail statement as usual I consider my
+an ally at my analysis daily analysis
+okay and depending on when here it is
+now we have increased even more and also
+we have another ten hundred realized so
+the the equity is sixteen sixteen
+thousand and six hundred depending on
+when my trades are taken then I can
+consider to take them more days but
+let's say that if I would have been in
+this Hauer
+I could have had a bit a better a better
+positioning for getting even more pips
+but at this hour I was sleeping so it's
+like not always you can be available in
+the chart and you know so it can be also
+a thing that can somehow affect the
+moment so you except maybe a little bit
+of volatility or retracing same
+situation was for the caddy and also
+Trey said even if I took the trades
+about in this area retrace it more times
+but was like a kind of resistance
+resistance area of course probably while
+I was leaping the signal of all the
+currency pairs aligned already with yen
+from an oversold so goodbye with a being
+revealed already around this area
+so that could have been a better
+positioning area so it happens sometimes
+did that that was in the middle of the
+other session and same thing for
+the aussie yen even here would have been
+a better area so basically the the
+formulas that I was capable to extend to
+all the timeframes
+God gave me more a better information
+for us regard the possibility of
+continuation of a trade or you've
+decided to take in a trade or not one
+side effect of this implementation that
+I had to discover that's why I was
+struggling some days ago is that the the
+great amount of formulas that are in
+this algorithm pushed me to earth the
+direction of reducing the amount of
+formulas that are in the graphical model
+for a simple reason that otherwise the
+users of CPU from the computer that has
+to make tick by tick calculations in
+real time would have been too much and
+therefore the performance of of my
+algorithm would have been critical so
+what I decided to do is to eliminate for
+this evolution of the algorithm in fact
+you don't see let's take the euro/usd
+just to give you an idea if you see
+other videos where i present only the
+original version of UFO there are a lot
+of lines of support resistance that are
+all injected by
+extra calculations as I had this idea of
+putting these two new sets of formulas
+that were reading the original values
+that are still the same in order to help
+me to I have them have a more precise
+determination of the currencies forces
+me to reduce to a minimum
+elements of information for s regard the
+graphical side giving only the 5% of the
+elements that was a compromise that was
+necessary in order to make possible to
+have formulations that were anyway
+running smoothly flawless and having
+anyway not problems on display in
+calculations on multiple time frames
+simultaneously because for each time
+frame there is its own calculation on 28
+currency pairs and these results are the
+results of all the formulations so it's
+quite an amount of stress for the CPU
+for the computer so that was a
+compromise that I had to do to make so
+let's finally see actually there are
+still GBP Japanese yen himself in the
+monthly in the weekly New Zealand dollar
+yen in this case now New Zealand dollar
+is getting the weakest and hover boat of
+the situation as well as also
+reverberant in this
+in the slower time frames and we can
+start to see that GDP is retracing
+somehow is getting some retracement and
+also Japanese yen from time to time is
+getting negative so we have to be
+careful and also it's almost the end of
+the the the American session so probably
+there will be even more movement but as
+far as regard this result is an extra
+result made just in some days and as
+usual you can take note of what is going
+on here and of all the currencies that I
+have traded at the time and the price so
+you can always check now we have 23
+trades and only three trades remaining
+open ok so giving us that was 995 and
+now is more so basically in Italy I was
+starting to calculate only on a weekly
+and daily timeframe and then I adjusted
+the formulas I made some tests that of
+course I can all always conduct
+exclusively in real time it cannot be
+bad testing for this because there is no
+featuring Metatrader that allows us to
+back test 28 currency personal Tansley
+in each and every time frame it's
+impossible for meta trader to do that
+and I think also it's not very possible
+for the majority of the trading
+platforms but so that's why there is the
+the need of taking some time for making
+extra tests while the markets are
+running but the results that I'm having
+both in this demo account for
+explanation and on my personal
+application on my live account are quite
+promising and somehow it's like reading
+the UFO but by not making extra effort
+but making even less effort in
+determining the weakest and the strong
+and also overbought and oversold
+conditions which are also situations
+that we will like always to evaluate and
+not in terms of currency pairs process
+but in terms of currencies and that's it
+so with an overall inside and overview
+of the elements that are creating the
+cross the pair's okay so with this
+continuation now I will close this trade
+and realize the final detail report for
+today
+and
+this is what we got with 26 trades
+okay we got some negative positions
+which are here and positive positions in
+the overall portfolio that has been
+generated by trading multiple assets and
+distributing the risk this is the final
+result I think it's enough for this
+extra update for your evaluation and I
+just let let you see what are the actual
+values for today so that you can help
+somehow at least an insight for your
+personal evaluation and analysis of the
+markets I invite you to watch also not
+only this previewed the immediately
+before video where I was where is
+basically this is the continuation of
+that but I also suggest you to have a
+look to the webinars that I've made
+because a lot of emails that I received
+which are asking me about the theory and
+principles that I am applying then with
+this algorithm of course the algorithm
+is to simply to make a simplification in
+terms of effort and but things can also
+be done by the analysis of the 28 charts
+this is my personal solution to analyze
+everything simultaneously so
+tanja sleep in a very few minutes and
+have an idea if it's a moment to trade
+if something that can be injected or not
+or if it's better to wait but as I was
+saying there are some videos on this
+channel that are more talking about
+theory and hedging and the way I see the
+markets which are webinars for the
+majority and I strongly suggest you also
+to take a look at that because some of
+you were sending me emails with requests
+of information that I'm sure you can
+really fine them and the videos are a
+bit longer but it's important to cover a
+topic with as much as possible
+information so you have to be patient
+take note and then do your orientation
+experiments and see what works for you
+as well accordingly to the way you trade
+that the hours you trade and all the
+other characteristics of your daily
+activity that can affect your trades I
+thank you for watching for subscribing
+the channel for supporting and as usual
+good time and good space

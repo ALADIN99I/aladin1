@@ -1,0 +1,969 @@
+hello fellow traders and welcome to this
+new webinar
+my unconventional forex trading channel
+today is the 6th of December 2019 it's
+Friday
+markets are almost going to close and
+the purpose of this video and publishing
+is in order to accomplish a kind of
+demonstration and as well tutorial for
+those who are already are owning and
+using the tools that I'm about to show
+and also of course showing the
+possibility of applying math for the
+daily Forex analysis using spreadsheets
+therefore using Excel have to be honnest
+the last months I got so many mails and
+also Skype contacts requesting to have
+this tool and of course for those who
+were supporting the project and decided
+to do that
+I decided to create a tailored version
+of my tools especially Excel
+on which they could have had some kind
+of reliable template to start and to
+create their own strategy accordingly to
+math basically is that and so this video
+will have this purpose and ...
+this kind of curiosity from you public
+in regards to this topic it it's being
+rising day by day just because of some
+videos that I've posted in the past
+and of course if you are new to this
+channel and you would like to have more
+information I strongly suggest you also
+to take a look to my previous videos
+there are published both in the channel
+and also in the playlists of this
+channel so you can have a
+better overview of what I'm talking
+about today so let's go into this stuff
+and I hope to become useful also in this
+case also in this presentation and
+of course here I have Metatrader account
+for demonstration and for educational
+purposes where I applied of course as
+usual my approach to forex and forex
+analysis and with the statement of a
+week of trading
+the very first week of December 2019 and
+saying you of course the time we are
+referring to so that you can and I
+strongly invite you to verify the
+content and the charts with your own
+charts and you will see everything that
+match so there is no scam of this is
+just that I will like really to
+share at least the attitude that it's
+possible somehow not saying to beat the
+market the market is unbeatable because
+it's managed by evil people but somehow
+that can be more predictable less
+stressful and
+more convenient and a certain point even
+in terms of profitability so let's start
+from some results and then we go into
+the topic and into the tools I'm talking
+about so as you may notice here I
+have the historical trades I perform it
+in this week and as usual my counter my
+uUFO expert advisor is running still so I
+can have a confrontation with the values
+of my spreadsheets is still running for
+a while until the markets are going we
+may notice here I have a balance of
+15.206.30 units of dollars in this case
+let's check...
+... deposit...
+yes in dollars ... so this is the total
+balance at the end of the week starting
+from an initial balance of
+$10,000 now we have..
+$15.206.30 so we had
+a +5000... okay you know the
+math in this case let's show the
+statement so these were the very first
+trades I made at the beginning of
+the week on Monday and these were the
+only ones that I made swing trading as
+you may notice we have this swap
+commission's okay so these trades were
+closed from the second to the fourth so
+after two days this was the only trade
+that I made as a swing trading you know
+there are specific days Mondays Fridays
+beginning of the month that have also
+some fundamental reasons to move prices
+with a specific behavior so they're less
+predictable
+then all the other trades that I made on
+the fourth, on the fifth and on the sixth
+were intraday okay so no swaps nothing
+about that only the Commissions for the
+trades that's it... see ... this is the
+graphical representation of the final
+balance in a week so this is quite
+positive result I got some negative
+trades of course also ...I am I can fail
+like everybody but the important thing
+is that when you trade just one currency
+pair you amplify the risk while when
+you're trading a portfolio of currency
+pairs the risk is mitigated is reduced
+some our more controlled and therefore
+even if there are some negative results
+the overall performance is
+quite impressive in order to go with
+this I based my analysis on what we see
+here which is this tool I'm talking about ... and this tool of course is based on ...
+just let me do a brief statement before
+ok
+let's see if we can make it yeah
+I made a video on this I published a
+video on this but I won't just briefly
+recap so that it's clear how it works in
+order to have a spreadsheet with all the
+data of 28 currency pairs that then with
+formulas are
+converted in eight currency values and
+then from this eight currency we can of
+currencies we can apply our math and
+charting
+okay we need to feed spreadsheet
+with data
+fx data
+this information comes from
+expert advisor that I have built that
+runs on MT4
+which gives in
+real-time information of prices
+and then through batch
+routine that it's recalled from visual
+basic called in Excel creates this
+process that from the EA which creates
+files with all the prices I was saying a
+batch routine that it's transferring
+this files to a spreadsheet okay because
+of some Visual Basic some macros created
+in Excel then we can go along through
+all this process for those are owning
+this Setup on their computer I have
+to make some considerations
+in regards to the performance of this
+expert advisor which works really well
+sometimes there can be problems and with
+this then I solve also this tutorial part
+which is important anyway to make notice
+from time to time
+I mean that can be that one day there is
+no interruption at all other days that
+can be one or two interruptions so in that
+case the expert advisor must be reloaded
+on the chart it works on what one chart
+only that can happen some issues that
+are not related to the expert advisor
+because I am experiencing this by myself
+with daily
+frequency but as you may notice our
+brokers are not very totally fair or
+whatever or also our operating system
+can have some issues for example when in
+Windows 10 we are having the updates
+there are automatically recalled by the
+OS it can happen that this will
+interrupt or somehow corrupt the normal
+internet flow and because of this
+Metatrader would kind of stop or stop of
+receiving data for a while and the
+solution in this case is to just perform
+the Windows Update feature and then
+reload the expert advisor on MT4 and
+everything is working fine there are
+other cases where all of a sudden we
+have this broken connection or no
+connection from the broker and of course
+also in this case if we have something
+that is expecting data in order to
+create all this workflow and is not
+receiving data it stops this is why also
+when we are talking about automation and
+trading robots these are kind of events
+so broker side
+but even if we have internet connection
+that we don't have the connection
+for the broker even if for milliseconds
+or for some seconds and then broker
+again goes back to the normal data feed
+even in this cases we cannot predict
+that but it happens that the EA stops
+in this case we have to wait for the
+broker to get back to normal activity
+reload the expert advisor which is a
+matter of one minute not even that and
+then things go back again okay with this
+conceptualization I stop this part and I
+go back to the spreadsheet anyway I hope
+you have clear in mind that in order to
+have something that works with real time
+behavior must have this kind of setup
+okay some data that are collected and
+then sent and loaded on the
+Excel spreadsheet and then refresh it
+you know ... the math and the formulas and
+therefore the charting okay
+so this is a kind of preface that I had
+to do for sure...
+okay so let's go back to our spreadsheet
+this is the final result of course here
+now we are we are observing day of
+Friday we have eight currencies you may
+see here euro dollar cad swiss franc GBP
+Aussie New Zealand dollar and yen and
+through the calculation of this
+spreadsheet okay we arrive to the only
+element that we really need to focus on
+and also if we want to create our own
+formulas I have settled up something
+very simple but then you can start with
+and then you can go with your own
+creativity if you like but this is the
+start the beginning so why did I
+organize the cells this way so let's
+give a brief recap to the controls
+actually I'm not doing anything so I
+have my Metatrader running with the
+other UFO and basically what it's here
+this this replied this this chart and
+these values are replying the UFO engine
+calculation but here we have some more
+information because we have the
+historical price action if we can call
+it that way that of course has been has
+to be read from right to left this
+mentally it's also kind of from right to
+left because the very first data are at
+the top so the present moment it's here
+at the top and then backwards in time
+this way every time I upload the files
+the data feed from the files folder in
+Excel and then i refresh my excel so we
+have just to make a double click on this
+button and then we have also the
+completion of
+of
+percentage of data in this case we are
+having 360 bars of maximum data here and
+loading only a hundred because for the
+day on a 15 minutes time frame okay so
+this is the kind of accuracy that I'm
+having and this is quite enough to
+analyze the day every time this
+performance so double-click here once
+all the files are loaded and then also
+an alarm signal is created generated by
+MT4 to advise me that the data are
+loaded I have some seconds for creating
+an update of my files and a refresh of
+my Excel spreadsheets then Metatrader
+starts again to recount and we create all
+the data feed and then all this
+information is going on row below and
+then I will have my new updated first
+value so this way these charts are
+progressing from left to right and we
+have the beginning of the day here and
+the present time here I think I will do
+anyway just because there are 10 minutes
+left
+let's see if we can make it and create
+an update in real time so that we can
+better analyze our information okay so
+let's try to do this that just give me a
+moment and in the mean time that I'm
+preparing also this this thing so I am
+loading another Metatrader on
+which I have loaded the expert advisor
+and the expert advisor ...let's see if
+it's running so then I can make a final
+update before really before the markets
+are closing okay
+so let's give it a moment to do this
+let's see okay so in a brief moment you
+will hear a sound and then I will
+perform so I can show all also this part
+okay effectively now if I'm clicking and
+creating this you can see okay now I'm
+having an extra
+they're going it's going above a hundred
+percent because I was having previous
+files so we have to be patient moment
+and then I will do this in a couple of
+minutes okay meantime  I want
+to show what it's about this this Excel
+spreadsheet so here we have four euro
+dollar cad chf gbp aud
+nzd jpy the currencies are
+displayed and this information see this
+is now our first
+update we have to wait for a new one
+here I was saying I have the graphical
+representation of these eight lines that
+we read from right to left therefore
+this is the behavior of the day of the
+currencies we see that New Zealand
+dollar went up GBP at a certain point
+felt down then this moment in time was
+the beginning of the
+the American session there was the
+non-farm payroll event both for
+Canadian dollar and for US dollar and in
+fact US dollar went strongly up and
+Canadian dollar felt completely you may
+of course check in your charts so this
+is the graphical representation of the
+currency behavior in the day of the
+Friday the 6th of December 2019 here we
+have the 28 pairs behavior so we can see
+that for example here we have the GBP
+New Zealand dollar which which was the
+weakest pair to trade GBPNZD ... as well as other currencies
+so we have the whole behavior there all
+28 charts normalized and providing a
+sense of movement so now I am finally
+updating my spreadsheets so you can see
+here we have this hour ok and now by
+double clicking here after the sound
+hour and refresh in Excel and I wait
+some seconds and as you can see the
+charts are
+updating accordingly to the formulas
+that are used to create the currencies
+and then this is something I will talk
+in a minute so now I have updated and
+also I have created a new point in time
+of my calculation which I know in the
+future if I want to check or make some
+further analysis even if the markets are
+off
+I can always refer to a specific moment
+of time therefore I can take the present
+point of my analysis and go back with
+the bars knowing that this moment is
+represented by this time on the charts
+okay so this will be also very easy
+because every time we do an update or
+every hour it depends on the frequency
+we can always save our charts and then
+create and save the file within with a
+new sequence named sequence number
+therefore we have a progression and
+maybe in a day we can have 10
+spreadsheets always with progression of
+the day and we can make our
+experiments calculations formulas ideas
+whatever we want okay okay so now this
+charts are representing
+are
+representing what is going on at this point
+in time on let's keep a new chart on a
+15 minute charts okay 15 minute charts
+from the beginning of the day to the end
+of the day in fact let's check and I can
+see that New Zealand dollar from let's
+say the bar adjust to some extra to be
+more clear at least for this purpose
+okay let's check this
+okay so it's more clear this way
+let's focus for a moment on this this
+chart
+so we may notice that from that 81 79 80
+81 bars ago from the present moment from
+this moment in time that is of course
+related in this case to my time zone but
+at the same time we can make the
+transpose for the server time on
+Metatrader but anyway when we operate in
+real time doesn't matter because we know
+that we have just made our data update
+and refresh so by simply going on in the
+charts and going back in time from the
+present candle going in this case 80 80
+81 which is here ok 3 o'clock 4 o'clock
+in the morning morning server time we
+had effectively that New Zealand dollar
+was strong and GBP was week and this is a
+movement of 130 140 pips okay
+and basically we could have any way
+noticed that at beginning of the day the
+GBP New Zealand dollar was already the
+pair to be traded somehow with it's like
+kind of filter in this case or a kind of
+confirmation of the analysis here all we
+can notice for example that at this
+point in time the graphical
+representation of the CAD this is the
+CAD okay and USD
+saying to me that in this area we had
+this jump up this big spike out of USD
+and CAD and also of course USD long
+against yen against AUD also against New
+Zealand dollar
+as well against EUR.. this is a
+great spike and same way but the
+opposite sense of CAD short against
+these currencies if we go and check for
+example usd/cad
+this moment in time on a 15-minute chart
+from this point it occurs at
+34 bar ... okay and here we have this moment represented
+this is 35 okay we have always to pay
+attention to the fact that it's not
+precise a hundred percent in the sense
+that he was starting from 1 backwards
+but in the charts the present bar is
+zero so we have to consider that if it's
+35  in this numeration
+enumeration in real is 34  but
+these are you know details that you have
+only to keep in mind is that a problem
+of course this is the graphical
+representation of what the markets did
+but of course it's also hard to read in
+the time before that this move would be
+expected this way because if we see in
+the very previous periods before the
+move USD and CAD were basically flat at
+the beginning of the day we were having
+more focus on the London session where
+of course GBP and EUR were moving more
+than other pairs... but here is not very clear this
+is what the markets did okay so why
+using math with Excel and in order to
+predict the analysis in my opinion math
+it's like as I said also in my previous
+webinars the 75% of the analysis if we
+are traders anyway if we have to be
+somehow connected to the market and buy
+some simple tools that are available for
+free on the internet we can really also
+know this news you know awareness on
+that on that which is a bit like trading
+from the Mendel's but it's not exactly
+trading on the news and referring just
+that we know that there are some major
+events that are occurring with the
+certain frequency where central banks
+big institutions make the prices of
+course they will flat everything so that
+will not be predictable
+so we have to assume that at that
+moments for example today at that time I
+was still having lunch with friends so
+was not even you know in that situation
+even sometimes it's it's very nice you
+know to catch those moves
+but in real when I have a very smooth
+movement of the pair towards a
+direction for some hours and then I
+realize some profit I can always decide
+,and that's what I do, to close my trades
+take the profit get out of the market
+and relax and do something else in the
+day but these are this thing somehow are
+predictable in the sense that we can
+expect them because we know that we have
+to keep in mind that there are also big
+hands that are moving because they have
+some important data that we will have
+with some delay and so they can make the
+move prior to any other operator
+monetary mass or things like that nor
+non-farm payrolls reports unemployment
+rates these are kind of fundamentals
+fundamental things and in my opinion has
+to be taken in consideration at least
+for knowing were not to operate in the
+market in also in conjunction with the
+fact that for me is still the most
+important fundamental event is just that
+we know if we are trading at the
+beginning of the Asian session at
+beginning of the London session at the
+beginning of the American session so we
+can really reduce with math and the
+fundamental analysis to these
+simple events and also to events that
+can increase volatility that can go in
+our favor or against us so we have to be
+really aware that in this case we have
+to understand that in the moment that
+could be great profitability great profit
+or also great loss so we can decide to
+stay out or unless we have other tools
+that are allowing us to be more
+accurate and have the trades in the
+proper direction so this is a very very
+important tool that I use
+every day for my analysis okay but along
+with this I have created another bunch
+of columns on which I can put my formulas
+and this formulas come out in this
+next chart ok? can see that?
+so for example in this formula I have
+the six periods moving average which is
+let's keep it this way you know
+B1 B 2 B 3 B 4 B 5 B 6
+there are Summed and then divided by 6 so as you
+may notice this is kind of average that
+is not applied to the currency pairs
+chart but it's applied to the currencies
+which can give me a more smooth
+information less fractal but somehow
+efficient anyway but as you may know
+that we can create many other formulas
+ok and I will show you an example
+practical example let's just briefly
+also see this panel that for today I
+will not cover as much as a simple
+example we can also have in this case
+another bunch of information that it's a
+real time information
+that can give us more ability to handle
+this information with the kind of allert
+okay and this of course is based on
+logical stuff for example in this case
+but you can follow any tutorial on excel
+or as regards this part because this is
+like so foundation for example this one
+says that if the currency value on B2
+is < 0 ...is negative
+and if the cell the same value of the
+six moving average is < 0
+simultaneously then I can SELL otherwise
+I will do nothing like you know this
+cases like this blanks here and if this
+is positive and this is positive I can
+BUY so in this case you see for example
+USD is positive both here and here in
+this moment and therefore I ever buy so
+this is more logical stuff that's a kind
+of what would I do the moment event
+occurs in this formula ok if it's major
+to 0 if it's positive or negative
+very simple because this way we are
+somehow trying to replicate and create a
+model of the market for that day
+so what if for this moment we can focus
+only on this because this part is a kind
+of extra that we can do in a second
+moment but anyway this part comes from
+this formula application so this is the
+important thing that we also have here
+so let's say for example that instead of
+doing this formula I would like to do
+another form so first of all what I
+suggest is simply that instead of going
+and you can add more formulas..we can have
+ten formulas we can have a hundred
+formulas instead of writing in the very
+same space which can be we can lose our
+previous work because we are over
+writing something this is not the case
+because we can simply create a copy of
+this update spreadsheet final
+spreadsheet so we can create a new copy
+let's leave it that way but we can also
+say for example that get more
+information and in this case I will do
+an Oscillator.. so I can I can simply
+here
+here we have we are having
+six periods simple moving average case
+of this one
+as this formula
+so that's now let's try to create a
+different formula or a new spreadsheet
+so even I can also make some comparisons
+you know by switching from a type to
+another
+and in this case instead of having this
+formula let's try to create you know you
+can find on the Internet a lot of
+formulas of the oscillator so it's up to
+you also to give some room and space to
+your creativity and or if you have your
+own ideas on that it's good to test and
+see the results and see how the results
+can help to give more accuracy to your
+analysis so let's do this and let's say
+for example to create a simple
+oscillator and let's create an average
+in this case I will
+write the formula and then we will so
+let's create an average for example of
+cells B2 to B6
+Average
+oh sorry
+- the average
+of the cells let's say B2 to B20
+and I will explain what I'm doing and I
+will show also how to create your own
+formulas this way okay so basically what
+I'm saying here I'm creating
+create the average of a short period
+of time and longer period of time and
+make the difference okay so when I'm
+doing this basically I am applying this
+formula to the present time in this case
+because it's just one cell present time
+of the euro currency which is this one
+okay of course I need and as you may
+notice this value has completely changed
+but I need to propagate this formula for
+all the currencies and for all the periods
+of my analysis periods that belong to this
+part that has to be immutable because
+this is the currencies this is this chart
+this is the behavior of the currencies
+which I started my analysis from ok?
+so in order to do this it's a very
+simple procedure which I really copy the
+formula and as you may notice this has
+changed for the present bar and then
+propagate for all the periods so I'm
+getting this weird but very useful I
+think information okay
+so now how do we work with the
+oscillator of course I can save my
+spreadsheet so in this case I can also
+have
+I can create another copy and I can have
+a copy of this at this moment in time
+okay so just in this case now markets
+are closed the end of the day has gone
+let's see if it's true yeah
+the time is still it's not moving
+anymore
+it's fixed so now the data are still
+okay so let's go
+back here so basically now we have a
+formula of the six moving average of
+these currencies and now we have an
+oscillator of these currencies so let's
+give a look at the same elements for
+example let's consider let me see in
+real time so I can isolate my values and
+I can focus for examples up to the very
+first moment of the day when GBP made
+this action and also let's check
+okay and I apply this case I have an
+oscillation of only two pairs but I can
+always recover all of them okay this is
+basic use of Excel we may notice that we
+have at the 5757 bars ago from the
+present moment we were having this event
+of falling of the GBP and rising of the
+New Zealand dollar then from bar
+approximately 49 we were having also
+this information of rising that were was
+going down from negative to positive and
+stay in the positive part of a chart of
+the GBP
+accordingly to a movement of the
+currency real movement of the currency
+in this way so 49 48 49 from 57 okay so
+let's check the charts again GDP is even
+dollar so let's check by analyzing the
+markets with oscillator in this case so
+so second 57 yeah 57 sorry 57
+57 here 56 57 this which is 45 49 so
+let's grab an indication
+okay then we were having at the movement
+of 45:49 because we can read this at
+this point okay
+47 48 49 so let's go back in time and
+check
+50
+...47
+so at 11:45 around that time
+in this case by observing with the
+oscillator who would have made 68 tips
+around 57 60 pips okay
+Sell we were short and we would have
+realized that by observing our
+oscillator we could have decided to
+enter short here and exit our trade the
+profit because of the movement that has
+been detected by the analysis of the
+oscillation of a New Zealand dollar and
+GBP so by having this
+re-strengthening of the GBP we could have
+decided at this point to stop the trade
+of course with profit
+please verify your charts as well
+okay
+this is profit let's go back and let's
+check in this case the other event
+that was quite
+unpredictable unless we would have known
+that in that moment there were the
+non-farm payrolls and the unemployment
+rates reports that were being released
+by the central bank's so let's check in
+this case USD and CAD okay in
+this case we would have had a little bit
+more of information because if we would
+have been trading on the usd/cad indeed
+let's also let me do this
+this chart as well so we can also
+compare by observing the cab that was
+above he was d but watching the
+oscillation of the cab that was negative
+and and the USD the wood was almost flat
+if we had a situation that of course
+we would have been unaware of this part
+of the chart so we would have had this
+kind of situation the same thing here
+let's say we were at 38 periods periods
+before 37 38 40 Periods
+okay so let's say 40 periods before
+okay
+so
+13:45
+okay
+okay so that was the moment in time for
+the analysis of the dollar cap if I had
+to trade the dollar vs cad by having
+negative downwards oscillation of the
+cad and flat oscillation of the dollar
+if I had to choose between going long or
+going short with usd/cad I would
+certainly said usd/cad .. long ... because
+Cad is falling and USD is rising
+always knowing that anyway I would have
+other
+more accuracy my readings because of
+that event of the non-farm payroll as
+the every first Friday of the month okay
+so if we check that moment in time
+let me grab the proper chart I would
+have been some how long in usd/cad at
+this moment in time
+and you do that with the proper color
+in this case
+okay so in this case at this moment in
+time even if I would have been down of
+some one two three pips who cares I
+would have said I'm going long again
+CAD is falling USD is flat so if Cad is
+going down so is weak and USD is
+not weak the result is that usd/cad it's
+going upwards okay
+one two three four five at the sixth bar so
+one hour and half after
+later again from this point in time we
+are having 40 periods which is that at
+this point in time we would have not had
+all the historical information that then
+we had and it could have been different
+but by having this and having some
+readings on the market information with
+the tools that are available on the
+internet for us regard these kind of
+fundamental analysis we would have  completed
+our readings as well as let's say for
+example that by recalling back gbp and
+by having a reading at this point in
+time but safe from forty-five periods
+ago of let's say GBP CAD
+let's be also here to CAD
+okay by being around this time we had
+this movement of the currencies which
+was real but also the oscillation that
+was stating something like that
+so let's go and check in this case a 45
+just round this sorry huh let me grab
+properly the things so let's say not 45
+but
+or discern ok so let's go back 47th
+forty
+five four to six
+around this area that we will check now
+let's put this because this is for the
+usd/cad so again gbp it's getting strong
+in the oscillation and a conformation
+with the movement of the currency CAD is
+it's getting weak accordingly to this
+movement as well if we go and check
+let's see at this point in time in this
+case let's grab
+we know GBP and CAD they're pretty
+volatile so we couldn't expect with a
+bit of more movement so maybe if we
+would have enter the markets around
+these this area we would expect the
+drawdown of 10 pips okay but we would
+have been long gbp long cad short
+so GBPCAD long and
+12 periods after so 12 is three hours
+after we had this spike up of 120 pips
+okay
+so
+in this case of course we have a
+completely different setup for as regards
+the logical part because it now this is
+not settled at all and even if it's not
+settled somehow I'm having the
+information of
+you know these values has to be updated
+in the sense that for example in this
+case I could put a kind of formula like
+that says to me let me check what I
+could do just to give you also an
+information on this part let's say that
+as I'm studying the oscillation
+basically I would like to understand if
+something is going up or down okay
+so basically what I'm saying if the
+period one is let's take it this way if
+the period one is higher than the
+previous period I'm going long and if
+the period one is lower than the period
+zero previous period then I'm going to
+short so in this case what we do we do
+if formula where I'm saying that if in
+this case I'm I'm doing this for the
+very first cell and then I propagate as
+usual the information so what I'm saying
+is that if this period is
+greater than the previous period those
+are always comparing these movements so
+if this period is greater than the
+period then
+BUY
+Buy statement
+else if if this information is opposite
+so  K 2 is less than K 3
+then SELL
+this is very simple I'm not writing here
+for example the condition where they are
+the same which they are equal but that
+can be implemented but this is just for
+demonstration purposes and then I hit
+enter so now if i propagate this logical
+section okay
+let's see if I did it right let's go
+because here the periods as well for
+because they are good for calculation
+let's see if there's something was like
+that okay you can see that GBP
+let me just do both of this because this
+way it's more efficient to see okay
+about 47 that see 47 can you see the
+numbers here
+sorry how I made it too much
+I hope you can see
+okay let's to do this I don't want to
+mess up too much with the numbers on the
+formula let's say that this is the 47
+okay
+is that clear 47 okay
+so at this point in time
+GBP
+which is this column
+is telling me BUY and of course I would
+have this information right here if I
+was forty seven bars ago now that time
+has passed now these values are
+progressively falling down but if I was
+at this point in time I would have had
+by my logic applied on my formula
+oscillator oscillator formula I would
+have also a confirmation here of a buy
+for as regards GBP and for as regards the
+CAD I would have had a SELL okay? so this
+way this section works okay also we can
+check this graphical representation of
+normalized twenty-eight currency pairs
+and find out
+example the GBP cat situation okay so if
+we exclude everything and we go only on
+a GBPCAD
+okay
+at 47 I would have had this kind of
+movement and as we notice is exactly
+the movement from right to left but if
+we check the charts is from left to
+right and it's the same thing because
+this is a graphical normalized coherent
+representation of all
+currency pairs in this case that we can
+use for comparison and Confirmation okay
+well at the end the possibilities are
+unlimited if you have some creativity or
+ideas that you would like to apply to
+your charts instead of using that boring
+and un-useful  indicators but you
+want to apply your math it's a bit
+complicated because you have to code
+everything and also you have to get the
+currency's value is not a currency pair
+the currency's value eight values only
+and then you focus on that and then
+you've built your currency pairs with
+reverse engineering applying with some
+formulas that gives you a kind of
+indicator of divergence or you can study
+you know the divergence with that can do
+a lot of stuff but basically I use an
+analysis that goes with oscillators to
+have a confirmation then I also take
+care of the beginning of the London
+session the American session the asian
+session and also i keep in mind that
+there are some days where there are some
+macro events that are occurring that can
+drastically move the prices therefore i
+can decide to operate or to stay out of
+the markets for certain hours this way I
+can control reduce my risk and live
+healthy and with not too much stress
+okay
+at the end of the journey of a week
+I have anyway a very positive
+performance and this is undoubted
+okay so it's about an hour that I'm
+talking I am very tired  now and I would
+like also to relax but I know that for
+the ones that participated to this
+project it's almost a duty for me to be
+useful and also to inspire other people
+that maybe are not using my exact tools
+but at the same time are involved into
+this stuff and would like to analyze the
+forex market by using Excel spreadsheets
+and math and give them some practical
+hints so I also gain some kind of ideas
+on formulas and how to apply them in
+order to be more accurate and precise in
+the analysis and what I have been
+showing in these situations is pretty
+clear and so I always invite you to
+double check with your charts to broker
+so there will be no misunderstanding
+okay all this said I truly thank you for
+watching and having the patient watching
+to this moment thank you for watching
+for subscribing for supporting the
+project for writing emails and also some
+compliments I really appreciate that
+it's part of my motivation and I don't
+know maybe in the next video what I will
+do would be also depending on what I
+receive via email as requests so I
+strongly take that in consideration
+for creating new videos but this is all for now and as
+usual I wish you good life good weekend
+in this case so have fun and ...
+good space and good time...
+Bye!
