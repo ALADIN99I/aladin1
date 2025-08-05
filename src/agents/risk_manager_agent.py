@@ -1,5 +1,6 @@
 from .base_agent import Agent
 from ..portfolio_manager import PortfolioManager
+from ..synthetic_portfolio_manager import SyntheticPortfolioManager
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
@@ -9,6 +10,7 @@ class RiskManagerAgent(Agent):
     def __init__(self, name, llm_client, mt5_connection, config):
         super().__init__(name, llm_client)
         self.portfolio_manager = PortfolioManager(mt5_connection)
+        self.synthetic_portfolio_manager = SyntheticPortfolioManager()
         # Read portfolio stop from config, same as UFOTradingEngine
         portfolio_stop_raw = config['trading'].get('portfolio_equity_stop', '-5.0')
         # Handle config values with inline comments like '-5.0 (-3.0)'
@@ -45,19 +47,31 @@ class RiskManagerAgent(Agent):
         self.last_risk_warnings = []
         self.portfolio_risk_trajectory = []
 
-    def execute(self, trade_decision):
+    def execute(self, trade_decision, open_positions):
         """
         Assesses the risk of a trade and the overall portfolio using the LLM.
         """
         equity_curve = self.portfolio_manager.calculate_equity_curve()
 
+        # Group trades into synthetic portfolios
+        if not open_positions.empty:
+            self.synthetic_portfolio_manager.group_trades(open_positions.to_dict('records'))
+            portfolio_performance = {}
+            for portfolio_name in self.synthetic_portfolio_manager.portfolios:
+                performance = self.synthetic_portfolio_manager.calculate_portfolio_performance(portfolio_name)
+                portfolio_performance[portfolio_name] = performance
+            portfolio_performance_str = "\nSynthetic Portfolio Performance:\n" + "\n".join([f"- {name}: ${pnl:+.2f}" for name, pnl in portfolio_performance.items()])
+        else:
+            portfolio_performance_str = ""
+
         prompt = (
             "You are a senior risk analyst. Assess the risk of the following trade plan. "
-            "Consider market volatility, the provided equity curve, and the overall risk "
+            "Consider market volatility, the provided equity curve, the synthetic portfolio performance, and the overall risk "
             "profile of the portfolio. Provide a risk score (1-5) and a detailed "
             "justification for your assessment.\n\n"
             f"Trade Plan:\n{trade_decision}\n\n"
-            f"Portfolio Equity Curve:\n{equity_curve.to_string() if equity_curve is not None else 'N/A'}"
+            f"Portfolio Equity Curve:\n{equity_curve.to_string() if equity_curve is not None else 'N/A'}\n"
+            f"{portfolio_performance_str}"
         )
 
         risk_assessment = self.llm_client.generate_response(prompt)
@@ -72,6 +86,16 @@ class RiskManagerAgent(Agent):
                 if drawdown < self.stop_loss_threshold:
                     portfolio_risk = "STOP_LOSS_BREACHED"
                     self.portfolio_manager.close_all_trades()
+
+        # Portfolio-level stop-loss for synthetic portfolios
+        if portfolio_performance:
+            for portfolio_name, pnl in portfolio_performance.items():
+                if pnl < -200: # a configurable threshold
+                    portfolio_risk = "SYNTHETIC_PORTFOLIO_STOP_LOSS"
+                    # In a real implementation, you would close the trades in this portfolio
+                    # For now, we just set the risk status
+                    print(f"WARNING: Synthetic portfolio '{portfolio_name}' has breached its stop loss with P&L: ${pnl:.2f}")
+
 
         # Enhanced with predictive risk modeling
         predictive_risk_assessment = self.perform_predictive_risk_analysis(equity_curve, trade_decision)

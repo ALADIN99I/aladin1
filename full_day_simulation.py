@@ -9,7 +9,10 @@ import os
 from pathlib import Path
 
 # Import necessary modules
-import MetaTrader5 as mt5
+try:
+    import MetaTrader5 as mt5
+except ImportError:
+    from src import mock_metatrader5 as mt5
 
 from src.data_collector import MT5DataCollector, EconomicCalendarCollector
 from src.ufo_calculator import UfoCalculator

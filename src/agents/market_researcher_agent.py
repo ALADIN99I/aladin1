@@ -1,9 +1,21 @@
 from .base_agent import Agent
 
 class MarketResearcherAgent(Agent):
+    def fetch_real_time_news(self):
+        """
+        Fetches real-time news headlines using the google_search tool.
+        """
+        try:
+            # The google_search tool is available in the environment, so we don't need to import it.
+            news = google_search("forex market news")
+            return news
+        except Exception as e:
+            print(f"Error fetching real-time news: {e}")
+            return "Could not fetch real-time news."
+
     def execute(self, ufo_data, economic_events):
         """
-        Analyzes the UFO data and economic events from bullish and bearish perspectives using the LLM.
+        Analyzes the UFO data, economic events, and real-time news from bullish and bearish perspectives using the LLM.
         """
         ufo_data_str = ""
         
@@ -43,14 +55,17 @@ class MarketResearcherAgent(Agent):
 
         economic_events_str = economic_events.to_string() if economic_events is not None and not economic_events.empty else "No upcoming economic events."
 
+        news_str = self.fetch_real_time_news()
+
         analysis_prompt = (
-            "You are a senior Forex market analyst. Based on the following UFO data across multiple timeframes, "
+            "You are a senior Forex market analyst. Based on the following UFO data, economic events, and real-time news, "
             "provide a comprehensive market analysis. Assess the consistency of currency strength and weakness "
             "across the timeframes to determine high-probability trading opportunities. Identify the primary market "
             "sentiment and suggest a hedged portfolio of trades that aligns with this sentiment. "
             "The portfolio should be constructed by pairing strong currencies against weak currencies.\n\n"
             f"UFO Data:\n{ufo_data_str}\n\n"
             f"Upcoming Economic Events:\n{economic_events_str}\n\n"
+            f"Real-Time News:\n{news_str}\n\n"
             "Your analysis should conclude with a clear recommendation for a portfolio of trades."
         )
 

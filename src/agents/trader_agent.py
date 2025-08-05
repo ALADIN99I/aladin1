@@ -1,21 +1,34 @@
 from .base_agent import Agent
 from ..portfolio_manager import PortfolioManager
+from ..synthetic_portfolio_manager import SyntheticPortfolioManager
 
 class TraderAgent(Agent):
     def __init__(self, name, llm_client, mt5_connection, symbols=None):
         super().__init__(name, llm_client)
         self.portfolio_manager = PortfolioManager(mt5_connection)
+        self.synthetic_portfolio_manager = SyntheticPortfolioManager()
         self.symbols = symbols if symbols else []
 
     def execute(self, research_consensus, open_positions, diversification_config=None):
         """
         Makes a trading decision based on the research consensus and open positions using the LLM.
-        Enhanced with dynamic diversification awareness based on config values.
+        Enhanced with dynamic diversification awareness and synthetic portfolio analysis.
         """
         account_info = self.portfolio_manager.get_account_info()
         balance = account_info.balance if account_info else 10000  # Default to 10k if info not available
 
         open_positions_str = open_positions.to_string() if not open_positions.empty else "No open positions."
+
+        # Group trades into synthetic portfolios
+        if not open_positions.empty:
+            self.synthetic_portfolio_manager.group_trades(open_positions.to_dict('records'))
+            portfolio_performance = {}
+            for portfolio_name in self.synthetic_portfolio_manager.portfolios:
+                performance = self.synthetic_portfolio_manager.calculate_portfolio_performance(portfolio_name)
+                portfolio_performance[portfolio_name] = performance
+            portfolio_performance_str = "\nSynthetic Portfolio Performance:\n" + "\n".join([f"- {name}: ${pnl:+.2f}" for name, pnl in portfolio_performance.items()])
+        else:
+            portfolio_performance_str = ""
 
         # Calculate diversification context
         position_count = len(open_positions) if not open_positions.empty else 0
@@ -62,13 +75,15 @@ class TraderAgent(Agent):
             "IMPORTANT: NO individual stop losses or take profits - UFO methodology uses PORTFOLIO-LEVEL risk management only!\n\n"
             f"Account Balance: ${balance} - Risk tolerance: 0.8-1.2% per trade, max 4.5% total portfolio risk.\n\n"
             f"Research Consensus:\n{research_consensus}\n\n"
-            f"Current Open Positions ({position_count} total):\n{open_positions_str}\n\n"
+            f"Current Open Positions ({position_count} total):\n{open_positions_str}\n"
+            f"{portfolio_performance_str}\n\n"
             "YOUR TASK:\n"
-            "1.  Analyze the `Current Open Positions`. \n"
-            "2.  If the number of open positions is at or near the `Maximum positions` limit, you should prioritize closing or adjusting existing positions over opening new ones.\n"
-            "3.  Only suggest `new_trade` actions if there is sufficient capacity in the portfolio.\n"
-            "4.  If you suggest new trades, ensure they are aligned with the `Research Consensus` and do not excessively increase the portfolio's risk.\n"
-            "5.  Provide a clear rationale for each action in your response."
+            "1.  Analyze the `Current Open Positions` and `Synthetic Portfolio Performance`. \n"
+            "2.  If a synthetic portfolio is underperforming, consider adding a hedging trade to mitigate risk. For example, if the 'GBP' portfolio is losing money, you might suggest selling a GBP pair.\n"
+            "3.  If the number of open positions is at or near the `Maximum positions` limit, you should prioritize closing or adjusting existing positions over opening new ones.\n"
+            "4.  Only suggest `new_trade` actions if there is sufficient capacity in the portfolio.\n"
+            "5.  If you suggest new trades, ensure they are aligned with the `Research Consensus` and do not excessively increase the portfolio's risk.\n"
+            "6.  Provide a clear rationale for each action in your response."
         )
 
         trade_decision_str = self.llm_client.generate_response(prompt)
