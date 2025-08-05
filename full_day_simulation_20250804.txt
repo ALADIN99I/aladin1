@@ -1,0 +1,949 @@
+UFO FOREX AGENT v3 - FULL DAY SIMULATION REPORT
+============================================================
+Date: Monday, August 04, 2025
+Generated: 2025-08-05 21:47:29
+Cycle Period: 30 minutes
+Total Cycles: 37
+
+[21:20:48] ✅ MT5 persistent connection established
+[21:20:48] ✅ Dynamic Reinforcement Engine enabled
+[21:20:48] Full-day simulation components initialized successfully
+[21:20:48] 🚀 Starting FULL DAY UFO Simulation for Monday, August 04, 2025
+[21:20:48] 📅 Trading Hours: 0:00 GMT to 18:00 GMT
+[21:20:48] ⏰ Cycle Frequency: Every 30 minutes
+[21:20:48] 📊 Continuous Monitoring: Position updates every 5 minutes
+[21:20:48] 📊 Total Cycles Planned: 36
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 1 - 00:00 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 00:00 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 2 - 00:30 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 00:30 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 3 - 01:00 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 01:00 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 4 - 01:30 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 01:30 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 5 - 02:00 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 02:00 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 6 - 02:30 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 02:30 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 7 - 03:00 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 03:00 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 8 - 03:30 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 03:30 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 9 - 04:00 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 04:00 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 10 - 04:30 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 04:30 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 11 - 05:00 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 05:00 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 12 - 05:30 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 05:30 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 13 - 06:00 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 06:00 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 14 - 06:30 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 06:30 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 15 - 07:00 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 07:00 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 16 - 07:30 GMT
+[21:20:48] ============================================================
+[21:20:48] ⏰ Outside trading hours at 07:30 GMT - Skipping cycle
+[21:20:48]
+============================================================
+[21:20:48] CYCLE 17 - 08:00 GMT
+[21:20:48] ============================================================
+[21:20:48] 📊 PHASE 1: Data Collection
+[21:20:59] ✅ Collected data for 27 symbols
+[21:20:59] 🛸 PHASE 2: UFO Analysis
+[21:20:59] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:20:59] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:20:59] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:20:59] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:20:59] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:20:59] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:20:59] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:20:59] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:20:59] 📅 PHASE 3: Economic Calendar
+[21:20:59] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:20:59]   📅 06:30 GMT: CHF CPI m/m
+[21:20:59] ✅ Retrieved 9 economic events for simulation date
+[21:20:59] 🔍 PHASE 4: Market Research
+[21:21:45] ✅ Market research completed
+[21:21:45] 💼 PHASE 5: UFO Portfolio Management
+[21:21:45] ✅ Portfolio assessed: 0 open positions
+[21:21:45] 🎯 PHASE 6: Trading Decisions
+[21:21:45] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:21:45] ⚖️ PHASE 7: Risk Assessment
+[21:21:45] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:21:45] 💰 PHASE 8: Fund Manager Authorization
+[21:21:58] ✅ Fund Manager decision: REJECTED
+[21:21:58] ⚡ PHASE 9: Trade Execution
+[21:21:58] ❌ Trades not approved - No execution
+[21:21:58] 📋 PHASE 10: Cycle Summary
+[21:21:58] 📊 Cycle 17 Summary (08:00 GMT):
+[21:21:58]    Trades Executed: 0
+[21:21:58]    Total Trades Today: 0
+[21:21:58]    Open Positions: 0/18
+[21:21:58]    Closed Trades: 0
+[21:21:58]    Realized P&L: $+0.00
+[21:21:58]    Unrealized P&L: $+0.00
+[21:21:58]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:21:58]
+============================================================
+[21:21:58] CYCLE 18 - 08:30 GMT
+[21:21:58] ============================================================
+[21:21:58] 📊 PHASE 1: Data Collection
+[21:22:08] ✅ Collected data for 27 symbols
+[21:22:08] 🛸 PHASE 2: UFO Analysis
+[21:22:08] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:22:08] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:22:08] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:22:08] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:22:08] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:22:08] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:22:08] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:22:08] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:22:08] 📅 PHASE 3: Economic Calendar
+[21:22:08] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:22:08]   📅 06:30 GMT: CHF CPI m/m
+[21:22:08] ✅ Retrieved 9 economic events for simulation date
+[21:22:08] 🔍 PHASE 4: Market Research
+[21:22:34] ✅ Market research completed
+[21:22:34] 💼 PHASE 5: UFO Portfolio Management
+[21:22:34] ✅ Portfolio assessed: 0 open positions
+[21:22:34] 🎯 PHASE 6: Trading Decisions
+[21:22:34] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:22:34] ⚖️ PHASE 7: Risk Assessment
+[21:22:34] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:22:34] 💰 PHASE 8: Fund Manager Authorization
+[21:22:47] ✅ Fund Manager decision: REJECTED
+[21:22:47] ⚡ PHASE 9: Trade Execution
+[21:22:47] ❌ Trades not approved - No execution
+[21:22:47] 📋 PHASE 10: Cycle Summary
+[21:22:47] 📊 Cycle 18 Summary (08:30 GMT):
+[21:22:47]    Trades Executed: 0
+[21:22:47]    Total Trades Today: 0
+[21:22:47]    Open Positions: 0/18
+[21:22:47]    Closed Trades: 0
+[21:22:47]    Realized P&L: $+0.00
+[21:22:47]    Unrealized P&L: $+0.00
+[21:22:47]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:22:47]
+============================================================
+[21:22:47] CYCLE 19 - 09:00 GMT
+[21:22:47] ============================================================
+[21:22:47] 📊 PHASE 1: Data Collection
+[21:22:57] ✅ Collected data for 27 symbols
+[21:22:57] 🛸 PHASE 2: UFO Analysis
+[21:22:58] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:22:58] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:22:58] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:22:58] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:22:58] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:22:58] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:22:58] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:22:58] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:22:58] 📅 PHASE 3: Economic Calendar
+[21:22:58] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:22:58]   📅 06:30 GMT: CHF CPI m/m
+[21:22:58] ✅ Retrieved 9 economic events for simulation date
+[21:22:58] 🔍 PHASE 4: Market Research
+[21:23:23] ✅ Market research completed
+[21:23:23] 💼 PHASE 5: UFO Portfolio Management
+[21:23:23] ✅ Portfolio assessed: 0 open positions
+[21:23:23] 🎯 PHASE 6: Trading Decisions
+[21:23:23] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:23:23] ⚖️ PHASE 7: Risk Assessment
+[21:23:23] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:23:23] 💰 PHASE 8: Fund Manager Authorization
+[21:23:36] ✅ Fund Manager decision: REJECTED
+[21:23:36] ⚡ PHASE 9: Trade Execution
+[21:23:36] ❌ Trades not approved - No execution
+[21:23:36] 📋 PHASE 10: Cycle Summary
+[21:23:36] 📊 Cycle 19 Summary (09:00 GMT):
+[21:23:36]    Trades Executed: 0
+[21:23:36]    Total Trades Today: 0
+[21:23:36]    Open Positions: 0/18
+[21:23:36]    Closed Trades: 0
+[21:23:36]    Realized P&L: $+0.00
+[21:23:36]    Unrealized P&L: $+0.00
+[21:23:36]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:23:36]
+============================================================
+[21:23:36] CYCLE 20 - 09:30 GMT
+[21:23:36] ============================================================
+[21:23:36] 📊 PHASE 1: Data Collection
+[21:23:46] ✅ Collected data for 27 symbols
+[21:23:46] 🛸 PHASE 2: UFO Analysis
+[21:23:46] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:23:46] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:23:46] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:23:46] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:23:46] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:23:46] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:23:46] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:23:46] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:23:46] 📅 PHASE 3: Economic Calendar
+[21:23:46] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:23:46]   📅 06:30 GMT: CHF CPI m/m
+[21:23:46] ✅ Retrieved 9 economic events for simulation date
+[21:23:46] 🔍 PHASE 4: Market Research
+[21:24:11] ✅ Market research completed
+[21:24:11] 💼 PHASE 5: UFO Portfolio Management
+[21:24:11] ✅ Portfolio assessed: 0 open positions
+[21:24:11] 🎯 PHASE 6: Trading Decisions
+[21:24:11] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:24:11] ⚖️ PHASE 7: Risk Assessment
+[21:24:11] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:24:11] 💰 PHASE 8: Fund Manager Authorization
+[21:24:23] ✅ Fund Manager decision: REJECTED
+[21:24:23] ⚡ PHASE 9: Trade Execution
+[21:24:23] ❌ Trades not approved - No execution
+[21:24:23] 📋 PHASE 10: Cycle Summary
+[21:24:23] 📊 Cycle 20 Summary (09:30 GMT):
+[21:24:23]    Trades Executed: 0
+[21:24:23]    Total Trades Today: 0
+[21:24:23]    Open Positions: 0/18
+[21:24:23]    Closed Trades: 0
+[21:24:23]    Realized P&L: $+0.00
+[21:24:23]    Unrealized P&L: $+0.00
+[21:24:23]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:24:23]
+============================================================
+[21:24:23] CYCLE 21 - 10:00 GMT
+[21:24:23] ============================================================
+[21:24:23] 📊 PHASE 1: Data Collection
+[21:24:34] ✅ Collected data for 27 symbols
+[21:24:34] 🛸 PHASE 2: UFO Analysis
+[21:24:34] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:24:34] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:24:34] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:24:34] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:24:34] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:24:34] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:24:34] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:24:34] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:24:34] 📅 PHASE 3: Economic Calendar
+[21:24:34] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:24:34]   📅 06:30 GMT: CHF CPI m/m
+[21:24:34] ✅ Retrieved 9 economic events for simulation date
+[21:24:34] 🔍 PHASE 4: Market Research
+[21:25:00] ✅ Market research completed
+[21:25:00] 💼 PHASE 5: UFO Portfolio Management
+[21:25:00] ✅ Portfolio assessed: 0 open positions
+[21:25:00] 🎯 PHASE 6: Trading Decisions
+[21:25:00] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:25:00] ⚖️ PHASE 7: Risk Assessment
+[21:25:00] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:25:00] 💰 PHASE 8: Fund Manager Authorization
+[21:25:13] ✅ Fund Manager decision: REJECTED
+[21:25:13] ⚡ PHASE 9: Trade Execution
+[21:25:13] ❌ Trades not approved - No execution
+[21:25:13] 📋 PHASE 10: Cycle Summary
+[21:25:13] 📊 Cycle 21 Summary (10:00 GMT):
+[21:25:13]    Trades Executed: 0
+[21:25:13]    Total Trades Today: 0
+[21:25:13]    Open Positions: 0/18
+[21:25:13]    Closed Trades: 0
+[21:25:13]    Realized P&L: $+0.00
+[21:25:13]    Unrealized P&L: $+0.00
+[21:25:13]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:25:13]
+============================================================
+[21:25:13] CYCLE 22 - 10:30 GMT
+[21:25:13] ============================================================
+[21:25:13] 📊 PHASE 1: Data Collection
+[21:25:23] ✅ Collected data for 27 symbols
+[21:25:23] 🛸 PHASE 2: UFO Analysis
+[21:25:23] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:25:23] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:25:23] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:25:23] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:25:23] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:25:23] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:25:23] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:25:23] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:25:23] 📅 PHASE 3: Economic Calendar
+[21:25:23] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:25:23]   📅 06:30 GMT: CHF CPI m/m
+[21:25:23] ✅ Retrieved 9 economic events for simulation date
+[21:25:23] 🔍 PHASE 4: Market Research
+[21:25:49] ✅ Market research completed
+[21:25:49] 💼 PHASE 5: UFO Portfolio Management
+[21:25:49] ✅ Portfolio assessed: 0 open positions
+[21:25:49] 🎯 PHASE 6: Trading Decisions
+[21:25:49] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:25:49] ⚖️ PHASE 7: Risk Assessment
+[21:25:49] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:25:49] 💰 PHASE 8: Fund Manager Authorization
+[21:26:01] ✅ Fund Manager decision: REJECTED
+[21:26:01] ⚡ PHASE 9: Trade Execution
+[21:26:01] ❌ Trades not approved - No execution
+[21:26:01] 📋 PHASE 10: Cycle Summary
+[21:26:01] 📊 Cycle 22 Summary (10:30 GMT):
+[21:26:01]    Trades Executed: 0
+[21:26:01]    Total Trades Today: 0
+[21:26:01]    Open Positions: 0/18
+[21:26:01]    Closed Trades: 0
+[21:26:01]    Realized P&L: $+0.00
+[21:26:01]    Unrealized P&L: $+0.00
+[21:26:01]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:26:01]
+============================================================
+[21:26:01] CYCLE 23 - 11:00 GMT
+[21:26:01] ============================================================
+[21:26:01] 📊 PHASE 1: Data Collection
+[21:26:11] ✅ Collected data for 27 symbols
+[21:26:11] 🛸 PHASE 2: UFO Analysis
+[21:26:12] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:26:12] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:26:12] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:26:12] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:26:12] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:26:12] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:26:12] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:26:12] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:26:12] 📅 PHASE 3: Economic Calendar
+[21:26:12] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:26:12]   📅 06:30 GMT: CHF CPI m/m
+[21:26:12] ✅ Retrieved 9 economic events for simulation date
+[21:26:12] 🔍 PHASE 4: Market Research
+[21:26:37] ✅ Market research completed
+[21:26:37] 💼 PHASE 5: UFO Portfolio Management
+[21:26:37] ✅ Portfolio assessed: 0 open positions
+[21:26:37] 🎯 PHASE 6: Trading Decisions
+[21:26:37] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:26:37] ⚖️ PHASE 7: Risk Assessment
+[21:26:37] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:26:37] 💰 PHASE 8: Fund Manager Authorization
+[21:26:50] ✅ Fund Manager decision: REJECTED
+[21:26:50] ⚡ PHASE 9: Trade Execution
+[21:26:50] ❌ Trades not approved - No execution
+[21:26:50] 📋 PHASE 10: Cycle Summary
+[21:26:50] 📊 Cycle 23 Summary (11:00 GMT):
+[21:26:50]    Trades Executed: 0
+[21:26:50]    Total Trades Today: 0
+[21:26:50]    Open Positions: 0/18
+[21:26:50]    Closed Trades: 0
+[21:26:50]    Realized P&L: $+0.00
+[21:26:50]    Unrealized P&L: $+0.00
+[21:26:50]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:26:50]
+============================================================
+[21:26:50] CYCLE 24 - 11:30 GMT
+[21:26:50] ============================================================
+[21:26:50] 📊 PHASE 1: Data Collection
+[21:27:00] ✅ Collected data for 27 symbols
+[21:27:00] 🛸 PHASE 2: UFO Analysis
+[21:27:00] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:27:00] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:27:00] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:27:00] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:27:00] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:27:00] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:27:00] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:27:00] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:27:00] 📅 PHASE 3: Economic Calendar
+[21:27:00] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:27:00]   📅 06:30 GMT: CHF CPI m/m
+[21:27:00] ✅ Retrieved 9 economic events for simulation date
+[21:27:00] 🔍 PHASE 4: Market Research
+[21:27:25] ✅ Market research completed
+[21:27:25] 💼 PHASE 5: UFO Portfolio Management
+[21:27:25] ✅ Portfolio assessed: 0 open positions
+[21:27:25] 🎯 PHASE 6: Trading Decisions
+[21:27:25] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:27:25] ⚖️ PHASE 7: Risk Assessment
+[21:27:25] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:27:25] 💰 PHASE 8: Fund Manager Authorization
+[21:27:37] ✅ Fund Manager decision: REJECTED
+[21:27:37] ⚡ PHASE 9: Trade Execution
+[21:27:37] ❌ Trades not approved - No execution
+[21:27:37] 📋 PHASE 10: Cycle Summary
+[21:27:37] 📊 Cycle 24 Summary (11:30 GMT):
+[21:27:37]    Trades Executed: 0
+[21:27:37]    Total Trades Today: 0
+[21:27:37]    Open Positions: 0/18
+[21:27:37]    Closed Trades: 0
+[21:27:37]    Realized P&L: $+0.00
+[21:27:37]    Unrealized P&L: $+0.00
+[21:27:37]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:27:37]
+============================================================
+[21:27:37] CYCLE 25 - 12:00 GMT
+[21:27:37] ============================================================
+[21:27:37] 📊 PHASE 1: Data Collection
+[21:27:48] ✅ Collected data for 27 symbols
+[21:27:48] 🛸 PHASE 2: UFO Analysis
+[21:27:48] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:27:48] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:27:48] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:27:48] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:27:48] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:27:48] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:27:48] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:27:48] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:27:48] 📅 PHASE 3: Economic Calendar
+[21:27:48] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:27:48]   📅 06:30 GMT: CHF CPI m/m
+[21:27:48] ✅ Retrieved 9 economic events for simulation date
+[21:27:48] 🔍 PHASE 4: Market Research
+[21:28:13] ✅ Market research completed
+[21:28:13] 💼 PHASE 5: UFO Portfolio Management
+[21:28:13] ✅ Portfolio assessed: 0 open positions
+[21:28:13] 🎯 PHASE 6: Trading Decisions
+[21:28:13] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:28:13] ⚖️ PHASE 7: Risk Assessment
+[21:28:13] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:28:13] 💰 PHASE 8: Fund Manager Authorization
+[21:28:26] ✅ Fund Manager decision: REJECTED
+[21:28:26] ⚡ PHASE 9: Trade Execution
+[21:28:26] ❌ Trades not approved - No execution
+[21:28:26] 📋 PHASE 10: Cycle Summary
+[21:28:26] 📊 Cycle 25 Summary (12:00 GMT):
+[21:28:26]    Trades Executed: 0
+[21:28:26]    Total Trades Today: 0
+[21:28:26]    Open Positions: 0/18
+[21:28:26]    Closed Trades: 0
+[21:28:26]    Realized P&L: $+0.00
+[21:28:26]    Unrealized P&L: $+0.00
+[21:28:26]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:28:26]
+============================================================
+[21:28:26] CYCLE 26 - 12:30 GMT
+[21:28:26] ============================================================
+[21:28:26] 📊 PHASE 1: Data Collection
+[21:28:36] ✅ Collected data for 27 symbols
+[21:28:36] 🛸 PHASE 2: UFO Analysis
+[21:28:37] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:28:37] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:28:37] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:28:37] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:28:37] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:28:37] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:28:37] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:28:37] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:28:37] 📅 PHASE 3: Economic Calendar
+[21:28:37] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:28:37]   📅 06:30 GMT: CHF CPI m/m
+[21:28:37] ✅ Retrieved 9 economic events for simulation date
+[21:28:37] 🔍 PHASE 4: Market Research
+[21:29:02] ✅ Market research completed
+[21:29:02] 💼 PHASE 5: UFO Portfolio Management
+[21:29:02] ✅ Portfolio assessed: 0 open positions
+[21:29:02] 🎯 PHASE 6: Trading Decisions
+[21:29:02] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:29:02] ⚖️ PHASE 7: Risk Assessment
+[21:29:02] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:29:02] 💰 PHASE 8: Fund Manager Authorization
+[21:29:15] ✅ Fund Manager decision: REJECTED
+[21:29:15] ⚡ PHASE 9: Trade Execution
+[21:29:15] ❌ Trades not approved - No execution
+[21:29:15] 📋 PHASE 10: Cycle Summary
+[21:29:15] 📊 Cycle 26 Summary (12:30 GMT):
+[21:29:15]    Trades Executed: 0
+[21:29:15]    Total Trades Today: 0
+[21:29:15]    Open Positions: 0/18
+[21:29:15]    Closed Trades: 0
+[21:29:15]    Realized P&L: $+0.00
+[21:29:15]    Unrealized P&L: $+0.00
+[21:29:15]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:29:15]
+============================================================
+[21:29:15] CYCLE 27 - 13:00 GMT
+[21:29:15] ============================================================
+[21:29:15] 📊 PHASE 1: Data Collection
+[21:29:25] ✅ Collected data for 27 symbols
+[21:29:25] 🛸 PHASE 2: UFO Analysis
+[21:29:26] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:29:26] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:29:26] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:29:26] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:29:26] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:29:26] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:29:26] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:29:26] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:29:26] 📅 PHASE 3: Economic Calendar
+[21:29:26] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:29:26]   📅 06:30 GMT: CHF CPI m/m
+[21:29:26] ✅ Retrieved 9 economic events for simulation date
+[21:29:26] 🔍 PHASE 4: Market Research
+[21:29:51] ✅ Market research completed
+[21:29:51] 💼 PHASE 5: UFO Portfolio Management
+[21:29:51] ✅ Portfolio assessed: 0 open positions
+[21:29:51] 🎯 PHASE 6: Trading Decisions
+[21:29:51] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:29:51] ⚖️ PHASE 7: Risk Assessment
+[21:29:51] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:29:51] 💰 PHASE 8: Fund Manager Authorization
+[21:30:03] ✅ Fund Manager decision: REJECTED
+[21:30:03] ⚡ PHASE 9: Trade Execution
+[21:30:03] ❌ Trades not approved - No execution
+[21:30:03] 📋 PHASE 10: Cycle Summary
+[21:30:03] 📊 Cycle 27 Summary (13:00 GMT):
+[21:30:03]    Trades Executed: 0
+[21:30:03]    Total Trades Today: 0
+[21:30:03]    Open Positions: 0/18
+[21:30:03]    Closed Trades: 0
+[21:30:03]    Realized P&L: $+0.00
+[21:30:03]    Unrealized P&L: $+0.00
+[21:30:03]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:30:03]
+============================================================
+[21:30:03] CYCLE 28 - 13:30 GMT
+[21:30:03] ============================================================
+[21:30:03] 📊 PHASE 1: Data Collection
+[21:30:14] ✅ Collected data for 27 symbols
+[21:30:14] 🛸 PHASE 2: UFO Analysis
+[21:30:14] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:30:14] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:30:14] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:30:14] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:30:14] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:30:14] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:30:14] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:30:14] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:30:14] 📅 PHASE 3: Economic Calendar
+[21:30:14] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:30:14]   📅 06:30 GMT: CHF CPI m/m
+[21:30:14] ✅ Retrieved 9 economic events for simulation date
+[21:30:14] 🔍 PHASE 4: Market Research
+[21:30:39] ✅ Market research completed
+[21:30:39] 💼 PHASE 5: UFO Portfolio Management
+[21:30:39] ✅ Portfolio assessed: 0 open positions
+[21:30:39] 🎯 PHASE 6: Trading Decisions
+[21:30:39] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:30:39] ⚖️ PHASE 7: Risk Assessment
+[21:30:39] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:30:39] 💰 PHASE 8: Fund Manager Authorization
+[21:30:52] ✅ Fund Manager decision: REJECTED
+[21:30:52] ⚡ PHASE 9: Trade Execution
+[21:30:52] ❌ Trades not approved - No execution
+[21:30:52] 📋 PHASE 10: Cycle Summary
+[21:30:52] 📊 Cycle 28 Summary (13:30 GMT):
+[21:30:52]    Trades Executed: 0
+[21:30:52]    Total Trades Today: 0
+[21:30:52]    Open Positions: 0/18
+[21:30:52]    Closed Trades: 0
+[21:30:52]    Realized P&L: $+0.00
+[21:30:52]    Unrealized P&L: $+0.00
+[21:30:52]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:30:52]
+============================================================
+[21:30:52] CYCLE 29 - 14:00 GMT
+[21:30:52] ============================================================
+[21:30:52] 📊 PHASE 1: Data Collection
+[21:31:03] ✅ Collected data for 27 symbols
+[21:31:03] 🛸 PHASE 2: UFO Analysis
+[21:31:03] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:31:03] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:31:03] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:31:03] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:31:03] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:31:03] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:31:03] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:31:03] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:31:03] 📅 PHASE 3: Economic Calendar
+[21:31:03] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:31:03]   📅 06:30 GMT: CHF CPI m/m
+[21:31:03] ✅ Retrieved 9 economic events for simulation date
+[21:31:03] 🔍 PHASE 4: Market Research
+[21:31:29] ✅ Market research completed
+[21:31:29] 💼 PHASE 5: UFO Portfolio Management
+[21:31:29] ✅ Portfolio assessed: 0 open positions
+[21:31:29] 🎯 PHASE 6: Trading Decisions
+[21:31:29] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:31:29] ⚖️ PHASE 7: Risk Assessment
+[21:31:29] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:31:29] 💰 PHASE 8: Fund Manager Authorization
+[21:31:41] ✅ Fund Manager decision: REJECTED
+[21:31:41] ⚡ PHASE 9: Trade Execution
+[21:31:41] ❌ Trades not approved - No execution
+[21:31:41] 📋 PHASE 10: Cycle Summary
+[21:31:41] 📊 Cycle 29 Summary (14:00 GMT):
+[21:31:41]    Trades Executed: 0
+[21:31:41]    Total Trades Today: 0
+[21:31:41]    Open Positions: 0/18
+[21:31:41]    Closed Trades: 0
+[21:31:41]    Realized P&L: $+0.00
+[21:31:41]    Unrealized P&L: $+0.00
+[21:31:41]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:31:41]
+============================================================
+[21:31:41] CYCLE 30 - 14:30 GMT
+[21:31:41] ============================================================
+[21:31:41] 📊 PHASE 1: Data Collection
+[21:31:52] ✅ Collected data for 27 symbols
+[21:31:52] 🛸 PHASE 2: UFO Analysis
+[21:31:52] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:31:52] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:31:52] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:31:52] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:31:52] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:31:52] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:31:52] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:31:52] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:31:52] 📅 PHASE 3: Economic Calendar
+[21:31:52] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:31:52]   📅 06:30 GMT: CHF CPI m/m
+[21:31:52] ✅ Retrieved 9 economic events for simulation date
+[21:31:52] 🔍 PHASE 4: Market Research
+[21:32:17] ✅ Market research completed
+[21:32:17] 💼 PHASE 5: UFO Portfolio Management
+[21:32:18] ✅ Portfolio assessed: 0 open positions
+[21:32:18] 🎯 PHASE 6: Trading Decisions
+[21:32:18] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:32:18] ⚖️ PHASE 7: Risk Assessment
+[21:32:18] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:32:18] 💰 PHASE 8: Fund Manager Authorization
+[21:32:30] ✅ Fund Manager decision: REJECTED
+[21:32:30] ⚡ PHASE 9: Trade Execution
+[21:32:30] ❌ Trades not approved - No execution
+[21:32:30] 📋 PHASE 10: Cycle Summary
+[21:32:30] 📊 Cycle 30 Summary (14:30 GMT):
+[21:32:30]    Trades Executed: 0
+[21:32:30]    Total Trades Today: 0
+[21:32:30]    Open Positions: 0/18
+[21:32:30]    Closed Trades: 0
+[21:32:30]    Realized P&L: $+0.00
+[21:32:30]    Unrealized P&L: $+0.00
+[21:32:30]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:32:30]
+============================================================
+[21:32:30] CYCLE 31 - 15:00 GMT
+[21:32:30] ============================================================
+[21:32:30] 📊 PHASE 1: Data Collection
+[21:32:40] ✅ Collected data for 27 symbols
+[21:32:40] 🛸 PHASE 2: UFO Analysis
+[21:32:40] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:32:40] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:32:40] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:32:40] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:32:40] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:32:40] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:32:40] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:32:40] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:32:40] 📅 PHASE 3: Economic Calendar
+[21:32:40] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:32:40]   📅 06:30 GMT: CHF CPI m/m
+[21:32:40] ✅ Retrieved 9 economic events for simulation date
+[21:32:40] 🔍 PHASE 4: Market Research
+[21:33:06] ✅ Market research completed
+[21:33:06] 💼 PHASE 5: UFO Portfolio Management
+[21:33:06] ✅ Portfolio assessed: 0 open positions
+[21:33:06] 🎯 PHASE 6: Trading Decisions
+[21:33:06] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:33:06] ⚖️ PHASE 7: Risk Assessment
+[21:33:06] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:33:06] 💰 PHASE 8: Fund Manager Authorization
+[21:33:18] ✅ Fund Manager decision: REJECTED
+[21:33:18] ⚡ PHASE 9: Trade Execution
+[21:33:18] ❌ Trades not approved - No execution
+[21:33:18] 📋 PHASE 10: Cycle Summary
+[21:33:18] 📊 Cycle 31 Summary (15:00 GMT):
+[21:33:18]    Trades Executed: 0
+[21:33:18]    Total Trades Today: 0
+[21:33:18]    Open Positions: 0/18
+[21:33:18]    Closed Trades: 0
+[21:33:18]    Realized P&L: $+0.00
+[21:33:18]    Unrealized P&L: $+0.00
+[21:33:18]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:33:18]
+============================================================
+[21:33:18] CYCLE 32 - 15:30 GMT
+[21:33:18] ============================================================
+[21:33:18] 📊 PHASE 1: Data Collection
+[21:33:28] ✅ Collected data for 27 symbols
+[21:33:28] 🛸 PHASE 2: UFO Analysis
+[21:33:29] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:33:29] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:33:29] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:33:29] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:33:29] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:33:29] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:33:29] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:33:29] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:33:29] 📅 PHASE 3: Economic Calendar
+[21:33:29] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:33:29]   📅 06:30 GMT: CHF CPI m/m
+[21:33:29] ✅ Retrieved 9 economic events for simulation date
+[21:33:29] 🔍 PHASE 4: Market Research
+[21:33:54] ✅ Market research completed
+[21:33:54] 💼 PHASE 5: UFO Portfolio Management
+[21:33:54] ✅ Portfolio assessed: 0 open positions
+[21:33:54] 🎯 PHASE 6: Trading Decisions
+[21:33:54] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:33:54] ⚖️ PHASE 7: Risk Assessment
+[21:33:54] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:33:54] 💰 PHASE 8: Fund Manager Authorization
+[21:34:06] ✅ Fund Manager decision: REJECTED
+[21:34:06] ⚡ PHASE 9: Trade Execution
+[21:34:06] ❌ Trades not approved - No execution
+[21:34:06] 📋 PHASE 10: Cycle Summary
+[21:34:06] 📊 Cycle 32 Summary (15:30 GMT):
+[21:34:06]    Trades Executed: 0
+[21:34:06]    Total Trades Today: 0
+[21:34:06]    Open Positions: 0/18
+[21:34:06]    Closed Trades: 0
+[21:34:06]    Realized P&L: $+0.00
+[21:34:06]    Unrealized P&L: $+0.00
+[21:34:06]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:34:06]
+============================================================
+[21:34:06] CYCLE 33 - 16:00 GMT
+[21:34:06] ============================================================
+[21:34:06] 📊 PHASE 1: Data Collection
+[21:34:16] ✅ Collected data for 27 symbols
+[21:34:16] 🛸 PHASE 2: UFO Analysis
+[21:34:16] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:34:16] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:34:16] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:34:16] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:34:16] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:34:16] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:34:16] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:34:16] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:34:16] 📅 PHASE 3: Economic Calendar
+[21:34:16] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:34:16]   📅 06:30 GMT: CHF CPI m/m
+[21:34:16] ✅ Retrieved 9 economic events for simulation date
+[21:34:16] 🔍 PHASE 4: Market Research
+[21:34:42] ✅ Market research completed
+[21:34:42] 💼 PHASE 5: UFO Portfolio Management
+[21:34:42] ✅ Portfolio assessed: 0 open positions
+[21:34:42] 🎯 PHASE 6: Trading Decisions
+[21:34:42] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:34:42] ⚖️ PHASE 7: Risk Assessment
+[21:34:42] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:34:42] 💰 PHASE 8: Fund Manager Authorization
+[21:34:55] ✅ Fund Manager decision: REJECTED
+[21:34:55] ⚡ PHASE 9: Trade Execution
+[21:34:55] ❌ Trades not approved - No execution
+[21:34:55] 📋 PHASE 10: Cycle Summary
+[21:34:55] 📊 Cycle 33 Summary (16:00 GMT):
+[21:34:55]    Trades Executed: 0
+[21:34:55]    Total Trades Today: 0
+[21:34:55]    Open Positions: 0/18
+[21:34:55]    Closed Trades: 0
+[21:34:55]    Realized P&L: $+0.00
+[21:34:55]    Unrealized P&L: $+0.00
+[21:34:55]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:34:55]
+============================================================
+[21:34:55] CYCLE 34 - 16:30 GMT
+[21:34:55] ============================================================
+[21:34:55] 📊 PHASE 1: Data Collection
+[21:35:05] ✅ Collected data for 27 symbols
+[21:35:05] 🛸 PHASE 2: UFO Analysis
+[21:35:05] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:35:05] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:35:05] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:35:05] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:35:05] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:35:05] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:35:05] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:35:05] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:35:05] 📅 PHASE 3: Economic Calendar
+[21:35:05] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:35:05]   📅 06:30 GMT: CHF CPI m/m
+[21:35:05] ✅ Retrieved 9 economic events for simulation date
+[21:35:05] 🔍 PHASE 4: Market Research
+[21:35:30] ✅ Market research completed
+[21:35:30] 💼 PHASE 5: UFO Portfolio Management
+[21:35:30] ✅ Portfolio assessed: 0 open positions
+[21:35:30] 🎯 PHASE 6: Trading Decisions
+[21:35:30] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:35:30] ⚖️ PHASE 7: Risk Assessment
+[21:35:30] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:35:30] 💰 PHASE 8: Fund Manager Authorization
+[21:35:43] ✅ Fund Manager decision: REJECTED
+[21:35:43] ⚡ PHASE 9: Trade Execution
+[21:35:43] ❌ Trades not approved - No execution
+[21:35:43] 📋 PHASE 10: Cycle Summary
+[21:35:43] 📊 Cycle 34 Summary (16:30 GMT):
+[21:35:43]    Trades Executed: 0
+[21:35:43]    Total Trades Today: 0
+[21:35:43]    Open Positions: 0/18
+[21:35:43]    Closed Trades: 0
+[21:35:43]    Realized P&L: $+0.00
+[21:35:43]    Unrealized P&L: $+0.00
+[21:35:43]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:35:43]
+============================================================
+[21:35:43] CYCLE 35 - 17:00 GMT
+[21:35:43] ============================================================
+[21:35:43] 📊 PHASE 1: Data Collection
+[21:35:53] ✅ Collected data for 27 symbols
+[21:35:53] 🛸 PHASE 2: UFO Analysis
+[21:35:54] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:35:54] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:35:54] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:35:54] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:35:54] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:35:54] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:35:54] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:35:54] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:35:54] 📅 PHASE 3: Economic Calendar
+[21:35:54] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:35:54]   📅 06:30 GMT: CHF CPI m/m
+[21:35:54] ✅ Retrieved 9 economic events for simulation date
+[21:35:54] 🔍 PHASE 4: Market Research
+[21:36:24] ✅ Market research completed
+[21:36:24] 💼 PHASE 5: UFO Portfolio Management
+[21:36:24] ✅ Portfolio assessed: 0 open positions
+[21:36:24] 🎯 PHASE 6: Trading Decisions
+[21:36:24] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:36:24] ⚖️ PHASE 7: Risk Assessment
+[21:36:24] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:36:24] 💰 PHASE 8: Fund Manager Authorization
+[21:36:37] ✅ Fund Manager decision: REJECTED
+[21:36:37] ⚡ PHASE 9: Trade Execution
+[21:36:37] ❌ Trades not approved - No execution
+[21:36:37] 📋 PHASE 10: Cycle Summary
+[21:36:37] 📊 Cycle 35 Summary (17:00 GMT):
+[21:36:37]    Trades Executed: 0
+[21:36:37]    Total Trades Today: 0
+[21:36:37]    Open Positions: 0/18
+[21:36:37]    Closed Trades: 0
+[21:36:37]    Realized P&L: $+0.00
+[21:36:37]    Unrealized P&L: $+0.00
+[21:36:37]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:36:37]
+============================================================
+[21:36:37] CYCLE 36 - 17:30 GMT
+[21:36:37] ============================================================
+[21:36:37] 📊 PHASE 1: Data Collection
+[21:36:48] ✅ Collected data for 27 symbols
+[21:36:48] 🛸 PHASE 2: UFO Analysis
+[21:36:48] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:36:48] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:36:48] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:36:48] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:36:48] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:36:48] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:36:48] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:36:48] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:36:48] 📅 PHASE 3: Economic Calendar
+[21:36:48] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:36:48]   📅 06:30 GMT: CHF CPI m/m
+[21:36:48] ✅ Retrieved 9 economic events for simulation date
+[21:36:48] 🔍 PHASE 4: Market Research
+[21:46:27] ✅ Market research completed
+[21:46:27] 💼 PHASE 5: UFO Portfolio Management
+[21:46:27] ✅ Portfolio assessed: 0 open positions
+[21:46:27] 🎯 PHASE 6: Trading Decisions
+[21:46:27] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:46:27] ⚖️ PHASE 7: Risk Assessment
+[21:46:27] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:46:27] 💰 PHASE 8: Fund Manager Authorization
+[21:46:40] ✅ Fund Manager decision: REJECTED
+[21:46:40] ⚡ PHASE 9: Trade Execution
+[21:46:40] ❌ Trades not approved - No execution
+[21:46:40] 📋 PHASE 10: Cycle Summary
+[21:46:40] 📊 Cycle 36 Summary (17:30 GMT):
+[21:46:40]    Trades Executed: 0
+[21:46:40]    Total Trades Today: 0
+[21:46:40]    Open Positions: 0/18
+[21:46:40]    Closed Trades: 0
+[21:46:40]    Realized P&L: $+0.00
+[21:46:40]    Unrealized P&L: $+0.00
+[21:46:40]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:46:40]
+============================================================
+[21:46:40] CYCLE 37 - 18:00 GMT
+[21:46:40] ============================================================
+[21:46:40] 📊 PHASE 1: Data Collection
+[21:46:50] ✅ Collected data for 27 symbols
+[21:46:50] 🛸 PHASE 2: UFO Analysis
+[21:46:51] 🔍 5: trending_market (confidence: high, scaling: 1.00)
+[21:46:51] 🔍 15: uncertain_market (confidence: low, scaling: 0.50)
+[21:46:51] 🔍 16385: mixed_market (confidence: medium, scaling: 0.75)
+[21:46:51] 🔍 16388: uncertain_market (confidence: low, scaling: 0.50)
+[21:46:51] 🔍 16408: trending_market (confidence: high, scaling: 1.00)
+[21:46:51] 📊 Timeframe Coherence: 6/8 currencies show strong coherence (75.0%)
+[21:46:51] 🔄 Mean Reversion Signals: 11 detected across timeframes
+[21:46:51] ✅ Enhanced UFO analysis completed for 5 timeframes
+[21:46:51] 📅 PHASE 3: Economic Calendar
+[21:46:51] ⚠️ 1 HIGH IMPACT events scheduled for trading day:
+[21:46:51]   📅 06:30 GMT: CHF CPI m/m
+[21:46:51] ✅ Retrieved 9 economic events for simulation date
+[21:46:51] 🔍 PHASE 4: Market Research
+[21:47:16] ✅ Market research completed
+[21:47:16] 💼 PHASE 5: UFO Portfolio Management
+[21:47:16] ✅ Portfolio assessed: 0 open positions
+[21:47:16] 🎯 PHASE 6: Trading Decisions
+[21:47:16] ❌ Trading decision error: module 'src.mock_metatrader5' has no attribute 'account_info'
+[21:47:16] ⚖️ PHASE 7: Risk Assessment
+[21:47:16] ❌ Risk assessment error: RiskManagerAgent.execute() missing 1 required positional argument: 'open_positions'
+[21:47:16] 💰 PHASE 8: Fund Manager Authorization
+[21:47:29] ✅ Fund Manager decision: REJECTED
+[21:47:29] ⚡ PHASE 9: Trade Execution
+[21:47:29] ❌ Trades not approved - No execution
+[21:47:29] 📋 PHASE 10: Cycle Summary
+[21:47:29] 📊 Cycle 37 Summary (18:00 GMT):
+[21:47:29]    Trades Executed: 0
+[21:47:29]    Total Trades Today: 0
+[21:47:29]    Open Positions: 0/18
+[21:47:29]    Closed Trades: 0
+[21:47:29]    Realized P&L: $+0.00
+[21:47:29]    Unrealized P&L: $+0.00
+[21:47:29]    Portfolio Value: $10,000.00 (Total P&L: $+0.00)
+[21:47:29]
+================================================================================
+[21:47:29] 🎯 FULL DAY SIMULATION COMPLETED
+[21:47:29] ================================================================================
+[21:47:29] 📅 Date: Monday, August 04, 2025
+[21:47:29] ⏰ Total Cycles: 37
+[21:47:29] 💼 Total Trades Executed: 0
+[21:47:29] 💰 Final Portfolio Value: $10,000.00
+[21:47:29]
+🎯 Final Diversification Status:
+[21:47:29]    Positions: 2/18
+[21:47:29]    Target: 6
+[21:47:29]    Minimum: 4
+[21:47:29]    Status: ⚠️ Below Minimum Diversification

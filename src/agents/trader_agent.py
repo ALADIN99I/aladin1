@@ -1,6 +1,7 @@
 from .base_agent import Agent
 from ..portfolio_manager import PortfolioManager
 from ..synthetic_portfolio_manager import SyntheticPortfolioManager
+import json
 
 class TraderAgent(Agent):
     def __init__(self, name, llm_client, mt5_connection, symbols=None):
@@ -9,7 +10,37 @@ class TraderAgent(Agent):
         self.synthetic_portfolio_manager = SyntheticPortfolioManager()
         self.symbols = symbols if symbols else []
 
-    def execute(self, research_consensus, open_positions, diversification_config=None):
+    def formulate_daily_hypothesis(self, ufo_data, economic_events):
+        """
+        Formulates a daily trading hypothesis and defines a synthetic portfolio.
+        """
+        if not ufo_data:
+            return None
+
+        ufo_summary = self.summarize_ufo_data(ufo_data)
+        events_summary = economic_events.to_string() if not economic_events.empty else "No significant economic events today."
+
+        prompt = (
+            "You are a senior Forex strategist. Based on the following market analysis, "
+            "formulate a trading hypothesis for the day. Identify the currencies that are likely to be strong and weak. "
+            "Then, define a synthetic portfolio to express this view. "
+            "The output should be a JSON object with 'buy' and 'sell' keys, e.g., "
+            "`{'buy': ['USD', 'JPY'], 'sell': ['EUR', 'GBP']}`.\n\n"
+            f"UFO Market Analysis:\n{ufo_summary}\n\n"
+            f"Economic Events:\n{events_summary}\n\n"
+            "Your response should be only the JSON object."
+        )
+
+        response = self.llm_client.generate_response(prompt)
+
+        try:
+            portfolio_definition = json.loads(response)
+            return portfolio_definition
+        except json.JSONDecodeError:
+            print(f"Warning: Could not decode JSON from LLM response: {response}")
+            return None
+
+    def execute(self, research_consensus, open_positions, diversification_config=None, synthetic_portfolio_history=None):
         """
         Makes a trading decision based on the research consensus and open positions using the LLM.
         Enhanced with dynamic diversification awareness and synthetic portfolio analysis.
@@ -19,16 +50,7 @@ class TraderAgent(Agent):
 
         open_positions_str = open_positions.to_string() if not open_positions.empty else "No open positions."
 
-        # Group trades into synthetic portfolios
-        if not open_positions.empty:
-            self.synthetic_portfolio_manager.group_trades(open_positions.to_dict('records'))
-            portfolio_performance = {}
-            for portfolio_name in self.synthetic_portfolio_manager.portfolios:
-                performance = self.synthetic_portfolio_manager.calculate_portfolio_performance(portfolio_name)
-                portfolio_performance[portfolio_name] = performance
-            portfolio_performance_str = "\nSynthetic Portfolio Performance:\n" + "\n".join([f"- {name}: ${pnl:+.2f}" for name, pnl in portfolio_performance.items()])
-        else:
-            portfolio_performance_str = ""
+        portfolio_history_str = synthetic_portfolio_history.to_string() if not synthetic_portfolio_history.empty else "No synthetic portfolio history yet."
 
         # Calculate diversification context
         position_count = len(open_positions) if not open_positions.empty else 0
@@ -59,38 +81,138 @@ class TraderAgent(Agent):
             return '{"trades": []}'
 
         prompt = (
-            "You are a professional Forex trader implementing intelligent diversification with UFO methodology. "
-            "Based on the following multi-timeframe research consensus and current portfolio, formulate a precise trade plan. "
-            "Your decisions should balance QUALITY analysis with DIVERSIFICATION needs for optimal risk management.\n\n"
-            "DIVERSIFICATION PRINCIPLES:\n"
-            f"• Minimum {min_positions} positions for basic diversification\n"
-            f"• Target {target_positions} positions for optimal risk distribution\n"
-            f"• Maximum {max_positions} positions to maintain focus\n"
-            "• Each trade must have strong analytical support\n"
-            "• Prefer different currency pairs/correlations\n\n"
-            f"{diversification_guidance}\n\n"
-            "The trade plan should be a JSON object with actions having this structure: "
-            "`{'action': 'new_trade'/'adjust_trade'/'close_trade', 'trade_id': <optional>, 'currency_pair': 'EURUSD', 'direction': 'BUY/SELL', 'entry_price': 1.0800, 'lot_size': 0.40}`.\n\n"
-            f"You MUST use only the following currency pairs for new trades: {self.symbols}\n\n"
-            "IMPORTANT: NO individual stop losses or take profits - UFO methodology uses PORTFOLIO-LEVEL risk management only!\n\n"
-            f"Account Balance: ${balance} - Risk tolerance: 0.8-1.2% per trade, max 4.5% total portfolio risk.\n\n"
+            "You are a professional Forex trader implementing the UFO methodology. "
+            "Your primary analysis tool is a 'Synthetic Portfolio' that represents your daily trading hypothesis. "
+            "Your task is to analyze the performance of this synthetic portfolio and decide on the appropriate trading actions.\n\n"
+            "The trade plan should be a JSON object with a single key 'decision' which can be 'buy_portfolio', 'sell_portfolio', 'close_portfolio', 'reverse_portfolio', or 'hold'. "
+            "For example: `{'decision': 'buy_portfolio'}`.\n\n"
+            f"Account Balance: ${balance}\n\n"
+            f"Synthetic Portfolio History:\n{portfolio_history_str}\n\n"
             f"Research Consensus:\n{research_consensus}\n\n"
-            f"Current Open Positions ({position_count} total):\n{open_positions_str}\n"
-            f"{portfolio_performance_str}\n\n"
+            f"Current Open Positions ({position_count} total):\n{open_positions_str}\n\n"
             "YOUR TASK:\n"
-            "1.  Analyze the `Current Open Positions` and `Synthetic Portfolio Performance`. \n"
-            "2.  If a synthetic portfolio is underperforming, consider adding a hedging trade to mitigate risk. For example, if the 'GBP' portfolio is losing money, you might suggest selling a GBP pair.\n"
-            "3.  If the number of open positions is at or near the `Maximum positions` limit, you should prioritize closing or adjusting existing positions over opening new ones.\n"
-            "4.  Only suggest `new_trade` actions if there is sufficient capacity in the portfolio.\n"
-            "5.  If you suggest new trades, ensure they are aligned with the `Research Consensus` and do not excessively increase the portfolio's risk.\n"
-            "6.  Provide a clear rationale for each action in your response."
+            "1.  Analyze the `Synthetic Portfolio History`. Look for trends, support/resistance levels, and potential reversal patterns.\n"
+            "2.  Based on your analysis, decide on one of the following actions:\n"
+            "    - 'buy_portfolio': If the portfolio is in a confirmed uptrend.\n"
+            "    - 'sell_portfolio': If the portfolio is in a confirmed downtrend.\n"
+            "    - 'close_portfolio': If the trend is weakening or a profit target has been reached.\n"
+            "    - 'reverse_portfolio': If you see a strong reversal signal (e.g., the portfolio has hit a major resistance level and is turning down).\n"
+            "    - 'hold': If there is no clear signal.\n"
+            "3.  Provide a clear rationale for your decision in your response."
         )
 
-        trade_decision_str = self.llm_client.generate_response(prompt)
+        llm_response = self.llm_client.generate_response(prompt)
 
-        if not isinstance(trade_decision_str, str) or not trade_decision_str.strip():
-            trade_decision_str = "{\"trades\": []}"
-            print("Warning: TraderAgent LLM did not return a valid trade decision string.")
+        try:
+            decision_data = json.loads(llm_response)
+            decision = decision_data.get('decision')
+        except json.JSONDecodeError:
+            print(f"Warning: Could not decode JSON from LLM response: {llm_response}")
+            decision = 'hold'
 
-        print(f"LLM Trade Decision:\n{trade_decision_str}")
-        return trade_decision_str
+        if decision == 'buy_portfolio':
+            return self.construct_portfolio_trades('buy')
+        elif decision == 'sell_portfolio':
+            return self.construct_portfolio_trades('sell')
+        elif decision == 'close_portfolio':
+            return self.construct_close_portfolio_trades(open_positions)
+        elif decision == 'reverse_portfolio':
+            close_trades = self.construct_close_portfolio_trades(open_positions)
+            # This is a simplified implementation. A more robust version would determine the new direction.
+            open_trades = self.construct_portfolio_trades('buy')
+
+            close_trades_data = json.loads(close_trades)
+            open_trades_data = json.loads(open_trades)
+
+            all_trades = close_trades_data.get('trades', []) + open_trades_data.get('trades', [])
+            return json.dumps({"trades": all_trades})
+        else:
+            return '{"trades": []}'
+
+    def calculate_lot_size(self, balance, risk_per_trade_percentage=1.0):
+        """
+        Calculates the lot size based on account balance and risk percentage.
+        This is a simplified version. A real implementation would consider pip values and stop loss levels.
+        """
+        risk_amount = balance * (risk_per_trade_percentage / 100)
+        # Assuming a standard risk of $10 per 0.01 lot
+        lot_size = (risk_amount / 10) * 0.01
+        return round(lot_size, 2)
+
+    def construct_portfolio_trades(self, direction):
+        """
+        Constructs a list of trades based on the synthetic portfolio definition.
+        """
+        trades = []
+        if not self.synthetic_portfolio_manager.portfolio_definition:
+            return '{"trades": []}'
+
+        account_info = self.portfolio_manager.get_account_info()
+        balance = account_info.balance if account_info else 10000
+
+        lot_size = self.calculate_lot_size(balance)
+
+        buy_currencies = self.synthetic_portfolio_manager.portfolio_definition.get('buy', [])
+        sell_currencies = self.synthetic_portfolio_manager.portfolio_definition.get('sell', [])
+
+        if direction == 'buy':
+            # Buy the "buy" currencies against the "sell" currencies
+            for buy_curr in buy_currencies:
+                for sell_curr in sell_currencies:
+                    # Note: This is a simplified way of forming pairs. A more robust
+                    # implementation would check for valid symbols in self.symbols.
+                    trades.append({
+                        'action': 'new_trade',
+                        'currency_pair': f"{buy_curr}{sell_curr}",
+                        'direction': 'BUY',
+                        'lot_size': lot_size
+                    })
+        elif direction == 'sell':
+            # Sell the "buy" currencies against the "sell" currencies
+            for buy_curr in buy_currencies:
+                for sell_curr in sell_currencies:
+                    trades.append({
+                        'action': 'new_trade',
+                        'currency_pair': f"{buy_curr}{sell_curr}",
+                        'direction': 'SELL',
+                        'lot_size': lot_size
+                    })
+
+        return json.dumps({"trades": trades})
+
+    def construct_close_portfolio_trades(self, open_positions):
+        """
+        Constructs a list of actions to close all open trades.
+        """
+        if open_positions.empty:
+            return '{"trades": []}'
+
+        trades = []
+        for index, row in open_positions.iterrows():
+            trades.append({
+                'action': 'close_trade',
+                'trade_id': row['ticket']
+            })
+
+        return json.dumps({"trades": trades})
+
+    def summarize_ufo_data(self, ufo_data):
+        """
+        Summarizes the UFO data for the LLM prompt.
+        """
+        if not ufo_data:
+            return "No UFO data available."
+
+        summary = []
+        # Correctly access coherence_analysis from ufo_data
+        coherence_analysis = ufo_data.get('coherence_analysis', {})
+        if not coherence_analysis:
+             return "No coherence analysis available in UFO data."
+
+        for currency, values in coherence_analysis.items():
+            summary.append(f"Currency {currency}:")
+            summary.append(f"  Coherence Level: {values.get('coherence_level', 'N/A')}")
+            summary.append(f"  Overall Coherence: {values.get('overall_coherence', 'N/A')}")
+            summary.append(f"  Dominant Direction: {values.get('dominant_direction', 'N/A')}")
+
+        return "\n".join(summary)

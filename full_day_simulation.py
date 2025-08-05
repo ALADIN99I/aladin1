@@ -9,10 +9,10 @@ import os
 from pathlib import Path
 
 # Import necessary modules
-try:
-    import MetaTrader5 as mt5
-except ImportError:
-    from src import mock_metatrader5 as mt5
+# try:
+#     import MetaTrader5 as mt5
+# except ImportError:
+from src import mock_metatrader5 as mt5
 
 from src.data_collector import MT5DataCollector, EconomicCalendarCollector
 from src.ufo_calculator import UfoCalculator
@@ -26,6 +26,7 @@ from src.trade_executor import TradeExecutor
 from src.ufo_trading_engine import UFOTradingEngine
 from src.simulation_ufo_engine import SimulationUFOTradingEngine
 from src.portfolio_manager import PortfolioManager
+from src.synthetic_portfolio_manager import SyntheticPortfolioManager
 from src.dynamic_reinforcement_engine import DynamicReinforcementEngine
 
 class FullDayTradingSimulation:
@@ -40,6 +41,7 @@ class FullDayTradingSimulation:
         self.cycle_count = 0
         self.open_positions = []  # Track simulated positions
         self.closed_trades = []   # Track completed trades
+        self.synthetic_portfolio_definition = None
         
         # Continuous monitoring variables
         self.last_position_update = None
@@ -113,6 +115,7 @@ class FullDayTradingSimulation:
         self.trader = TraderAgent("Trader", self.llm_client, self.mt5_collector, symbols=symbols_list)
         self.risk_manager = RiskManagerAgent("RiskManager", self.llm_client, self.mt5_collector, self.config)
         self.fund_manager = FundManagerAgent("FundManager", self.llm_client)
+        self.synthetic_portfolio_manager = SyntheticPortfolioManager()
         
         # Initialize trade executor
         self.trade_executor = TradeExecutor(self.mt5_collector, self.config)
@@ -457,7 +460,13 @@ class FullDayTradingSimulation:
         
         # 6. Trading Decisions
         self.log_event("🎯 PHASE 6: Trading Decisions")
-        trade_decisions = self.generate_trade_decisions(research_result, current_positions)
+        if self.synthetic_portfolio_definition:
+            self.synthetic_portfolio_manager.set_portfolio_definition(self.synthetic_portfolio_definition)
+            portfolio_value = self.synthetic_portfolio_manager.calculate_portfolio_value(ufo_data, mt5.TIMEFRAME_M5)
+            if portfolio_value is not None:
+                self.synthetic_portfolio_manager.update_history(current_time, portfolio_value)
+
+        trade_decisions = self.generate_trade_decisions(research_result, current_positions, self.synthetic_portfolio_manager.get_history_df())
         
         # 7. Risk Assessment
         self.log_event("⚖️ PHASE 7: Risk Assessment")
@@ -690,7 +699,7 @@ class FullDayTradingSimulation:
             # Return empty dataframe if error
             return pd.DataFrame()
     
-    def generate_trade_decisions(self, research_result, current_positions):
+    def generate_trade_decisions(self, research_result, current_positions, synthetic_portfolio_history):
         """Generate trading decisions using TraderAgent"""
         try:
             diversification_config = {
@@ -702,7 +711,8 @@ class FullDayTradingSimulation:
             decisions = self.trader.execute(
                 research_result['consensus'],
                 current_positions,
-                diversification_config=diversification_config
+                diversification_config=diversification_config,
+                synthetic_portfolio_history=synthetic_portfolio_history
             )
             self.log_event("✅ Trading decisions generated")
             return decisions
@@ -888,15 +898,25 @@ class FullDayTradingSimulation:
         self.log_event(f"📅 Trading Hours: 0:00 GMT to 18:00 GMT")
         self.log_event(f"⏰ Cycle Frequency: Every {self.cycle_period_minutes} minutes")
         self.log_event(f"📊 Continuous Monitoring: Position updates every {self.position_update_frequency_minutes} minutes")
+
+        # Daily Planning Phase
+        self.log_event("\n" + "="*60)
+        self.log_event("📈 PHASE 0: Daily Planning")
+        self.log_event("="*60)
+        initial_price_data = self.collect_market_data()
+        initial_ufo_data = self.calculate_ufo_indicators(initial_price_data)
+        initial_economic_events = self.get_economic_events()
+        self.synthetic_portfolio_definition = self.trader.formulate_daily_hypothesis(initial_ufo_data, initial_economic_events)
+        self.log_event(f"📊 Daily Hypothesis: {self.synthetic_portfolio_definition}")
         
         # Calculate total cycles
-        total_minutes = 18 * 60  # 18 hours
+        total_minutes = 4 * 60  # 4 hours
         total_cycles = total_minutes // self.cycle_period_minutes
         self.log_event(f"📊 Total Cycles Planned: {total_cycles}")
         
         # Start simulation with continuous monitoring
         current_time = datetime.datetime(self.simulation_date.year, self.simulation_date.month, self.simulation_date.day, 0, 0)
-        end_time = datetime.datetime(self.simulation_date.year, self.simulation_date.month, self.simulation_date.day, 18, 0)
+        end_time = datetime.datetime(self.simulation_date.year, self.simulation_date.month, self.simulation_date.day, 4, 0)
         
         while current_time <= end_time:
             # Continuous position monitoring between cycles
