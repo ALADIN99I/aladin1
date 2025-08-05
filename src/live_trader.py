@@ -18,7 +18,7 @@ from .ufo_calculator import UfoCalculator
 from .llm.llm_client import LLMClient
 from .trade_executor import TradeExecutor
 from .ufo_trading_engine import UFOTradingEngine
-from .dynamic_reinforcement_engine import DynamicReinforcementEngine
+# from .dynamic_reinforcement_engine import DynamicReinforcementEngine
 
 class LiveTrader:
     def __init__(self, config):
@@ -70,11 +70,11 @@ class LiveTrader:
         self.ufo_calculator = UfoCalculator(config['trading']['currencies'].split(','))
 
         # Initialize Dynamic Reinforcement Engine
-        self.dynamic_reinforcement_engine = DynamicReinforcementEngine(config)
-        if self.dynamic_reinforcement_engine.enabled:
-            print("✅ Dynamic Reinforcement Engine enabled")
-        else:
-            print("⚠️ Dynamic Reinforcement Engine disabled")
+        # self.dynamic_reinforcement_engine = DynamicReinforcementEngine(config)
+        # if self.dynamic_reinforcement_engine.enabled:
+        #     print("✅ Dynamic Reinforcement Engine enabled")
+        # else:
+        #     print("⚠️ Dynamic Reinforcement Engine disabled")
 
     def run(self):
         """

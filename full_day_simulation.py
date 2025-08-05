@@ -27,7 +27,7 @@ from src.ufo_trading_engine import UFOTradingEngine
 from src.simulation_ufo_engine import SimulationUFOTradingEngine
 from src.portfolio_manager import PortfolioManager
 from src.synthetic_portfolio_manager import SyntheticPortfolioManager
-from src.dynamic_reinforcement_engine import DynamicReinforcementEngine
+# from src.dynamic_reinforcement_engine import DynamicReinforcementEngine
 
 class FullDayTradingSimulation:
     def __init__(self, simulation_date=datetime.datetime(2025, 7, 30)):
@@ -121,11 +121,11 @@ class FullDayTradingSimulation:
         self.trade_executor = TradeExecutor(self.mt5_collector, self.config)
         
         # Initialize dynamic reinforcement engine
-        self.dynamic_reinforcement_engine = DynamicReinforcementEngine(self.config)
-        if self.dynamic_reinforcement_engine.enabled:
-            self.log_event("✅ Dynamic Reinforcement Engine enabled")
-        else:
-            self.log_event("⚠️ Dynamic Reinforcement Engine disabled")
+        # self.dynamic_reinforcement_engine = DynamicReinforcementEngine(self.config)
+        # if self.dynamic_reinforcement_engine.enabled:
+        #     self.log_event("✅ Dynamic Reinforcement Engine enabled")
+        # else:
+        #     self.log_event("⚠️ Dynamic Reinforcement Engine disabled")
         
         self.log_event("Full-day simulation components initialized successfully")
     
@@ -1367,88 +1367,88 @@ class FullDayTradingSimulation:
                     self.log_event(f"  ⚠️ {pos['symbol']}: P&L ${pos['pnl']:.2f}")
             
             # Enhanced Dynamic Reinforcement monitoring
-            if self.dynamic_reinforcement_engine.enabled and self.dynamic_reinforcement_engine.should_check_reinforcement(current_time):
-                current_market_data = self.get_real_time_market_data_for_positions(self.open_positions, current_time)
+            # if self.dynamic_reinforcement_engine.enabled and self.dynamic_reinforcement_engine.should_check_reinforcement(current_time):
+            #     current_market_data = self.get_real_time_market_data_for_positions(self.open_positions, current_time)
                 
-                # Detect market events that trigger reinforcement
-                market_events = self.dynamic_reinforcement_engine.detect_market_events(
-                    self.open_positions, 
-                    current_market_data, 
-                    getattr(self, 'previous_ufo_data', None)
-                )
+            #     # Detect market events that trigger reinforcement
+            #     market_events = self.dynamic_reinforcement_engine.detect_market_events(
+            #         self.open_positions,
+            #         current_market_data,
+            #         getattr(self, 'previous_ufo_data', None)
+            #     )
                 
-                if market_events:
-                    self.log_event(f"🎯 Dynamic Reinforcement: {len(market_events)} market events detected")
+            #     if market_events:
+            #         self.log_event(f"🎯 Dynamic Reinforcement: {len(market_events)} market events detected")
                     
-                    # Process each event for reinforcement
-                    for event in market_events:
-                        position = event.get('position')
-                        if position:
-                            # Calculate dynamic reinforcement for this event
-                            reinforcement_plan, message = self.dynamic_reinforcement_engine.calculate_dynamic_reinforcement(
-                                position, 
-                                event, 
-                                current_market_data, 
-                                getattr(self, 'previous_ufo_data', None)
-                            )
+            #         # Process each event for reinforcement
+            #         for event in market_events:
+            #             position = event.get('position')
+            #             if position:
+            #                 # Calculate dynamic reinforcement for this event
+            #                 reinforcement_plan, message = self.dynamic_reinforcement_engine.calculate_dynamic_reinforcement(
+            #                     position,
+            #                     event,
+            #                     current_market_data,
+            #                     getattr(self, 'previous_ufo_data', None)
+            #                 )
                             
-                            if reinforcement_plan:
-                                self.log_event(f"  ⚡ {event['type']}: {position['symbol']} - {message}")
-                                self.log_event(f"    📊 Reinforcement: {reinforcement_plan['additional_lots']:.2f} lots")
+            #                 if reinforcement_plan:
+            #                     self.log_event(f"  ⚡ {event['type']}: {position['symbol']} - {message}")
+            #                     self.log_event(f"    📊 Reinforcement: {reinforcement_plan['additional_lots']:.2f} lots")
                                 
-                                # Execute reinforcement (in simulation)
-                                self.execute_dynamic_reinforcement(position, reinforcement_plan, current_time)
-                            else:
-                                self.log_event(f"  ⏸️ {position['symbol']}: {message}")
+            #                     # Execute reinforcement (in simulation)
+            #                     self.execute_dynamic_reinforcement(position, reinforcement_plan, current_time)
+            #                 else:
+            #                     self.log_event(f"  ⏸️ {position['symbol']}: {message}")
                 
-                # Also check UFO-based reinforcement for compatibility
-                if hasattr(self, 'previous_ufo_data'):
-                    for position in self.open_positions:
-                        # Check if UFO engine also suggests reinforcement
-                        should_reinforce, reason, plan = self.ufo_engine.should_reinforce_position(
-                            position, 
-                            self.previous_ufo_data,
-                            current_market_data
-                        )
-                        if should_reinforce and plan:
-                            self.log_event(f"  🛸 UFO reinforcement suggestion: {position['symbol']} - {reason}")
+            #     # Also check UFO-based reinforcement for compatibility
+            #     if hasattr(self, 'previous_ufo_data'):
+            #         for position in self.open_positions:
+            #             # Check if UFO engine also suggests reinforcement
+            #             should_reinforce, reason, plan = self.ufo_engine.should_reinforce_position(
+            #                 position,
+            #                 self.previous_ufo_data,
+            #                 current_market_data
+            #             )
+            #             if should_reinforce and plan:
+            #                 self.log_event(f"  🛸 UFO reinforcement suggestion: {position['symbol']} - {reason}")
             
         except Exception as e:
             self.log_event(f"❌ Error in continuous position monitoring: {e}")
     
-    def execute_dynamic_reinforcement(self, position, reinforcement_plan, current_time):
-        """Execute dynamic reinforcement trade in simulation"""
-        try:
-            # Create reinforcement position
-            reinforcement_position = {
-                'ticket': np.random.randint(100000, 999999),
-                'symbol': position['symbol'],
-                'direction': position['direction'],  # Same direction as original
-                'volume': reinforcement_plan['additional_lots'],
-                'entry_price': self.get_historical_price_for_time(position['symbol'], current_time) or position['current_price'],
-                'current_price': position.get('current_price', position['entry_price']),
-                'pnl': 0.0,
-                'timestamp': current_time,
-                'comment': f'Dynamic {reinforcement_plan["type"]}',
-                'original_position': position.get('ticket'),
-                'reinforcement_details': reinforcement_plan
-            }
+    # def execute_dynamic_reinforcement(self, position, reinforcement_plan, current_time):
+    #     """Execute dynamic reinforcement trade in simulation"""
+    #     try:
+    #         # Create reinforcement position
+    #         reinforcement_position = {
+    #             'ticket': np.random.randint(100000, 999999),
+    #             'symbol': position['symbol'],
+    #             'direction': position['direction'],  # Same direction as original
+    #             'volume': reinforcement_plan['additional_lots'],
+    #             'entry_price': self.get_historical_price_for_time(position['symbol'], current_time) or position['current_price'],
+    #             'current_price': position.get('current_price', position['entry_price']),
+    #             'pnl': 0.0,
+    #             'timestamp': current_time,
+    #             'comment': f'Dynamic {reinforcement_plan["type"]}',
+    #             'original_position': position.get('ticket'),
+    #             'reinforcement_details': reinforcement_plan
+    #         }
             
-            # Add to open positions
-            self.open_positions.append(reinforcement_position)
+    #         # Add to open positions
+    #         self.open_positions.append(reinforcement_position)
             
-            # Record in dynamic reinforcement engine
-            self.dynamic_reinforcement_engine.record_reinforcement(position, reinforcement_plan)
+    #         # Record in dynamic reinforcement engine
+    #         self.dynamic_reinforcement_engine.record_reinforcement(position, reinforcement_plan)
             
-            self.log_event(f"    ✅ Dynamic reinforcement executed: {reinforcement_position['symbol']} "
-                          f"{reinforcement_position['direction']} {reinforcement_position['volume']:.2f} lots "
-                          f"@ {reinforcement_position['entry_price']:.5f}")
+    #         self.log_event(f"    ✅ Dynamic reinforcement executed: {reinforcement_position['symbol']} "
+    #                       f"{reinforcement_position['direction']} {reinforcement_position['volume']:.2f} lots "
+    #                       f"@ {reinforcement_position['entry_price']:.5f}")
             
-            # Also add to trades executed for tracking
-            self.trades_executed.append(reinforcement_position)
+    #         # Also add to trades executed for tracking
+    #         self.trades_executed.append(reinforcement_position)
             
-        except Exception as e:
-            self.log_event(f"    ❌ Failed to execute dynamic reinforcement: {e}")
+    #     except Exception as e:
+    #         self.log_event(f"    ❌ Failed to execute dynamic reinforcement: {e}")
     
     def cleanup_connections(self):
         """Clean up MT5 and other connections"""
