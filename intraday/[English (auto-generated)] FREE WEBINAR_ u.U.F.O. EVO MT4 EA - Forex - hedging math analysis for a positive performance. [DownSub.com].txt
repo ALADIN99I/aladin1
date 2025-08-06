@@ -1,0 +1,729 @@
+hi everybody welcome after
+many months that I was not here on
+YouTube but of course I had my reasons
+basically on working living trading
+programming studying and I'm quite usual
+to to study for a long time and deep the
+markets life conditions and find new
+ideas from the previous ones that could
+implement the ones that I'm doing and if
+you followed my my previous videos of
+course you may realize that the engine
+that I created to develop a kind of
+different understanding of the foreign
+currencies movement which is the UFO
+algorithm in this webinar in this video
+webinar I would like to show another
+side of the UFO but this time this isn't
+today is the fifth of January 2019 and
+so it's the beginning of the year
+actually we were between the Saturday
+and the Sunday while I'm recording this
+so we are the weekend markets are closed
+and I would like to do a different kind
+of video that anyway can lead you to
+inspire you and give you an
+understanding both if you're beginner or
+expert is always use of
+to give a consideration to math base
+approach to the forex market because
+we're dealing with numbers fractions
+whatever their number so their language
+is math this is what I am believing day
+by day due to my personal research
+before starting for beginning who like
+briefly to thank the many males that I
+received so the many of you that are
+writing me emails every day and not
+every day or every week I can stand upon
+the traffic which is pretty intense and
+require me extra effort and if I'm
+focused actually I was working in the
+last six months to developing something
+that I will show you in the next minutes
+so if I focus on something that I tend
+to avoid also messages that are very
+brief and insignificant while I tend to
+give a reply or consideration to those
+who are saying something okay not just
+asking or whatever because there's some
+of you that joined the project of the
+UFO and after your fall and and thank
+can realize this by using also be stool
+others don't but they are following the
+theory and anyway there's a lot of
+things that can be done despite having
+UF or not but the point is that there
+has to be some kind of improvement in
+the things we do so the moment I study
+something is just to improve and better
+my my Forex experience and trading
+experience so then twelve you that are
+driving me everyday or contacting me via
+skype always if I have time I can give
+some time to that but at this moment I'm
+very easy so I wanted to use this time
+also thank you all and all for all your
+comments and if I didn't if it's
+possible for me I was following that I
+don't have the website that I was
+planning to do because trading was even
+more interesting and absorbing my energy
+so this I am answering to some questions
+that I got this month but I think it's
+more effective to do a good trading and
+anyway the web this year so this is also
+a good point of contact where to focus
+all the energies so the start whatever
+so
+normally and let's put a charge wherever
+we wanna start from $0 and so you can
+have an idea what I'm trying to chart
+okay so
+that's the template okay so basically
+this is the Friday the 4th of time I'm
+gonna talk about the 4th of January 2019
+markets are closed this time I won't do
+any kind of this is more webinar this is
+not something to prove what you can see
+thousands of videos that I shown with
+real live market conditions what math
+basic analysis can provide in terms of
+selecting the better currencies that
+will form the pairs that would be part
+of the portfolio that has to be
+efficient therefore positive this is by
+map based analysis for a positive
+performed for a positive trade
+performance
+because every day there is a development
+of the currencies in a way that we have
+to understand in different time frames
+this is the problem the problem is the
+time time is morning they say yeah but
+in the horizontal axis time is relative
+because we can analyze one minute or one
+hour or one day a week and this is very
+this is probably more noisy chart is
+more nosy death selection of time so we
+have to reason in simple blocks and in
+fact in the UFO if you've followed my
+previous videos all the previous videos
+that I made you've noticed that here at
+the top now at the moment the markets
+are closed so there's no action for that
+algorithm but normally you used to see
+here serious values of each currency
+and then you have more boxes so you have
+the chart of the month the week today
+four hours one hour half an hour and so
+on and with the values compared to that
+timeframe okay
+then I received some emails were asking
+me what the best timeframes to operate
+with normally let's take an assumption
+that trade be efficient must have a
+vision of a day and the day composes the
+the Fulop of continuum section because
+we have five days in a row where markets
+never closed vacation or holidays
+excluded
+so we need to consider the week the
+development of the week at least as a
+minimum set up and the day and I also of
+course with my tools because within a
+moment I will also show you some excel
+and this is the part of a different
+webinar that I'm doing today
+so I also observe other timeframes but I
+focus on the daily and weekly ok so you
+see numbers that are regarding the
+strength or the weakness of the
+currencies therefore if we have eight
+currencies which are of course
+cat Swiss franc TV p OC kiwi and yen
+we have to select that one too
+stronger and want to week and then pair
+them together somehow
+this creates an efficient portfolio with
+performance major to zero positive this
+is what we want to do so a lot of
+questions that were coming from you were
+regarding the fact that the numbers
+right of the screen where somehow I mean
+not that much sense this is what I want
+to do this evening and also say
+something more give a graphical
+representation of those numbers with an
+idea in mind can really help those who
+already have this to the UFO to have a
+better understanding of what they're
+doing because this is two that I
+normally use from time to time and this
+is more exclusive because it's the
+development of the UFO into an Excel
+spreadsheet which can give more
+opportunities to make calculations that
+metatrader4 doesn't have okay so we know
+this year the Eurodollar in the session
+of today but I don't want to talk about
+your dollar I'm starting from that okay
+so
+the expert advisors cannot call at this
+moment because there are no ticks
+an exposition of the values but these
+values have been registered into this
+spreadsheet what is this
+first of all format for understanding
+Norman we have the charts we go left to
+right in the reading because of the many
+sorry because of the many spreadsheets I
+have okay there are a lot of splashes
+these spreadsheets anyway are recreating
+the UFO directly from data that are
+exported from an t4 into a folder and
+taken as a basic values for calculations
+into an Excel spreadsheet we can notice
+that in this case the readings are from
+right to left
+because the first value of the most
+recent value what we have here on the
+right extreme right because of the
+spreadsheet vertical calculation which
+places at the top always the first data
+we have to read these in the opposite
+direction so from right
+this sounds like da Vinci method but I
+think that the Forex is even more evil
+and perverted that for me is fine to
+have heard a reading in this case of
+currencies so these are the values
+normalized on a basal of - of plus 1 and
+minus 1 or plus 100 minus 100 doesn't
+matter they are all normalized but it's
+basically what we see here for example
+here we can see this time is this is the
+cat the green is the car ok oh sorry
+the green is the Aussie okay for example
+in this case the day I am observing half
+of the day the day the day before and so
+when we see the values in the UFO we can
+have the weekly and the day okay so
+let's trip to the weekly and and I see
+that I have this peak so is the Aussie
+in the UFO 94 I will see the Aussie with
+with the positive value and higher than
+any of these ones the gray mystic and
+purple is the TV team
+Blue is euro red miss Toller you see
+black is New Zealand dollar yellow is
+who's Frank
+take the I forgot oh and brown which is
+here
+here is the problem
+yeah okay I'm sorry this could be a
+really big boring but it's important
+because the reason why ninety nine
+ninety percent of traders are failing is
+this is because Forex is this this is
+the perpetual motion and oxidation of
+the currencies that we have to detect
+and select that Forex is this this is
+the sort of
+graphic explanation of the currencies
+and then we just take part of this in
+this how can we have an understanding
+this is the euro dollar of what it's
+going on and if we had select the euro
+dollar to trade in the day of Friday
+being very success successful at least
+unless we had open sell trades in this
+area for buying trades in this area
+right so if we were somewhere around
+here that would have not been such an
+efficient
+acids to select right
+but the problem is and this is why I'm
+saying I have to compare the weekly
+values and the daily values in the worth
+of panel is because
+what I see here is the explanation of
+the thing so let me consider this I
+observe the values in the UFO and I see
+that Ozzy is pretty strong
+because it has entered this so this is a
+very important zone so when a value
+breaks and this is trans following
+I see that usd/cad since that's
+important time if you if if the
+beginning of the chart there are four
+charts here so let's take the daily
+chart and Heath
+we just do also this you can better
+understand
+okay so if this is the beginning then
+now and now this data are at nineteen
+see up here in the yellow is at nineteen
+of that day this is the date of today
+that I'm recording but these are the
+hours of the server so it's nineteen so
+this time here is 19 okay so seven pm of
+the server so if I'm here when I see
+that do see here at the top is starting
+to go up this way here at this point in
+time this is why I'm dealing with time
+on a daily basis or weekly basis but
+this will come after okay I see that
+ah see here at this point in time so
+what point is this around here okay is
+point one one eight okay so these are
+the time frame that I exported the data
+to achieve this result is five minutes
+so
+sorry this is this point 100 the 1 1 K 1
+1 I boy
+let's do 120 around this point take 120
+for five minutes is 600 minutes divided
+60 minutes is 10 hours okay so 10 hours
+ago so if now is 7:00 p.m. okay 10 hours
+ago
+it's
+this 19 minus 10 is Nydia is 9:00 a.m.
+okay so at 9:00 a.m. of the server in
+the morning I see that Ozzy is starting
+to break okay and this is also
+reflecting what is occurring in the half
+of the vein Alice's but what is more
+important is that in the weekly analysis
+we see that OC it has broken this level
+okay which basically is this
+and hopefully because this is the trade
+setup of this week so if the traits of
+top of the next week will confirm what
+I'm seeing now in these time frames what
+I'm saying now can be somehow assumed
+also for the first days of the next week
+to come so from this Monday but there
+you have to be confirmed by the numbers
+so I see that Ozzy is raising and also
+is raising in the day before look at
+this bang-bang this this break this
+break here was than this break here
+confirmation this is trending so we are
+the higher number both in the the
+algorithm in the UFO in the NT for we
+have a great number weekly
+in the daily well we find anyway that we
+have a positive value this has to be
+clear in the day week thinking that we
+have to above this so this won't be the
+strongest but it has to be positive okay
+it has to be positive
+this is why I focus also on analyzing
+the day before which is not very
+possible with
+in Metatrader I have to create an extra
+algorithm for that it's more easy with
+Excel anyway
+so confirmed that
+it has broken this level because of this
+is a specific level that goes above the
+100 and starts from 95 or nine point
+five or zero point nine five is the same
+this is a kind of confirmation that at
+least we'll go up to the next level so
+if I were but I would have been 9 again
+reading these values because this is not
+repainting this is what it is
+this story historical data calculated I
+see also what I see
+Yin entering this extreme low level so
+extremely negative and also here it
+appears and we have to see here this
+crosses between yin Swiss franc and
+young and you later
+but anyway also here even with with some
+Peaks
+the lowest wall was entering already
+entered in the daily okay and this is
+just half of the day
+here was read already entered so palsy
+yen should have been the trade the first
+selection then of course keeping in mind
+that Aussie yen means Aussie by yet so
+what other currencies could have been
+paired if we take a look at here
+Ozzie by young self means this kind of
+event
+young is breaking something like
+threshold the lower part of the day and
+it's also breaking down from a higher
+point so selling yen here means because
+of this that says so means to break down
+so what I'm having this is not yeah like
+because this is the weekly let me just
+put this interesting what in the weekly
+this is not the time frame you are
+observing we are observing this moment
+in time
+and we'll see that here we are having
+two near currencies that are showing
+some interest
+this is you roll this is Swiss franc and
+this one that has just started from here
+is okay
+which have not broken this level but
+somehow they have been rejected
+take this we see the Swiss franc is more
+bastard at this moment but it shows some
+kind of support and then it's great okay
+so let's say that I would have intend to
+use these currencies that have somehow
+show some support at this level because
+this is these are the levels were words
+like support resistance peak head and
+shoulder whatever they have since they
+don't have sense on the charts because
+in the charts we observe we are
+observing a ratio not the whole see we
+have these peaks of each currency so as
+a secondary option for the portfolio
+after also yen and by I could select all
+so let me to do what normally as usual
+let's break this
+so we can keep in mind and follow
+so we
+as strong
+or don't
+Oh
+work
+I do apologize for this inconvenience
+apparently I cannot write
+which it
+if I can correct the screen
+seems I have double screen
+let's see if I can make it somehow
+oh it's not work
+okay what can we do we can do this
+let's write a note here
+so we have the weakest
+and the strongest
+and we have
+as we who said to chuck pasta choking
+Lucien
+and as a stronger we have the palsy and
+we have
+the other three selections that show
+some support at least at that moment on
+that level
+they show some kind of
+to shop in that day so they are
+accordingly not the strongest buy
+clothes again but they are having they
+will have probably a positive powers so
+we have Swiss franc
+okay
+this is bad so this okay so what are the
+trades that are coming out from this
+combination
+well it's very simple ballsy yen
+all of them
+okay
+very simple this is the equation
+so at nine o'clock
+what can we say also
+so this day I'm going to say for example
+this hour
+we have the cross ocen but we didn't
+know at that moment at that moment we
+knew only this so at this point we were
+also facing yeah
+this level here which is this
+threshold here was here okay
+so he wasn't like in this condition was
+a kind of and in fact near more in
+detail in the day before there was a
+minimum of the swiss franc with a sharp
+at least for that day and euro
+well you raise this one
+so euro was going from negative a
+positive situation in negative and
+positive and also New Zealand dollar
+this is the New Zealand dollar
+kind of stationery at this level for
+time that was anyway level of support
+into peers
+so what we have to do now go into our
+trading platform and
+yeah
+Asya
+bye-bye
+this is the Aussie yen
+this is a 15 minutes chart that
+around 9:00
+so here suppose again
+150 beeps up
+then we had
+Swiss franc yet
+wrong nine
+says Swiss franc up
+throwdown of 10 pips
+out of 17 tips
+yo yo
+round nine
+throwdown of 25 pigs that remember trade
+combo so that if some something goes
+wrong in one of them the other
+compensate and this mate makes our stop
+loss stop loss doesn't have to be
+intended this price level because they
+can be kept by this but you have to put
+an overall stop loss on your equity
+that's the honest applause 2% 1% 3% but
+on the enmity of your portfolio anyway
+we got 75
+then we got New Zealand dollar
+this is the day
+and nine o'clock
+you can see the time
+tonight
+a
+115 beeps
+for currencies for currencies
+to
+for five currencies
+four bears traded
+with a bit of Throwdown that could have
+occur at the moment of the movement of
+the euro yen should not that consider
+because if we stay straight to the plan
+we see only the great reactions and also
+we have to we have to understand that we
+also have to read these charts as well
+but somehow this is the most weak and
+this is the most
+the ones that are breaking some levels
+of extra high and extra no this is the
+noise that we've seen the charts okay
+and this is pretty confusing at the
+beginning but it's very simple because
+as I showed you here in the day you can
+really see
+will you roll
+this
+it's all
+in the day cat the great one
+yellow Swiss franc
+purple is GT
+yeah all of the bottle
+and we have the maximum
+same thing here
+for example yen from the top goes down
+so it's really breaking
+so if these values are confirmed at the
+beginning of the next week and the
+scenario stays true to the plan so this
+thing I need at least the Monday to
+analyze this it's more likely that
+things can evolve that's by the fact
+that I have to be careful about collapse
+or retracement
+even if I am suffering some drawdown
+because I entered too early
+I can always count on the fact that I am
+I have identified correctly the trend of
+the currency the form of the chorus is
+the better express and perform the trend
+accordingly to the performance of the
+markets which is this stuff notice the
+fact that when I reached these values
+and I am entering a say nine o'clock
+because this was the beginning of the
+day at the beginning of the day I was
+having only this portion of data and of
+course this this this was located here
+with all the regression of course at
+that moment this was the data
+here - here
+so Jung was breaking and yam was at the
+top on the wheat and the day before was
+already falling down so it's multiple
+level stuff there are levels and levels
+that but we don't take all the Masand in
+the middle at the moment we take only
+one to and from a further analysis that
+despite the fact that comes from an
+analysis of the currencies and because
+of this it's both technical and
+fundamental because technical analysis
+relies explicitly only on charts
+this kind of technical analysis it's the
+technical analysis that becomes
+fundamental
+we can observe that there are some
+beings that are necessary to do to
+create confusion and indecision
+but we really pick up things that are
+making nikyo yen even if it made a
+positive with a bit of a tradesman at
+five at 17 so 5:00 p.m.
+while the Swiss franc also at 5:00 p.m.
+it was having this the Aussie yen at
+5:00 p.m.
+look at 5:00 p.m. it is completely after
+so at that moment it wasn't there was
+helping to compensate and the Aussie yen
+was also going up
+so at the end by entering at that moment
+with those bears only so four tears to
+trade
+I was basically having a straight line
+up
+just because I consider the numbers that
+are in the UFO that here you can have a
+presentation from right to left and have
+an idea of what this those numbers are
+okay so what to expect for the next week
+honestly I don't know honestly I would
+trust my numbers the moment I see that
+okay
+of course this is a mental approach it's
+like
+an algorithm a robot there are some
+certain things no matter what because we
+have two days of darkness that by my
+experience let me say next week what is
+going to happen what I demonstrated you
+here now and explained was anyway what
+to effectively select for a trade after
+Friday morning
+these are values that are high and low
+of a certain currencies that are the
+same levels in the you
+and what would have been the experience
+of about four or five hundred peeps
+global with only four pairs majority of
+time in positive
+that's very simple if the scenario is
+the same on Monday Monday Tuesday then I
+could say that this is a good and amend
+that if you watch the video again and
+maybe you consider the way I have you of
+course I know I'm closing now this video
+because it's about the hour that I was
+intended to do this but what are the
+suggestions at the end of this
+focus on certain parts of the video if
+you like you can always go back and you
+can also check with your Metatrader
+the charts that I'm showing you now that
+I've shown you in this video and see if
+the data are genuine are the same that
+you are having in your trading
+environment
+what you see now here is a kind of
+radiography okay x-ray of the currencies
+that you can analyze you can go back
+into the unit and see where are
+this lines like if you were watching the
+end to a forum and this is for all of
+you so it's just an analysis that can
+give you a suggestion for making your
+analysis this is not a suggestion to
+trade because trade is very personal and
+someone has a different kind of attitude
+to risk compared to another world so
+this is just intended for a market
+analysis of course we don't do market
+analysis for itself we do that for
+developing a trading plan a trading
+action so if this data may be coherent
+and it can be another kind of
+confirmation to your analysis analysis
+of the markets well then you have at
+least another point of view
+technique or strategy whatever you have
+so program will do other webinars I
+don't know but there were a lot of
+fragmentary questions in the emails and
+a lot of people that wants to speak I
+can have more time in the future at this
+moment I wanted to develop all this
+stuff and have a better understanding
+from any point so that I could have made
+also video that can be somehow more
+graphical and make understand things
+that only number I see those this stuff
+I see in my brain
+the moment I see numbers but it took me
+a while to make figure it out how the
+things should have been and and this is
+the result which lets my knowledge very
+analysis on the Forex so
+thank you very much for your patient and
+interest in following along this body
+now of course you may have probably
+questions but I suggest you to watch the
+video at least a couple of times because
+despite the fact that it seemed very
+simple to select the top there are there
+there is a lot of information that I
+have released right now
+so if you have questions it's good to
+receive some emails or comments would be
+more appreciable some comments so in
+that case they can be like a question
+for an answer for a lot of similar
+questions and for all the other stuff
+like if you want to communicate if you
+see that there is an opportunity or not
+to enter in this project you can contact
+me privately I will of course make a
+selection so if you write just hey hi
+how much is dea it's not that's not the
+purpose of the thing so ok so I will
+consider only those who are writing with
+some sense and its own meaning and not
+that they have to say that I'm good or
+whatever this is not what it's about but
+it's about talking like a trader or
+someone that has experience and doesn't
+have to be positive or negative but has
+to be conscious this is very important
+because this is not an automated trade
+this is better than an automated trade
+for me
+because it shows me it makes all the the
+automation of the computations which is
+13 3-0 spreadsheets before arriving to
+this one
+so it's ready enough
+with this I don't need automation I need
+to be in the morning at nine o'clock
+at nine o clock here
+but zero point three zero zero point
+zero three zero point zero five up for
+deals yen and realize 150 bits
+okay
+so
+for me for my vision and automation can
+to do the something like this can be
+done it's very exhausting but I still
+prefer this way because I can do
+fundamental analysis as well on the real
+behavior of the currencies and then
+arrive to the pears as I always
+explained as you saw before so I hope
+that this the content of this video
+found you well and if you're still awake
+I thank you for watching for subscribing
+the channel
+some months ago I arrived to a thousand
+members so it's important
+or the recognition for myself which
+means that it's what I'm doing as some
+sense so if you want to be posted for
+further videos you can always subscribe
+and I thank you for that then thanks for
+your comments and you show since a while
+have a good space

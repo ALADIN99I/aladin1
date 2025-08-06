@@ -1,0 +1,477 @@
+good day to everybody I'm doing this
+brief video tutorial integration of my
+algorithm I made in this today's some
+little adjustments to even improve
+better the interface of reading and
+injecting the hedging order and in fact
+I'm going to show you in a moment what
+was the outlook for today or at least at
+the first hours of this morning already
+detected before going to sleep some
+hours and then wake up have an
+understanding of the situation and then
+projecting the rest of the orders if it
+was the case or closing the orders if
+they were wrong so first of all today we
+are in the market it's Wednesday the
+16th so if you're watching also this
+video you can check in real time what
+it's going on actually have dispositions
+and I decided to put you know only one
+pair and make an hedging and I will show
+in a minute the workflow with in this
+case manual trading I received a lot of
+the lot of emails and I'm happy very
+happy about the fact that majority of
+you would like to learn and understand
+what is going on so that you can control
+your trades but this requires some
+understandings some ability to read the
+markets and the charts and it's not very
+easy not even for me in fact I created
+my tools my algorithmic to
+but that there is a possibility to fail
+less than the majority and to succeed
+more than the minority sometimes life
+and life is clear anyway so today were
+more into the you fall in the version
+that it's for the manual trading okay as
+you may notice I I have here a list of
+trades and in the very first morning and
+3:30 - I put two trades that were
+suggested by the algorithm with
+Australian dollar strong in a long
+position and New Zealand dollar and cut
+himself then I woke up early this
+morning and I still saw that on a daily
+timeframe
+the Australian dollar now is still
+strong against the yen but it was even
+before against the yen against the GDP
+against the Swiss franc and therefore he
+only thought that I could had the first
+you know this moment was okay all this
+strong so let's trade all day today at
+least this morning because we must see
+then what the markets are developing for
+each and every currency pair we choose
+so for example if we go in the Aussie
+CAD and he can brown them because I
+don't know at the moment just open the
+chart and excited to make this
+integration for you to understand the
+workflow on a total manual setup which
+is not at least very difficult to
+understand this more difficult may be to
+be there at the right moment to catch
+the move and at this moment for example
+is retracing
+God anyway I can switch my order and
+close my position at least if I have a
+decent signal in a daily timeframe week
+but the currency that it's meant to be
+long is not Australian dollar anymore
+okay
+otherwise I keep the order and I keep
+dispositions which are hated because of
+this better created I created another
+super team that gives even more
+possibility to make coherent decisions
+in a very short time and very fast so
+just to have a brief recap on the
+trading analysis something that it's
+necessary to do every time we open our
+charts all dirty charts because at this
+moment with only one chart I can analyze
+all the markets here and then I need I
+want maybe to have an understanding of
+the single chart so i position myself in
+the chart and then I have indeed
+detailed both information on the chart
+and informations on the possible hedging
+strategy that I can use see here that
+Australian dollar and is the strong but
+against yen against GBP changes okay but
+the important thing is for me now that
+Australian dollar keeps is strength okay
+and it can vary at this moment I don't
+know reminders all are behaving but
+anyway I'm copying disorders also on my
+real account and here is for proposes
+demonstration only I created as usual
+even for testing my algorithm with this
+new super King that is integrating and
+it will be the future update the moment
+is completing the testing and I want to
+test it as well so we have a clear
+information of what is going on
+so now that I'm safe and I can make you
+know brief a brief interruption and
+create a video so in real time what is
+going on and let's try to make
+of it okay so I was saying at the
+beginning of the day or in the middle
+when you start trading you should
+analyze all the currency pairs okay all
+their information and see here we have
+also lenders Swiss franc with this kind
+of also representation from the
+algorithm that is quite matching the
+situation I guess you can see by
+yourself this is one minute chart if you
+go in the daily chart of course these
+values are recalculated tick by tick in
+average chart frame so you'll be
+timeframe of the charge so then you can
+have nice informations in every time
+frame but the little the time frame the
+the more changes can be in the buying
+and selling of the currency pairs of
+course when currency pairs are aligned
+in different time frames in that case is
+more profitable to have an edge okay so
+what I did what did I do to achieve this
+result okay
+so right my pencil
+as you may notice at this moment we have
+a very strong value of Australian dollar
+which goes above any other value the
+situation this morning was similar but
+with values that were more lower okay
+now they are both increased but both
+Australian dollar and the other currency
+pairs some of them they are negative so
+weak by definition of the sign okay
+euro dollar was different this morning
+was the opposite and I decided not to
+trade euro dollar okay not to risk too
+much of my margin and to have a decent
+you know ratio in my trading since the
+beginning of the day this value and this
+value
+they they had no changed at all the the
+persistence signal was this so I have a
+first important element what to buy rest
+is about the cell but what the cell the
+currency pairs now cut as we trace it a
+lot and in fact all the cut is not you
+know you see here it has retreated but
+card was negative see strength is still
+negative good GBP negative New Zealand
+dollar positive but not that much and it
+was negative and look given here we have
+a people tradesmen that can be also
+beginning of a new phase but at this
+moment we keep the order as it is then
+Japanese yen was negative okay and use
+dollar was negative not you wrong and
+anyway as you can see I traded cozy
+dollar and I have anyway a little profit
+on that okay so the suggestion was to
+pray against Australian dollar in as a
+strong currency of the day you know in
+Freeland CAD Swiss franc
+GDP
+sorry are for this to be off okay
+it's not over already saved young
+and what else us
+okay so Australian dollar against
+whispers and bye so this place were so
+so so so so
+and so is not that difficult to it's all
+written here you have only to rewrite
+the formula for today and of course all
+Australian dollar US dollar will be long
+Australian dollar and zealand dollar
+will be long Australian dollar card will
+be long astronauto Swiss franc will be
+long Australian dollar job the GE GB
+notice GBP Australian dollar in these
+games we have to go short and Australian
+dollar Japanese yen we go long this is
+what you want to achieve okay with this
+LMS of our last class class in this case
+in our assets okay so I hope that this
+matches with the theory and you see the
+same behavior okay saying same approach
+ok then how do i regulate my trades I
+try to keep you know my margin that
+doesn't go below the minus 2/3 percent
+otherwise I close the trade or and I do
+always give a check if there are big
+changes in this main values and then I
+monitored this panel that's it okay
+and likewise now I could also say okay
+it's enough for today I want to enjoy
+the rest of my day
+I already made a significant profit and
+it's better to go out of the markets I
+don't know it's still persistent this
+okay so
+I applied this algorithm that now we are
+seeing in a daily timeframe and of
+course we don't see now that much about
+this information but if we go on a 50
+minute for example we may appreciate the
+details and also the announcements that
+I was telling you at the beginning of
+this video that I was performing both in
+this panel and also in the graphical to
+give more sense of what is going on and
+happening okay so now in few hours so
+this is another demonstration or a lot
+of videos where they show you and it
+make the analysis when they are here and
+they see all this path and say okay here
+is going here so it's going to go up yes
+because you see that man but showing
+things in real time in a very few hours
+related into the moment so that you can
+check it by yourself in a second and
+with these results now let's say that I
+decided to reach a 15 15 percent okay of
+this move and of course it may be
+replayed but I'm trying to get at least
+this amount and close my trait okay I
+want to have a 15 percent so I want to
+make also brief this this and a googol
+further but I have my own phrase then to
+follow so okay so I close my crates and
+then what
+go to the account history we go to all
+history we create a detailed report that
+we save for this first day so I can just
+create also the folder okay okay so this
+date line 0 1 so we have at least but
+also a track that can be provided if you
+need it
+so
+this is the account that we are trading
+let me just hide okay these are the
+operations that have been processed
+today very clean with some new testing
+around 3:00 and of course I also got
+some plays that were proficient in every
+direction so I decided that to make that
+final trade with 742 742 this is the
+result so up to now if we close and we
+catch the way this way every day
+sometimes more sometimes less it depends
+on the markets this morning Ozzy was
+determinant but very slow and was
+fighting with all the other currency
+pairs
+I saw the seizure only in the currency
+person that than at the end that were a
+bit retracing but there was this kind of
+progression and every report that you
+see as a correspondence with the reality
+of the day if now so if these are the
+results please take note please go back
+either in order to explain this is more
+tangible the fact that I made this
+analysis in about 10 minutes
+even less it's just that I maybe you
+know I want I do wanna lie I do analyze
+on the charts this way and I like to
+write down some notes so then I can
+interpret or very easy but I can also do
+it on a pen and paper and then I take
+traffic
+or on my excel file and I copy that
+later I don't use Excel files you know
+to note down what I'm about to do I'm
+more focus on reaction and pen and paper
+over the plan is more easy and more
+visual as well and also can always be
+recalled to understand the strategy that
+you wanted to adopt in this case by
+hedging the Australian dollar we can
+also try for example now we're still
+having in a C on okay here things have
+put in this direction euro and
+Australian dollar artisans also I can
+attend but now they are a bit moving
+anyway so let's try this let's good euro
+Australian dollar in sell and because
+it's it here and Australian dollar Swiss
+franc in solo is just you know make a
+little real in life time experiment then
+we are having okay Swiss franc GBP let's
+let's check the GBP euro GBP and you
+achieve no sorry
+Australian dollar of GDP where are you
+when I don't find it to be a signal okay
+yeah GBP Australian dollar GBP
+Australian dollar based on quote
+arranging and it's kind of retracing so
+I have to wait a bit Australian dollar
+against you hope it's fine because it's
+huge
+and again Swiss franc so at the moment I
+am about to thing to leave this ones let
+me check Australian dollar and Japanese
+yen anyway because Australian dollar and
+Japanese
+it's more likely that if Japanese yen is
+falling Australian dollar Japanese yen
+you go yeah
+what is falling so I can also put
+Australian dollar Japanese yen so at
+this moment I'm just trading these three
+currencies and I think I also made a
+little mistake because Australian dollar
+Swiss franc is not in Seoul by the party
+but it's in by I always close on this
+day anyway so recapping what did I do
+now I use a different color green okay
+so I okay lets me let me also put the
+chart in a daily okay so I open the
+charts now and after some minutes I see
+the values which are telling me and of
+course it would take the time for the
+market to so I need to have a bit of
+space this is why I'm not putting
+immediately stop gloss or acting on that
+and just trading with the convention or
+with the belief that something is more
+likely to be in that direction with more
+probability okay
+so again I see that Australian dollar is
+in by in both the titles okay
+and here is suggested now with Swiss
+franc and euro so I decide that
+Australia very strong same principle now
+I have euro a that I am associating
+going short because the world is bass
+and Australian dollar squad and whereas
+Australian dollar Swiss franc Australian
+dollar Japanese yen okay
+this recurrence occurs only now at this
+moment we have to see if GBP or US
+dollar maybe was dollar may fall I don't
+know at this moment I'm just reading
+this and I am accepting a risk that in
+this case I should have prayed like
+using a 0.3
+for example 0.3 and 0.3 and wait in a
+bit you know because let's suppose that
+I am opening the charts at this moment I
+have to make all also the analysis
+taking the charts understand when is the
+time to forget this moment I'm just
+hedging and trying to get the most
+profit goal there so from 30 charts and
+more I have selected only this 3
+combination 1 2 3
+and that said now I have to let them
+work it can be that price can we trace
+of one figures is normal I can I must
+leave some movement because I'm entering
+the markets when some values are being
+pretty revealed okay already so I need
+to give the time in the meantime we can
+give a bit of analysis in the charts
+let's for example pick up the Australian
+dollar Swiss franc
+okay which is which is saying in a 50
+minute time frame it's given me
+completely different values of course
+important is that Australian dollar is
+getting this is strong and strength is
+weak and anyway I have to wait about
+three minutes every time I switch from a
+chart to another chart so that these
+values as well are properly properly
+updated and I can have a better reading
+of this value student okay so if I have
+to read this chart in a daily I still
+add Australian dollar in by Swiss franc
+and Euro himself and I also added as a
+another currency pair just to make a
+little test Japanese yen if we go in the
+4-hour chart we see that the structures
+of the three days and some graphics are
+starting to get out of the day opening
+so we are having the day here the two
+sessions the Arjun session concluded and
+give a lap in with the beginning of the
+European session and these are the days
+before and even in four hours timeframe
+Australian dollar is in by with GBP and
+euro this time is to between in the four
+hour they probably I would have chosen
+but anyway I stay straight to this
+methodology with just three pairs so
+let's see now that I ever have exit
+already profitable trades that I could
+have left you know running more and more
+now I am attempting to see ok conditions
+are not varied at this moment so I stay
+straight toward the algorithm is
+suggesting and acting like ok I I trust
+you I saw what you want but make me do
+some profit ok so let's go to one hour
+timeframe
+we see even more development of the the
+graphical aids for the trading and we
+can understand how the markets behave in
+the audience session and now they are
+starting to behave in the European
+session towards the u.s. session and
+even in this timeframe in an hour time
+frame we have Australian dollar which is
+strong again against Swiss franc and
+euro himself so we have three time
+frames that are saying us that these
+currency pairs are most likely to behave
+with a good direction and in fact
+somehow at this moment we have reduce it
+by half our exposure in negative okay in
+matter of minutes we could also make
+other assumptions whatever but markets
+has already started we had already this
+is at an hour charge so we had another
+we have already had a big move so there
+is space for possible retracement so we
+don't we don't have to risk too much at
+this moment because that may you know a
+better trade in this error like I did
+and like the this
+this graphic shows so that's why I
+closed the place so you can see in 12
+operations two short positions ten long
+positions 100% and no magic the flow
+down space consecutive wings consecutive
+losses and down for the day don't need
+to trade in the afternoon maybe ie I
+trade in the afternoons there is good
+work but I also awkward to do because
+there are some requests that I have to
+and I want to make some vocation as well
+so if you don't mind so I hope to have
+given you another example of what we can
+do by reading the market this way I
+thank you for watching for subscribing
+my channel for writing emails comments
+suggestions for referring my algorithms
+some of you thank you very much it's a
+good achievement for me and let's keep
+in touch those of you that want to
+contacting me some of you that are
+asking how can I contact you whatever
+there is an email in the description of
+this video also in my about page in this
+channel so you can use that for
+contacting me via email or on skype
+which is better because I receive also a
+lot of emails that are leading to
+nothing and not even that with the need
+of explanation and others that are even
+more interesting people so I give
+priority to them of course thanks for
+watching again have a good time
+have a good space enjoy the day and
+a profit profitable trades of course
+this is indeed I think that I feel and I
+wish you with all the best bye

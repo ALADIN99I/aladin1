@@ -1,0 +1,416 @@
+so
+the body and welcome to unconventional
+forex Channel this video
+I will realize some practical example of
+what explained in my previous two videos
+therefore if you already seen them
+that's fine this is the right place to
+conclude this practical example of
+trading which is just an example for
+educational purposes on what I have
+described exhaustively in my previous
+two videos if it's the first time you
+can watch of course this video too but I
+strongly suggest you to watch the
+previous two ones that are connected to
+what I'm about to show you today okay so
+let's start immediately and okay the
+great part of the theory has been
+explained on my previous videos of
+course I will do some relation and some
+kind of conclusions in this video for
+what as we got what I was explaining in
+the previous webinars but today I am
+going to share a practical day trading
+application to to prove that by
+analyzing forex using math in this case
+I use my own formula which is the UFO
+engine for determining weak weakness and
+strength of the currencies along with
+divergencies along with some filters
+how all this put together can become a
+trade activity while determining the
+currency pairs to trade and the
+positions and take action okay
+so let's first of all take a look to my
+Excel spreadsheet in continuous
+evolution actually you saw other tabs
+okay my previous webinars this is a kind
+of quite complex recap in the moment
+that you see for the first time but at
+the end is something very simple to read
+if you know what what and works okay
+actually what I'm trading today it's a
+portfolio there it's explained here in
+this this chart okay it's always from
+right to left and I will show you
+something that I made yesterday for
+example for instance of course
+females are coming every day I cannot
+reply to all the email some emails are
+fake other are very interesting and I
+always thanks all the people that are
+writing me down and
+writing comments or contacting me via
+Skype and sustaining this project okay
+what we can see here is something that I
+have to show you in order to complete
+some answers to the questions that were
+regarding the fact that it's a very long
+time that I don't show something
+practical Metatrader on how to perform
+this okay so it's fine it's right I also
+have the time to do that so what I
+decided to do is to follow strictly my
+my complex algorithm which is basically
+is sort on don't be scared okay so I am
+observing the market observation the
+market performance which are these two
+graphs okay and then determining the
+best assets to trade for the day it's
+always they trading so it's something
+that you start in the morning and you
+close something right now so when the
+markets are closing and the liquidity
+and the activity is moving down okay so
+you get only the best moves and you take
+out the rest of course there are minor
+trades that can be done but they are not
+consistent as I will show you my
+approach is finally from this filter
+selection there is another filter
+direction so basically what it what it
+series all logical stuff that converts
+to math something that has a number with
+a certain magnitude positive or negative
+to true or false okay so based on this
+matrix that I can read I determinate
+some trades okay
+so let me show you let me just do this
+so basically in the day of yesterday
+yesterday was the 25th of June 2019 I
+created as usual a brand new team
+account for making an example and in the
+day of yesterday my readings were
+stating that New Zealand dollar was the
+most important currency to trade against
+the others in fact as you can see New
+Zealand dollar was strong compared to
+all the others some of them they
+realized little profit other much more
+important profit we are in this example
+we're starting with the base of 50,000
+units of currency and we trade one lot
+for the purpose of showing you and what
+are the currencies there are trade of
+course lot size and it's always it has
+always to be included in a money
+management approach therefore it has to
+be proportional to our initial balance
+which is in this case
+okay of course if we are blessed we
+should also we have to also to decrease
+the lot size going from standard odds to
+minimal so microwatts okay so basically
+the first day you can see very easily
+from the result of my trading it was a
+hundred percent positive results so
+basically on three and four seven seven
+trades they were all successful and
+profitable and the final gain at the end
+of the day was of two thousand and one
+hundred excluding the Commission's units
+okay so a quite nice treatment of this
+was for the day of yesterday attained
+today I start from the beginning of the
+day because of course I can stay here
+all the time in front of the video
+showing what things that are going on so
+I will show you then I will close the
+trades and we will make the final
+balance of this okay so this is the
+basically the 26th so today of June 2019
+and here is the prospect of the trades
+that I have made yesterday okay so this
+is what I am exposing I'd made yesterday
+okay which is basically this one
+I started today noticing that yen was
+the currency Morse more weed than any
+other so I decided to trade yen and sell
+against other currencies and starting
+from negative balance the moment that I
+injected the orders okay so see here is
+838 and the trades have been placed
+between six thirty seven and seven and
+then some others enforcement's on GBP
+was the currency that was more retracing
+than others but as my algorithm was
+suggesting that I was 92 96% ride on my
+trade I decided to enforce for this
+currency for the GBP which is very
+obvious that has a lot of volatility and
+I increased the lots in order to
+compensate a bit even if there were
+other currencies that were starting to
+compensate so you see some negative
+position some positive positions okay
+the major drove down at the beginning of
+the day was made by Gd
+okay going further now we have a reading
+of the statement at 10:00 in the morning
+and at 10:00 in the morning so after one
+hour and auth okay I was already in
+positive
+of 1,500 units okay then reading at
+11:12 so after one hour and I was 4,000
+units
+I got also at the reading a reading at
+12 o'clock that was probably the maximum
+okay was 5,000 units please take
+attention to pay attention also to these
+details okay then I got the maximum one
+o'clock of five thousand four hundred
+units of profit for today with this
+setup if you see all the trades started
+this morning and they're still running
+okay so let's take the loop to
+Metatrader and we see that after okay
+I got a buy the first buy of the day
+let's say here we are having the gbp/jpy
+okay I got this
+first buy but then I got this
+replacement the most major retracement
+for GDP I said in my algorithm GBP was
+retracing but I got the senior the
+signal compared to Japanese yen to buy
+GBP and to start upon this young so I
+decided to stay straight if you say if
+you see some kind of blinks or whatever
+and just updating my you can see now is
+to try to seat like here so it's time
+and it's another day training because of
+course today I started with a new train
+opening new seasons and having a bit of
+trust in my system for us regard
+situations like this because of course
+you start to buy while the currency is
+retracing down and then you have this
+big up and then you have a moment of
+retracement retracement of half of the
+movement so you can also think that my
+my trade is now going against okay but
+as I still have in this scenario still
+my portfolio which is this one for today
+so all the current system is began and
+this is developed the development of my
+trades okay so this synthetic assets in
+that the instrument created by putting
+together hedging more currencies
+together as you may notice I got of
+course this peak I got this down now I
+got this up but I'm almost at 5,000
+units again because all the currencies
+that are in the portfolio are working
+together are working along together okay
+what to say I would say that if we
+analyze other currencies like all the
+yen for example let me check if I have
+it here okay on the car so euro yen
+let's see briefly in 30 minutes
+okay so euro yen
+[Music]
+and put some up I in this area and look
+at this very simple and is okay 550 tips
+here then we have GDP n okay gbpn
+alright we already saw that sorry let me
+just put back or let's - maybe something
+even better just take a moment
+so trades have been injected around this
+power here more or less okay
+okay so we have gbpn then we have euro
+yen okay and we are rosy yeah
+50 pips there's somehow still running
+then we have yeah this is beautiful
+Guardian 50 tips here then we have Swiss
+friend Japanese yen more ranging phase
+but somehow still consistently
+supporting than what we got also okay
+also yen we have New Zealand dollar
+Japanese yen there it goes and look at
+this in the very first hour of the
+morning but anyway I started with a lot
+of session here and we have also 50 pips
+here so basically I was right in all the
+cases
+also today USD and a bit of retracement
+so the metal retracements as they have
+been done so throwdowns have been done
+by GBP and USD compensating with the
+others so they were growing together
+therefore this synthetic instrument is
+going with these oscillations but
+towards up okay well I have reached the
+same post I can even go more okay
+because I can leave the trades let them
+go
+but for this proposals as if this is
+petitioner proposes I can always stop
+this I had my trainings my trades on
+real accounts on other platforms of
+course but I just coated the trays I had
+and this is two days okay so you saw the
+day before and this day - so this be
+quite a good example close an example
+that also gives us a idea that by having
+a right perspective and mathematical
+perspective on voice somehow we balance
+from the menthol and technical analysis
+and we merged them together blending
+these two analogies because currencies
+and currency pairs are related one to
+each other by the ratio the overall
+market performance gives a lot of
+informations in regards to this so let's
+just make a final statement okay
+these goals and gift it to this a brief
+examination so as you may notice in in
+two days I've raised my balance from
+fifty thousand units we always think in
+terms of units of course if you have
+less budget at the beginning you have
+also to be very careful and this is a
+money management situation of the lot
+size that you are using but the
+proportions are the same okay so with
+the base of 50,000 units realizing
+today's seven thousand and seven hundred
+units it's quite a good result I think
+okay so we are having
+on 15 we have roughly the 15% 15% came
+today's pay attention that this is
+something that you cannot achieve only
+by having a very accurate analysis at
+the beginning of the day trying somehow
+to get a proper and good point for the
+Opposition in the trades okay but if you
+are somehow predicting the right
+direction of the currencies related to
+strength and weakness as comes out from
+the UFO expert advisor this is the
+result anyway it's just only to have to
+be a little bit more patient if you have
+a little bit of throwdown
+okay main direction where I made 17
+trades with a hundred percent of
+profitability is quite great consistent
+system okay and this is it so basically
+this was the rise up of my portfolio
+you can also take a look here and see
+how it develops
+so my portfolio started around this area
+and started only to grow and grow and
+grow okay
+this is to inspire you and put a bit of
+understanding on the fact that not only
+that trader or ctrader whatever platform
+you're using it's not the indicators
+that she uses not the news that you
+follow is not that because at the end is
+always something that has to relate with
+some mathematical boundaries okay
+between currencies and if you catch them
+you can really override all the other
+kind of analysis and focus directly on
+placing some very simple trade because
+seven positions in this gate of course
+there are other situations where there
+are too strong and too weak but in these
+days it's working that way anyway the
+moment you are focusing and catching a
+snapshot of the market which you have
+from 92 to a hundred percent of
+probability of being right that's enough
+there's nothing else you require okay so
+I hope that also this practical example
+of day trading in two days
+help you to better focus on the fact
+that any one of you with a bit of skills
+on a spreadsheet importing data from
+wherever they want I do that by using an
+expert advisor that I have created in
+order
+sooo the best my Excel spreadsheet and
+all this is explained in the to produce
+video size if you are interested on this
+you need to watch them as well because
+there's a lot of information that I of
+course I cannot repeat this one
+otherwise it's going to be too long so I
+wait for your suggestions comments or
+emails as usual and of course I'm sorry
+and I do apologize if I cannot reply to
+all but I have to make a selection ok
+and give priority to those who will want
+to support this project or want to
+participate somehow but I hope that also
+part of my videos are answering to a
+very great amount of people
+that are driving me everyday these are
+the final results of course that are
+very likely to be in line with all the
+other examples of day trading swing
+trading intraday whatever I made in the
+past even if I still have I still have
+the opinion that intraday trading so
+positioning some orders at the beginning
+of the day closing them at the ending of
+a market session or the ending of the
+day and then repeat the process day by
+day is the best way to approach before
+it's too much volatility too much spikes
+and rallies back and back and forth so
+every day there are certain currencies
+that are moving and others that are
+still so you better get into the market
+with your trades and then get out of the
+market and leave the big hands to do
+whatever they want and to the small
+traders that normally do not want to
+learn to lose their money okay this is
+an example I'm not saying you have to
+trade this way so with this lot size
+with this badnesses you can even trade
+with 500 euros trading with micro lot
+and every very
+very important results in a certain
+amount of time okay and the good point
+on this strategy which is the win
+strategy win trade strategy so trade
+what it's not weena stands for what is
+not because I'm focusing on things that
+are not shown directly especially on
+trading platforms okay has finally
+revealed a kind of coherency with all
+the studies that I've made in the past
+with the UFO engine and with some other
+sophistications that I built along the
+time using Excel because metatrader4
+this is too much simple and it's not
+meant for very complex calculations and
+formulas okay so there has to be kind of
+compromise but my compromise at the end
+of the day gives a very interesting
+result and I don't know what else to say
+basically because with this I'm
+concluding also this prior videos and I
+will just wait for your feedback which
+is always valuable
+it's always a great pleasure to have
+people that are following you and are
+writing you and giving some recognition
+to your work so because of this I will
+never stop never ever stop to say thank
+you to all of you for watching my videos
+subscribing my channel are supporting
+the projects of view and we though the
+same we should good life good space

@@ -1,0 +1,308 @@
+everybody and welcome back after some
+regenerating and illuminating days of
+vacation just to make a brief tutorial
+about my the application of the theories
+that I am explained in my previous
+videos in this case always related to
+hedging I always use my algorithm for
+evaluate the situation if it it's time
+to trade or to wait or what currency
+pairs to filter this week I will have
+some some tough tax tasks to to do and
+so I decided just to make a quick video
+now because I have the time to do this
+and hopefully if I have time I will do
+even more but I will be very busy anyway
+Eve those who are riding me or contact
+me on skype there will be always time
+for a brief chat as usual and but I will
+have lots of business friends
+so let's proceed what what I have
+decided to trade at a certain point of
+of the day and here we have the
+situation ok as you may see I traded ok
+you see you as usual you can always
+check the time the date we are in a
+swing trading situation you see we're
+already the swabs were passed today and
+I'm doing my usual simulation that at
+this moment is for a bigger project so
+I'm providing this data every week and
+I'm making this always a simulation on
+$10,000 account with a an ECM broker in
+this K there is providing the data what
+to say ok today was quite stage
+naari it's Monday actually is the 29th
+of August 2017 we've just passed the new
+day and but I'm talkin so it's Tuesday
+actually but I'm talking about the
+analysis of the market that came out in
+the late evening of Monday ok so some
+hours ago and as you can see here we had
+some information that then injected me
+some orders buy and sell orders on this
+currency pairs for a reason there was
+not that much movement today I was
+saying and the currency pairs were like
+kind of too much floating without giving
+a very strong signal in order to take
+the trade so I decided to apply another
+kind of way of hedging normally here I
+receive a lot of questions here is not
+hedging within one single currency pairs
+that did this is for me a straddle the
+hedging there I mean is crossing the
+currency pairs ok whatever the technique
+is actually there are two main
+techniques for hedging in regards to the
+kind of values that we are that we are
+having in our analysis and there is
+another one that I like to do but it's
+very instinctive but it can come with
+time and I'll show you what it's about
+well actually there is a reason why I
+choose these currency pairs so in the
+day currency pairs were not moving too
+much
+they were both you know you know in a
+bullish situation on an or in a bearish
+situations
+so what consists to filter in this case
+so as you can see I I chose I am and
+make the choice for euro New Zealand
+dollar that I will open let me do this
+way okay so we have your only zealand
+dollar this one
+then we have GBP story New Zealand
+dollar Swiss franc okay which is this
+one
+and we have also need Zealand dollar yen
+just as well okay so what I decided to
+do anyway we are at the beginning of the
+week and we have some values that we
+have to start to detect and analyze
+properly right otherwise we have to work
+somehow to figure out what can be our
+market analysis and to be honest ok here
+I let's see let's put it this way
+because I have a daily and you will see
+in a minute another way to use that I
+use my algorithm when I have to make
+intraday analysis for then having the
+confirmation of some assumptions that I
+was doing ok so we may see here 3
+different timeframes
+no matter the chart because this is this
+we we are reading these values which are
+in market values ok so we are having 3 3
+different time frames monthly weekly and
+daily in the weekly we see that New
+Zealand dollar let's put this
+is negative let's drop the the most
+negative of the situation and we see
+that Japanese yen and Swiss franc are
+quite strong as well as your own okay
+these are the most important values in a
+monthly view in the market analysis so I
+will then as usual create this let's
+hope that the video doesn't clips that
+much because there is a lot of activity
+at this moment so anyway we have
+basically New Zealand dollar which is
+the weakest and we had a strong Swiss
+franc Japanese yen and euro okay I could
+have said also that are anyway strong
+card and US dollar but they are not that
+relevant as you see in the values and if
+we go in our weekly analysis we may see
+that dollar is weak here but euro still
+strong is so that's fine and also
+Japanese yen is strong it's fine and
+also Swiss franc is strong is fine
+accordingly to this and New Zealand
+dollar is still weak okay as a as a
+minus here okay and it's the weakest we
+have also the CAD here of course there
+is developing but here we see that in a
+monthly it's has a different story then
+if we go back in in a and its negative
+and how its negative here as well
+but if we go also in a daily at this
+point that in the daily we have also
+another confirmation of weakness of New
+Zealand dollar and relative more
+strength that was positive some time ago
+here but anyway it's more strong euro
+and anyway for sure Japanese yen and for
+sure Swiss franc
+okay so all the said let's say that I
+don't trust you run it along dollar
+because of this negative retracement
+here even if here is quite strong and I
+could close this situation okay so let's
+do a brief recap in our in our analysis
+we decided that in a multi time frame
+observation we had in market values in
+market values for the month market
+values for the week and in market values
+for the day and all these values agree
+with the same kind of meaning and
+direction and presence in the market
+that were estimated as the weakest the
+weakest was New Zealand dollar and the
+most strong
+we're Japanese young Swiss franc and
+somehow you roll in this case is not
+proper hedging but it's anyway a
+diversification with only you know three
+currency pairs one two and three and
+it's a diversification of our portfolio
+of our assets taking the most relevant
+currency pairs that are expressing in
+more time frames we see here we have the
+monthly timeframe expressed in minutes
+here we have the weekly timeframe
+expressing minute here we have so we can
+take a look on this but despite also the
+fact that we have values here that are
+suggested in a monthly of course the end
+it appears to be strong even in the
+weekly and even in the daily so it would
+be a good idea also to evaluate the yen
+at this moment but as you saw from the
+beginning of my video I could already
+you know with only these positions only
+these positions that are at the moment
+created so with your New Zealand dollar
+one block New Zealand dollar Swiss franc
+on our block and New Zealand dollar
+Japanese yen another block I could have
+already made you know in some hours and
+in a swing trading situation enough for
+then stopping so this is another way to
+let's say hedge somehow study and a
+multi-time franc correlation situation
+with an in market analysis this is a
+brand new account created for this for
+this a week for this week so we are
+Monday and Tuesday Monday just passed
+and I was the first hours of Tuesday and
+we already seen that it started to work
+properly by the analysis that started
+from
+the time frame here from a weekly and
+from then a daily and I had a
+confirmation that in both timeframes so
+in the day in the week and in the month
+these values of week being week and
+being strong were somehow respected so
+kind of frank confirmation whatever and
+so now that's usually to our let's do
+this in this case because i have open
+this trades and i open three positions
+pair as you can see so i will definitely
+take one position pair at this moment so
+just to have an idea of what we had
+performed as well and then we can leave
+all the others you know running and
+let's make our account history so we see
+just founded and created the assets so
+now we want to have all history and we
+want to save as detailed report detail
+report and we create a new folder
+[Music]
+okay
+so this is the way that it's likely to
+proceed taking records and having you
+know or under control so we can
+understand our progress and that's it
+so it's not normal trading or hedging
+but it's a basic you know it's moral a
+lateral thought you you you evaluate in
+this case the information that are
+provided anyway from different and
+strongest and longest time frames
+providing you anyway an overall trend
+that some somehow should be respected
+but it should be kept at least in the
+three most important time frames which
+are the day the week and the month
+simultaneously otherwise is getting weak
+okay
+and it's getting with low probability
+but when this happens and this was what
+I decided to start to pray today was
+because there were no relevant you know
+information of movement of currency
+pairs in the day itself so I decided to
+make this kind of analysis and show you
+that there is also this way to approach
+and there are many ways because the
+values that are reported in my expert
+advisor are this simply the values that
+we are getting from the charts getting
+from the our broker and so there is no
+opportunity to fake anything or whatever
+is just to read properly these values
+this which are anyway the real
+representation of the market at this
+moment considering multiple time frames
+and this this kind of work can be done
+by using three simple charts okay
+and not because of the chart symbol but
+because we can run different time frames
+and then have our different projections
+in different ways of course we can move
+our staff if we want to have more
+operative 'ti and this waist railing is
+very simple in my opinion sometimes we
+can make mistakes or somehow we can be
+too much early in entering the order or
+the positions but if the overall
+situation is confirmed
+anyway the results will come in brief
+and as you so let's say that now I want
+to just take one position for each and
+you know I want to stop also this trades
+leaving open only the best and taking
+some profit
+so this way at least you have a kind of
+mini progression in some hours anyway
+our is in some hours so let's see so we
+have this first statement this phrase
+and this straights running and then the
+second one okay hope this is enough for
+your understanding and your questions
+that I got in this in this week of
+anyway vocation and now it would be easy
+as I told you but I will also be give
+some time for you and I thank you for
+watching and following me and I received
+a lot of things that I had to reply but
+it's also a pleasure so thank you very
+much for your support I have a good time
+and space into a life and have a good
+trading day tomorrow and I hope that by
+doing this you can see at least and
+maybe try to attend some understanding
+there is no suggestion to trade this is
+my own way of trading but this is also
+my theories that I explained so I have
+somehow to support and make coherent so
+this is what it is okay and this is the
+tool I use and this is for you or your
+own example and then you are you have to
+be major and understand if your trading
+you know because someone else is saying
+something you cannot trade because you
+must have a vision you don't you cannot
+go and say oh it trailer that way so I
+do the same you must have a vision you
+must understand when you are entering if
+you are too late if you have to wait if
+you are in the same timeframe analysis
+that someone else is so trading is very
+personal and I am almost a hundred
+percent from one of trading and this is
+the way I do model trading okay bye and
+good everything ok see you

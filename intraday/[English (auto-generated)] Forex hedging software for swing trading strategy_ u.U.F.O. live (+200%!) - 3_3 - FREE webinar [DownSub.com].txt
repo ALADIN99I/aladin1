@@ -1,0 +1,660 @@
+hello everybody and welcome to the third
+part of this mini series dedicated to
+the swing trading and hedging techniques
+and strategies in order to be profitable
+over more days holding positions for
+more days both in buy and sell if you
+saw my previous videos might produce
+webinars I was explaining in the first
+one theory and in the other one I was
+doing some back testing on some charts
+pair in order to also simulate through
+the data historical data of meta trader
+the behavior of the currencies and
+therefore the behavior of the of the
+expert advisor
+anyway this expert advisor is made to
+run light so what you will see in this
+in this webinar will be the live
+behaving and so a real live trading
+example that of course I injected a
+couple of days ago because we have to
+wait for the positions to develop
+through the day days and anyway you will
+have also some referrals in terms of
+statements and it could be very shocking
+but I bear with me till the end so you
+will see that what I am explaining in
+theory then through the expert advisors
+that I have designed I am I was capable
+to arrive at a point to shake somehow
+the markets that in a way that I can
+understand at least some moves making
+some gain from that so it's a process
+that was through these months and years
+and here now is an example of opera
+tivity through that method
+before starting anyway I would like to
+make a little preface if you alone like
+this in regards to the fact that I am
+using at this point let me just let me
+just write down a couple of things so
+that it will be clear when I will
+explain so at this moment what you will
+see is that I am using an expert advisor
+which which will provide an analysis on
+about 30 charts 30 30 currency pairs
+providing the eight majors currencies
+that we can combine together so we will
+have CAD Swiss franc Japanese yen GBP
+Australian dollar and New Zealand dollar
+Keely and of course we will have Bureau
+and dollar then from the analysis this
+algorithm which is a cold UFO
+unconventional forex observer ultimate
+will then provide running on each and
+every chart some will process some data
+that are in common from the whole box of
+all the charts timeframes open close of
+each and every currency pair together
+and then it will split on each and every
+chart analyzing them and contextualizing
+the information that it's in
+all multi-dimensional object we call
+forex related to each and every chart
+activating blending orders then
+accordingly to the situation trying to
+read the markets in real time and then
+trying to understand what kind of move
+is the more important at the moment
+pending orders that in this example you
+will see we will ask we will put with
+the zero point one unit lot and that for
+me will be a kind of only of unadvised
+in order to go and get to the chart and
+then behave manually so basically the
+order is injected pending so it can be
+triggered because the price is passing
+over Oregon state pending anyway for me
+it's just a signal to act on that chart
+and to act accordingly to what I have
+explained you might produce videos in
+regards to hedging okay so what the
+charts are providing are providing
+signals of strengths and weakness
+of those currency pairs okay and we'll
+study their temporary correlation this
+is to make you understand how the expert
+advisor behaves so at the end for me
+it's just a matter of running and t4 and
+run the algorithm on each and every
+chart I want wait for the computation
+and then wait for standing orders that
+are coming out plus plus the signals
+that I have in the panels that are
+revealing me informations that will be
+used for my strategy okay trading
+strategy for some cream trading in this
+case the more what we will see will be
+an algorithm that will have three main
+blocks so a block regarding the analysis
+of the currency pairs another block that
+it's suggesting a hedging strategy the
+basic one but the most important the one
+that everybody can can trade and then
+the all that you seen in the graphics in
+the chart and the price action price
+levels of the exact stuff fibonacci as
+well I got a customer that I access to
+me about adding this feature of
+Fibonacci levels so in this case you
+will see the UFO with the feature
+activated of Fibonacci that is very
+interesting because it is automatically
+setting up the Fibonacci accordingly to
+the highs and lows and properly in the
+order that they are at higher or lower
+oh hi so it would be very useful
+especially for those that are using them
+quite often okay so all these tools
+together are enough for me to inject
+some prediction some orders and to trade
+and hold the positions of it because
+this is was a big experiment so on
+Monday of this week and then I also
+invite you to check the charts and with
+your Metatrader and verify what I'm
+about to show you yeah take a look at
+that and then you will understand that
+what I have explained in my previous
+videos in terms of theory and in terms
+of application can be easily applied
+just by observing and properly measuring
+the performance of the market and taking
+in consideration based on quote in our
+analysis more than considering the
+currency pairs like you know assets to
+trade if you have to consider the whole
+and then go to the narrow wing narrow
+into the basic elements that are
+composing our our environment okay so
+okay so this is it let's get rid of this
+stuff and now let's open this meta
+trader so at this moment okay we are
+here hero dollar and you can see already
+a chart with two buys of one unit so
+what I did as I was saying to you that
+if my algorithm not at this moment the
+algorithm is not running okay I can make
+it run it would be in a while now they
+also run in this office just because
+this way I explain to you but at the
+same time I still have positions that
+I'd be entered and you can you can
+easily
+have a look on this these are the ones
+that I decided to keep further there
+were some trades that I decided to blow
+because I was too late but you will see
+the performance that I perform it in
+these two days anyway here you see we
+have the first of August and the second
+of August and now we are in the third
+and I injected these two orders
+according to my my algorithm so these
+are already in positive and I injected
+them yeah less than one hour ago
+less than one hour ago and I got them
+from the algorithm then I stopped that
+and I prepared the material that I am
+about to show you in order to complete
+the exposure of this methodology and
+approach to Forex okay
+at this moment anyway I kept positions
+says more days in fact you can see we
+have a swap majority of it is negative
+there are were also some spots positive
+anyway and you can see I'm not trading
+with stop-loss I act manually so it's a
+semi-automated methodology I apply an
+hour I'm showing you bank on all the
+possible charts let me just get rid of
+this you see let's take the Euro Dollar
+it was euro dollar there it is let me
+just see this one okay euro dollar so
+see it's already combining also the the
+Fibonacci levels with the proper
+retracement okay and in this case the
+algorithm is computing and analyzing the
+strength and the weakness of each and
+every currency pair it has informations
+on their behavior and oscillation in
+this such
+we archive of data to minute-by-minute
+so it can be also a good comparison it
+has some parameters that are more wicked
+things that they are good to be known
+when we are trading and it has also some
+information of days and quote related to
+the movement of the pair not only to the
+value of the base and the quote so in
+this case you will and dollar okay then
+we have a section that regards the money
+management and risk management so
+actually I am more 27% on my balance I
+started with the McHale normally I
+always show you my experiments and my
+tricks on demo platform in order to make
+it easy and fast and also these demo
+patterns I'm also using them for testing
+when I'm realizing my expert advisors
+because I have to run them using real
+you know real live and not back testing
+but I need to have a demo convert to run
+it and to test the strategy pass the
+expert advisor make it work
+understand where it doesn't work and
+somehow test me so I need this so I
+wanted to make I founded a brand new
+demo account just for this with 10000
+euros so it's an average account and
+applied what what you see here is the
+institutional version of my algorithm
+and there is also a retail version and
+simply followed its process the moment
+there were some information in order to
+take action and then I started to
+combine the simple rules of hedging that
+I've explained in a video in a webinar
+that you can always go back and see
+because it's very everything is
+correlated
+and yeah I simply applied what it's my
+strategy and then held the positions for
+more days of course I was also in a
+negative position of some tips like 10
+20 30 pips sometimes but always
+fluctuating and always with more you
+will see I realized at least I think 70
+trades in these two days because and
+even if the expert advisor is not
+running generating in this case because
+it will have its own mark of generation
+of orders is anyway providing me the
+solution to the trick for today or at
+least for this moment because basically
+is identifying and recognizing and
+telling us in very simple words that
+currency that in this case its analyzed
+to sell is New Zealand dollar even if we
+are in a euro dollar chart it can be any
+chart because these are all informations
+that are that are recalculated in each
+and every chart so even if we don't have
+a specific child like GBP New Zealand
+dollar doesn't matter we can open them
+but in every chart there is the same
+information valuable for us to make us
+choose the charts we have to study and
+trade ok so what is saying here is that
+New Zealand dollar is so strong that
+it's better to be composed in the
+equation of hedging in the sense of
+being sold and we have to buy GBD
+because it's still strong during this
+day is especially on Monday the
+suggestion would was GBP and Japanese
+yen then it turned into GBP CAD and then
+in turn into GBP New Zealand dollar at
+the end of the markets today was again a
+little bit improving the GBP strong and
+Japanese yen weak and now it has
+reestablished this balance with New
+Zealand dollar so the trades would see
+that I realize in the statement will be
+reflecting the hedging strategy where
+you simply combine New Zealand dollar
+and GBP with the strong or the weak that
+we are having here against euro or US
+dollar in the sense for example we have
+both euro and dollar quite strong okay
+they are they have both positive values
+92 and 56 compared to others in this
+case the action to take would be to buy
+GBP New Zealand dollar which is what I
+did buy and actually look this we have
+even more the profit as increased and
+this is in real time because I made by
+as soon as I saw this so let me profit
+in points so it's already 25 pips and
+then as between euro and dollar the
+strongest is the euro the strongest
+against the weakest so you will need to
+learn dollar this is the simple strategy
+to currency pairs one lot one euro lot
+size spare and okay but then you can
+hedge by having also this section and
+understanding that our other currencies
+that are not the weakest and the
+strongest but very weak or very strong
+and you can combine them together in
+order to edge them and this is very easy
+and simple okay because the expert
+advisor does all the calculation or all
+the necessary work workflow that
+otherwise it will take hours for each
+chart its software divided in three main
+blots of subroutines that I built in
+this two years and it's about nine
+a thousand lines of code okay so it's
+quite complex but it has some meaning
+and then it must be simple to understand
+okay so now what I'm about to show you
+it's a bit about the performance and on
+this then I invite you to also verify
+verify prices and the time whatever you
+I can scroll that now a bit you know
+even if I than you can stop with your
+pose function in your video so then you
+can check each and every because this is
+all realized between yesterday and today
+yes early Monday and yesterday and today
+actually were the first hours of the day
+and I found I found only now time for
+for doing this but I will go briefly
+into into this this explanation okay
+so let's first a see me let me okay this
+is the first one okay so as you can see
+at the beginning this is the very first
+operation because these are trade that
+are all closed transactions or cancel
+okay because every 30 minutes
+the algorithm projects a trade if the
+trade is not kept it recalculates maybe
+a better position it closes the previous
+one and it puts another order but not
+more than one per chart so you will have
+only one end one single order buy or
+sell and with some rules also for
+reversing and so these are all these
+orders that are generated while
+examining the charts at the beginning I
+made as I told you the positive 10000
+you
+and as you can see in the very first
+morning I was even more fresh because at
+the end we'll be tired at the end of the
+day so performance at the end I wanted
+to close though some position that I was
+not very convincing but anyway it's just
+you know unexampled that I made along
+with my trading activity today and some
+hours that I could have spent in order
+to generate this because I think it's
+necessary also to show some statements
+so that you can really you know
+understand the performance in real and
+the situation at this very morning was
+quite interesting because with only 13
+operations 14 14 to be exact
+I was generating you know this profit
+and with just one trade that I injected
+instead of selling by instead of sell I
+instead of by I I pick up the cell phone
+mistake and I close that ok it happens
+especially if you are doing other things
+or making coffee whatever so it can be
+anyway this is the the thing but anyway
+you can see the proportion between the
+gross loss which is 27 euro we have a
+gross profit of 502 so this is just a
+mistake that you know ok so then we have
+let me check the second one which one is
+that ok this one is the second so the
+first one was here and we were at this
+level then I took and enter other trades
+and we doublet I doublet basically
+keeping the ratio of a hundred percent
+of long positions that will decrease
+ability to see but anyway really nice
+performance in this sense always with
+that short position that worked out was
+making somehow you know a bit of noise
+anyway consecutive wins and consecutive
+losses this is the proportion and you
+can see the graph very easily also the
+balance
+and the equity or all the stuff that is
+here you know how to read it because you
+are in the same okay then the big move
+and I also lost because I was late in
+running the algorithm euro New Zealand
+dollar a bit after I ran super down and
+you can checking the in the Metatrader
+what happened today and yesterday so the
+first the second and the third as you
+can see also on a on the days that are
+reported here okay then so we were now
+at 29 trades and quite impressively this
+was the new gain so 3,000 euro so are
+really such a really nice performance
+with always you know a hundred percent
+of long positions and just a long short
+position that a hundred percent wrong in
+this case which is this one with this
+relative throwdown anyway so okay and
+this is the capital that I have gained
+so plus three thousand seven hundred and
+twenty six and I wanted to trade with
+lots of one euro and quite not abounding
+but somehow trying to be relaxed you
+know and following the simple strategy
+but then I was just doubling the orders
+the moment I was in a good position and
+deciding then to get more gain but I
+could have done that because will my
+suggestions from the algorithm work were
+quite coherent so then let's go to the
+next one which is this one so from this
+one we raised then to this level 5000
+okay
+and of course all this information here
+you can also verify them so I leave them
+for you to reach it with the video then
+we got another extra trade and some
+short positions that were retracement
+because to the day of stage when I was
+taking profits from the Monday and
+injecting some orders for the next day
+it was basically a buy day so I tried
+some retracement some of them were more
+successful others I was they stopped
+because I could have you know stopping
+at the moment before so I took them with
+a little loss or a break-even but they
+were not important because they were a
+retracement phase and I was searching
+for the long position and then finally
+we got as you can see at the end I was
+just closing some orders but that was
+already taking only the good positions
+continuing and so let's hope that now
+it's getting better let's see what is
+going to get is raised if we take a
+snapshot now just to just to have a very
+recent update ok
+[Music]
+okay so we see now write this as even
+more incremented okay and we have of
+course we had some losses because I
+decided to close and not to keep more
+because we were going towards the
+midnight spreads were starting to rise
+so I just made this in order to make at
+least a couple of days but now we're in
+the third day so for me the objective of
+explaining and showing how to perform
+swing trading it is this okay and you
+can see by yourself is these are graphs
+that you would like to see in your
+statements some considerations normally
+people shows you this kind of grass be
+be aware that what you're seeing here is
+not a back-testing graph not a backtest
+made with it's a real-time because you
+can see you can tell it by the multiple
+currencies that are traded okay in a
+back-testing you just test one currency
+pair and you have just that currency
+pair with all the episodes they have
+infinite numbers of trades very huge
+draw downs and incredible you know up
+and downs they have not kind of you know
+consistent increase meant and in a very
+moderate trade so this is why it's good
+for me to trade with man you allottee
+with knowledge and apply the knowledge
+to the instruments that are facilitating
+and making easily the process of
+analyzing in a matter of minutes okay
+another thing that you should notice
+despite the fact that in some positions
+i have settled
+I'll take profit pay attention to the
+Colin of the stop-loss because in all
+the trades that have been injected
+through these days I never used an extra
+plus no stop losses currency the moment
+you have decided their correlation and
+established that in such in a quite you
+know meaningful period of time they need
+their space to behave so make inserting
+a stop loss it's something that you have
+to do after when you have reached the
+point and then you go you know in a
+break-even position or a bit out but
+then you have the profit but when you
+have to let them be and even go in a
+negative situation you must let them
+breathe without stop losses so even some
+risk because you're saying yeah without
+surpluses but the risk is that they are
+covered one to be one with the other by
+hedging and you see positions of GBP
+Japanese yen they are from the first
+then we have dispositions from the
+second that I kept because they were
+suggested from this final analyzer and
+and then now GDP New Zealand dollar and
+euro New Zealand dollar which are
+already 50 pips made with two of them
+only so this is then a discrete way of
+trading that gives you anyway consistent
+gain okay so this is something that I
+can show you and make you understand and
+each and every chart each chart works
+and behaves accordingly to my formulas
+and then understanding that what is
+going on of course in this case as I
+called you I see one oxy applied they
+can also be of course deleted or it can
+be
+given without without need of of the
+Fibonacci levels if you're not using
+them anyway now you can see also here
+are all the values running running so
+given a complete vision of the market at
+least for the first hours now I decided
+a moment to take a break and already let
+go the positions that I have established
+for the very first day and see what they
+were going to give anyway from a 15
+capital that we have here balance okay
+that we have at this moment the equity
+is 900 so I always almost made the 200%
+in two days enough which is the cycle
+that I was telling you it's embedded in
+India in this algorithm that I am that
+I'm using I got a lot of males with
+questions of any kind and means too much
+the if I have to answer to all of them
+but some of you they were asking me also
+statement and anyway it was in program
+to do that the moment I was completing
+so I think that with this we have from
+the theory to some first understanding
+of the behavior of how it works and then
+some practical examples that may arise
+realized right after of course not in
+the same moment of the example because
+the example was in history and this was
+applied to the first and the second one
+and the third of August so this is this
+is what what what are the results and
+you can see also that when we are losing
+and when we are
+having let's say that the profit let me
+just show you better okay let's go
+insert so yes these are the losses
+especially this ones I close them you
+know too much later should have wait a
+bit more but it's fine but the average
+losses are more this kind okay and if we
+go and see the magnitude of the profit
+on the other side well we have greater
+greater profits that are hedging and
+covering properly you know possible
+negative moments and see we have also
+negative positions like this but then we
+had for example 368 398 173 57 minus 27
+so this is how it works and the
+combination in a way of all of them
+together and as you can see the ones
+that are negative are some experiment
+that I was doing I could have put only
+the buy orders and let it go but then I
+also I wanted to trade and attend some
+replacements so this is also on the
+other side and some of them was
+successful other were less while the
+buys positions were the majority and
+positive and so you see that they were
+in this case some sell orders in
+positive and other sell orders in
+negative but I was kind of you know
+trying to test in awesome with some kind
+of easiness because it has to be
+something that you feel calm and relaxed
+and even if you are making little
+mistakes that can be because we are not
+perfect the overall performance of the
+portfolio and the currency pairs that
+you have chosen for your exposure and in
+the
+and in the lungs must be enough accurate
+in order to create enough space even for
+little mistakes and that can occur but
+they don't have to damage your your your
+investment and your speculation that
+you're doing with with the current six
+well I think this complete um with all
+the other aspects that can be said of
+course this will be some mentoring some
+private stuff some creation of
+algorithms for you if you want or simply
+send me as usual on email because
+certain things will have a different
+part I cannot figure out all the other
+questions and put them now because I'm
+quite tired today and I wanted anyway to
+give this also evidence that it's quite
+important because theory and it's
+functional to operative ET and strategy
+and these elements must have a positive
+performance okay so for me I hope it's
+clear that I can generate robots and
+automate a trade but it won't be that
+efficient as a human being is the
+important thing is for me is to have the
+right information at the right moment
+take a decision lowering the risk rising
+at the maximum the probability of
+success and let it go for the day next
+day is another day is another reset if
+certain positions are somehow defined or
+they are still breathing and being
+positive if you keep them otherwise you
+wait for the next signal that anyway it
+would be injected here as well
+as in the orders that the moment I let
+for example now go the auto trading and
+I let go the auto trading on all the
+charts just as a final example if the
+algorithm is detecting any any kind of
+elements let's see now what it's what
+we'll do or if it's generating something
+or not I don't know anyway the algorithm
+when it runs it will analyze the chart
+and provide all the necessary
+information for a hedging strategy and
+then we can also keep in analysis our
+performance in in the equity and
+understand how much capital we are
+risking if we're in negative or our how
+much capital we are generating and
+adding to our because now we have 30%
+more of this value which is almost 20
+now so thanks for watching and thanks
+for the patience of these three three
+webinars that together hope they will
+make sense for you and that can be
+digested little by little accordingly to
+your time and we'll to understand and to
+put your head into this kind of sin
+quite complicated but it's very simple
+somehow at the end and for any need
+let's keep in contact okay have a great
+time space and ideas for the day after
+and for those are our trading tomorrow
+that would be a very profitable day ok
+bye ciao

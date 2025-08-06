@@ -1,0 +1,394 @@
+hello fellow traders and welcome to this
+new video of unconventional Forex
+trading today I'm gonna be very brief
+due to the large amount of emails that I
+got in these past weeks of January and
+December as well after my latest videos
+and webinars that of course I strongly
+suggest you if you are interested on
+this topic to to take your time to watch
+and have a view of what I did in order
+to then follow this one or make
+kind of compendium of information today
+I will briefly
+give recap and attempt to give some
+answers to the many different mails that
+I got, mean time is of course as you can
+notice running the sound of MT4 in the
+background ... as I was saying I will try to
+answer to the most frequently asked
+questions in regards to my system hoping
+that in the future at least by watching
+this video and watching the previous
+videos that I made everything could be
+more clear and if you really want to
+contact me privately via email or Skype
+at least for these questions you have a
+read your answer so you will contact me
+for further information and more
+specific ones okay?.. so prior to start
+with this as usual I always bring an
+example of trade ... an example of the
+strategy that I use combining also with
+the Excel spreadsheets as usual in order
+to show the whole process of gathering
+data from mt4 than analyzing data and
+then projecting some forecasts and
+placing the trades
+getting some profit hopefully okay... so
+let's start first with
+the actual situation ...today's it's
+Thursday the 23rd of January 2020 as you
+may notice here  from this date
+and the situation of the market since
+the beginning of the day that started
+around this bar so sixty-three bars ago
+in terms of 15 minutes time frame bars
+showed immediately that the currency
+that was strong so to be traded as
+strong currency was the Australian
+dollar despite the fact that today the
+situation is quite messy and oscillating
+and despite the fact that around
+two o'clock AM... there was this huge spike in
+movement
+I had anyway to decide to make a
+trade and also copied my trade mirror at
+my trade on a team account in order to
+give an explanation and an example of
+trading opportunity so after analyzing
+this information also accordingly to the
+formula that I already presented in the
+previous video of a kind of oscillator
+and the analysis of 28 pairs
+normalized and brought them together in
+the graph I waited for the starting of
+the London session in order to project
+my trades as you may notice we had this
+situation let me just this is the GBPAUD
+on a 15 minute time frame and that you
+can see around 1:00 2:00 o'clock AM there
+was this big spike sentencing that
+Aussie was behaving strong and then
+there was this ranging situation...
+I injected my trades around this price area okay and then
+i wanted to make some profit and then I
+closed my trades... the initial balance of
+course was as usual of ten thousand
+units of currency and I place it some
+trades multiple trades but basically
+just all the currencies against all the
+currency pairs against the Aussie
+therefore basically I made seven
+positions my portfolio was made
+of seven currency pairs all the pair's
+against the Aussie let's also give a
+brief summary of this there was only
+negative one negative trade that was
+injected by the state as I clicked the
+wrong pair and then I closed that I
+closed immediately because was related
+to GBPNZD
+and as you can see that
+was a minimal amount that I just made by
+mistake but what is important to notice
+despite this this practical error was
+the fact that the result my trades was
+about 14% in 3-4 hours of trading and
+with a total trades of 22 so 21 trades
+in real 3 units per each pair related
+to AUD ...let me check this okay so
+basically you notice that AUD behaved
+very strong with the spikes at the
+beginning of the day but then around the
+beginning of the London session there
+was this big spike up and after a bit of
+retracement by following my my analysis
+and the fact that the AUD was
+starting to fall as well as some
+currencies that were getting some
+strength so that was starting to weaken
+that for me was the moment to close the
+trades and take the profit so after all
+this is a great equity curve with a
+profit factor I hope you can see
+read all the trades all the numbers you
+can check and verify with your mentor
+trade a platform with your broker if
+everything matches so that's always this
+crucial thing from myself that I would
+like really for you to verify what I'm
+saying what I'm doing
+so basically almost a hundred percent of
+positive results in three four hours
+okay so this was the result and
+basically the questions that I got since
+my previous video always talking about
+this topic that I got in a large amount
+in these past weeks I tried to make a
+sum of them put them together summarized
+them and at this moment now I will
+briefly give an answer for each and
+every one so that would be more clear
+for those who are writing me about my
+methodology so let's go further so this
+is the final balance
+okay so for as regards my methodology, my
+system the minimum requirements for
+installing and working with this it's
+about to have Windows 10 computer with
+Windows 10 always up to date is very
+important and I explain also why in my
+previous video so please please please
+watch this video watch my previous
+videos first then re-watch this for the
+questions and then if you feel the need
+of course then write me or contact me
+via Skype as you usually do as I was
+saying with the stand computer up to
+date with an Intel Core i5 or i7 which
+is better and a licensed Microsoft Excel
+copy in order to work of course with
+Excel spreadsheets of course Metatrader
+is necessary for this for running the
+expert advisor that grabs the
+information from Metatrader and delivers
+the markets data to excel
+spreadsheet of course it's more likely
+to have an ECM broker together to have
+reliable data and information and of
+course you need to have quite enough
+fast internet connection
+for as regards those who are willing to have
+the system and that are writing me about
+there are some considerations to do that
+I will do that right now
+for as regards the installation basically
+the system requires to have installed in
+your computer the expert advisor some
+VBA's files batch files for  the
+dialogue between Metatrader and Excel
+that I have built by myself that I'm
+using as personal tools for my trading
+of course there's also some Excel
+configuration for the spreadsheet in
+itself and there's also a final system
+testing and this can be done by me via
+remote access usually by using
+TeamViewer and this job will require for
+each PC on which you want to have this
+installed will require about one hour
+for has regard then of course the
+related mentoring that would be done
+one-to-one I normally use exclusively
+Skype for Skype in English and also by
+using the screen sharing to so that I
+can follow your screen and guide you to
+the process so all the system works this
+price is impersonal formulas
+implementation because as I showed my
+system comes with the basic but
+essential setup that is the setup that
+is required in order
+to make some analysis on market analysis
+but at the same times the spreadsheets
+allows to implement with your
+own formulas this time formulas that are
+applied not to the pairs but the currencies
+pairs... not the currency pairs but to the currencies
+so we apply the formula to
+the currencies created as clusters of
+currency pairs and of course for all the
+details that would be the topic of the
+mentoring session okay I will not take
+too much time to explain everything now even
+because a lot of this has already been
+explained in my previous webinars okay
+that you can always rewatch on this
+channel of course there's also part of
+the mentoring session it's related to
+the money management and some
+fundamental analysis that has to
+necessarily be integrated with the math
+Math approach that I have (which represents
+the 75% of the analysis)... we have always
+taking consideration that we are moving
+in markets that are moved by
+institutions and by "big hands" decisions
+so we have always to be careful and not
+give anything for granted and try to
+analyze and be cautious and be able to
+create some profit without leaving our
+money in the market for such a long time
+so it's all about a Day trading
+activity
+then of course the moment someone has
+the system it's suggested to
+have some self-training on a demo
+account for about one week or two this
+is a math based analysis and this math
+based analysis it's done to support
+manual trading environment so we're not
+talking about automated trading it's a
+manual trading and of course everyone
+has its own skills everyone has his own
+level of understanding of ability and
+because of this it takes a bit of time
+not a much but it's completely different
+mentality and approach that has to be
+built within you within yourself in
+order to be confident by using
+currencies and then converting
+currencies to currency pairs because of
+this it takes a bit of training you know
+an every day training testing
+understanding analyzing understanding
+attempting a trade so for this couple of weeks
+... from one to two weeks of training
+it's the average time required in order
+to become to start to have some positive
+performances for us regard the mt4 back
+testing I got a lot of requests on this
+"... can I back test your system?"...
+in this case the back testing the
+standard back testing of my system which
+is of course the T-WIN...
+trade W.I.N. strategy is not like a normal
+expert advisor that can be run on the
+back testing feature of MT4
+MT4  does back test on single
+currency pairs... this system analyzes
+simultaneously 28 currency pairs and if
+you want to do some kind of back testing
+you have to do it in the training
+situation because it has to be done in
+real time market conditions is not
+possible to even because the expert
+advisor itself it's necessary just to
+gather the data and then other kinds of
+testing are not possible the moment you
+are analyzing and injecting the trades
+after an analysis that comes from Excel
+not Metatrader okay some questions were
+regarding the fact that I'm using the 15
+minutes timeframe ... let's be clear the
+analysis it's using 15 minutes at this
+moment what I'm showing here it's based
+on bars of 15 minutes okay
+but the analysis itself it's made on a
+daily basis and of course the expert advisor that run
+and gets the data can run also on
+a different timeframe 1 minute 5 minutes
+15 of course 30 or 60 minutes without
+any problem so the timeframes below
+the daily time frame but normally I found that
+for this kind of approach and analysis
+and representation on Excel the 15
+minutes time frames is the best
+compromise in order to have some
+detailed information and at the same
+time with not much bars the the overall
+view of the day okay so this is my
+personal choice due to different
+experiments and different situations
+that I have tested and the optimal
+configuration but anyway it's also
+possible to to analyze in very detail
+for example in with one minute timeframe
+bars for as regard the fact that some of
+you may want to have some consulting
+from my person well of course there is
+an email also in the video description
+and also on my channel but anyway this
+is my email so mtalgosolutions @ gmail.com
+but please first send me an
+email with your presentation and i want
+to be clear one-line emails or even
+nonsense emails very straightforward
+emails without any presentations or
+whatever or emails also with attached
+files that I don't know where they come
+from whatever they would be discarded
+immediately so please be specific and
+present yourself as well as I am
+presenting every time I I do a video
+okay and also when I speak with skype
+and after this email  you can
+reach me through Skype so at my contact
+to Skype and then message me
+on Skype and
+course we will find the time maybe to
+have a chat a voice chat on skype
+...costs... of course this system itself is a system
+that I worked on on it for about four or
+five years almost five years now I can
+say without any doubt and so it has its
+own value but for this reason and also
+for the fact that then the requests are
+very specifically individual and also
+related to the level of skill that each
+one has and which is different we can
+discuss of this for sure on on skype
+when we talk ok and finally and this is
+a point that is not a question that I
+got but something that I want to be
+clear the system is not unlimited I will
+not give to everyone and forever the
+system even because it's good to keep
+something rare and not that much
+spreaded in order also to to give rarity
+and save some privacy for us regard the
+trading so this system would be limited
+and after I will reach a certain number
+of requests that will be fulfilled I
+will stop to provide the system in the
+sense that it will be no longer
+available to further requests and this
+will be discretional so I will decide a
+moment I would reach certain number of
+people I'm sorry but this will be
+limited for my choice because remember
+that this is my personal - these are my
+personal
+tools and knowledge and as I am private
+operator and doing this also making a
+compromise for as regards my time and my
+rules so if this is my policy okay so
+you can always follow my channel you can
+always see the webinars that I do and
+the information that I release and that
+I have released in the past because now
+I have almost 70 videos that you can
+watch so and majority are webinars with
+information and experiences that I share
+so this is very crucial that you
+understand also this point okay so this
+is this is it
+this is all I hope that this it's quite
+clear in terms of the most common
+questions that every time you watch a
+couple of my videos then immediately you
+go to your mail and then you ask always
+the same question and because I would
+like to enjoy my time and save my time
+with this video I hope you get
+always the answer and I hope that this
+video would be watch over and over from
+the majority of you so that I will have
+more quality in my emails and that I can
+give more support to those who are
+willing to go further or have experience
+of my techniques and my advices and
+would like to discuss about this or
+share together their experience with all
+the said I thank you for watching this
+brief video ... thank you for
+subscribing my channel thank you
+for the support and anyway I have to
+mention also the many beautiful words
+that I receive every time and that they
+give motivation to my work give me some
+you know extra stamina for for going
+further and as usual have a good time
+with space and enjoy life...
+BYE!

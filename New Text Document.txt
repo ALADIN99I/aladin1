@@ -1,0 +1,13 @@
+so now understand why the agent sytem is losing money, 
+I would need to analyze its methodlogy ,
+ risk management, and the market conditions during the 
+simulation and see why he's not inspiring the profitable
+ every day author at folder intraday/*.txt (how the author identify it's change of direction or should hold (how much time to hold ) with smart diversification even at worst case should be 0.01% profit and how he turns losses into profit )
+
+so now understand why the agent sytem is losing money, what issue data mishandeling ,he  does in every cycle look back window from 0 gmt till that specified cycle ?
+
+
+this is simulation micmics real system see mechanisme of llm agents why it's not inspiring the profitable
+ intraday's author at folder intraday/*.txt (how the author filter between meanreversion and trend following and how he turns losses into profit )
+
+dont add new tools just enhance the llms to distill the brain of the author  in intraday how he turns losses into profit

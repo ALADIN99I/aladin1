@@ -1,0 +1,509 @@
+hello fellow traders and welcome to this
+second part
+of the webinar over unconventional forex
+trading and of course I suggest you to
+watch the previous video which is the
+first part basically I'm doing this
+second part because  as it
+appears the less the frequency
+I publish videos the higher the frequency I
+receive mails and requests of every
+kind and also Skype contacts so I just
+made a kind of Appendix to the previous
+video as a second part which somehow I
+will speak about another topic very
+briefly and I strongly beg you to watch
+the entire video first from the
+beginning to the end because a lot of
+emails I got they were asking
+something that was already explained or
+answered in the video and by asking to
+the people that were sending me mail
+they were saying: ... "oh but I just saw the
+first 10 minutes!"... whatever....  I know it
+takes a moment to explain things but I
+will put myself available for a reply of
+course when there is an email with some
+sense not very short messages or
+nonsense messages but sometimes you ask
+something that is then explained maybe
+at the 25th minute of the video so take
+the patience to watch at least once the
+video completely ok so all this said
+just to go directly to the topic
+today I will today it's Friday is the
+26th* of October 2019
+and Markets now are
+closed and I will do just a brief
+*- (Saturday has just begun) -
+explanation of something which compares
+somehow because I got requests on this
+with so I would put some practical
+trading examples I will expose
+why manual trading is definitely better
+than automated trading for as regards
+of course retail traders especially
+indeed man are trading anyway requires a
+good quality of market analysis and
+requires therefore the proper tools
+which in my case is my currency
+strength meter u.U.F.O., that
+I have built by myself and for myself on
+the ante for meta trader platform so all
+this said let's go directly to the point
+and I will start let's see that see I
+will start with this ok so if you watch
+the previous video you will see it will
+end with a balance and some examples for
+acid are the risk management and
+that good quality of the analysis and
+the results that a good quality quality
+quality of analysis my case based on
+math can lead to some impressive results
+or at least good results for someone
+repressive now markets are closed as I
+said and so you see why you were forward
+that was still running somehow so it's a
+kind of screenshot this one is just
+static now because there is no data feed
+basically so it can also disappear
+that doesn't matter and in the previous
+video you saw a balance that was then in
+the statement you know of MT4... this
+week I traded not that much days because
+we have to mention something that yes
+can be done also an automated trading
+but let's say that with mono trading you
+have also to focus on certain aspects of
+the markets which regard for example the
+fact that it's better stay out of
+trading when some markets are closed and
+in this case in this way we got Tokyo
+session that was closed for holidays
+on Monday I think, so there are some days and
+even the day after where where markets
+are more ranging than trending unless
+there are other reasons for them to trend normally
+it happens this so there are
+days where there is no practical trend
+that can give you a kind of
+relaxed trading because there is a kind
+of inner oscillation rather than trying
+even if sometimes there are very big ox
+oscillations but within a range and
+with the trend I feel more confident at
+least because you can catch better moves
+so also with the Brexit issue that is
+somehow leading GBP in a very crazy way
+with a lot of pips that can be done and
+unfortunately I was out a couple of days
+for medical reasons so I just traded
+some days okay so as you can see here we
+are starting from the negative side you
+know of the trade when you have to close
+your trades because you're going with
+the risk management that I was talking
+about in the previous video anyway when
+you go over a certain percentage of
+negative percentage of your balance and
+anyway if you remember
+oh let's also do this for a second we
+were the last screenshot with this one
+with the October the 18th of October at
+11:43 with this balance okay and
+basically I made some extra trades this
+week and as I was showing you here sorry
+okay we have here now we have a balance
+of fifty two thousand eight hundred and
+twelve units yes of course also we can
+see it here okay and basically this was
+exactly is exactly what I was showing
+you now so there is now a new statement
+that is dated
+25th of October yes now I said 26th
+because now is already Saturday here okay?..
+...anyway... I'm talking about this week
+within the Friday because now is Friday for
+this statement... is regarding Friday the
+25th of October at 22 and 55 okay so
+this is the very latest statement that I
+made from this week and the results were
+not that much I could have trade even
+better but I got times that I was not
+that was not possible for me being at
+the computer and make an analysis and
+save some time for that so I made just a
+couple of trades anyway we can see that
+from the final balance of fifty thousand , fifty five .31 units I increased
+to
+of about two thousand and seven hundred
+and fifty units okay so that was in a
+way of positive result going
+further and I was while I was willing to
+talk about manual trading versus the
+automated trading and there are weeks
+where Forex can be for it's market can
+be more predictable and less stressful
+other weeks is not the same this is why
+that out there are also exogenous
+factors that we must assume and think
+with our own mind and figure out somehow
+that can be more hard to read
+analysis of the market and I told you a
+minute ago that basically there are some
+conditions when certain markets are
+closed that influence all the day because
+their currency in this case for example
+the Japanese yen were not moving
+therefore there was the need to keep
+them in a range and as all the
+currencies are correlated connected
+interrelated one to each other also the
+other currency pairs were somehow
+influenced by the ranging of just one
+currency okay or at least more limited
+because of the need of maintaining
+stability at least this is my analysis
+for this week and I was dis I'm saying
+this now because there is something that
+I was hitting in the web of course on
+YouTube and so it's public so I think I
+can at least show one thing in relation
+to kind of automation I think that was
+something like that but what I wanted to
+show you is that for those for all the
+emails that I get where they're asking
+me: "... do you think about making a uUFO which...
+... is fully automated?".
+This is a wrong approach to the thing
+because uUFO
+which means
+unconventional Forex Outlook or
+unconventional Forex observer it's a
+tool to read in real time the trending
+of the strength of the currencies that
+it's a kind of 75% of the analysis is
+just leading indication that defines on
+which currencies I have to focus then
+comes another part that takes in
+consideration
+the market conditions and then the in
+chart analysis to identify the highs the
+lows good spots were position my trades
+that completes the analysis and prepares
+for the trading ok so there's a kind of
+process that involves multiple aspects
+so uUFO in itself the moment is
+just a part of the strategy cannot be
+automated because the final decision is
+is not because now here I see NZD vs CAD
+I'm going to trade NZD vs CAD...
+I'm receiving
+something like a filter that says
+take a look to NZD and CAD but
+if a move already occurred I know that by
+passing these two currencies I will take
+a look to others because these are
+already gone so it's filter that can
+tell me it's time to take action on
+these currencies or... these currencies have
+revealed already their move therefore I
+know that they can be considered in the
+opposite direction or that I can use
+other the other six currencies remained
+so I make a kind of analysis on six
+cases rather than eight currencies okay
+but then I considered also other factors
+and as I told you I was on the web and I
+took just a screenshot okay and let's
+talk about this example
+I went into this page and I saw that was
+a streaming .. so it was in real time
+and there was this challenge,
+a trading challenge of 1 million pound
+challenge where I think it's a good
+example of how bad the automation can be
+for my reasons at least ok and we see
+here a challenge on the gbp/usd I hope
+let me check if you can see it better
+let's make it even better... here GBP USD
+gbpusd ok so this account has this balance..
+this balance and was making this
+loss
+because since the beginning of the day
+was injecting at this level a BUY order
+that for more than six hours 10 hours ... sorry
+was leading to this result now we
+can see now how the GBP went today okay but
+let me tell you that that was an
+automation as you can see we have these
+values and we have this order injected
+by kind of analysis that it's also made
+on a single currency pair
+so doesn't consider cannot consider the
+strength and weakness of the eight
+currencies that are in the Forex market
+okay was just on an application of
+something on the chart of gbp/usd so
+maybe yeah this account was five hundred and thirty one thousand pounds
+okay was in negative was
+trading a volume of 10 lots and
+with - 6500 pounds but in my opinion
+by giving to the market that amount for ten
+hours it means you have wasted a day
+even if then it retraces even if this
+loss is the 1% almost 1% so it's within
+the parameters of a good money
+management there was this issue about
+creating a very poor portfolio based on
+one currency pair only and having a
+negative exposition for ten hours if you
+do day trading
+you cannot do that every day at least
+you have to bring home something ok or
+if this is wrong you have to cut it
+I think it's kind of a dangerous way to
+put the things and to show the
+automation because 10 lots is something
+that of course we are talking about big
+amounts of probably a demo account... I don't know
+this but I don't want to investigate
+further ok but I think it's very... see
+here?... the time... so it was open since the
+end of the markets since
+Thursday the 24th that was opened and
+was this negative
+but I think for normal retail traders
+simple people and even the majority
+which are novice or inexperienced
+it's a very bad example and is
+automation
+so just to counterbalance this which is
+made what way what are these fucking
+indicators sorry for the word indicators
+but let me show you that what I did
+today for as regards markets
+okay so I took as well a screenshot
+of my GBP was the trading okay because
+the UFO is not loaded around the chart
+it requires only the euro dollar chart
+see here EURUSD one chart only on
+the daily timeframe in this case and I
+can read and have everything under my
+control on my control and I will show
+you I was here on this gbp/usd this is a
+five minute charts that put it on a 15
+minute chart so it makes sense okay so
+on the date on this day on this Friday
+this was the GBP was being okay and
+as you can see I made a trade that I will show you in a moment at 10:00 so it was 10:00 on
+the server time in the morning 10:00
+a.m. at this level of price and I made
+of course not buy, but SELL
+okay making some good profit okay for
+45 pips okay and
+just to show you this is the gbp/usd at
+15 minutes this is of course the chart
+that I was showing you also this is a
+screenshot just evidence okay this is a
+sell order of one lot and it's already a
+lot of a lot sorry for this... and as you can
+see this level sell order was made here
+we can check this one gbp/usd let's get the line... that's ...here it is
+GBPUSD
+here it is...
+I also got of course some negatives but
+who cares
+so at 10:00
+10:00 am on GBP SELL so not buy like the
+automation okay at 1.28 around 1.28
+1.28578 okay
+1.28 this line is a little bit above let's
+show you in a picture this line is a
+little bit above just to give the
+opportunity to see also the Sell order
+line which is here so if this is one
+1.28609
+this one is 1 point something less
+than 605 and so it's 1.2857
+1.286...1.285...
+okay?...  just a little bit
+less was around this are a little bit
+lower
+okay hope this makes sense just too and
+also let's take a look maybe this is the
+15-minute chart okay so let's take a
+look to the one-minute chart and in the
+one-minute chart you can see even more
+clearly which is one point two
+around that value okay one point two
+eight five
+one point two eight five
+okay.. GBP USD
+.
+well
+so
+I'm not getting why
+certain hours of automated trade (same  effort that I can put with manual trading) they give such
+a negative result because what I mean
+for day-trading is that by the end of
+the day you close your positions and
+tomorrow is another day but this kind of
+results
+are not good and they are very bad
+behavior example ... not only a bad
+example... a bad behavior example ... very
+dangerous because people that are
+beginners can think:
+"oh we can go like that..."
+NO YOU CAN'T
+you have to make your
+own analysis and get some results sooner
+or later the moment you are doing an
+automation you don't know what it's
+going on the moment you do the analysis
+you know exactly what's goin' on  or
+at least much better and if something is
+not clear in your mind you know you can
+quit this way (automation) you don't know what it's
+going on and of course when you're at
+the beginning of the trade and you see
+you buy ... okay but then is retracing... is
+retracing and then bang down again
+you take for the day not swing trainning
+especially when you have automations
+they are dangerous okay so hope this
+example and this...
+this is of course the uUFO running...
+so this is the result of the analysis of
+the market not of the uUFO is in a certain way
+anyway big helper for me is basically
+everything because it uses math and
+gives me numbers and it's a kind of
+filtering very tight that I can perform
+a good market analysis for manual trading...
+it's the effort that I will do manually
+chart after chart for 28 charts so
+the 28 currency pairs every day that
+instead of making that in hours I made
+that in minutes and then I focus my
+trading also with Excel spreadsheets and
+with anyway chart analysis okay
+so gbp/usd in that "bad example" was to buy
+in this area and let it go that's wrong
+first you have to close at the end of
+the day and second
+there was a SELL not a buy action to take
+okay well
+I know there are many questions whatever
+and I hope that you enjoyed this video
+and to say the good example of this I
+know I respect everyone that trades I
+don't like any way and I disagreed with
+certain ways of showing Forex and ..
+forex trading because this website had no
+opportunity for example to have no
+no comments ... but had advertisement and had
+merchandising ... I do forex for a reason
+because I wanted to crack somehow to be
+capable or to realize something that
+would have allowed me to hack or to
+crack debug reverse-engineer the forex
+market this personal passion prior than
+trading and make
+the retail trailer I'm not merchandising
+my stuff and when I see websites or
+YouTube channels where instead of giving
+knowledge or good behavioral examples
+they're there just to make
+audience and sell merchandise you do a
+merchandiser  .. you're
+not a trader... or at least you can be a
+trader as well you have my respect but
+it's not good for the people is not
+educational ok anyway we can have
+lesson learning from this okay
+the lesson learning is that
+manual trading is definitely better and more effective than automated trading it
+requires for you to be there and work
+into the day trading but you get
+results and you know what you're doing
+Automation it's good to be in the
+computation in the formulas that kind of
+automation is nice because saves hours
+and hours of work of daily work and
+repetitive work okay but the other kind
+of automation where orders are injected
+based on a single chart and creating
+basically a ghost portfolio of just
+one currency pair in its ... :-( ...
+I trade and hedge them together
+so despite also some negatives results
+but we can see that on around this time
+between 9:30 and 10:00 as you may notice
+I traded the GBP against all the
+currencies so I created a kind of
+diversification of my portfolio based on
+the GBP that was weak
+that anyway was weaker than the other
+currencies
+it's more than 75% of the job but then it takes also to enter because
+there was not that much movement
+45 pips... so it's good to have a
+good entering position but was Friday and
+even in Friday's where certain markets
+are closing and they are not open till
+next day is like they're closed for
+holidays so that's why on the Fridays
+there are not very good situations to
+catch okay there is a kind of oddity a
+kind of mysterious something that cannot
+be predicted probably guessing you get
+more or making some kind of Voodoo dance
+you can get more results but anyway
+probably the Voodoo stuff or the magic
+rituals or some chakra meditation can be
+more effective if compared to automation
+this is my personal opinion ok so
+respect to all ... I respect also those who are
+making something that I totally disagree
+but I at least I gave my opinion and I
+hope at least a part of you can agree with me and at the
+same time I hope that all the emails that
+were talking about automation rather
+than manual trading can have at least an
+example of one and the others and the
+other and
+at least figure out what I'm talking
+about okay so with this said I don't
+want to make it that much long so I hope
+you're still there watching the video
+that now is ending and as usual I thank
+you for watching and subscribing my
+channel for the many mails that I
+receive ... be patient and of course be
+"be something"... because one line of email
+where I have to write down and reply for
+me doesn't make sense
+so I reject that but if someone is
+explaining me something or be very
+specific or wants to talk to Skype and
+there are conditions and in that case I
+take in consideration for whatever it
+takes for a simple opinion rather than
+mentoring or then figuring out what my
+tools are and what they are for...
+also the respect that I give to you by
+doing something here is also something
+that I pay respect for the effort that I
+made in all the years that I am into
+into the "Forex thing" I also beg
+you for a bit of respect to my person
+or at least in the understanding that it
+takes some time to reply to all ... whatever
+so thanks again for watching for
+subscribing and for supporting my
+project and as usual I wish you
+good space and time and good life ...
+... take care of you okay?...
+...BYE!

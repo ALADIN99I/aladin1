@@ -1,0 +1,1601 @@
+
+
+good time and good space fellow Traders
+
+good time and good space fellow Traders
+and welcome back for this final
+
+and welcome back for this final
+
+and welcome back for this final
+video um the last tool that I'm using on
+
+video um the last tool that I'm using on
+
+video um the last tool that I'm using on
+analyzing the Forex
+
+analyzing the Forex
+
+analyzing the Forex
+Market which I named sator effects and
+
+Market which I named sator effects and
+
+Market which I named sator effects and
+works on
+
+works on
+
+works on
+Excel in this video we discuss about the
+
+Excel in this video we discuss about the
+
+Excel in this video we discuss about the
+portfolio
+
+
+
+
+
+performance and let's dive into it
+
+performance and let's dive into it
+immediately and we're talking about this
+
+immediately and we're talking about this
+
+immediately and we're talking about this
+nice and
+
+nice and
+
+nice and
+simple
+
+simple
+
+simple
+chart
+
+chart
+
+chart
+here so as I told
+
+
+
+
+
+you I'm
+
+you I'm
+using and creating this chart by
+
+using and creating this chart by
+
+using and creating this chart by
+selecting
+
+selecting
+
+selecting
+some
+
+some
+
+some
+values uh regarding the
+
+values uh regarding the
+
+values uh regarding the
+currencies and again the way that I have
+
+currencies and again the way that I have
+
+currencies and again the way that I have
+uh built this
+
+uh built this
+
+uh built this
+interface it's about Excel skills so if
+
+interface it's about Excel skills so if
+
+interface it's about Excel skills so if
+you want to
+
+you want to
+
+you want to
+create uh V lookups or whatever you need
+
+create uh V lookups or whatever you need
+
+create uh V lookups or whatever you need
+to know Excel and as you can imagine
+
+to know Excel and as you can imagine
+
+to know Excel and as you can imagine
+again again I repeat that because it's
+
+again again I repeat that because it's
+
+again again I repeat that because it's
+important to make the things clear this
+
+important to make the things clear this
+
+important to make the things clear this
+is not an Excel course so
+
+is not an Excel course so
+
+is not an Excel course so
+this kind of tool
+
+this kind of tool
+
+this kind of tool
+it's very doable by someone that has
+
+it's very doable by someone that has
+
+it's very doable by someone that has
+Excel skills and knows how to use this
+
+Excel skills and knows how to use this
+
+Excel skills and knows how to use this
+software so for this
+
+software so for this
+
+software so for this
+I I I send you back to any kind of
+
+I I I send you back to any kind of
+
+I I I send you back to any kind of
+courses or studies that are implementing
+
+courses or studies that are implementing
+
+courses or studies that are implementing
+your abilities by using Excel what I am
+
+your abilities by using Excel what I am
+
+your abilities by using Excel what I am
+about to do here now is just to explain
+
+about to do here now is just to explain
+
+about to do here now is just to explain
+to you how do I get this formula then if
+
+to you how do I get this formula then if
+
+to you how do I get this formula then if
+I have created a simplified way for
+
+I have created a simplified way for
+
+I have created a simplified way for
+doing this rather than going back and
+
+doing this rather than going back and
+
+doing this rather than going back and
+forth this is due to my skills in Excel
+
+forth this is due to my skills in Excel
+
+forth this is due to my skills in Excel
+but you can do the same by having your
+
+but you can do the same by having your
+
+but you can do the same by having your
+skills in Excel otherwise you can do
+
+skills in Excel otherwise you can do
+
+skills in Excel otherwise you can do
+that in a simple way as I as I'm showing
+
+that in a simple way as I as I'm showing
+
+that in a simple way as I as I'm showing
+you right now okay
+
+you right now okay
+
+you right now okay
+so this chart portfolio performance is
+
+so this chart portfolio performance is
+
+so this chart portfolio performance is
+strictly strictly related to the UFO
+
+strictly strictly related to the UFO
+
+strictly strictly related to the UFO
+market
+
+market
+
+market
+performance and basically is telling us
+
+performance and basically is telling us
+
+performance and basically is telling us
+what I am doing with my money with my
+
+what I am doing with my money with my
+
+what I am doing with my money with my
+balance with My Equity the moment I'm
+
+balance with My Equity the moment I'm
+
+balance with My Equity the moment I'm
+trading something again against
+
+trading something again against
+
+trading something again against
+something else okay so it's a very
+
+something else okay so it's a very
+
+something else okay so it's a very
+simple
+
+simple
+
+simple
+concept let's copy this into the proper
+
+concept let's copy this into the proper
+
+concept let's copy this into the proper
+spreadsheet for the
+
+spreadsheet for the
+
+spreadsheet for the
+calculation which
+
+calculation which
+
+calculation which
+is this
+
+is this
+
+is this
+one yeah I already created something for
+
+one yeah I already created something for
+
+one yeah I already created something for
+you to make it
+
+you to make it
+
+you to make it
+clear so first of all do we agree
+
+
+
+
+
+that we are
+
+that we are
+using the same
+
+using the same
+
+using the same
+spreadsheet of the
+
+spreadsheet of the
+
+spreadsheet of the
+UFO market performance
+
+UFO market performance
+
+UFO market performance
+calculation okay this if you saw the
+
+calculation okay this if you saw the
+
+calculation okay this if you saw the
+previous videos you see that here we
+
+previous videos you see that here we
+
+previous videos you see that here we
+were arrived at this point I'm not
+
+were arrived at this point I'm not
+
+were arrived at this point I'm not
+cutting anything so it's all a
+
+cutting anything so it's all a
+
+cutting anything so it's all a
+straightforward just divided in five
+
+straightforward just divided in five
+
+straightforward just divided in five
+parts okay for your convenience
+
+
+
+
+
+so what I said to my main page is that I
+
+so what I said to my main page is that I
+want to buy dollar and sell all the
+
+want to buy dollar and sell all the
+
+want to buy dollar and sell all the
+other
+
+
+
+
+
+currencies how do I obtain
+
+currencies how do I obtain
+this these curves are identical are the
+
+this these curves are identical are the
+
+this these curves are identical are the
+same right exactly the
+
+
+
+
+
+same basically from the formula that
+
+same basically from the formula that
+provides me the the UFO market
+
+
+
+
+
+performance which is good for me on for
+
+performance which is good for me on for
+certain kinds of analysis in conjunction
+
+certain kinds of analysis in conjunction
+
+certain kinds of analysis in conjunction
+with other
+
+
+
+
+
+
+
+
+
+performance which basically has this
+
+performance which basically has this
+formula
+
+
+
+
+
+okay the formula is that I
+
+okay the formula is that I
+take
+
+
+
+
+
+wait maybe a little bit bigger can be
+
+wait maybe a little bit bigger can be
+more clear
+
+
+
+
+
+
+
+
+
+so I'm
+
+so I'm
+saying take the DJ column value which is
+
+saying take the DJ column value which is
+
+saying take the DJ column value which is
+US
+
+US
+
+US
+dollar and subtract which is plus
+
+dollar and subtract which is plus
+
+dollar and subtract which is plus
+because I am buying dollar and
+
+because I am buying dollar and
+
+because I am buying dollar and
+subtract all the other
+
+subtract all the other
+
+subtract all the other
+columns very simple right but this is an
+
+columns very simple right but this is an
+
+columns very simple right but this is an
+a simulation of what I'm doing in real
+
+a simulation of what I'm doing in real
+
+a simulation of what I'm doing in real
+every time I buy or sell an
+
+every time I buy or sell an
+
+every time I buy or sell an
+asset and this is an
+
+asset and this is an
+
+asset and this is an
+equation and as I always said since the
+
+equation and as I always said since the
+
+equation and as I always said since the
+beginning of my journey in this channel
+
+beginning of my journey in this channel
+
+beginning of my journey in this channel
+we need to put everything under an
+
+we need to put everything under an
+
+we need to put everything under an
+equation and when we put
+
+equation and when we put
+
+equation and when we put
+orders like buying or selling some
+
+orders like buying or selling some
+
+orders like buying or selling some
+crosses or other
+
+crosses or other
+
+crosses or other
+crosses we basically write an equation
+
+crosses we basically write an equation
+
+crosses we basically write an equation
+that in our case in order to be profit
+
+that in our case in order to be profit
+
+that in our case in order to be profit
+profitable we would like that that
+
+profitable we would like that that
+
+profitable we would like that that
+equation is Major to zero right okay
+
+
+
+
+
+so if we are let me get rid of this if
+
+so if we are let me get rid of this if
+we are for example
+
+we are for example
+
+we are for example
+deciding just to
+
+
+
+
+
+buy
+
+buy
+dollar and sell Euro and we have have
+
+dollar and sell Euro and we have have
+
+dollar and sell Euro and we have have
+this kind of
+
+this kind of
+
+this kind of
+curve and we find this curve Chang it
+
+curve and we find this curve Chang it
+
+curve and we find this curve Chang it
+here as
+
+here as
+
+here as
+well in order to obtain that guess
+
+
+
+
+
+what pardon but I need to arrange in
+
+what pardon but I need to arrange in
+order for you to have a better view okay
+
+order for you to have a better view okay
+
+order for you to have a better view okay
+what I will do this in this case I will
+
+what I will do this in this case I will
+
+what I will do this in this case I will
+just simply
+
+just simply
+
+just simply
+create a
+
+create a
+
+create a
+formula on which I buy dollar and sell
+
+formula on which I buy dollar and sell
+
+formula on which I buy dollar and sell
+Euro and if I then make a propagation of
+
+Euro and if I then make a propagation of
+
+Euro and if I then make a propagation of
+the formula I obtain the
+
+the formula I obtain the
+
+the formula I obtain the
+same
+
+same
+
+same
+curve okay so what if I am doing this
+
+curve okay so what if I am doing this
+
+curve okay so what if I am doing this
+operation here I am getting a profit but
+
+operation here I am getting a profit but
+
+operation here I am getting a profit but
+the moment I see that this profit starts
+
+the moment I see that this profit starts
+
+the moment I see that this profit starts
+to
+
+to
+
+to
+go in the opposite sense so
+
+go in the opposite sense so
+
+go in the opposite sense so
+negative I know that this operation
+
+negative I know that this operation
+
+negative I know that this operation
+so which is
+
+
+
+
+
+basically
+
+basically
+plus USD minus
+
+
+
+
+
+Euro it's an equation that goes negative
+
+Euro it's an equation that goes negative
+and My Equity goes negative okay
+
+
+
+
+
+so in order to obtain the portfolio
+
+so in order to obtain the portfolio
+performance I need to rely on the UFO
+
+performance I need to rely on the UFO
+
+performance I need to rely on the UFO
+market
+
+market
+
+market
+performance
+
+performance
+
+performance
+which gives me the performance of every
+
+which gives me the performance of every
+
+which gives me the performance of every
+single currency and then I create the
+
+single currency and then I create the
+
+single currency and then I create the
+cross or the conjunction of crosses
+
+cross or the conjunction of crosses
+
+cross or the conjunction of crosses
+let's say I want
+
+let's say I want
+
+let's say I want
+to based on this information and the
+
+to based on this information and the
+
+to based on this information and the
+oscillator I want to buy
+
+oscillator I want to buy
+
+oscillator I want to buy
+dollar buy
+
+dollar buy
+
+dollar buy
+euro and
+
+euro and
+
+euro and
+sell Australian
+
+sell Australian
+
+sell Australian
+dollar and sell New Zealand dollar I
+
+dollar and sell New Zealand dollar I
+
+dollar and sell New Zealand dollar I
+obtain this beautiful rising
+
+obtain this beautiful rising
+
+obtain this beautiful rising
+up Equity curve
+
+
+
+
+
+which is this
+
+which is this
+one and for doing the same we were
+
+one and for doing the same we were
+
+one and for doing the same we were
+saying buying Euro see buying dollar
+
+saying buying Euro see buying dollar
+
+saying buying Euro see buying dollar
+buying
+
+
+
+
+
+Euro sell Australian dollar and sell New
+
+Euro sell Australian dollar and sell New
+Zealand
+
+Zealand
+
+Zealand
+dollar okay how do we do
+
+dollar okay how do we do
+
+dollar okay how do we do
+that creating equal
+
+that creating equal
+
+that creating equal
+buying Dollar Plus buying Euro minus
+
+buying Dollar Plus buying Euro minus
+
+buying Dollar Plus buying Euro minus
+selling o minus selling New Zealand
+
+
+
+
+
+dollar and here it is the same
+
+dollar and here it is the same
+exact Equity
+
+exact Equity
+
+exact Equity
+curve so this is a very simple concept
+
+curve so this is a very simple concept
+
+curve so this is a very simple concept
+and in order also to give you the idea
+
+and in order also to give you the idea
+
+and in order also to give you the idea
+that we are doing right
+
+
+
+
+
+let's go back and
+
+let's go back and
+say
+
+say
+
+say
+the that we buy
+
+
+
+
+
+euro
+
+euro
+and sell dollar
+
+and sell dollar
+
+and sell dollar
+okay
+
+okay
+
+okay
+okay let's
+
+okay let's
+
+okay let's
+buy euro and sell
+
+buy euro and sell
+
+buy euro and sell
+dollar and we have this curve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+okay this is the same curve now just for
+
+okay this is the same curve now just for
+sake
+
+sake
+
+sake
+of
+
+
+
+
+
+being in this case I just created uh
+
+being in this case I just created uh
+plus Euro and
+
+plus Euro and
+
+plus Euro and
+minus
+
+minus
+
+minus
+dollar and um I want
+
+
+
+
+
+this to represent
+
+this to represent
+me my euro dollar which is also here
+
+me my euro dollar which is also here
+
+me my euro dollar which is also here
+already okay so now here if you remember
+
+already okay so now here if you remember
+
+already okay so now here if you remember
+from the previous
+
+from the previous
+
+from the previous
+videos this is
+
+videos this is
+
+videos this is
+the incremental sum
+
+the incremental sum
+
+the incremental sum
+of the percentage of
+
+of the percentage of
+
+of the percentage of
+variation of each cross asset okay so if
+
+variation of each cross asset okay so if
+
+variation of each cross asset okay so if
+we go
+
+we go
+
+we go
+back and this one we see that
+
+back and this one we see that
+
+back and this one we see that
+is exactly the
+
+
+
+
+
+same this is the plus Euro minus Dollar
+
+same this is the plus Euro minus Dollar
+in our portfolio
+
+in our portfolio
+
+in our portfolio
+if we trade this way basically we are
+
+if we trade this way basically we are
+
+if we trade this way basically we are
+trading euro
+
+trading euro
+
+trading euro
+dollar and this is the performance of
+
+dollar and this is the performance of
+
+dollar and this is the performance of
+the day of euro dollar only which coin
+
+the day of euro dollar only which coin
+
+the day of euro dollar only which coin
+there is a um Coincidence of
+
+there is a um Coincidence of
+
+there is a um Coincidence of
+uh graphical
+
+uh graphical
+
+uh graphical
+representation with our per portfolio
+
+
+
+
+
+performance it seems
+
+performance it seems
+obvious but but if I ask this question
+
+obvious but but if I ask this question
+
+obvious but but if I ask this question
+without showing the
+
+without showing the
+
+without showing the
+chart to the majority of people that are
+
+chart to the majority of people that are
+
+chart to the majority of people that are
+approaching to Forex I will not
+
+approaching to Forex I will not
+
+approaching to Forex I will not
+get uh a conscious answer on this so
+
+get uh a conscious answer on this so
+
+get uh a conscious answer on this so
+it's also a good point to reflect for
+
+it's also a good point to reflect for
+
+it's also a good point to reflect for
+you in order to create your own tools by
+
+you in order to create your own tools by
+
+you in order to create your own tools by
+using in this case a spreadsheet like
+
+using in this case a spreadsheet like
+
+using in this case a spreadsheet like
+Excel
+
+
+
+
+
+
+
+
+
+conclusion this is the final
+
+conclusion this is the final
+element that I am using for
+
+element that I am using for
+
+element that I am using for
+trading and for analyzing of course
+
+trading and for analyzing of course
+
+trading and for analyzing of course
+before trading the Forex
+
+before trading the Forex
+
+before trading the Forex
+market so I'm using
+
+market so I'm using
+
+market so I'm using
+conjunction I recap the market
+
+conjunction I recap the market
+
+conjunction I recap the market
+performance the UFO currencies momentum
+
+performance the UFO currencies momentum
+
+performance the UFO currencies momentum
+oscillator in
+
+oscillator in
+
+oscillator in
+conjunction then I
+
+conjunction then I
+
+conjunction then I
+use the cartisian plane which represents
+
+use the cartisian plane which represents
+
+use the cartisian plane which represents
+me any way what is strong like in this
+
+me any way what is strong like in this
+
+me any way what is strong like in this
+case Japanese
+
+case Japanese
+
+case Japanese
+Yen
+
+Yen
+
+Yen
+or uh
+
+or uh
+
+or uh
+CHF and what is weak like Australian
+
+CHF and what is weak like Australian
+
+CHF and what is weak like Australian
+dollar and New Zealand
+
+dollar and New Zealand
+
+dollar and New Zealand
+dollar and I also have the ability to
+
+dollar and I also have the ability to
+
+dollar and I also have the ability to
+Triangle
+
+Triangle
+
+Triangle
+relate this in a correlation map here I
+
+relate this in a correlation map here I
+
+relate this in a correlation map here I
+see all the crosses here I can
+
+
+
+
+
+just have a confrontation with a few
+
+just have a confrontation with a few
+crosses on uh in this case a euro dollar
+
+crosses on uh in this case a euro dollar
+
+crosses on uh in this case a euro dollar
+on the x- axis and oen and also ncdn on
+
+on the x- axis and oen and also ncdn on
+
+on the x- axis and oen and also ncdn on
+the vertical y AIS which of course is
+
+the vertical y AIS which of course is
+
+the vertical y AIS which of course is
+negative weak o and nzd weak against
+
+
+
+
+
+Yen this is not the explanation on how
+
+Yen this is not the explanation on how
+to trade on how to analyze the market
+
+to trade on how to analyze the market
+
+to trade on how to analyze the market
+but of course this is the
+
+but of course this is the
+
+but of course this is the
+workflow
+
+workflow
+
+workflow
+okay that finally ends here so
+
+okay that finally ends here so
+
+okay that finally ends here so
+ideally by Trading
+
+
+
+
+
+let's say we don't have anything here by
+
+let's say we don't have anything here by
+trading
+
+
+
+
+
+oie for this day this day is the
+
+oie for this day this day is the
+28th of January
+
+
+
+
+
+
+
+
+
+trading
+
+trading
+oie and newal land in sell and Japanese
+
+oie and newal land in sell and Japanese
+
+oie and newal land in sell and Japanese
+yen in
+
+yen in
+
+yen in
+buy this is the equity curve that
+
+buy this is the equity curve that
+
+buy this is the equity curve that
+results and the moment I am at this
+
+results and the moment I am at this
+
+results and the moment I am at this
+point of the day and I see a kind of
+
+point of the day and I see a kind of
+
+point of the day and I see a kind of
+rising of this in conjunction
+
+rising of this in conjunction
+
+rising of this in conjunction
+with the information that I get from the
+
+with the information that I get from the
+
+with the information that I get from the
+market performance and from the momentum
+
+market performance and from the momentum
+
+market performance and from the momentum
+oscillator and also from the cartisian
+
+oscillator and also from the cartisian
+
+oscillator and also from the cartisian
+planes by
+
+
+
+
+
+isolating oing New Zealand dollar and
+
+isolating oing New Zealand dollar and
+yang in this case where I see that Yang
+
+yang in this case where I see that Yang
+
+yang in this case where I see that Yang
+is
+
+is
+
+is
+stationary and not weak at all and oie
+
+stationary and not weak at all and oie
+
+stationary and not weak at all and oie
+and New Zealand are going weak towards
+
+and New Zealand are going weak towards
+
+and New Zealand are going weak towards
+this direction because here we're not
+
+this direction because here we're not
+
+this direction because here we're not
+having the O and nzd but we have USD o
+
+having the O and nzd but we have USD o
+
+having the O and nzd but we have USD o
+on the xaxis and USD nzd on the x-axis
+
+on the xaxis and USD nzd on the x-axis
+
+on the xaxis and USD nzd on the x-axis
+and Euro o and Euro
+
+and Euro o and Euro
+
+and Euro o and Euro
+nzd Euro and dollar are rising against
+
+nzd Euro and dollar are rising against
+
+nzd Euro and dollar are rising against
+OC and NCD that means that ooc and NCD
+
+OC and NCD that means that ooc and NCD
+
+OC and NCD that means that ooc and NCD
+are
+
+are
+
+are
+weak at the end I can decide okay this
+
+weak at the end I can decide okay this
+
+weak at the end I can decide okay this
+is the scenario let's put it on a
+
+is the scenario let's put it on a
+
+is the scenario let's put it on a
+portfolio
+
+portfolio
+
+portfolio
+analysis and maybe I get at this point
+
+analysis and maybe I get at this point
+
+analysis and maybe I get at this point
+and I see that it's breaking
+
+and I see that it's breaking
+
+and I see that it's breaking
+the uh supports of this ideal
+
+the uh supports of this ideal
+
+the uh supports of this ideal
+portfolio and it's going higher and
+
+portfolio and it's going higher and
+
+portfolio and it's going higher and
+higher so I decide to enter with this
+
+higher so I decide to enter with this
+
+higher so I decide to enter with this
+trade for example
+
+trade for example
+
+trade for example
+okay this concludes and hence
+
+okay this concludes and hence
+
+okay this concludes and hence
+our uh our
+
+our uh our
+
+our uh our
+mine
+
+mine
+
+mine
+um set of tools that I have created
+
+um set of tools that I have created
+
+um set of tools that I have created
+based on mathema iCal formulas and I
+
+based on mathema iCal formulas and I
+
+based on mathema iCal formulas and I
+hope to have helped you and inspired you
+
+hope to have helped you and inspired you
+
+hope to have helped you and inspired you
+to do your job and do your
+
+to do your job and do your
+
+to do your job and do your
+study because I really appreciate people
+
+study because I really appreciate people
+
+study because I really appreciate people
+that are devoted to
+
+that are devoted to
+
+that are devoted to
+this uh activities which are the basics
+
+this uh activities which are the basics
+
+this uh activities which are the basics
+for at least not being a
+
+for at least not being a
+
+for at least not being a
+loser in the Forex Market but trying to
+
+loser in the Forex Market but trying to
+
+loser in the Forex Market but trying to
+be a profitable Trader no matter if
+
+be a profitable Trader no matter if
+
+be a profitable Trader no matter if
+you're trading $100 or
+
+you're trading $100 or
+
+you're trading $100 or
+$100,000 you deserve the same
+
+$100,000 you deserve the same
+
+$100,000 you deserve the same
+respect but the first respect that you
+
+respect but the first respect that you
+
+respect but the first respect that you
+show is the moment you show respect to
+
+show is the moment you show respect to
+
+show is the moment you show respect to
+yourself and study and apply so by
+
+yourself and study and apply so by
+
+yourself and study and apply so by
+giving you also the formulas I hope that
+
+giving you also the formulas I hope that
+
+giving you also the formulas I hope that
+this will solve a lot of emails that I
+
+this will solve a lot of emails that I
+
+this will solve a lot of emails that I
+am getting day by day every day
+
+am getting day by day every day
+
+am getting day by day every day
+even on the
+
+even on the
+
+even on the
+weekends and now it's your turn to make
+
+weekends and now it's your turn to make
+
+weekends and now it's your turn to make
+the job and make your
+
+the job and make your
+
+the job and make your
+work and the future videos now I
+
+work and the future videos now I
+
+work and the future videos now I
+produced quite a lot of videos right
+
+produced quite a lot of videos right
+
+produced quite a lot of videos right
+since the since one year ago and then I
+
+since the since one year ago and then I
+
+since the since one year ago and then I
+will produce in the future months other
+
+will produce in the future months other
+
+will produce in the future months other
+videos but don't ask me when because
+
+videos but don't ask me when because
+
+videos but don't ask me when because
+first of all you need to start study and
+
+first of all you need to start study and
+
+first of all you need to start study and
+study and study and then at the end
+
+study and study and then at the end
+
+study and study and then at the end
+maybe study
+
+maybe study
+
+maybe study
+again these videos in order to create
+
+again these videos in order to create
+
+again these videos in order to create
+your own set of
+
+your own set of
+
+your own set of
+tools for analyzing the Forex market so
+
+tools for analyzing the Forex market so
+
+tools for analyzing the Forex market so
+this is sator
+
+this is sator
+
+this is sator
+effects I thank you for watching I thank
+
+effects I thank you for watching I thank
+
+effects I thank you for watching I thank
+you for your support your likes your
+
+you for your support your likes your
+
+you for your support your likes your
+comments for your subscriptions to this
+
+comments for your subscriptions to this
+
+comments for your subscriptions to this
+Channel and as usual
+
+Channel and as usual
+
+Channel and as usual
+I wish you a good space and a good
+
+I wish you a good space and a good
+
+I wish you a good space and a good
+time bye
+

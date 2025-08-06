@@ -1,0 +1,578 @@
+hello fellow traders and welcome to
+another episode of unconventional Forex
+trading Channel I hope today to be
+relatively brief today it's Friday the
+6th of March 2020 I will show you
+another practical example of
+mathematical analysis applied to forex
+market and the relative results just
+bear with me for the length of this
+video today I'm doing this video with a
+specific request I got let's say I got
+two requests in real a long the time but
+with the second one always via email I
+figured out that more of you would have
+had some some questions like this
+basically the question was that normally
+I do make examples mirroring my trades
+on demo accounts but I always use you
+know
+demo account with 10,000 units of currency
+balance and also with a higher leverage
+and the question that I got from one of
+you I will not say the name of course
+for privacy reasons but was pretty
+legitimate to do... this guy was asking that
+"how it's possible or if it's possible to
+trade by having a normal set up of
+account" what I mean I mean that this guy
+was asking about I have about a thousand
+euros to trade so not ten thousand but a
+thousand euros and I'm also trading by
+using an account with a leverage of a
+100:1 okay so not five hundred
+leverage but 100 leverage so as I
+normally do not speak that much also
+about money management and also lot size
+for as regards trading positions
+I decided during the week to made an
+account for you know ..
+for educational purposes and to do some
+kind of replication of what is the
+normal expectation of profit by using of
+course my own methodology at least I can
+speak for the way I do approach to forex
+analysis and therefore forex trading but
+it's something very subjective this is
+not an invitation to trade or whatever
+but
+if you are interested in Forex
+analysis whatever and you are not very
+satisfied by indicators or fancy expert
+advisors or trading robots and you are
+more focused on manual trading anyway this
+kind of approach seems to reveal good
+results in terms of profitability even
+with small accounts and with small
+leverage which means restricted amount
+of money that we can put in the
+market and trade in order to get our
+equity rising so as I will show you now
+directly I would would go directly to
+the point
+I created my account as usual mirroring
+the trade of today let's just have a
+brief note on this so the account was
+founded with 1000 units of Euro
+anyway 1000 units and with a leverage of
+a 100:1 you will also see
+in the final statement of
+course I traded just this morning within
+the London session and of course I
+closed my trades about half an hour
+before the release of the non-farm
+payrolls which of course can create some
+some kind of big spikes and in the
+beginning of the American session of
+course ... but just to show what can be
+done on a daily basis in terms of profit
+by using some math and some analysis and
+some logical considerations of course
+this is related to a normal day trading
+activity so I also measured lot size
+okay and I got some kind of money
+management on this just to give also an
+example of how to behave within the
+same circumstances where every normal
+trader could afford
+so roughly 1000 euros of balance and
+trading lot sizes in this case of 0.03
+so of course I'm running my usual
+u.UFO expert advisor which of course
+provides me strength and weakness of the
+currencies this is a part of my strategy
+and I'm using this in order to confirm
+what I also have in my Excel
+spreadsheets
+I'm showing you here basically this is
+the
+this is the development of the day
+always reading right to left so here we
+have the currencies and here we have the
+28 pairs normalized ... the black line that you
+see here is basically the euro dollar
+see if we can see that okay so this is
+also the behavior of EURUSD ... markets
+started here so here's the open of the
+day and so we have the development of
+all the currencies... normally my workflow
+starts from the analysis of this Excel
+spreadsheet and in conjunction also then
+with a double confirmation provided by my
+expert advisor u.UFO ... the one that I have
+created and just prior to
+proceed just a brief explanation on how
+things are working in terms of analysis
+basically I have these eight lines which
+are 8 currencies that I get from my
+calculations and so here I have the
+black one is the New Zealand dollar the
+brown is the Japanese yen the yellow is
+a Swiss franc then a seat here the
+purple is the GBP the green is the
+AUD ... the Australian dollar then the
+gray one is the CAD and red one is the
+USD of course the blue
+it's here is the EUR so from the
+beginning of the day I started to see a
+development of the currencies so the
+first assumptions that that I made of
+course I woke up just a couple of hours
+before the starting of the European/London session where I was about to see some
+strength of New Zealand dollar and
+Japanese yen even with some of
+oscillations of course but there was
+this kind of strength there was also
+starting weakness of the euro
+but that was also going along with the
+weakness of the USD... when I do
+mentoring, to explain these things
+deeply, I cannot I cannot make, you know, a
+complete mentoring here, even because it will
+take a lot of time and because it's
+something that must be tailored to the
+needs of everyone just to give you rough
+information normally when I do consider
+euro I also consider dollar so I
+consider the euro dollar as the main
+pair and so the main combination of
+currencies that provides equilibrium in
+the forex market so by following the
+euro as a negative that someone could
+have thought about thinking in terms of
+selling euro in real that would have
+been trade to do if the dollar would
+have been on the positive side so if it
+would have been on the buy side but as
+you can see a euro and dollar let's see
+this by making this simple double
+EUR and USD were somehow going along
+this way so this is always the beginning
+of the day and blue is the Euro and red is
+USD so even dollar was going down and
+in fact there was a relative strength of
+Euro against dollar therefore euro was
+in a buy direction was long okay in fact
+at this point 25 bars 15 minutes
+timeframe from now the system now this
+is the moment the present we got this
+great divergence between euro and dollar
+in favor of euro okay? so other
+assumptions that I made... there was this
+AUD moving.... of course we have to
+understand that at the beginning of the
+day in the asian session we had this
+major currencies that then can preserve
+the trend or revert the trend in the
+following sessions which are AUD NZD
+and JPY and then of course
+in the next session take more place
+EUR  GBP CHF and also of
+course USD,related to
+the other currencies ... also after checking
+this scenario and figuring out what
+would be what could have been the
+setup of the day for trading
+I also searched for some confirmation on
+this chart on the right which basically
+is like analyzing 28 currency pairs all
+the time in just
+one chart, because they are normalized
+so as you may notice here we can see all
+the currency pairs and therefore I
+could have some information related
+to certain currencies because for example
+by watching as I told you the Euro
+falling down as well the dollar falling
+down I wanted to check for example the
+EURCAD which was not falling that much
+down and was also following the EURUSD
+...in the sense of going up so
+somehow I was thinking more to buy euro
+than selling it okay?
+but this is a process you know that
+takes some moments ... a very small amount
+of time compared to analyzing on
+Metatrader 28 charts and clustering them
+by currency which takes of course a lot
+of more fatigue and mental stress
+in order to figure out what to do
+so after analyzing both the elements and
+of course I can tell you briefly that by
+having in order to have I will do an
+update now so I will also give an
+overview of how this this even if I'm a
+previous videos and I strongly suggest
+you to go back and watch them if you're
+new to this channel I'll just show you
+I will make an update so you will see
+that these values are updating in real
+time in a matter of seconds basically on
+my Metatrader along with the UFO which
+confirms anyway in the long term this is
+the daily and of course this is the EURUSD
+daily so we saw that the
+Eurodollar was up of about a hundred
+pips and in fact my values here are
+confirming that EUR was positive and
+USD was negative ...what else? we got
+CADi very negative and we can see here
+from our chart if we select only
+the CAD for a second from the starting
+of the day we got just this rise up with
+this strong level of resistance that was
+not broken and then going down then
+returning back to the zero level and
+then falling down this is the Canadian
+dollar
+okay so that was making sense to me
+enough to inject my trades the way I did
+it .. I was saying... on this Metatrader all
+this expert advisor are created by me so
+I exactly know what I'm doing
+I had this expert advisor which
+basically works in the sense of pulling
+out data from Metatrader and creating
+some .CSV files that then buy some
+VBA operations in Excel are imported
+in Excel and then are updated always in
+Excel generating by updating all the
+formulas that are in my tabs
+and updating all the final results so
+what we see here basically now is
+creating a new data and the new data are
+in the folder of Metatrader in the
+folder files and we see here now is
+creating again files are created and
+left there
+for some seconds to allow the user to
+update Excel and then they are erased
+and then they are recreated again why
+this because this way the closes of the
+present moment are always updated to the
+latest values okay
+so now we will wait some seconds then
+the files are deleted now are they are
+regenerated and if I go and now I start
+to double click here see that this value
+is going updating updating we are a
+hundred percent data loaded and now I will
+create an update of my files and you
+will see they magically update... the charts
+will update consequently with the latest
+closes and of course there is this
+advancement of course I decided to stop
+my trades prior to the release of the
+non-farm payrolls this is the first
+Friday of the month because of the high
+volatility and because we are going
+towards the ending of the market so I
+didn't want to messed up to much
+because I already realized some tangible
+profit that day by day can compound
+my balance increasing it ok so basically
+this is the way that I do my analysis
+and of course of this as I'm using Excel
+it's based on month so mathematical
+formulas because in forex market and we
+have this peculiarity which is unique
+compared to any other kind of market
+where currencies are related one to each
+other as just because we are trading
+pairs so when we trade euro dollar we
+trade euro in one sense and the dollar
+in the opposite sense and this goes for
+each and every pair
+therefore pairs establish a relation
+that is stable between every currency okay? so
+this is the unique to clarity that I
+found and then that drives me every time
+to choose the Forex market as my
+preferred and unique market to trade
+okay so by giving you a brief overview
+of this I think it's enough and let's
+proceed also showing you the trades that
+I made today here is a brief recap of
+course and let's see the results so I'm
+showing you here the trades I made so you
+can check and I strongly invite you as
+usual to... because also someone can say oh
+no but you're creating
+something fake... whatever... so you can
+always check the open time of the trades
+and also the direction the currencies
+that have been traded and the price I'm
+not trading with stop-loss but I will
+show you in a moment also regards the in
+regards to the money management how do I
+behave okay so first of all by having an
+account of 1000 euros okay and 100
+leverage okay
+of course here is the date whatever when
+I took the screenshot I had to act
+consequently for as regards the sizing of
+the lot of the Lots that I traded so I
+decided to use this lot size for every
+trade I made
+..." shame on me"... something that I should
+have considered as well because as you
+may notice here I traded twice NZDCAD which was fine
+but at the same time I could have also
+trade and I don't know why I missed this
+trade but it happens anyway could have
+been positive as well because if I am
+buying New Zealand dollar
+therefore I am determining that CAD is weak
+and for example in this case I sell
+AUD and I buy JPY so I
+decide that Japanese yen is strong I could
+have also trade CADJPY
+selling Canadian dollar and buying Yen
+it would have been another trade
+you know put in the list but in this
+case I made only nine trades in
+this  day instead of ten but that's
+fine anyway so here is the result which
+is really really really good in terms of
+profit okay considering also that I got
+just one 1.44 euro of commissions
+so this was the total profit that
+then I got to take off this costs
+basically I made today the 12% on my
+balance think in terms that a bank if
+you give to them your money blocked in
+in a fund for one year maybe you get
+from one to two percent in one
+year I made 12% in one day not even in
+one day in some hours and therefore you
+can make by yourself at least this math
+because if you think in terms that you
+can trade I don't know 20 days in a
+month and compounding an average of 12%
+sometimes can be ten other times can be
+fifteen or twenty it depends also on the
+volatilities to remember that today is
+Friday by the end of the month you can
+really achieve results like 150%
+250% okay? ... by making 12/15%
+every day and of course maybe not
+trading all the days but let's say
+twenty days in a month could be
+sufficient so this is the profitability
+of my analysis by trading
+using a math analysis rather
+than technical or fundamentals of course I'm
+adding some fundamental analysis because
+I spoke to you about the non-farm
+payrolls which is a news event because
+it has always to be something that you
+have to be aware of because there are
+also some traders that are taking
+decisions and there are trading by the
+data points that they are receiving from
+the fundamental
+News so it makes sense that also
+fundamental news can affect the
+direction of our currency of a currency
+pair so being aware of that can add
+another layer of security to our
+trading which is important this is part
+of the risk management okay
+and of course by you can see by yourself
+that by watching this chart
+actually was one of the not very few
+because in real if you trade with some
+you know coherence and some
+consciousness you can achieve resolve
+like this as well which is a 100% of positive results with
+basically no drawdown I got a drawdown
+just of a couple of Units not that much
+but was basically nothing and if you can
+think that 123 euros
+on 1.000 in six hours is not enough
+for you maybe this is not a channel for
+you but I think that by compounding
+every day of trading an amount
+like that by the end of the month it
+could be a very good satisfaction at
+least for me it is okay so you have to
+ask yourself and answer yourself as well
+so this is the statistics from my
+trading and as a final answer in order
+also to answer to my followers that
+brought me about making an example like
+this so more like within the real world
+with a proportionate and realistic in
+the realistic starting balance and
+realistic realistic
+Lot sizing and also some money
+management in this case let's check it
+out as well I always spoke about the
+fact that I trade without using stop
+losses in the traditional sense of stop
+losses okay even to prove that by
+analyzing with mathematical approach
+it reduces drastically the risk, therefore
+I test also my algorithms by not using
+stop loss line that can be that the
+broker can catch okay so I leave to the
+pair's the ability to oscillate in order
+to reach the point that I am targeting
+okay but anyway I do use the concept of
+stop loss in which way by using another
+expert advisor that I created
+which is very simple but at the same
+time is very effective effective and
+helps me to apply a money management
+approach okay and let's see if I loaded
+here probably no oh here is the CSV so
+the two data from Metatrader here we
+have the uUFO... let's see if we have
+it here...  so basically here this is my
+money manager okay which basically by
+seeing the options I have only two
+elements the stop loss level and the
+take profit level okay which are set by
+default this way but I can always change
+them in real time so let's say that I
+want to have a stop loss level of
+-2%  and take profit level
+of +15% okay and then I update my algorithm so here
+you see my setup I have these values
+that I just put in the form and
+what do I mean with stop level in
+percentage and take profit level I mean
+that  if I made 9 trades
+the overall level that will
+immediately close all of my trades so
+that I can rebuild my strategy and re-start
+trading without losing that much money
+will be the 2 percent on equity okay so
+if I have 1000 euros of balance and the
+overall trades all together there you go
+below 20 euros just 2% okay
+this expert advisor automatically will
+close on the trades from me as well as
+if I
+have a profit so if my balance goes
+above 150 euros which is
+the 15% and take profit of
+course I can give minus 2 percent
+minus 5 percent minus 50 percent depends
+on my attitude to risk but as I wanted
+to make a normal example and also a good
+behavioral  example for the ones that
+requested via mail this question but also
+for all the others 'cause it's important to
+give the right awareness also for a
+regards money management this is the way I
+do but instead of calculating and always
+watching my balance and equity whatever
+I created a simple expert advisor that
+does the job for me
+ok so I don't have to think about that
+once the orders are into the panel then
+it's about this expert advisor to manage
+the possible losses or possible profits
+so this would be more easy of course I
+am also in this moment I have a
+break-even situation ok so there's no
+trading of course I am
+the also the unnerved if I am in loss or
+in profit I have also here a hundred 100
+leverage situation and of course when
+the trays are running I have also the
+percentage and the number of the orders
+that I have on and my balance and my
+equity moving of course so I have all
+the information that I need recapped
+here for simplicity ... in terms of
+analyzing the trades of course we can
+see without no problems about the euro
+dollar let's see
+... EURUSD...
+I started trading around this time so
+this were the pips more or less that I
+realized
+also let me remember I got the EURCAD
+started around this time
+okay what else I got
+I was not that much happy with GBPAUD
+but that's fine let's check this you
+know this was this messy situation so I
+barely got it in pair by after a
+certain point but there was not that
+much probably because of the non-farm
+payrolls regarding the next American
+session that anyway there was this
+ranging phase that would have been you
+know somehow leveling at least that
+trade .. what else made... the AUDJPY and
+yeah but I read anyway for a GBP that
+against AUD when not that well the GBP
+against the CAD was
+more than positive okay and also the
+AUDJPY was we were saying
+was oscillating so there
+was this battle between GBP and AUD
+but at the end it was winning the JPY
+against the AUD of course I suffered
+a little bit in this point so
+about twenty pips down but it was
+compensating by other currencies that
+were more than positive and going about
+you know roughly 40 pips what else
+we got?
+USDJPY and EURCAD okay and
+USDJPY was about here so I got 80 pips
+and yeah what I miss it was the CAD in
+Sell Japanese yen in Buy which was most
+similar but I repeat once you identify
+the currencies there are strong and weak
+as I already largely explained in my
+previous webinars and videos then you
+know how to set up coherently the pairs
+accordingly to the strength and the
+weakness so if you trade euro dollar in buy
+then you will not buy dollar against
+something else because ...
+if you're if you're buying
+euro and selling dollar this selling
+dollar has to be for all the other pairs
+so you will...
+it's it's a double confirmation that you
+know for sure that USDJPY is most
+is most likely to go to be Sell rather
+than Buy okay? so there is a logic in
+this kind
+of approach that helps also to organize
+the order the orders ...with a coherent
+setup okay in order to create that
+synthetic pair which is the equation
+generated by putting the orders together
+with buy and sell order so I think that
+for today and for this
+explanation this is quite all that I
+wanted to say and I hope that by showing
+this example I properly answered to the
+questions I got and gave also not only
+by typing some words but take a
+practical example of how to behave and
+also how to consider the money
+management and so it's all for that and
+as usual I wish you a good weekend good
+ending of the week and also a good
+starting of the week and trading week as
+well and I wish of course
+Good Space 'n' Good Time!
+bye!!!

@@ -1,0 +1,525 @@
+hi everybody welcome to this new update
+and video about the forex trading
+analysis that I would like to be short
+it's Friday as usual it's almost time to
+close the markets and try to close the
+trades but this time I will do something
+a bit different in order always to give
+some answer general answers to the many
+similar mails that I receive that you
+new followers and Watchers are using for
+stressing out some topics that I make
+over or better explain and expand my
+explanation so this time I will open a
+platform on which there is no trade
+running okay
+the account it's zero everything is
+clear so the males and the questions
+just to make it clear the reason of this
+this video tutorial
+at least from my perspective is to
+answer to the fact that some of you were
+asking is it possible to use also this
+kind of analysis in the short term for
+shortened trades and to show kind of
+methodology from the very first type so
+also the way I do inject the order so
+let's do this just to have some spots
+right and I will go straight to the
+point
+so
+I what you're watching exactly is a new
+implementation on the already evolution
+of the UFO it's an implemented panel on
+which I have developed new formulas that
+you may notice are about to consider the
+currencies against euro and dollar which
+are the two currencies in the foreign
+exchange market which have them the
+greatest liquidity and I will lock them
+now to make some considerations and
+inject immediately the orders and see
+how things should develop they remind
+that we are on the Friday as usual the
+worst scenario to trade the last hours
+of the markets there can be spikes or
+whatever but we will try to make it
+clear normally always consider the
+higher time frames okay so the monthly
+the daily at the weekend the day and
+this is basically what I do at the
+beginning of the day or in the middle of
+the day but it's also true that
+especially in the last hours of the day
+we should expect a narrow time frame on
+horizon on which we have to consider our
+trades and we know that we can expect
+also retracements of the last hour so as
+you may notice here we have a situation
+on which some currents are already
+explained and if you have watched my
+previous videos you already know how to
+read them and see that the negative
+value means basically going short and a
+positive
+means going long all not specific
+currency then we have to match and
+create our currency pairs okay but in
+this case we are at the onion of the
+markets and we will focus about the fact
+that you will see for example that cat
+is positive in the meter that the bigger
+timeframes we see that cat is negative
+in the shorter timeframes especially the
+four hours did the hour and the half an
+hour there is this kind of oscillation
+in the four hours okay but we can see
+similar situations for the swiss franc
+which is short in the longer time frames
+and it's long in the shorter time frames
+it's a word playing situation but it's
+as it is so with the power of my pen I
+would say I will make a brief trade
+right now okay even if of course again I
+do not suggest unless you are expert and
+unless you have a good risk attitude to
+trade in these hours on the Friday
+at the end of the markets anyway how to
+proceed to hedge the trades properly so
+the first step is to identify the
+weakest the weakest and the strongest
+currencies
+so let's go straight forward and we see
+that we have CAD negative so we put cat
+now we do a full spectrum analysis okay
+despite you run donor and for a reason
+that I probably will explain in this
+tutorial or in the next ones we have
+Swiss franc as a strong currency we have
+GBT as weak
+maybe as if activity is negative
+negative negative as well as as Ozzy and
+New Zealand dollar okay and New Zealand
+on the other hand yen is strong it's
+positive
+so we have this this market situation
+okay
+and among all of them of course
+certainly card is the first candidate
+also Ozzy and New Zealand dollar and
+somehow GBP
+okay even if less than goes in New
+Zealand dollar the games the comparison
+with can Ozzy and so we take also GBP
+when we have this scenarios this is the
+markets atop the next step is to compose
+the pair's
+so we have currencies here okay
+okay so if we have week cat GBP O's in
+it $7 and if we have strong Swiss franc
+and Japanese yen unless the scenario now
+is changing in the Alphin our situation
+because it's almost reach at the point
+where this panel will give new values
+and we probably should wait at least the
+next half an hour so five minutes but
+it's just a moment that we can create
+our analysis okay this is 4x
+analysis
+that must be done prior to interview or
+today if you should do this on with a
+pen and paper like the old times
+okay so regarding the pairs and the and
+the trades that will come out we can say
+that we can sell
+okay
+Swiss franc
+and cut yen correct
+we can sell GBP Swiss franc and GBP yeah
+we can sell Aussie Swiss franc and also
+yen
+and we can sell it on dollar Swiss franc
+and New Zealand dollar yen
+this is a specific hedge on which on one
+hand we are selling these currencies and
+we are buying these currencies right
+respecting this set up situation in a
+certain way we are replicating mirroring
+the market through our trades and the
+market performance this scenario is more
+then a plus B plus C plus D this
+why we're doing this because we're
+putting together the currencies the weak
+against the strong okay if I had to make
+a selection of course my last choice
+should be GBP because GBP is somehow not
+that weak you see here okay but I would
+like to wait at least a couple of
+minutes so we see this panel change it's
+the half an hour shift and then decide
+to inject the trains but of course also
+my algorithm in itself suggests that
+cadion and New Zealand dollar yen are in
+the correct set up so it's leading me
+towards an analysis or a confirmation of
+my analysis okay so this is for us
+regard and the set up of course I'm not
+considering urine dollar why because
+they are considered from my perspective
+a kind of meter a kind of yeah meter of
+evaluation of all the other currencies
+and where we find liquidity we don't
+find volatility and vice versa and when
+we trade especially in the short-term
+trades we seek volatility because it's
+volatility that makes our trades to
+develop okay if I allowed you for a
+while this scenario for example we'll
+see that now we are hitting
+as 2129 now it's 21 30 you know in a
+certain few seconds okay so let's see
+how this scenario is right again in the
+30 minutes so we see that there is a
+shift where audience alum dollar are
+starting to become positive and despite
+this situation we should wait at least 5
+minutes more but let's say that the
+values there I have read are confirmed
+okay
+we see now that there is a completely
+different set up in the 30 minutes
+compared to the power so yen is negative
+so should be we this is how the markets
+are oscillating half an hour after half
+an hour New Zealand dollar an Aussie are
+getting strong and I have selected that
+week so it's very important to timing to
+be on a situation where we see our
+currencies which are developing
+coherently in multiple time frames
+anyway oszi is already getting negative
+Candy's negative that's fine
+so Karen Aussie are quite ok Yin is
+retracing so let's do it
+ok so I show you how to approach we have
+this bunch of trades the next thing is
+open them simultaneously so I will do
+that catch this Frank
+so yen so
+GBP Swiss franc I wait for that because
+GBP I'm not okay GBP now it's time
+probably to that GBP Swiss franc so gbbn
+so all the Swiss franc so all the yen so
+New Zealand dollar yen so New Zealand
+dollar Swiss franc so okay so we
+injected this trades which are one two
+three four five six seven eight
+okay so we are like hedging a double
+formula okay and we also do this simple
+thing with say statement that reports
+this initial situation on which of
+course I am in a negative balance
+because I'm paying the price of
+injecting my orders that's normal
+what I did in terms of concept of
+trading basically I didn't put on a stop
+loss as you saw rather than using stop
+loss as a safe asset to
+lower my risk or somehow limit the loss
+I decided to distribute the risk of the
+fluctuation of the currencies proceeding
+with a methodology that puts me on one
+side and in the proper side the weakest
+ones and the strongest ones so if the
+currency is strong of course I do expect
+that it's going to rise and infocar I
+see is weak I expect is going to sell
+and if I put together weak against
+strong I can expect that that the spread
+that the movement can have more
+probability to result equal or major to
+zero which is the goal of this balance
+what I and now have now now have created
+trading simultaneously so as you saw at
+the same moment I created this
+alpha entity let's call it this way
+which is basically my portfolio
+okay and my portfolio is something that
+should somehow reflect if is correct the
+market performance and if it's well
+reentered on a graphical representation
+okay should start
+negative
+should develop this way but should go
+positive
+why because I put the minus on the right
+side and the plus simply a simple math
+okay simple concept math that I am
+applying to my formula
+okay of course now we have to wait and
+be patient while I hope it will not take
+that much longer that much long - to
+visualize some results but this is who
+are basically I do every time sometimes
+there is a market condition a market
+performance when my portfolio is based
+only on two pairs or four
+sometimes three but generically in order
+to probe equally distribute trade I use
+this kind of symbolism okay where the
+equilibrium can be granted by having
+this fact was conditioned so as we
+notice we are having our balance that
+it's floating and I didn't do that much
+care of even if I should've and I would
+have done that having more time and
+having more accuracy but what is sure is
+that among twenty eight pairs
+that I could trade and make some
+assumptions and some analysis not only
+28 but 28 for all the time frames that
+we know so it's kind of lots of work
+reading this scenario that I am not
+liking that much at this moment because
+I see yen is getting negative and that's
+why there is a kind of retracement but
+let's give it some time to develop
+already and still in the strongest in
+the longer time frames we are having a
+positive signal and respect of this of
+this situation I just got one two three
+four five six seven eight pairs
+that I decided to trade and I made it in
+less than one minute to create my
+portfolio okay
+less than one minute and for the
+analysis it took me about five minutes I
+could have done that even without
+writing or writing on a paper but this
+way you can see what is the result and
+of course after bear in mind that
+because I have evaluated the 30 minutes
+the hour and four hours chart which is
+already passed at least a couple of
+hours my trades should be Thailand
+can you type them that much longer
+unless in the next half an hour
+these values are somehow confirmed okay
+and we can start notice for example that
+GBP is is getting some Strang and as I
+told you GBP would have been my last
+choice okay so the and also again as you
+can see is somehow a little bit
+retracing so it's a matter of fact that
+when I go for a shorter timeframe I have
+to contextualize my trade to the
+timeframe that I am observing the longer
+the timeframe
+the longer the trade okay actually with
+the -23 on Japanese yen it has to
+retrace it this way all the trades that
+are related to yen you may notice are
+somehow more negative than the trades
+related to Swiss franc unless the
+currency pairs that are related to yang
+are currency pairs that are losing but
+what I do see now is that Swiss franc is
+getting negative so against the
+situation and at the beginning was
+positive like here and we are in the
+second half of the hour okay so when
+this occurs and maybe these values are
+also confirmed in the how early time
+frame let's say that CAD is getting
+positive that Swiss franc is getting
+negative that GBP
+is getting positive which is already
+holes in each cylinder are getting
+positive and Yin is getting negative
+also in the how early time frame in that
+case it would be my stop-loss okay but
+what if these values and the way that
+they are settled up here are reconfirmed
+in the Alpha Knauer
+well maybe I can I can say well there's
+a chance there's more high probability
+for my trade to to be successful what
+else to say
+yeah of course also I didn't do part of
+the chart analysis of all this eight
+pairs I just entered and simultaneously
+so I would probably decide to wait for a
+better point of retracement or things
+like that but this is not the purpose of
+this video propose of this video is just
+to make clear that it's also possible to
+make short-term trades and accordingly
+to the readings of the market and market
+performance okay and as usual having
+some negative balance at the beginning
+because of the spread because of the
+the markets themselves that receive
+inputs second-by-second not a second by
+not a second
+tick by tick call it whatever you want
+and they adapt with their algorithmic
+setup so that can be sometimes hard to
+achieve a very positive resolved in very
+few moments at this moment he seems that
+something is moving even if I every
+tradesmen between 100 minus 100 and
+minus 200 which is my basic first limit
+okay
+let's do also this way to read stuff
+this would be around minus 200 my
+effective stop-loss which regards the
+whole portfolio okay because the whole
+portfolio has been valued by the trace
+that I have injected has costed me this
+so let's say that you know within a
+trade like this and I want to make it
+short a first target can be
+last 200
+okay
+but what if I then I am waiting and I am
+reporting here for practical
+visualization that cat has to be
+negative Swiss franc has to be positive
+Japanese GBP sari has to be negative
+cause yes to be negative New Zealand
+dollar has to be negative and yen has to
+be positive as well here we have we have
+to be we must have this this context
+negative negative negative and positive
+and hopefully also in the 4 hours time
+frame we must have negative positive
+negative negative negative and positive
+okay if these values will be respected
+in the next minute half an hour's hours
+there is much more probability that I
+hit this zone or even go further
+remembering that I'm trading against the
+market situation which is exactly the
+opposite now that it's reflected at
+least for some time for some values in
+the daily timeframe okay only Aussie is
+respecting a negative attitude on equals
+okay
+but anyway we are heated with at least
+at this moment the plus 100
+which is
+major
+okay
+so let's give it some minutes more
+that's also
+okay
+so from our point of view even if I have
+some currency pairs that are not
+behaving very well like GBP and I was
+stressing GBP somehow is it's not
+respecting the initial values of the
+first half hour and I'm having two
+negative position look at this
+with GBP I'm also having other
+currencies that are hedging enough and
+are distributing the risk okay and now i
+hitted the 200 threshold okay so ideally
+if I would like to do this let me just
+wait a second
+well now is havin another betrays my
+spoiler I should wait I could have
+stopped because now we are 50 minutes
+let me just show you this taking 10
+minutes to go to the next to the next
+half an hour okay
+because I want to make the video that
+much longer
+I hope the concept is clear and now
+we'll do another safety tape report okay
+let's crack this down so by hedging in
+20 minutes
+sorry yeah it's about 20 to 25 minutes
+of course I created wallet-sized and if
+I suggest you to see previous videos on
+which I explain sizing and how to
+distribute the size but this is just for
+example proposals to show the
+proactivity and the fact that we want to
+create a positive and if you see what I
+pictured here this is exactly the same
+curve
+it's mathematical it's math okay let's
+express this way and the results in very
+few moments is that I gained this profit
+having just one negative resolved one
+loss trade which is to be peaceful
+strength and this trades which are all
+in positive so seven against one of
+course I always suggest you to take a
+look at your charts in your meta trader
+verify price values I'm not making any
+kind of back testing or simulation using
+fake values this is what actually is
+occurring in real time on the 23rd of
+March 2018 and in a Friday ok so I gave
+you all the coordinates that temporal
+coordinates that you can also see assume
+here so there's nothing to to to hide or
+to faith is not my business for example
+now we should see we should wait around
+22 the new half an hour if we want to
+trade in very short timeframe but this
+methodology that I have applied for the
+half an hour hour and four hours that of
+course is still representing me a
+situation on which I will use another
+color
+at this moment was seated cab is still a
+good candidate let's fight it here
+cab is still a good candidate Swiss
+franc is still candidate as going longer
+okay Japanese yen is still a good
+candidate GBP I'm not very happy with
+that but Oh seeing yen ozn in Zealand
+dollar yes of course they are so if I
+would have been more conservative and
+less having less risk approach to put
+that much this are the two factors these
+two instead of trading eight pairs I
+would have trade six pairs okay
+which would have gave me less exposure
+to my balance and would have provided me
+only such successful trades in a matter
+of 20 minutes
+okay so I hope that this clarifies and
+provides a lot of answers so my email
+box can lower down a bit in size and I
+can focus more on other things and I
+wanted to do this explanation of course
+at the end of the markets because I'm
+also tired than the end of the week but
+I find also relaxing too I made my
+trades and I can have a moment to relax
+also to recap the situation to observe
+the markets in the word moment and
+somehow provide also some explanation
+and reply massively to a lot of answers
+to a lot of questions that I that I
+receive via Skype or via email and with
+all the same with this hopefully
+brief or simple explanation I hope that
+it's clear first of all that you can
+always reply on your with a pen and a
+paper that has to be done that way and
+that you also wish you also to have this
+kind of results and I remind you that
+you can do the same approach for larger
+timeframes taking your trades even more
+than 20 minutes and of course because of
+this the pips gain should be
+proportionally more than the pips that
+we did in this trade example okay so as
+usual thanks for watching thanks for
+subscribing and for supporting the
+project to all of you and I wish you
+good weekend good time and space

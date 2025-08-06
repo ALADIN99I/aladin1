@@ -1,0 +1,446 @@
+hi everybody welcome to this new video
+tutorial
+using my usual expert advisor for the
+market analysis the forex market
+analysis today I will talk a bit
+reply to some questions that I received
+about volumes but as usual about
+currency and weakness the currency
+strength and currency weakness
+analysis and showing you reports of
+another live example the usual
+the start first from the platform
+actually on trading
+today is the 10th of January 2018 so
+please
+take check to your meta trader platform
+to compare the values whatever as usual
+I invite you to with that and of course
+I also show you what is occurring on a
+monthly basis in the market
+performance so we can see here actually
+we have the situation with euro USD
+weaker Japanese yen New Zealand dollar
+are quite strong
+we are talking about the monthly
+view oszi
+medium strong GBP Swiss franc we can
+carve the medium strong but then we go
+into the weekly which is the more
+interesting for the trader at least I
+used today by comparing weekly and daily
+the charts
+we see that
+Japanese yen is the key for today
+which was very strong against Europe
+against oszi GBP and CAD which are the
+trades that are injected also Trading
+New Zealand dollar because at this hour
+when I launched at my trades there was
+also some weakness of New Zealand dollar
+that anyway appear to be much more
+strong than awesome okay and also in the
+daily as usual you can notice the values
+here that are showing cat week GBP week
+again somehow the most strong the
+strongest with Japanese yen and
+therefore I went short against with all
+the currencies against the yen from
+detail statement report that you may
+notice at the beginning I luncheon to
+two units per symbol so so unit so cozy
+CAD euro gbpn at $7 and along the way I
+took some trades some profit from the
+trade which is which is this profit
+consolidated profit and also I had
+floating profit that
+based on the last
+statement I did was at this level now we
+are about 200 euros more and these are
+the points of profit made of course as
+you can see it's even dollar ten please
+verify all the information the data that
+you see you can come back in the video
+and pause it and and make your
+evaluations
+brief analysis on the currency so let's
+take 15 minute chart and you see I I
+went short
+with the CAD against the yen in this
+area and then the price
+felt of course there was this
+orange line as usual that I described it
+might produce two videos a kind of trash
+hold on which if it's violated then it
+it enhances the probability that
+the price will proceed in that direction
+as well as GBP let's take it 15 minutes
+and
+we may see that the same behavior
+occurred here even if the GBP Yun
+started to full already at the beginning
+of the other session and then proceeded
+a further
+also yen
+let's grab the 15 minutes charts
+which I don't understand why is
+represented this way let's see in the 30
+minutes
+and here the same thing okay bang around
+this level
+so the two blue line and orange line
+which are calculated from the previous
+day and
+disposed
+the behavior of the cross that we got
+you wrong
+same behavior see
+the orange and the blue line and then
+look how the price went down and we
+trace it of course but now it's going
+down again and I don't know for how long
+because I have to read the market now
+they are somehow reacting in a ranging
+phase and finally the New Zealand dollar
+which was the most harder battle because
+New Zealand dollar has some inner
+strength and in fact we can see the
+volatility and how the price we trace it
+to above this level of this threshold
+after breaking it and then proceeding
+down again but we are almost at the end
+of the European session at this moment
+and then
+we have just the last hours of the
+American session a few words on
+let's first do a simple thing
+let's put all the timeframes in a minute
+so I can show you and therefore answer
+to the question that I got
+as usual via email some of you are and
+there were at least four emails that
+were asking me about volume so I decided
+to make a brief
+a brief tutorial regard that because in
+real even if I trade without indicators
+the only indication that I use is
+volumes that for me it's
+important information in terms of
+activity that occurs a specific price
+level and that can help me to read the
+price action along with the channels
+that are built in my
+graphical module that can
+but give me a better idea of what is
+going on in regards to the level of
+price and then how the price behaves
+after reading that values
+let's do if I can also
+a
+detailed report
+today the platform seems to behave a bit
+weird I don't know if you had the same I
+try to make
+upgrades of
+Windows but it says there is a kind of
+bug that doesn't allow me to make
+as usual
+but I will do it at the end of course no
+problem now we are having this account
+with this
+this value that is reflected here and
+at the moment I was making this
+temporary
+trading floating from open trades and
+having this equity which is somehow
+reflected in the equity that I have it
+now
+let's stop for a brief in regards to the
+this module this enhancement you may see
+that there are some candlesticks which
+have this yellow dot and
+basically we can
+just
+get rid of the volumes
+I don't
+okay I
+just started the platform some minutes
+ago I was closing the computer as I told
+you for the upgrades of the updates of
+Windows 10 that sometimes it's very
+messy and can cause also issues with all
+the software that are related with
+getting some
+information from the network and today
+is one of the messy days
+anyway we see that there are these
+yellow dots there appears on inserting
+candlesticks which reveal
+an increase meant of the volume activity
+at a specific price level and that can
+suggest
+the behavior of
+the price
+in regards to the fact that for example
+here I've just been
+settled up another point yellow point
+and let's see how the price behaves
+towards this yellow point which it's
+like if it was a part here of volumes
+but in real its volume activity related
+to
+price level okay and also related to
+channeling
+the rates
+designed by a formulation that reads
+that it's taken from from my expert
+advisor for my algorithm so this is this
+potential combination of
+potential combination of
+determining
+levels of support resistance and fair
+price on the long term
+sorry medium term and very short term
+and answered with the fact that I know
+for example that on this one-minute
+candlestick the volumes were here and
+the price went up and then there was
+some
+volumes activity right here and then the
+price started to
+fall and now there is shaping can you
+see another
+another yellow dot here which
+is
+considering the volumes even if we are
+not seeing them here that are
+detected by the analysis of the
+algorithm
+rising
+at this price level so instead of having
+a vertical analysis of the volume of
+which our bar by bar
+our
+position on the chart on the very same
+chart we are observing which is easier
+to make our considerations
+therefore we see that there was a very
+high volume here that pushed the price
+up
+but then at this level of support
+resistance of the short term there was
+another
+volume activity
+that
+pulled the price down and again around
+this level there was another
+volume activity that pushed the price
+down even more
+but now we have to see if the price is
+oscillating along this
+they lock this line this line that is
+cleared
+or if is going to break this line and
+fall down
+and really worried about creating now an
+account history because I saw that there
+are some issues let's try again let's
+see if they're more
+lucky yeah we are
+so let's put
+yeah
+so see this is what is actually going on
+and
+so when I do
+observe
+and another analyze the markets first of
+all I always refer to the
+market performance of the currencies I
+choose what currencies are strong and
+what are the ones that are weak and then
+I open the related charts in this case
+were all against the yen yen long and
+GDP pussycat euro and at seven dollar
+short and then
+normally I was observing the the volumes
+in this area but I found more profitable
+to enhanced
+this graphical module with a subroutine
+that I created so months ago
+that
+puts on on chart
+tick by tick and
+candlestick by candlestick
+when and where
+the volumes are
+appearing and occurring so that it's
+easier to make considerations about the
+price ranging and floating and more and
+your solution of the price
+that could be significant also for some
+sculpting activity as well as for
+positioning our trades the moment we
+have identified
+the currencies that we are
+you have decided to trade okay so for
+example in this bar that just occurred
+the price open here went down a bit and
+when the price was going up there was
+some buying pressure
+price arrived to this level and
+then
+open here the next bar and there was
+some
+volumes activity at this level and then
+the price went down retrace it and then
+let's see what it's going to do to the
+next into the next bar of course as you
+can see we have level of support and
+resistance here that are painting
+because of the formulas that are
+calculated
+yeah and
+as you may notice there are some
+coherences between the volumes and the
+risin of the price of courses if the
+volumes of course in the lower part of
+the candlestick can mean that there is
+some buying activity and if the volumes
+of curse in the upper part of the
+chemistry like here for example it means
+that it could be some selling activity
+recapping a bit we had 30 minute times
+friends
+we I got trades
+in this area for us regard New Zealand
+dollar yen and the
+price went down after breaking this blue
+this this orange line of
+channeling calculated with in relation
+to the activity of the price action of
+the previous day
+same situation for
+the euro yen
+same situation for
+the Aussie yen
+same situation and much more enhanced
+because of the values of GBP onion that
+now are somehow rigueur things as you
+can see G please get a strong and
+Japanese yen is weakening a bit and also
+here is weakening so I better close and
+let's see let's give it some time a bit
+more and also card card as this
+this very
+fallen situation okay so I will now
+finally and let's hope to get
+we can do that so let's let's attempt to
+close our trades for today I
+made a final
+detail report
+it's not making
+report
+today's behaving very very weird and I
+think there is an issue with
+let me also just close
+just close
+I don't know what it's going on it's
+like there is a
+there is an issue with
+with Windows that
+doesn't allow me to create
+let me do a little trick and get rid of
+some memory of
+I beg your pardon for this but it's for
+me it's sometimes I have to deal with
+this situation
+when
+okay finally so I
+will not go again into this because you
+already so all the
+situation of the markets
+and then you can always go back with
+with the video and we play that so at
+the end I closed I made only this trades
+today all injected between
+715 yes sorry 8:00 and 8:30 so this
+morning and
+the final balance
+was
+this coming from this situation before
+so enhanced I could have taken could
+have closed a little bit very better as
+I told you
+there are some times that I have to deal
+with the operating system and this is
+not only for my case but in general I
+can give you also the suggestion when
+you have issues with your Metatrader
+that it looks like is not working or
+there are some issues always
+check
+if you made all the updates of Windows
+there was an updated actually to do so I
+had to close the platform made the
+updates reboot the computer and then
+finally we ran everything so I wanted to
+do this before the ending of the
+European session but anyway even in this
+case
+this is a
+quite nice statement that with only ten
+trays in Rio there are five trades
+because we traded again all secant you
+would appear New Zealand dollar against
+the yen
+sterling the basin by the court and
+some there were some interesting there
+is the was an interesting amount of pips
+by selecting these currency pairs along
+among twenty twenty eight possible
+crosses that normally any broker can
+provide us for trading the more the fact
+that by having the
+the volumes now enhanced in
+the
+charts instead of reading them bar by
+bar but reading them along with the
+price level can even enhance even better
+the reading of the price action once we
+have selected the currency pairs
+volumes that is the way that I read the
+volumes and by by having implemented the
+algorithm now I will do some extra
+testing because of the super team I just
+took that this subroutine that I created
+some months ago and now I have the game
+in the graphical interface and I have
+only to optimize that but by having that
+that was even more enhancing because
+instead of making everything by
+visual calculation from below from the
+line below of the graphical
+representation of the values to the
+price action I have it directly on my
+chart I hope that this video
+gave you some extra inspiration even on
+how to read the volumes
+related to the price action and to the
+levels of support resistance and for any
+other questions feel free as usual to
+bribe me or contacting me via Skype
+hope to have time to do that because I
+have quite busy and not always I have
+time for that but as soon as possible
+especially I would give priority anyway
+to those who are very clear in their
+questions and not making some
+basic questions that are very hard to
+make interpretation so please be precise
+in your question and if it's possible if
+I have knowledge on that I will reply to
+you as soon as possible thanks for
+watching for subscribing and supporting
+this channel and
+have a good trades and have a good day
+time and space
