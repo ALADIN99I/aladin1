@@ -38,6 +38,7 @@ class LiveTrader:
         self.position_update_frequency_minutes = 5
         self.continuous_monitoring_enabled = True
         self.last_monitoring_time = None
+        self.position_metadata = {} # To store peak_pnl for trailing stops
 
         # Fix config parsing issues
         self.fix_config_values()
@@ -251,33 +252,38 @@ class LiveTrader:
 
         open_positions = self.portfolio_manager.get_positions()
         if open_positions.empty:
+            self.position_metadata.clear() # Clear metadata if no positions are open
             return
 
-        total_unrealized_pnl = 0.0
         positions_to_close = []
 
+        # Cleanup metadata for closed positions
+        open_tickets = set(open_positions['ticket'])
+        for ticket in list(self.position_metadata.keys()):
+            if ticket not in open_tickets:
+                del self.position_metadata[ticket]
+
         for index, position in open_positions.iterrows():
-            total_unrealized_pnl += position['profit']
+            ticket = position['ticket']
+            pnl = position['profit']
+
+            # Initialize or update peak_pnl in metadata
+            if ticket not in self.position_metadata:
+                self.position_metadata[ticket] = {'peak_pnl': pnl}
+            elif pnl > self.position_metadata[ticket]['peak_pnl']:
+                self.position_metadata[ticket]['peak_pnl'] = pnl
+
+            peak_pnl = self.position_metadata[ticket]['peak_pnl']
 
             # Position closing logic from simulation
-            close_on_profit = position['profit'] > 75  # Take profit at +$75
-            close_on_loss = position['profit'] < -50   # Stop loss at -$50
-
-            # Time-based exit: close positions older than 4 hours
+            close_on_profit = pnl > 75
+            close_on_loss = pnl < -50
             position_age_hours = (now.replace(tzinfo=None) - position['time'].replace(tzinfo=None)).total_seconds() / 3600
             close_on_time = position_age_hours > 4
-
-            # Trailing stop
-            close_on_trailing = False
-            if 'peak_pnl' not in position:
-                position['peak_pnl'] = position['profit']
-            elif position['profit'] > position['peak_pnl']:
-                position['peak_pnl'] = position['profit']
-            elif position['peak_pnl'] > 30 and position['profit'] < position['peak_pnl'] * 0.7:
-                close_on_trailing = True
+            close_on_trailing = peak_pnl > 30 and pnl < peak_pnl * 0.7
 
             if close_on_profit or close_on_loss or close_on_time or close_on_trailing:
-                positions_to_close.append(position['ticket'])
+                positions_to_close.append(ticket)
                 if close_on_profit:
                     close_reason = "profit target"
                 elif close_on_loss:
@@ -286,10 +292,12 @@ class LiveTrader:
                     close_reason = "time-based exit"
                 else:
                     close_reason = "trailing stop"
-                self.log_event(f"🎯 Marking {position['symbol']} for closure: {close_reason} (P&L: ${position['profit']:.2f})")
+                self.log_event(f"🎯 Marking {position['symbol']} for closure: {close_reason} (P&L: ${pnl:.2f})")
 
         for ticket in positions_to_close:
-            self.trade_executor.close_trade(ticket)
+            if self.trade_executor.close_trade(ticket):
+                if ticket in self.position_metadata:
+                    del self.position_metadata[ticket]
 
         self.last_monitoring_time = now
 
@@ -669,9 +677,21 @@ class LiveTrader:
 
             self.update_portfolio_value(force_update=True)
 
+            current_market_data = self.get_real_time_market_data_for_positions(open_positions)
+
+            # UFO-Based Reinforcement
+            if self.previous_ufo_data:
+                for _, position_series in open_positions.iterrows():
+                    position_dict = position_series.to_dict()
+                    should_reinforce, reason, plan = self.ufo_engine.should_reinforce_position(
+                        position_dict, self.previous_ufo_data, current_market_data
+                    )
+                    if should_reinforce and plan:
+                        self.log_event(f"  🛸 UFO reinforcement suggestion: {position_dict['symbol']} - {reason}")
+                        self.execute_dynamic_reinforcement(position_dict, plan)
+
             # Dynamic Reinforcement
             if self.dynamic_reinforcement_engine.enabled and self.dynamic_reinforcement_engine.should_check_reinforcement(now):
-                current_market_data = self.get_real_time_market_data_for_positions(open_positions)
                 market_events = self.dynamic_reinforcement_engine.detect_market_events(
                     open_positions, current_market_data, self.previous_ufo_data
                 )
@@ -699,6 +719,22 @@ class LiveTrader:
                 current_market_data[symbol] = {
                     'close': tick_info.last, 'ask': tick_info.ask, 'bid': tick_info.bid,
                     'spread': tick_info.ask - tick_info.bid, 'timestamp': datetime.now()
+                }
+            else:
+                self.log_event(f"⚠️ Could not get tick info for {symbol}, using fallback price")
+                base_prices = {
+                    'EURUSD-ECN': 1.0850, 'GBPUSD-ECN': 1.2650, 'USDJPY-ECN': 143.50,
+                    'AUDUSD-ECN': 0.6720, 'USDCAD-ECN': 1.3580, 'NZDUSD-ECN': 0.6250,
+                    'EURJPY-ECN': 155.20, 'GBPJPY-ECN': 180.50, 'AUDJPY-ECN': 96.30,
+                    'USDCHF-ECN': 0.9120, 'EURCHF-ECN': 0.9880, 'GBPCHF-ECN': 1.1520,
+                    'AUDCAD-ECN': 0.9080, 'NZDJPY-ECN': 89.60, 'CADCHF-ECN': 0.6730,
+                    'CHFJPY-ECN': 157.20, 'AUDNZD-ECN': 1.0750, 'EURGBP-ECN': 0.8590,
+                    'GBPCAD-ECN': 1.7180, 'XAUUSD-ECN': 1850.00, 'GBPAUD-ECN': 1.8820
+                }
+                fallback_price = base_prices.get(symbol, 1.0)
+                current_market_data[symbol] = {
+                    'close': fallback_price, 'ask': fallback_price + 0.0001, 'bid': fallback_price,
+                    'spread': 0.0001, 'timestamp': datetime.now()
                 }
         return current_market_data
 
