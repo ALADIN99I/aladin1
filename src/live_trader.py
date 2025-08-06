@@ -1,5 +1,6 @@
 import time
 import pandas as pd
+import numpy as np
 import re
 import json
 from datetime import datetime
@@ -25,9 +26,31 @@ class LiveTrader:
     def __init__(self, config):
         self.config = config
         self.previous_ufo_data = None
+        self.trades_executed = []
+        self.portfolio_value = 10000.0  # Starting balance
+        self.initial_balance = 10000.0
+        self.realized_pnl = 0.0  # Track cumulative realized P&L from closed trades
+        self.simulation_log = []
+        self.cycle_count = 0
+        self.open_positions = []  # Track simulated positions
+        self.closed_trades = []   # Track completed trades
         
-        # Helper function to parse config values with comments
-        def parse_config_value(value, default):
+        # Continuous monitoring variables
+        self.last_position_update = None
+        self.position_update_frequency_minutes = 5  # Update positions every 5 minutes
+        self.continuous_monitoring_enabled = True
+        self.portfolio_history = []  # Track portfolio value over time
+
+        # Fix config parsing issues
+        self.fix_config_values()
+
+        # Initialize components
+        self.initialize_components()
+
+    def fix_config_values(self):
+        """Fix configuration values that have comments or multiple values"""
+        # Parse values with inline comments
+        def parse_value(value, default):
             if isinstance(value, str):
                 # Remove inline comments and extra spaces
                 clean_value = value.split('#')[0].split('(')[0].strip()
@@ -37,46 +60,623 @@ class LiveTrader:
                     return default
             return value
         
-        # Read cycle period from config (default 40 minutes if not specified)
-        cycle_period_raw = config['trading'].get('cycle_period_minutes', '40')
-        self.cycle_period_minutes = parse_config_value(cycle_period_raw, 40)
-        self.cycle_period_seconds = self.cycle_period_minutes * 60
+        # Fix portfolio equity stop parsing
+        portfolio_stop = self.config['trading'].get('portfolio_equity_stop', '-5.0')
+        self.portfolio_equity_stop = parse_value(portfolio_stop, -5.0)
         
-        # Continuous monitoring variables
-        self.last_position_update = None
-        self.position_update_frequency_seconds = 300  # Update positions every 5 minutes
-        self.continuous_monitoring_enabled = True
-        self.portfolio_history = []  # Track portfolio value over time
-        
-        self.llm_client = LLMClient(api_key=config['openrouter']['api_key'])
+        # Fix other config values
+        self.cycle_period_minutes = parse_value(self.config['trading'].get('cycle_period_minutes', '40'), 40)
+        self.max_concurrent_positions = parse_value(self.config['trading'].get('max_concurrent_positions', '11'), 11)
+        self.target_positions_when_available = parse_value(self.config['trading'].get('target_positions_when_available', '6'), 6)
+        self.min_positions_for_session = parse_value(self.config['trading'].get('min_positions_for_session', '5'), 5)
 
+    def initialize_components(self):
+        """Initialize all trading components"""
+        # Initialize LLM client
+        self.llm_client = LLMClient(api_key=self.config['openrouter']['api_key'])
+
+        # Initialize MT5 data collector and establish persistent connection
         self.mt5_collector = MT5DataCollector(
-            login=config['mt5']['login'],
-            password=config['mt5']['password'],
-            server=config['mt5']['server'],
-            path=config['mt5']['path']
+            login=self.config['mt5']['login'],
+            password=self.config['mt5']['password'],
+            server=self.config['mt5']['server'],
+            path=self.config['mt5']['path']
         )
 
-        self.trade_executor = TradeExecutor(self.mt5_collector, self.config)
-        self.ufo_engine = UFOTradingEngine(config)
-
-        self.agents = {
-            "data_analyst": DataAnalystAgent("DataAnalyst", self.mt5_collector),
-            "researcher": MarketResearcherAgent("MarketResearcher", self.llm_client),
-            "trader": TraderAgent("Trader", self.llm_client, self.mt5_collector),
-            "risk_manager": RiskManagerAgent("RiskManager", self.llm_client, self.mt5_collector, self.config),
-            "fund_manager": FundManagerAgent("FundManager", self.llm_client)
-        }
-
-        self.communication_bus = CommunicationBus()
-        self.ufo_calculator = UfoCalculator(config['trading']['currencies'].split(','))
-
-        # Initialize Dynamic Reinforcement Engine
-        self.dynamic_reinforcement_engine = DynamicReinforcementEngine(config)
-        if self.dynamic_reinforcement_engine.enabled:
-            print("✅ Dynamic Reinforcement Engine enabled")
+        # Establish persistent MT5 connection for the simulation
+        if not self.mt5_collector.connect():
+            self.log_event("⚠️ Warning: MT5 connection failed, using mock data")
         else:
-            print("⚠️ Dynamic Reinforcement Engine disabled")
+            self.log_event("✅ MT5 persistent connection established")
+
+        # Initialize UFO components
+        self.ufo_calculator = UfoCalculator(self.config['trading']['currencies'].split(','))
+        self.ufo_engine = UFOTradingEngine(self.config)
+
+        # Initialize agents
+        symbols_list = self.config['trading']['symbols'].split(',')
+        self.data_analyst = DataAnalystAgent("DataAnalyst", self.mt5_collector)
+        self.market_researcher = MarketResearcherAgent("MarketResearcher", self.llm_client)
+        self.trader = TraderAgent("Trader", self.llm_client, self.mt5_collector, symbols=symbols_list)
+        self.risk_manager = RiskManagerAgent("RiskManager", self.llm_client, self.mt5_collector, self.config)
+        self.fund_manager = FundManagerAgent("FundManager", self.llm_client)
+
+        # Initialize trade executor
+        self.trade_executor = TradeExecutor(self.mt5_collector, self.config)
+
+        # Initialize dynamic reinforcement engine
+        self.dynamic_reinforcement_engine = DynamicReinforcementEngine(self.config)
+        if self.dynamic_reinforcement_engine.enabled:
+            self.log_event("✅ Dynamic Reinforcement Engine enabled")
+        else:
+            self.log_event("⚠️ Dynamic Reinforcement Engine disabled")
+
+        self.log_event("Full-day simulation components initialized successfully")
+
+    def check_portfolio_equity_stop(self):
+        """Check if portfolio-level stop loss is breached (UFO methodology)"""
+        if self.initial_balance <= 0:
+            return False, "Invalid initial balance"
+
+        current_drawdown = ((self.portfolio_value - self.initial_balance) / self.initial_balance) * 100
+
+        if current_drawdown <= self.portfolio_equity_stop:
+            return True, f"Portfolio stop breached: {current_drawdown:.2f}% (limit: {self.portfolio_equity_stop}%)"
+
+        return False, f"Portfolio healthy: {current_drawdown:.2f}% drawdown"
+
+    def get_pip_value_multiplier(self, symbol):
+        """Get correct pip value multiplier for different currency pairs"""
+        symbol_clean = symbol.replace('-ECN', '').upper()
+
+        # JPY pairs use 1000 multiplier (pip = 0.01)
+        jpy_pairs = ['USDJPY', 'EURJPY', 'GBPJPY', 'AUDJPY', 'NZDJPY', 'CHFJPY', 'CADJPY']
+        if any(jpy_pair in symbol_clean for jpy_pair in jpy_pairs):
+            return 1000
+
+        # Most other forex pairs use 10000 multiplier (pip = 0.0001)
+        # Reduced from 100000 to make P&L more realistic
+        return 10000
+
+    def update_portfolio_value(self, force_update=False):
+        """Update portfolio value based on open positions P&L using real historical prices"""
+        # Skip update if too recent (unless forced)
+        if not force_update and self.last_position_update:
+            time_since_update = (datetime.now() - self.last_position_update).total_seconds() / 60
+            if time_since_update < self.position_update_frequency_minutes:
+                return
+
+        total_unrealized_pnl = 0.0
+        position_updates = []
+
+        # Calculate P&L for all open positions using real market data
+        for position in self.open_positions:
+            current_price = self.get_historical_price_for_time(position['symbol'], datetime.now())
+            if current_price is None:
+                # Use entry price if no historical data available
+                current_price = position['entry_price']
+
+            # Get correct pip value multiplier
+            pip_multiplier = self.get_pip_value_multiplier(position['symbol'])
+
+            # Calculate P&L based on direction with correct pip values
+            price_diff = current_price - position['entry_price']
+            if position['direction'] == 'SELL':
+                price_diff = -price_diff
+
+            # Calculate P&L: price_difference * volume * pip_multiplier
+            pnl = price_diff * position['volume'] * pip_multiplier
+
+            # Track price movement since last update
+            previous_price = position.get('current_price', position['entry_price'])
+            price_change = current_price - previous_price
+
+            position['current_price'] = current_price
+            position['pnl'] = pnl
+            position['last_update'] = datetime.now()
+            total_unrealized_pnl += pnl
+
+            # Track significant price movements
+            if abs(price_change) > 0.0005:  # 0.5 pip movement
+                position_updates.append({
+                    'symbol': position['symbol'],
+                    'price_change': price_change,
+                    'pnl_change': price_change * position['volume'] * pip_multiplier * (1 if position['direction'] == 'BUY' else -1),
+                    'current_pnl': pnl
+                })
+
+        # Update portfolio value: initial_balance + realized_pnl + unrealized_pnl
+        previous_portfolio_value = self.portfolio_value
+        self.portfolio_value = self.initial_balance + self.realized_pnl + total_unrealized_pnl
+
+        # Track portfolio history for continuous monitoring
+        portfolio_change = self.portfolio_value - previous_portfolio_value
+        self.portfolio_history.append({
+            'timestamp': datetime.now(),
+            'portfolio_value': self.portfolio_value,
+            'unrealized_pnl': total_unrealized_pnl,
+            'realized_pnl': self.realized_pnl,
+            'change': portfolio_change,
+            'position_count': len(self.open_positions)
+        })
+
+        # Log significant portfolio changes
+        if abs(portfolio_change) > 10 and position_updates:
+            self.log_event(f"💰 Portfolio update: ${self.portfolio_value:,.2f} (${portfolio_change:+.2f})")
+            for update in position_updates[:3]:  # Log top 3 movers
+                self.log_event(f"  📊 {update['symbol']}: {update['price_change']:+.5f} → P&L: ${update['current_pnl']:+.2f}")
+
+        # Close positions based on realistic conditions (stop loss, take profit)
+        positions_to_close = []
+        for i, position in enumerate(self.open_positions):
+            # Enhanced position closing logic with proper thresholds
+            close_on_profit = position['pnl'] > 75  # Take profit at +$75
+            close_on_loss = position['pnl'] < -50   # Stop loss at -$50
+
+            # Time-based exit: close positions older than 4 hours (240 minutes)
+            close_on_time = False
+            if 'timestamp' in position:
+                position_age = (datetime.now() - position['timestamp']).total_seconds() / 60
+                close_on_time = position_age > 240  # 4 hours
+
+            # Trailing stop: close if position has moved against us significantly from peak
+            close_on_trailing = False
+            if 'peak_pnl' not in position:
+                position['peak_pnl'] = position['pnl']
+            elif position['pnl'] > position['peak_pnl']:
+                position['peak_pnl'] = position['pnl']
+            elif position['peak_pnl'] > 30 and position['pnl'] < position['peak_pnl'] * 0.7:
+                close_on_trailing = True
+
+            if close_on_profit or close_on_loss or close_on_time or close_on_trailing:
+                positions_to_close.append(i)
+                if close_on_profit:
+                    close_reason = "profit target"
+                elif close_on_loss:
+                    close_reason = "stop loss"
+                elif close_on_time:
+                    close_reason = "time-based exit"
+                else:
+                    close_reason = "trailing stop"
+
+                self.log_event(f"🎯 Marking {position['symbol']} for closure: {close_reason} (P&L: ${position['pnl']:.2f})")
+
+        # Close positions (in reverse order to maintain indices)
+        for i in reversed(positions_to_close):
+            closed_position = self.open_positions.pop(i)
+            # Add realized P&L to running total
+            self.realized_pnl += closed_position['pnl']
+            self.closed_trades.append(closed_position)
+            self.log_event(f"📉 Position closed: {closed_position['symbol']} P&L: ${closed_position['pnl']:.2f}")
+
+        # Update last position update time
+        self.last_position_update = datetime.now()
+
+    def log_event(self, message):
+        """Log simulation events with timestamp"""
+        timestamp = datetime.now().strftime("%H:%M:%S")
+        log_entry = f"[{timestamp}] {message}"
+        self.simulation_log.append(log_entry)
+        print(log_entry)
+
+    def get_historical_price_for_time(self, symbol, target_time):
+        """Get real historical price for a specific symbol at a specific time"""
+        try:
+            # Convert target time to MT5 timestamp
+            target_timestamp = int(target_time.timestamp())
+
+            # Get historical data around the target time (M5 bars)
+            rates = mt5.copy_rates_from(symbol, mt5.TIMEFRAME_M5, target_timestamp, 1)
+
+            if rates is not None and len(rates) > 0:
+                self.log_event(f"✅ Using REAL data from MT5 for {symbol}")
+                # Return the close price
+                return float(rates[0]['close'])
+            else:
+                # Fallback: get the most recent data if exact time not available
+                rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_M5, 0, 1)
+                if rates is not None and len(rates) > 0:
+                    self.log_event(f"✅ Using REAL data from MT5 for {symbol} (fallback)")
+                    return float(rates[0]['close'])
+                else:
+                    self.log_event(f"⚠️ Using FALLBACK data for {symbol}")
+                    # If no historical data is available, return None
+                    return None
+        except Exception as e:
+            self.log_event(f"⚠️ Error getting historical price for {symbol}: {e}")
+            return None
+
+    def calculate_ufo_entry_price(self, symbol, direction, ufo_data, current_time):
+        """Calculate optimal entry price based on UFO methodology and currency strength"""
+        try:
+            # Get base historical price
+            base_price = self.get_historical_price_for_time(symbol, current_time)
+            if base_price is None:
+                # Fallback to standard base prices
+                base_prices = {
+                    'EURUSD-ECN': 1.0850, 'GBPUSD-ECN': 1.2650, 'USDJPY-ECN': 143.50,
+                    'AUDUSD-ECN': 0.6720, 'USDCAD-ECN': 1.3580, 'NZDUSD-ECN': 0.6250,
+                    'EURJPY-ECN': 155.20, 'GBPJPY-ECN': 180.50, 'AUDJPY-ECN': 96.30,
+                    'USDCHF-ECN': 0.9120, 'EURCHF-ECN': 0.9880, 'GBPCHF-ECN': 1.1520,
+                    'AUDCAD-ECN': 0.9080, 'NZDJPY-ECN': 89.60, 'CADCHF-ECN': 0.6730,
+                    'CHFJPY-ECN': 157.20, 'AUDNZD-ECN': 1.0750, 'EURGBP-ECN': 0.8590,
+                    'GBPCAD-ECN': 1.7180, 'XAUUSD-ECN': 1850.00, 'GBPAUD-ECN': 1.8820
+                }
+                base_price = base_prices.get(symbol, 1.0850)
+
+            # Calculate UFO adjustment if UFO data is available
+            if ufo_data:
+                # Extract currencies from symbol
+                clean_symbol = symbol.replace('-ECN', '')
+                if len(clean_symbol) >= 6:
+                    base_currency = clean_symbol[:3]
+                    quote_currency = clean_symbol[3:6]
+
+                    # Get currency strengths from M5 timeframe (primary trading timeframe)
+                    primary_tf = mt5.TIMEFRAME_M5
+                    raw_ufo_data = ufo_data.get('raw_data', ufo_data)
+
+                    if primary_tf in raw_ufo_data:
+                        strength_data = raw_ufo_data[primary_tf]
+                        
+                        base_strength = 0.0
+                        quote_strength = 0.0
+
+                        # Handle both DataFrame and dict formats
+                        if hasattr(strength_data, 'columns'):
+                            # DataFrame format
+                            if base_currency in strength_data.columns:
+                                base_strength = strength_data[base_currency].iloc[-1]
+                            if quote_currency in strength_data.columns:
+                                quote_strength = strength_data[quote_currency].iloc[-1]
+                        else:
+                            # Dict format
+                            if base_currency in strength_data:
+                                base_strength = strength_data[base_currency][-1]
+                            if quote_currency in strength_data:
+                                quote_strength = strength_data[quote_currency][-1]
+                        
+                        # Calculate strength differential
+                        strength_diff = base_strength - quote_strength
+                        
+                        # UFO-based price adjustment
+                        # Strong differential = better entry timing = slight price improvement
+                        if abs(strength_diff) > 1.0:  # Significant strength difference
+                            # Apply small adjustment in favorable direction
+                            if direction == 'BUY' and strength_diff > 0:  # Strong base currency
+                                # Slightly better entry (lower price for BUY)
+                                price_adjustment = -base_price * 0.0002  # 2 pip improvement
+                            elif direction == 'SELL' and strength_diff < 0:  # Strong quote currency
+                                # Slightly better entry (higher price for SELL)
+                                price_adjustment = base_price * 0.0002  # 2 pip improvement
+                            else:
+                                # Weaker signal, use current historical price as-is
+                                price_adjustment = 0.0
+                        else:
+                            # Normal market entry - use historical price as-is
+                            price_adjustment = 0.0
+
+                        optimal_price = base_price + price_adjustment
+                        return max(optimal_price, base_price * 0.95)  # Safety minimum
+
+            # Fallback: use historical price as-is without any random adjustments
+            return base_price
+
+        except Exception as e:
+            self.log_event(f"⚠️ Error calculating UFO entry price for {symbol}: {e}")
+            # Ultimate fallback
+            return 1.0850 if 'EUR' in symbol else 143.50 if 'JPY' in symbol else 1.2650
+
+    def run_single_cycle(self):
+        """Simulate a single 40-minute trading cycle"""
+        self.cycle_count += 1
+
+        self.log_event(f"\n" + "="*60)
+        self.log_event(f"CYCLE {self.cycle_count} - {datetime.now().strftime('%H:%M')} GMT")
+        self.log_event("="*60)
+
+        # Check session status
+        if not self.ufo_engine.is_active_session():
+            self.log_event(f"⏰ Outside trading hours at {datetime.now().strftime('%H:%M')} GMT - Skipping cycle")
+            return True
+
+        # 1. Data Collection
+        self.log_event("📊 PHASE 1: Data Collection")
+        price_data = self.collect_market_data()
+
+        # 2. UFO Analysis
+        self.log_event("🛸 PHASE 2: UFO Analysis")
+        ufo_data = self.calculate_ufo_indicators(price_data)
+
+        # 3. Economic Calendar
+        self.log_event("📅 PHASE 3: Economic Calendar")
+        economic_events = self.get_economic_events()
+
+        # 4. Market Research
+        self.log_event("🔍 PHASE 4: Market Research")
+        research_result = self.market_researcher.execute(ufo_data, economic_events)
+
+        # 5. UFO Portfolio Management (Priority Check)
+        self.log_event("💼 PHASE 5: UFO Portfolio Management")
+
+        # UFO METHODOLOGY: Check portfolio-level stop FIRST
+        portfolio_stop_breached, stop_reason = self.check_portfolio_equity_stop()
+        if portfolio_stop_breached:
+            self.log_event(f"🚨 UFO PORTFOLIO STOP TRIGGERED: {stop_reason}")
+            self.log_event("🚨 Closing ALL positions - no individual stops needed!")
+
+            # Close all positions and add to realized P&L
+            for position in self.open_positions:
+                self.realized_pnl += position.get('pnl', 0.0)
+                self.closed_trades.append(position)
+                self.log_event(f"📉 Emergency close: {position['symbol']} P&L: ${position.get('pnl', 0.0):.2f}")
+
+            self.open_positions.clear()
+            self.portfolio_value = self.initial_balance + self.realized_pnl
+            self.log_event("🚨 All positions closed. UFO Portfolio Stop engaged.")
+            return True
+
+        # UFO: Check session end timing (with updated simulation time and actual economic events)
+        should_close, close_reason = self.ufo_engine.should_close_for_session_end()
+        if should_close:
+            self.log_event(f"🌅 UFO SESSION END: {close_reason}")
+            self.log_event("🌅 Closing all positions for session end")
+
+            for position in self.open_positions:
+                self.realized_pnl += position.get('pnl', 0.0)
+                self.closed_trades.append(position)
+                self.log_event(f"📉 Session close: {position['symbol']} P&L: ${position.get('pnl', 0.0):.2f}")
+
+            self.open_positions.clear()
+            self.portfolio_value = self.initial_balance + self.realized_pnl
+            return True
+
+        # UFO: Analyze exit signals based on currency strength changes
+        if hasattr(self, 'previous_ufo_data') and ufo_data:
+            exit_signals = self.analyze_ufo_exit_signals(ufo_data, self.previous_ufo_data)
+            if exit_signals:
+                self.log_event(f"📈 UFO Exit Signals detected: {len(exit_signals)} currency changes")
+                for signal in exit_signals:
+                    self.log_event(f"⚠️ {signal['reason']} (change: {signal['change']:.2f})")
+                
+                # Enhanced auto-close on strong signals
+                if len(exit_signals) >= 3:
+                    self.log_event("🚨 STRONG EXIT SIGNALS detected: Auto-closing positions")
+                    positions_closed = self.close_affected_positions(exit_signals)
+                    self.log_event(f"🚨 Auto-closed {positions_closed} positions based on strong exit signals")
+
+        # Store UFO data for next cycle comparison
+        if ufo_data:
+            self.previous_ufo_data = ufo_data
+
+        current_positions = self.assess_portfolio()
+
+        # 6. Trading Decisions
+        self.log_event("🎯 PHASE 6: Trading Decisions")
+        trade_decisions = self.generate_trade_decisions(research_result, current_positions)
+
+        # 7. Risk Assessment
+        self.log_event("⚖️ PHASE 7: Risk Assessment")
+        risk_assessment = self.assess_risk(trade_decisions)
+
+        # 8. Fund Manager Authorization
+        self.log_event("💰 PHASE 8: Fund Manager Authorization")
+        authorization = self.get_fund_authorization(trade_decisions, risk_assessment)
+
+        # 9. Trade Execution
+        self.log_event("⚡ PHASE 9: Trade Execution")
+        executed_trades = self.execute_approved_trades(authorization, trade_decisions, current_positions, ufo_data)
+
+        # 10. Cycle Summary
+        self.log_event("📋 PHASE 10: Cycle Summary")
+        self.generate_cycle_summary(executed_trades)
+
+        return True
+
+    def generate_trade_decisions(self, research_result, current_positions):
+        """Generate trading decisions using TraderAgent"""
+        try:
+            diversification_config = {
+                'min_positions_for_session': self.min_positions_for_session,
+                'target_positions_when_available': self.target_positions_when_available,
+                'max_concurrent_positions': self.max_concurrent_positions
+            }
+
+            decisions = self.trader.execute(
+                research_result['consensus'],
+                current_positions,
+                diversification_config=diversification_config
+            )
+            self.log_event("✅ Trading decisions generated")
+            return decisions
+        except Exception as e:
+            self.log_event(f"❌ Trading decision error: {e}")
+            return '{"trades": []}'
+
+    def assess_risk(self, trade_decisions):
+        """Assess risk of proposed trades"""
+        try:
+            assessment = self.risk_manager.execute(trade_decisions)
+            status = assessment.get('portfolio_risk_status', 'Unknown')
+            self.log_event(f"✅ Risk assessment: {status}")
+            return assessment
+        except Exception as e:
+            self.log_event(f"❌ Risk assessment error: {e}")
+            return {'trade_risk_assessment': 'Error', 'portfolio_risk_status': 'OK'}
+
+    def get_fund_authorization(self, trade_decisions, risk_assessment):
+        """Get Fund Manager authorization"""
+        try:
+            authorization = self.fund_manager.execute(trade_decisions, risk_assessment)
+            decision = "APPROVED" if "APPROVE" in authorization.upper() else "REJECTED"
+            self.log_event(f"✅ Fund Manager decision: {decision}")
+            return authorization
+        except Exception as e:
+            self.log_event(f"❌ Fund authorization error: {e}")
+            return "REJECT: Authorization error"
+
+    def execute_approved_trades(self, authorization, trade_decisions, current_positions, ufo_data):
+        """Execute trades if approved"""
+        executed_count = 0
+
+        if "APPROVE" not in authorization.upper():
+            self.log_event("❌ Trades not approved - No execution")
+            return executed_count
+
+        # Check UFO engine conditions
+        try:
+            should_trade, reason = self.ufo_engine.should_open_new_trades(
+                current_positions=current_positions,
+                portfolio_status={'balance': self.portfolio_value, 'equity': self.portfolio_value},
+                ufo_data=ufo_data
+            )
+
+            if not should_trade:
+                self.log_event(f"❌ UFO Engine blocked trades: {reason}")
+                return executed_count
+
+            self.log_event(f"✅ UFO Engine approved: {reason}")
+
+            # Simulate trade execution
+            try:
+                json_match = re.search(r'{.*}', trade_decisions, re.DOTALL)
+                if json_match:
+                    json_str = json_match.group(0)
+                    json_str = re.sub(r'//.*?\n', '\n', json_str)
+                    json_str = re.sub(r',\s*([}\]])', r'\1', json_str)
+
+                    parsed_data = json.loads(json_str)
+                    
+                    # Extract trades
+                    actions_list = []
+                    if 'actions' in parsed_data:
+                        actions_list = parsed_data['actions']
+                    elif 'trade_plan' in parsed_data:
+                        actions_list = parsed_data['trade_plan']
+                    elif 'trades' in parsed_data:
+                        for trade in parsed_data['trades']:
+                            action_type = trade.get('action', 'new_trade')
+                            if action_type == 'new_trade':
+                                actions_list.append({
+                                    'action': 'new_trade',
+                                    'currency_pair': trade['currency_pair'],
+                                    'direction': trade.get('direction', 'BUY').upper(),
+                                    'volume': trade.get('lot_size', 0.1)
+                                })
+                            elif action_type == 'close_trade':
+                                actions_list.append({
+                                    'action': 'close_trade',
+                                    'trade_id': trade.get('trade_id'),
+                                    'currency_pair': trade.get('currency_pair')
+                                })
+
+                    # Execute each trade
+                    for action in actions_list:
+                        if action.get('action') == 'new_trade':
+                            symbol = action.get('symbol') or action.get('currency_pair', '')
+                            direction = action.get('direction', '').upper()
+                            volume = action.get('volume') or action.get('lot_size', 0.1)
+
+                            # Validate and correct currency pair format
+                            base_symbol = symbol.replace("/", "")
+                            corrected_symbol = self.validate_and_correct_currency_pair(base_symbol)
+
+                            if corrected_symbol is None:
+                                self.log_event(f"⚠️ Skipping invalid currency pair: {symbol}")
+                                continue  # Skip this trade
+
+                            # Also handle direction inversion if pair was inverted
+                            if base_symbol != corrected_symbol and len(base_symbol) >= 6:
+                                # Check if we need to invert the direction
+                                original_base = base_symbol[:3]
+                                corrected_base = corrected_symbol[:3]
+                                if original_base != corrected_base:
+                                    # Pair was inverted, so invert the direction
+                                    direction = 'SELL' if direction == 'BUY' else 'BUY'
+                                    self.log_event(f"⚠️ Direction inverted due to pair correction: {direction}")
+
+                            # Add symbol suffix if it doesn't exist
+                            suffix = self.config['mt5'].get('symbol_suffix', '')
+                            if not corrected_symbol.endswith(suffix):
+                                full_symbol = corrected_symbol + suffix
+                            else:
+                                full_symbol = corrected_symbol
+
+                            # Use UFO-based entry price calculation for more realistic execution
+                            entry_price = self.calculate_ufo_entry_price(
+                                full_symbol,
+                                direction,
+                                ufo_data,
+                                datetime.now()
+                            )
+
+                            # Create position info
+                            position_info = {
+                                'ticket': np.random.randint(100000, 999999),
+                                'symbol': full_symbol,
+                                'direction': direction,
+                                'volume': volume,
+                                'entry_price': entry_price,
+                                'current_price': entry_price,
+                                'pnl': 0.0,
+                                'timestamp': datetime.now(),
+                                'comment': f'UFO Cycle {self.cycle_count}'
+                            }
+
+                            # Add to both lists
+                            self.open_positions.append(position_info)
+                            self.trades_executed.append(position_info)
+                            executed_count += 1
+
+                            self.log_event(f"🔹 Trade executed: {full_symbol} {direction} {volume} lots @ {position_info['entry_price']:.5f}")
+
+                        elif action.get('action') == 'close_trade':
+                            trade_id = action.get('trade_id')
+                            if trade_id:
+                                position_to_close = next((p for p in self.open_positions if p.get('ticket') == trade_id), None)
+                                if position_to_close:
+                                    self.open_positions.remove(position_to_close)
+                                    self.realized_pnl += position_to_close.get('pnl', 0.0)
+                                    self.closed_trades.append(position_to_close)
+                                    self.log_event(f"🔹 Trade closed by LLM: {position_to_close['symbol']} P&L: ${position_to_close.get('pnl', 0.0):.2f}")
+                                    executed_count += 1
+                            continue # Continue to next action
+
+            except Exception as e:
+                self.log_event(f"❌ Trade execution error: {e}")
+                
+        except Exception as e:
+            self.log_event(f"❌ UFO engine error: {e}")
+
+        return executed_count
+
+    def generate_cycle_summary(self, executed_trades):
+        """Generate summary for this cycle"""
+        # Calculate unrealized P&L from open positions
+        unrealized_pnl = sum(pos.get('pnl', 0.0) for pos in self.open_positions)
+        total_pnl = self.portfolio_value - self.initial_balance
+
+        self.log_event(f"📊 Cycle {self.cycle_count} Summary ({datetime.now().strftime('%H:%M')} GMT):")
+        self.log_event(f"   Trades Executed: {executed_trades}")
+        self.log_event(f"   Total Trades Today: {len(self.trades_executed)}")
+        self.log_event(f"   Open Positions: {len(self.open_positions)}/{self.max_concurrent_positions}")
+        self.log_event(f"   Closed Trades: {len(self.closed_trades)}")
+        self.log_event(f"   Realized P&L: ${self.realized_pnl:+,.2f}")
+        self.log_event(f"   Unrealized P&L: ${unrealized_pnl:+,.2f}")
+        self.log_event(f"   Portfolio Value: ${self.portfolio_value:,.2f} (Total P&L: ${total_pnl:+,.2f})")
+
+    def assess_portfolio(self):
+        """Assess current portfolio positions"""
+        try:
+            # Use our realistic position tracking instead of MT5
+            positions = self.open_positions
+            position_count = len(positions) if positions is not None else 0
+            self.log_event(f"✅ Portfolio assessed: {position_count} open positions")
+            return positions
+        except Exception as e:
+            self.log_event(f"❌ Portfolio assessment error: {e}")
+            # Return empty dataframe if error
+            return pd.DataFrame()
 
     def run(self):
         """
@@ -84,366 +684,16 @@ class LiveTrader:
         """
         while True:
             try:
-                # 1. Check if we're in an active trading session
-                if not self.ufo_engine.is_active_session():
-                    print(f"Outside active trading session. Waiting 5 minutes...")
-                    time.sleep(300)
-                    continue
-
-                # 2. Data Collection
-                price_data = self.collect_market_data()
-
-                # 3. UFO Calculation
-                ufo_data = self.calculate_ufo_indicators(price_data)
-
-                # 4. First Priority: UFO Portfolio Management (NO individual stops!)
-                try:
-                    open_positions = self.agents['risk_manager'].portfolio_manager.get_positions()
-                    if open_positions is not None and len(open_positions) > 0:
-                        print(f"\n--- UFO Portfolio Management: {len(open_positions)} positions ---")
-                        
-                        # 🎯 UFO METHODOLOGY: Check portfolio-level stop FIRST (2-3% of account)
-                        account_info = self.mt5_collector.connect() and mt5.account_info()
-                        if account_info:
-                            portfolio_stop_breached, stop_reason = self.ufo_engine.check_portfolio_equity_stop(
-                                account_info.balance, account_info.equity
-                            )
-                            if portfolio_stop_breached:
-                                print(f"🚨 UFO PORTFOLIO STOP TRIGGERED: {stop_reason}")
-                                print("🚨 Closing ALL positions - no individual stops needed!")
-                                for position in open_positions:
-                                    self.trade_executor.close_trade(position.ticket)
-                                print("🚨 All positions closed. Waiting 5 minutes before resuming...")
-                                time.sleep(300)
-                                continue
-                        
-                        # Check session end timing
-                        should_close, close_reason = self.ufo_engine.should_close_for_session_end()
-                        if should_close:
-                            print(f"🌅 UFO SESSION END: {close_reason}")
-                            print("🌅 Closing all positions for session end")
-                            for position in open_positions:
-                                self.trade_executor.close_trade(position.ticket)
-                            time.sleep(300)
-                            continue
-                        
-                        # UFO compensation/reinforcement logic (if portfolio is healthy)
-                        current_market_data = self.get_real_time_market_data_for_positions(open_positions)
-                        for position in open_positions:
-                            should_reinforce, reason, reinforcement_plan = self.ufo_engine.should_reinforce_position(
-                                position, ufo_data, current_market_data
-                            )
-                            
-                            if should_reinforce:
-                                print(f"🔧 UFO Compensation: {reason}")
-                                success, result_msg = self.ufo_engine.execute_compensation_trade(
-                                    position, reinforcement_plan, self.trade_executor
-                                )
-                                if success:
-                                    print(f"✅ {result_msg}")
-                                else:
-                                    print(f"❌ Compensation failed: {result_msg}")
-                            elif "close position" in reason:
-                                print(f"📊 UFO Analysis: Closing {position.ticket} - {reason}")
-                                self.trade_executor.close_trade(position.ticket)
-                            else:
-                                print(f"📈 Position {position.ticket} - {reason}")
-                            
-                except Exception as e:
-                    print(f"Error managing existing positions: {e}")
-                    open_positions = None
-
-                # UFO: Analyze exit signals based on currency strength changes
-                if hasattr(self, 'previous_ufo_data') and ufo_data:
-                    exit_signals = self.analyze_ufo_exit_signals(ufo_data, self.previous_ufo_data)
-                    if exit_signals:
-                        print(f"📈 UFO Exit Signals detected: {len(exit_signals)} currency changes")
-                        for signal in exit_signals:
-                            print(f"⚠️ {signal['reason']} (change: {signal['change']:.2f})")
-
-                        # Enhanced auto-close on strong signals
-                        if len(exit_signals) >= 3:
-                            print("🚨 STRONG EXIT SIGNALS detected: Auto-closing positions")
-                            positions_closed = self.close_affected_positions(exit_signals)
-                            print(f"🚨 Auto-closed {positions_closed} positions based on strong exit signals")
-
-                # Store UFO data for next cycle comparison
-                if ufo_data:
-                    self.previous_ufo_data = ufo_data
-
-                # 5. Agentic Workflow for new trade decisions
-                economic_events = self.get_economic_events()
-                
-                # Get current open positions after management
-                try:
-                    open_positions = self.agents['risk_manager'].portfolio_manager.get_positions()
-                except:
-                    open_positions = None
-                    
-                research_result = self.agents['researcher'].execute(ufo_data, economic_events)
-                
-                # Pass diversification config to TraderAgent
-                diversification_config = {
-                    'min_positions_for_session': self.ufo_engine.min_positions_for_session,
-                    'target_positions_when_available': self.ufo_engine.target_positions_when_available,
-                    'max_concurrent_positions': self.ufo_engine.max_concurrent_positions
-                }
-                
-                trade_decision_str = self.agents['trader'].execute(
-                    research_result['consensus'], 
-                    open_positions,
-                    diversification_config=diversification_config
-                )
-
-                risk_assessment = self.agents['risk_manager'].execute(trade_decision_str)
-
-                if risk_assessment['portfolio_risk_status'] == "STOP_LOSS_BREACHED":
-                    print("!!! EQUITY STOP LOSS BREACHED. CEASING ALL TRADING. !!!")
-                    break
-
-                authorization = self.agents['fund_manager'].execute(trade_decision_str, risk_assessment)
-
-                # 6. Output with Diversification Status
-                position_count = len(open_positions) if open_positions is not None and hasattr(open_positions, '__len__') else 0
-                diversification_status = f"📊 Portfolio Diversification: {position_count}/{self.ufo_engine.max_concurrent_positions} positions"
-                
-                if position_count < self.ufo_engine.min_positions_for_session:
-                    diversification_status += " ⚠️ Below minimum"
-                elif position_count >= self.ufo_engine.target_positions_when_available:
-                    diversification_status += " ✅ Well diversified"
-                else:
-                    diversification_status += " 📈 Building diversification"
-                
-                print("\n--- Live Trading Cycle ---")
-                print(f"Timestamp: {pd.Timestamp.now()}")
-                print(diversification_status)
-                print(f"Research Consensus: {research_result['consensus']}")
-                print(f"Trade Decision: {trade_decision_str}")
-                print(f"Risk Assessment: {risk_assessment}")
-                print(f"Final Authorization: {authorization}")
-
-                # 7. UFO-based Trade Execution (only if conditions are met)
-                should_execute = "APPROVE" in authorization.upper()
-                
-                # If Fund Manager rejected due to high risk, check if we can auto-scale
-                if not should_execute and "REJECT" in authorization.upper():
-                    if "risk" in authorization.lower() and "exceed" in authorization.lower():
-                        print("🔄 Fund Manager rejected due to high risk - will auto-scale and execute anyway")
-                        should_execute = True
-                
-                if should_execute:
-                    # Enhanced UFO engine check with diversification parameters
-                    should_trade, trade_reason = self.ufo_engine.should_open_new_trades(
-                        current_positions=open_positions, 
-                        portfolio_status={'balance': account_info.balance, 'equity': account_info.equity} if account_info else None,
-                        ufo_data=ufo_data
-                    )
-                    
-                    if not should_trade:
-                        print(f"UFO Engine: {trade_reason}")
-                    else:
-                        print(f"🎯 UFO Engine: {trade_reason}")
-                        try:
-                            json_match = re.search(r'{.*}', trade_decision_str, re.DOTALL)
-                            if not json_match:
-                                print("No JSON object found in the LLM decision.")
-                            else:
-                                # Clean JSON by removing JavaScript-style comments
-                                json_str = json_match.group(0)
-                                # Remove single-line comments (// ...)
-                                json_str = re.sub(r'//.*?\n', '\n', json_str)
-                                # Remove trailing commas before closing brackets
-                                json_str = re.sub(r',\s*([}\]])', r'\1', json_str)
-                                
-                                parsed_data = json.loads(json_str)
-                                print(f"Parsed trade data: {parsed_data}")
-                                
-                                # Handle different JSON formats from LLM
-                                actions_list = []
-                                if 'actions' in parsed_data:
-                                    actions_list = parsed_data['actions']
-                                elif 'trade_plan' in parsed_data:
-                                    # Handle trade_plan format (already contains actions)
-                                    actions_list = parsed_data['trade_plan']
-                                elif 'trades' in parsed_data:
-                                    # Convert simple trades format to actions format
-                                    for trade in parsed_data['trades']:
-                                        actions_list.append({
-                                            'action': 'new_trade',
-                                            'currency_pair': trade['currency_pair'],
-                                            'direction': trade['direction'].upper(),
-                                            'volume': 0.1,  # Default volume
-                                            'symbol': trade['currency_pair']
-                                        })
-                                
-                                # Apply automatic risk scaling to respect 4.5% portfolio limit
-                                total_original_risk = 0.0
-                                for action in actions_list:
-                                    if action.get('action') == 'new_trade':
-                                        volume = action.get('volume') or action.get('lot_size', 0.1)
-                                        # Estimate risk per trade (simplified: volume * 1% per 0.1 lots)
-                                        estimated_risk = (volume / 0.1) * 1.0  # Rough estimate
-                                        total_original_risk += estimated_risk
-                                
-                                # Calculate scaling factor if needed
-                                max_portfolio_risk = 4.5  # 4.5% to avoid hitting 5% limit
-                                risk_scale_factor = 1.0
-                                
-                                if total_original_risk > max_portfolio_risk:
-                                    risk_scale_factor = max_portfolio_risk / total_original_risk
-                                    print(f"⚠️ Scaling down positions: Original risk {total_original_risk:.1f}% → {max_portfolio_risk}%")
-                                    print(f"📉 Risk scale factor: {risk_scale_factor:.3f}")
-                                
-                                for action in actions_list:
-                                    if action.get('action') == 'new_trade':
-                                        symbol = action.get('symbol') or action.get('currency_pair', '')
-                                        direction = action.get('direction', '').upper()
-                                        volume = action.get('volume') or action.get('lot_size', 0.1)
-
-                                        # Validate and correct currency pair format
-                                        base_symbol = symbol.replace("/", "")
-                                        corrected_symbol = self.validate_and_correct_currency_pair(base_symbol)
-
-                                        if corrected_symbol is None:
-                                            print(f"⚠️ Skipping invalid currency pair: {symbol}")
-                                            continue  # Skip this trade
-
-                                        # Also handle direction inversion if pair was inverted
-                                        if base_symbol != corrected_symbol and len(base_symbol) >= 6:
-                                            # Check if we need to invert the direction
-                                            original_base = base_symbol[:3]
-                                            corrected_base = corrected_symbol[:3]
-                                            if original_base != corrected_base:
-                                                # Pair was inverted, so invert the direction
-                                                direction = 'SELL' if direction == 'BUY' else 'BUY'
-                                                print(f"⚠️ Direction inverted due to pair correction: {direction}")
-
-                                        # Add symbol suffix if it doesn't exist
-                                        suffix = self.config['mt5'].get('symbol_suffix', '')
-                                        if not corrected_symbol.endswith(suffix):
-                                            full_symbol = corrected_symbol + suffix
-                                        else:
-                                            full_symbol = corrected_symbol
-
-                                        # Convert direction to MT5 trade type
-                                        if direction == 'BUY':
-                                            trade_type = mt5.ORDER_TYPE_BUY
-                                        elif direction == 'SELL':
-                                            trade_type = mt5.ORDER_TYPE_SELL
-                                        else:
-                                            print(f"Invalid direction: {direction}")
-                                            continue
-
-                                        # Get volume and apply scaling
-                                        scaled_volume = round(volume * risk_scale_factor, 2)
-                                        
-                                        # Ensure minimum volume (0.01 lots)
-                                        final_volume = max(scaled_volume, 0.01)
-
-                                        # Execute trade without fixed SL/TP (UFO methodology)
-                                        success = self.trade_executor.execute_ufo_trade(
-                                            symbol=full_symbol,
-                                            trade_type=trade_type,
-                                            volume=final_volume,
-                                            comment=action.get('comment', 'UFO Trade (Auto-Scaled)')
-                                        )
-                                        
-                                        if success:
-                                            risk_pct = (final_volume / 0.1) * 1.0  # Rough risk estimate
-                                            print(f"✅ UFO Trade executed: {full_symbol} {direction} {final_volume} lots (~{risk_pct:.1f}% risk)")
-                                        else:
-                                            print(f"❌ Failed to execute: {full_symbol} {direction}")
-
-                                    elif action.get('action') == 'close_trade':
-                                        trade_id = action.get('trade_id')
-                                        if trade_id:
-                                            self.trade_executor.close_trade(trade_id)
-                                        continue
-
-                        except Exception as e:
-                            print(f"Error during UFO trade execution: {e}")
-
-                # Perform additional position updates between cycles (every 5 minutes)
-                next_cycle_time = datetime.now() + pd.Timedelta(minutes=self.cycle_period_minutes)
-                monitoring_time = datetime.now() + pd.Timedelta(seconds=self.position_update_frequency_seconds)
-                
-                while monitoring_time < next_cycle_time:
-                    open_positions = self.agents['risk_manager'].portfolio_manager.get_positions()
-                    if open_positions is not None and not open_positions.empty:
-                        self.continuous_position_monitoring()
-
-                    # Wait for the next monitoring interval
-                    time.sleep(self.position_update_frequency_seconds)
-                    monitoring_time = datetime.now() + pd.Timedelta(seconds=self.position_update_frequency_seconds)
-
+                self.run_single_cycle()
+                time.sleep(self.cycle_period_minutes * 60)
             except KeyboardInterrupt:
-                print("\nTrading interrupted by user. Exiting...")
+                self.log_event("\nTrading interrupted by user. Exiting...")
                 break
             except Exception as e:
-                print(f"Error in trading cycle: {e}")
-                print("Waiting 60 seconds before retrying...")
+                self.log_event(f"Error in trading cycle: {e}")
+                self.log_event("Waiting 60 seconds before retrying...")
                 time.sleep(60)
 
-    def get_real_time_market_data_for_positions(self, open_positions):
-        """
-        Collect real-time market data for all open positions
-        This replaces the empty current_market_data = {} with actual price data
-        """
-        current_market_data = {}
-        
-        if open_positions is None or len(open_positions) == 0:
-            return current_market_data
-            
-        try:
-            # Connect to MT5 to get current prices
-            if not self.mt5_collector.connect():
-                print("⚠️ Failed to connect to MT5 for market data collection")
-                return current_market_data
-                
-            # Extract unique symbols from positions
-            symbols_to_fetch = set()
-            for _, position in open_positions.iterrows():
-                symbols_to_fetch.add(position['symbol'])
-            
-            # Get current tick data for each symbol
-            for symbol in symbols_to_fetch:
-                try:
-                    tick = mt5.symbol_info_tick(symbol)
-                    if tick is not None:
-                        current_market_data[symbol] = {
-                            'close': tick.bid,  # Use bid for current price
-                            'ask': tick.ask,
-                            'bid': tick.bid,
-                            'spread': tick.ask - tick.bid,
-                            'timestamp': pd.Timestamp.now()
-                        }
-                        print(f"📊 Real-time data: {symbol} @ {tick.bid:.5f} (spread: {(tick.ask - tick.bid):.5f})")
-                    else:
-                        print(f"⚠️ No tick data available for {symbol}")
-                        # Fallback: try to get recent bar data
-                        rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_M1, 0, 1)
-                        if rates is not None and len(rates) > 0:
-                            current_market_data[symbol] = {
-                                'close': rates[0]['close'],
-                                'ask': rates[0]['close'] + 0.0001,  # Estimated spread
-                                'bid': rates[0]['close'],
-                                'spread': 0.0001,
-                                'timestamp': pd.Timestamp.now()
-                            }
-                            print(f"📊 Fallback data: {symbol} @ {rates[0]['close']:.5f} (from M1 bar)")
-                        
-                except Exception as e:
-                    print(f"❌ Error getting market data for {symbol}: {e}")
-                    continue
-            
-            self.mt5_collector.disconnect()
-            print(f"✅ Collected real-time market data for {len(current_market_data)} symbols")
-            
-        except Exception as e:
-            print(f"❌ Error in market data collection: {e}")
-            
-        return current_market_data
-    
     def collect_market_data(self):
         """Collect market data for analysis for all symbols."""
         try:
@@ -459,7 +709,7 @@ class LiveTrader:
                     mt5.TIMEFRAME_D1: 100
                 }
 
-                data = self.agents['data_analyst'].execute({
+                data = self.data_analyst.execute({
                     'source': 'mt5',
                     'symbol': symbol,
                     'timeframes': timeframes,
@@ -467,10 +717,10 @@ class LiveTrader:
                 })
                 all_data[symbol] = data
 
-            print(f"✅ Collected data for {len(all_data)} symbols")
+            self.log_event(f"✅ Collected data for {len(all_data)} symbols")
             return all_data
         except Exception as e:
-            print(f"❌ Data collection error: {e}")
+            self.log_event(f"❌ Data collection error: {e}")
             return None
 
     def calculate_ufo_indicators(self, price_data):
@@ -510,10 +760,10 @@ class LiveTrader:
             # Log enhanced analysis results
             self._log_enhanced_analysis(oscillation_analysis, uncertainty_metrics, coherence_analysis)
 
-            print(f"✅ Enhanced UFO analysis completed for {len(ufo_data)} timeframes")
+            self.log_event(f"✅ Enhanced UFO analysis completed for {len(ufo_data)} timeframes")
             return enhanced_ufo_data
         except Exception as e:
-            print(f"❌ UFO calculation error: {e}")
+            self.log_event(f"❌ UFO calculation error: {e}")
             return None
 
     def _log_enhanced_analysis(self, oscillation_analysis, uncertainty_metrics, coherence_analysis):
@@ -525,7 +775,7 @@ class LiveTrader:
                 confidence = metrics.get('confidence_level', 'unknown')
                 scaling = metrics.get('recommended_position_scaling', 1.0)
 
-                print(f"🔍 {timeframe}: {overall_state} (confidence: {confidence}, scaling: {scaling:.2f})")
+                self.log_event(f"🔍 {timeframe}: {overall_state} (confidence: {confidence}, scaling: {scaling:.2f})")
 
             # Log coherence insights
             strong_coherence_count = sum(1 for curr_data in coherence_analysis.values()
@@ -534,7 +784,7 @@ class LiveTrader:
 
             if total_currencies > 0:
                 coherence_ratio = strong_coherence_count / total_currencies
-                print(f"📊 Timeframe Coherence: {strong_coherence_count}/{total_currencies} currencies show strong coherence ({coherence_ratio:.1%})")
+                self.log_event(f"📊 Timeframe Coherence: {strong_coherence_count}/{total_currencies} currencies show strong coherence ({coherence_ratio:.1%})")
 
             # Log mean reversion opportunities
             mean_reversion_signals = 0
@@ -543,30 +793,30 @@ class LiveTrader:
                                              if curr_data.get('mean_reversion_signal', False))
 
             if mean_reversion_signals > 0:
-                print(f"🔄 Mean Reversion Signals: {mean_reversion_signals} detected across timeframes")
+                self.log_event(f"🔄 Mean Reversion Signals: {mean_reversion_signals} detected across timeframes")
 
         except Exception as e:
-            print(f"⚠️ Error logging enhanced analysis: {e}")
+            self.log_event(f"⚠️ Error logging enhanced analysis: {e}")
 
     def get_economic_events(self):
         """Get economic calendar events for simulation"""
         try:
             # Get raw events from cache
-            raw_events = self.agents['data_analyst'].execute({'source': 'economic_calendar'})
+            raw_events = self.data_analyst.execute({'source': 'economic_calendar'})
 
             if raw_events is None or raw_events.empty:
-                print("❌ No economic calendar data available")
+                self.log_event("❌ No economic calendar data available")
                 return pd.DataFrame()
 
             # Process events for simulation date with timezone conversion
             processed_events = self.process_economic_events(raw_events)
             event_count = len(processed_events) if processed_events is not None and not processed_events.empty else 0
 
-            print(f"✅ Retrieved {event_count} economic events for today")
+            self.log_event(f"✅ Retrieved {event_count} economic events for today")
             return processed_events
 
         except Exception as e:
-            print(f"❌ Economic calendar error: {e}")
+            self.log_event(f"❌ Economic calendar error: {e}")
             return pd.DataFrame()
 
     def process_economic_events(self, raw_events):
@@ -579,7 +829,7 @@ class LiveTrader:
             if 'date' in raw_events.columns:
                 raw_events['datetime'] = pd.to_datetime(raw_events['date'], utc=True)
             else:
-                print("❌ No date column found in economic calendar data")
+                self.log_event("❌ No date column found in economic calendar data")
                 return pd.DataFrame()
 
             # Filter events for our simulation date (August 4th, 2025)
@@ -591,7 +841,7 @@ class LiveTrader:
             ].copy()
 
             if daily_events.empty:
-                print(f"ℹ️ No economic events found for {today}")
+                self.log_event(f"ℹ️ No economic events found for {today}")
                 return pd.DataFrame()
 
             # Convert to GMT for simulation compatibility
@@ -613,15 +863,15 @@ class LiveTrader:
             # Log key events for the trading day
             high_impact_events = daily_events[daily_events['impact'] == 'High']
             if not high_impact_events.empty:
-                print(f"⚠️ {len(high_impact_events)} HIGH IMPACT events scheduled for trading day:")
+                self.log_event(f"⚠️ {len(high_impact_events)} HIGH IMPACT events scheduled for trading day:")
                 for _, event in high_impact_events.iterrows():
                     event_time = f"{event['gmt_hour']:02d}:{event['gmt_minute']:02d}"
-                    print(f"  📅 {event_time} GMT: {event['country']} {event['title']}")
+                    self.log_event(f"  📅 {event_time} GMT: {event['country']} {event['title']}")
 
             return daily_events
 
         except Exception as e:
-            print(f"❌ Error processing simulation economic events: {e}")
+            self.log_event(f"❌ Error processing simulation economic events: {e}")
             return pd.DataFrame()
 
     def analyze_ufo_exit_signals(self, current_ufo_data, previous_ufo_data):
@@ -690,7 +940,7 @@ class LiveTrader:
         for signal in exit_signals:
             currencies_to_close.add(signal['currency'])
 
-        open_positions = self.agents['risk_manager'].portfolio_manager.get_positions()
+        open_positions = self.risk_manager.portfolio_manager.get_positions()
         if open_positions is None or open_positions.empty:
             return 0
 
@@ -707,7 +957,7 @@ class LiveTrader:
                 # Check if either currency is affected by exit signals
                 if base_currency in currencies_to_close or quote_currency in currencies_to_close:
                     positions_to_close.append(position['ticket'])
-                    print(f"🚨 Marking {symbol} for closure due to {base_currency}/{quote_currency} exit signals")
+                    self.log_event(f"🚨 Marking {symbol} for closure due to {base_currency}/{quote_currency} exit signals")
 
         # Close positions
         for ticket in positions_to_close:
@@ -737,7 +987,7 @@ class LiveTrader:
                     # If no historical data is available, return None
                     return None
         except Exception as e:
-            print(f"⚠️ Error getting historical price for {symbol}: {e}")
+            self.log_event(f"⚠️ Error getting historical price for {symbol}: {e}")
             return None
 
     def validate_and_correct_currency_pair(self, pair):
@@ -774,7 +1024,7 @@ class LiveTrader:
             # Check if inverted pair exists
             inverted = quote + base
             if inverted in valid_pairs:
-                print(f"⚠️ Correcting inverted pair: {clean_pair} -> {inverted}")
+                self.log_event(f"⚠️ Correcting inverted pair: {clean_pair} -> {inverted}")
                 return inverted
 
             # Special handling for common inversions
@@ -807,11 +1057,11 @@ class LiveTrader:
 
             if clean_pair in inversion_map:
                 corrected = inversion_map[clean_pair]
-                print(f"⚠️ Correcting known inverted pair: {clean_pair} -> {corrected}")
+                self.log_event(f"⚠️ Correcting known inverted pair: {clean_pair} -> {corrected}")
                 return corrected
 
         # If we can't fix it, log error and return None
-        print(f"❌ Invalid currency pair: {pair} (cleaned: {clean_pair})")
+        self.log_event(f"❌ Invalid currency pair: {pair} (cleaned: {clean_pair})")
         return None
 
     def calculate_ufo_entry_price(self, symbol, direction, ufo_data, current_time):
@@ -891,48 +1141,69 @@ class LiveTrader:
             return base_price
 
         except Exception as e:
-            print(f"⚠️ Error calculating UFO entry price for {symbol}: {e}")
+            self.log_event(f"⚠️ Error calculating UFO entry price for {symbol}: {e}")
             # Ultimate fallback
             return 1.0850 if 'EUR' in symbol else 143.50 if 'JPY' in symbol else 1.2650
 
     def continuous_position_monitoring(self):
         """Perform continuous position monitoring between trading cycles"""
         try:
-            open_positions = self.agents['risk_manager'].portfolio_manager.get_positions()
-            if open_positions is None or open_positions.empty:
+            if not self.open_positions:
                 return
 
-            print(f"--- Continuous Monitoring ({datetime.now().strftime('%H:%M:%S')}) ---")
+            # Check if we've already monitored this exact time to prevent loops
+            if hasattr(self, '_last_monitoring_time') and self._last_monitoring_time == datetime.now():
+                return
+            self._last_monitoring_time = datetime.now()
+
+            # Force portfolio value update during continuous monitoring
+            self.update_portfolio_value(force_update=True)
+
+            # Check for significant portfolio changes that require immediate action
+            if self.portfolio_history:
+                recent_changes = self.portfolio_history[-5:]  # Last 5 updates
+                if len(recent_changes) >= 2:
+                    latest_value = recent_changes[-1]['portfolio_value']
+                    previous_value = recent_changes[-2]['portfolio_value']
+                    rapid_change = abs(latest_value - previous_value) / previous_value * 100
+
+                    if rapid_change > 1.0:  # 1% rapid change threshold
+                        self.log_event(f"⚡ Rapid portfolio change: {rapid_change:.2f}% in {self.position_update_frequency_minutes} min")
+
+                        # Check if portfolio stop is approaching
+                        current_drawdown = ((latest_value - self.initial_balance) / self.initial_balance) * 100
+                        if current_drawdown < (self.portfolio_equity_stop * 0.8):  # 80% of stop threshold
+                            self.log_event(f"⚠️ Approaching portfolio stop: {current_drawdown:.2f}% (threshold: {self.portfolio_equity_stop}%)")
 
             # Check for positions with excessive unrealized losses during monitoring
             high_risk_positions = []
-            for index, position in open_positions.iterrows():
-                if position.profit < -75:  # High risk threshold
+            for position in self.open_positions:
+                if position.get('pnl', 0) < -75:  # High risk threshold
                     high_risk_positions.append(position)
 
             if high_risk_positions:
-                print(f"🚨 Monitoring alert: {len(high_risk_positions)} positions with high unrealized losses")
+                self.log_event(f"🚨 Monitoring alert: {len(high_risk_positions)} positions with high unrealized losses")
                 for pos in high_risk_positions[:3]:  # Log top 3
-                    print(f"  ⚠️ {pos['symbol']}: P&L ${pos.profit:.2f}")
+                    self.log_event(f"  ⚠️ {pos['symbol']}: P&L ${pos['pnl']:.2f}")
 
             # Enhanced Dynamic Reinforcement monitoring
             if self.dynamic_reinforcement_engine.enabled and self.dynamic_reinforcement_engine.should_check_reinforcement(datetime.now()):
-                current_market_data = self.get_real_time_market_data_for_positions(open_positions)
+                current_market_data = self.get_real_time_market_data_for_positions(self.open_positions)
 
                 # Detect market events that trigger reinforcement
                 market_events = self.dynamic_reinforcement_engine.detect_market_events(
-                    open_positions,
+                    self.open_positions,
                     current_market_data,
                     getattr(self, 'previous_ufo_data', None)
                 )
 
                 if market_events:
-                    print(f"🎯 Dynamic Reinforcement: {len(market_events)} market events detected")
+                    self.log_event(f"🎯 Dynamic Reinforcement: {len(market_events)} market events detected")
 
                     # Process each event for reinforcement
                     for event in market_events:
                         position = event.get('position')
-                        if position is not None:
+                        if position:
                             # Calculate dynamic reinforcement for this event
                             reinforcement_plan, message = self.dynamic_reinforcement_engine.calculate_dynamic_reinforcement(
                                 position,
@@ -942,17 +1213,17 @@ class LiveTrader:
                             )
 
                             if reinforcement_plan:
-                                print(f"  ⚡ {event['type']}: {position['symbol']} - {message}")
-                                print(f"    📊 Reinforcement: {reinforcement_plan['additional_lots']:.2f} lots")
+                                self.log_event(f"  ⚡ {event['type']}: {position['symbol']} - {message}")
+                                self.log_event(f"    📊 Reinforcement: {reinforcement_plan['additional_lots']:.2f} lots")
 
-                                # Execute reinforcement
-                                self.execute_dynamic_reinforcement(position, reinforcement_plan)
+                                # Execute reinforcement (in simulation)
+                                self.execute_dynamic_reinforcement(position, reinforcement_plan, datetime.now())
                             else:
-                                print(f"  ⏸️ {position['symbol']}: {message}")
+                                self.log_event(f"  ⏸️ {position['symbol']}: {message}")
 
                 # Also check UFO-based reinforcement for compatibility
                 if hasattr(self, 'previous_ufo_data'):
-                    for index, position in open_positions.iterrows():
+                    for position in self.open_positions:
                         # Check if UFO engine also suggests reinforcement
                         should_reinforce, reason, plan = self.ufo_engine.should_reinforce_position(
                             position,
@@ -960,55 +1231,61 @@ class LiveTrader:
                             current_market_data
                         )
                         if should_reinforce and plan:
-                            print(f"  🛸 UFO reinforcement suggestion: {position['symbol']} - {reason}")
+                            self.log_event(f"  🛸 UFO reinforcement suggestion: {position['symbol']} - {reason}")
 
         except Exception as e:
-            print(f"❌ Error in continuous position monitoring: {e}")
+            self.log_event(f"❌ Error in continuous position monitoring: {e}")
 
-    def execute_dynamic_reinforcement(self, position, reinforcement_plan):
-        """Execute dynamic reinforcement trade"""
+    def execute_dynamic_reinforcement(self, position, reinforcement_plan, current_time):
+        """Execute dynamic reinforcement trade in simulation"""
         try:
-            # Convert direction to MT5 trade type
-            if position['type'] == 0: # BUY
-                trade_type = mt5.ORDER_TYPE_BUY
-            else: # SELL
-                trade_type = mt5.ORDER_TYPE_SELL
+            # Create reinforcement position
+            reinforcement_position = {
+                'ticket': np.random.randint(100000, 999999),
+                'symbol': position['symbol'],
+                'direction': position['direction'],  # Same direction as original
+                'volume': reinforcement_plan['additional_lots'],
+                'entry_price': self.get_historical_price_for_time(position['symbol'], current_time) or position['current_price'],
+                'current_price': position.get('current_price', position['entry_price']),
+                'pnl': 0.0,
+                'timestamp': current_time,
+                'comment': f'Dynamic {reinforcement_plan["type"]}',
+                'original_position': position.get('ticket'),
+                'reinforcement_details': reinforcement_plan
+            }
 
-            # Execute the reinforcement trade
-            success = self.trade_executor.execute_ufo_trade(
-                symbol=position['symbol'],
-                trade_type=trade_type,
-                volume=reinforcement_plan['additional_lots'],
-                comment=f'Dynamic {reinforcement_plan["type"]}'
-            )
+            # Add to open positions
+            self.open_positions.append(reinforcement_position)
 
-            if success:
-                # Record in dynamic reinforcement engine
-                self.dynamic_reinforcement_engine.record_reinforcement(position, reinforcement_plan)
-                print(f"    ✅ Dynamic reinforcement executed: {position['symbol']} "
-                      f"{position['type']} {reinforcement_plan['additional_lots']:.2f} lots")
-            else:
-                print(f"    ❌ Failed to execute dynamic reinforcement for {position['symbol']}")
+            # Record in dynamic reinforcement engine
+            self.dynamic_reinforcement_engine.record_reinforcement(position, reinforcement_plan)
+
+            self.log_event(f"    ✅ Dynamic reinforcement executed: {reinforcement_position['symbol']} "
+                          f"{reinforcement_position['direction']} {reinforcement_position['volume']:.2f} lots "
+                          f"@ {reinforcement_position['entry_price']:.5f}")
+
+            # Also add to trades executed for tracking
+            self.trades_executed.append(reinforcement_position)
 
         except Exception as e:
-            print(f"    ❌ Failed to execute dynamic reinforcement: {e}")
+            self.log_event(f"    ❌ Failed to execute dynamic reinforcement: {e}")
 
     def check_portfolio_status(self):
         """
         Checks overall portfolio status using UFO methodology.
         """
         try:
-            positions = self.agents['risk_manager'].portfolio_manager.get_positions()
+            positions = self.risk_manager.portfolio_manager.get_positions()
             if positions is None or len(positions) == 0:
                 return
                 
             portfolio_value = self.ufo_engine.calculate_portfolio_synthetic_value()
-            print(f"Portfolio synthetic value: {portfolio_value:.2f}%")
+            self.log_event(f"Portfolio synthetic value: {portfolio_value:.2f}%")
             
             if portfolio_value <= -5.0:  # Portfolio stop loss threshold
-                print("Portfolio stop loss triggered - closing all positions")
+                self.log_event("Portfolio stop loss triggered - closing all positions")
                 for position in positions:
                     self.trade_executor.close_trade(position.ticket)
                     
         except Exception as e:
-            print(f"Error checking portfolio status: {e}")
+            self.log_event(f"Error checking portfolio status: {e}")
