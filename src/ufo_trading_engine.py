@@ -98,34 +98,53 @@ class UFOTradingEngine:
         should_trade, _ = self.should_trade_now()
         return should_trade
     
-    def should_close_for_session_end(self):
+    def should_close_for_session_end(self, economic_events=None):
         """
         Determines if positions should be closed due to session ending
-        Implements "not to go to bed with positions open" rule
+        Uses simulation time and actual economic calendar data instead of hardcoded news times
         """
         now_utc = datetime.utcnow().replace(tzinfo=pytz.UTC)
         london_time = now_utc.astimezone(self.session_timezone)
-        current_time = london_time.time()
+        current_time_london = london_time.time()
         current_weekday = london_time.weekday()
-        
+
+        # For news periods, use GMT time directly
+        current_time_gmt = now_utc.time()
+
         # Close before weekend
-        if current_weekday == 4 and current_time >= time(21, 0):  # Friday 9 PM
+        if current_weekday == 4 and current_time_london >= time(21, 0):  # Friday 9 PM London
             return True, "Weekend closure - Friday evening"
-            
+
         # Close at 8 PM GMT (20:00) - UFO methodology end of analysis period
-        if current_time >= time(20, 0):
+        if current_time_gmt >= time(20, 0):
             return True, "End of UFO analysis period (8 PM GMT)"
-            
-        # Close during major news times (can be expanded)
-        major_news_times = [
-            (time(8, 30), time(9, 30)),   # London open + ECB times
-            (time(13, 30), time(14, 30)), # NY open + Fed times
-        ]
-        
-        for start_time, end_time in major_news_times:
-            if start_time <= current_time <= end_time:
-                return True, f"Major news period: {current_time}"
-                
+
+        # Use actual economic calendar data if provided
+        if economic_events is not None and not economic_events.empty:
+            # Check for high-impact events in the next 30 minutes
+            current_hour = current_time_gmt.hour
+            current_minute = current_time_gmt.minute
+
+            # Look for high-impact events in current hour or next 30 minutes
+            high_impact_events = economic_events[
+                (economic_events['impact'] == 'High') &
+                (
+                    # Events in current hour
+                    (economic_events['gmt_hour'] == current_hour) |
+                    # Events in next hour if we're in the last 30 minutes
+                    ((current_minute >= 30) & (economic_events['gmt_hour'] == (current_hour + 1) % 24))
+                )
+            ]
+
+            if not high_impact_events.empty:
+                event_details = []
+                for _, event in high_impact_events.iterrows():
+                    event_time = f"{event['gmt_hour']:02d}:{event['gmt_minute']:02d}"
+                    event_details.append(f"{event_time} GMT: {event['country']} {event['title']}")
+
+                return True, f"High-impact economic events approaching: {'; '.join(event_details)}"
+
+
         return False, "Normal trading hours"
     
     def analyze_ufo_exit_signals(self, current_ufo_data, previous_ufo_data):

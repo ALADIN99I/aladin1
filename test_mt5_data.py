@@ -1,4 +1,5 @@
 import datetime
+import pandas as pd
 try:
     import MetaTrader5 as mt5
     REAL_MT5 = True
@@ -30,7 +31,12 @@ if init_result:
     if rates is not None:
         print(f"\n📊 Current rates for {symbol}:")
         for i, rate in enumerate(rates):
-            print(f"  Bar {i}: Open={rate['open']:.5f}, Close={rate['close']:.5f}, Time={datetime.datetime.fromtimestamp(rate['time'])}")
+            # Handle numpy.datetime64 from mock data
+            if isinstance(rate['time'], pd.Timestamp):
+                time_val = rate['time']
+            else:
+                time_val = pd.to_datetime(rate['time'])
+            print(f"  Bar {i}: Open={rate['open']:.5f}, Close={rate['close']:.5f}, Time={time_val}")
     else:
         print(f"❌ No rates returned for {symbol}")
         print(f"Last error: {mt5.last_error()}")
