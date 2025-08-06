@@ -16,8 +16,9 @@ class UFOTradingEngine:
     - Portfolio-level risk management
     """
     
-    def __init__(self, config):
+    def __init__(self, config, simulation_time=None):
         self.config = config
+        self.simulation_time = simulation_time
         # Read from trading section, default to -5.0 if not found
         portfolio_stop_raw = config['trading'].get('portfolio_equity_stop', '-5.0')
         # Handle config values with inline comments like '-5.0 (-3.0)'
@@ -62,13 +63,21 @@ class UFOTradingEngine:
         self.mean_reversion_sensitivity = 2.0  # Z-score threshold for mean reversion trades
         self.coherence_requirement = 0.6  # Minimum coherence for high-confidence trades
         self.volatility_adjustment_factor = 0.5  # Position scaling in volatile conditions
+
+    def set_simulation_time(self, simulation_time):
+        """Set the current simulation time"""
+        self.simulation_time = simulation_time
         
     def should_trade_now(self):
         """
         Determines if trading should occur based on session timing
         Avoids major news and focuses on session-based opportunities
         """
-        now_utc = datetime.utcnow().replace(tzinfo=pytz.UTC)
+        if self.simulation_time:
+            now_utc = self.simulation_time.replace(tzinfo=pytz.UTC)
+        else:
+            now_utc = datetime.utcnow().replace(tzinfo=pytz.UTC)
+
         london_time = now_utc.astimezone(self.session_timezone)
         current_time = london_time.time()
         current_weekday = london_time.weekday()  # 0=Monday, 6=Sunday
@@ -98,33 +107,65 @@ class UFOTradingEngine:
         should_trade, _ = self.should_trade_now()
         return should_trade
     
-    def should_close_for_session_end(self):
+    def should_close_for_session_end(self, economic_events=None):
         """
         Determines if positions should be closed due to session ending
         Implements "not to go to bed with positions open" rule
         """
-        now_utc = datetime.utcnow().replace(tzinfo=pytz.UTC)
+        if self.simulation_time:
+            now_utc = self.simulation_time.replace(tzinfo=pytz.UTC)
+        else:
+            now_utc = datetime.utcnow().replace(tzinfo=pytz.UTC)
+
         london_time = now_utc.astimezone(self.session_timezone)
-        current_time = london_time.time()
+        current_time_london = london_time.time()
         current_weekday = london_time.weekday()
+
+        # For news periods, use GMT time directly
+        current_time_gmt = now_utc.time()
         
         # Close before weekend
-        if current_weekday == 4 and current_time >= time(21, 0):  # Friday 9 PM
+        if current_weekday == 4 and current_time_london >= time(21, 0):  # Friday 9 PM
             return True, "Weekend closure - Friday evening"
             
         # Close at 8 PM GMT (20:00) - UFO methodology end of analysis period
-        if current_time >= time(20, 0):
+        if current_time_gmt >= time(20, 0):
             return True, "End of UFO analysis period (8 PM GMT)"
             
-        # Close during major news times (can be expanded)
-        major_news_times = [
-            (time(8, 30), time(9, 30)),   # London open + ECB times
-            (time(13, 30), time(14, 30)), # NY open + Fed times
-        ]
-        
-        for start_time, end_time in major_news_times:
-            if start_time <= current_time <= end_time:
-                return True, f"Major news period: {current_time}"
+        # Use actual economic calendar data if provided
+        if economic_events is not None and not economic_events.empty:
+            # Check for high-impact events in the next 30 minutes
+            current_hour = current_time_gmt.hour
+            current_minute = current_time_gmt.minute
+
+            # Look for high-impact events in current hour or next 30 minutes
+            high_impact_events = economic_events[
+                (economic_events['impact'] == 'High') &
+                (
+                    # Events in current hour
+                    (economic_events['gmt_hour'] == current_hour) |
+                    # Events in next hour if we're in the last 30 minutes
+                    ((current_minute >= 30) & (economic_events['gmt_hour'] == (current_hour + 1) % 24))
+                )
+            ]
+
+            if not high_impact_events.empty:
+                event_details = []
+                for _, event in high_impact_events.iterrows():
+                    event_time = f"{event['gmt_hour']:02d}:{event['gmt_minute']:02d}"
+                    event_details.append(f"{event_time} GMT: {event['country']} {event['title']}")
+
+                return True, f"High-impact economic events approaching: {'; '.join(event_details)}"
+        else:
+            # Close during major news times (can be expanded)
+            major_news_times = [
+                (time(8, 30), time(9, 30)),   # London open + ECB times
+                (time(13, 30), time(14, 30)), # NY open + Fed times
+            ]
+
+            for start_time, end_time in major_news_times:
+                if start_time <= current_time_gmt <= end_time:
+                    return True, f"Major news period: {current_time_gmt}"
                 
         return False, "Normal trading hours"
     

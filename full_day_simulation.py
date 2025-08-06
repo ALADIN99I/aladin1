@@ -21,7 +21,6 @@ from src.agents.market_researcher_agent import MarketResearcherAgent
 from src.agents.fund_manager_agent import FundManagerAgent
 from src.trade_executor import TradeExecutor
 from src.ufo_trading_engine import UFOTradingEngine
-from src.simulation_ufo_engine import SimulationUFOTradingEngine
 from src.portfolio_manager import PortfolioManager
 from src.dynamic_reinforcement_engine import DynamicReinforcementEngine
 
@@ -101,7 +100,7 @@ class FullDayTradingSimulation:
         
         # Initialize UFO components
         self.ufo_calculator = UfoCalculator(self.config['trading']['currencies'].split(','))
-        self.ufo_engine = SimulationUFOTradingEngine(self.config, self.simulation_date)
+        self.ufo_engine = UFOTradingEngine(self.config, simulation_time=self.simulation_date)
         
         # Initialize agents
         symbols_list = self.config['trading']['symbols'].split(',')
