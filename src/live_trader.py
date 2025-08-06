@@ -232,9 +232,10 @@ class LiveTrader:
             self.mt5_collector.disconnect()
             self.log_event("✅ MT5 connection closed. Bot shut down.")
 
-    # ... (Keep all helper methods from the original LiveTrader and add missing ones) ...
     def assess_portfolio(self):
+        """Assess current portfolio positions and trigger position management."""
         try:
+            # This method now primarily triggers the update and gets the latest positions
             self.update_portfolio_value()
             positions = self.portfolio_manager.get_positions()
             position_count = len(positions) if not positions.empty else 0
@@ -245,19 +246,23 @@ class LiveTrader:
             return pd.DataFrame()
 
     def update_portfolio_value(self, force_update=False):
-        """Update portfolio value based on open positions P&L using real-time prices"""
+        """
+        Update portfolio value based on open positions P&L using real-time prices
+        and manage positions based on profit/loss, time, and trailing stops.
+        """
         now = datetime.now()
-        if not force_update and self.last_monitoring_time and (now - self.last_monitoring_time).total_seconds() / 60 < self.position_update_frequency_minutes:
+        if not force_update and self.last_monitoring_time and \
+           (now - self.last_monitoring_time).total_seconds() / 60 < self.position_update_frequency_minutes:
             return
 
         open_positions = self.portfolio_manager.get_positions()
         if open_positions.empty:
-            self.position_metadata.clear() # Clear metadata if no positions are open
+            self.position_metadata.clear()  # Clear metadata if no positions are open
             return
 
         positions_to_close = []
 
-        # Cleanup metadata for closed positions
+        # Cleanup metadata for positions that have been manually closed or no longer exist
         open_tickets = set(open_positions['ticket'])
         for ticket in list(self.position_metadata.keys()):
             if ticket not in open_tickets:
@@ -267,7 +272,7 @@ class LiveTrader:
             ticket = position['ticket']
             pnl = position['profit']
 
-            # Initialize or update peak_pnl in metadata
+            # Initialize or update peak_pnl for trailing stop logic
             if ticket not in self.position_metadata:
                 self.position_metadata[ticket] = {'peak_pnl': pnl}
             elif pnl > self.position_metadata[ticket]['peak_pnl']:
@@ -275,11 +280,15 @@ class LiveTrader:
 
             peak_pnl = self.position_metadata[ticket]['peak_pnl']
 
-            # Position closing logic from simulation
-            close_on_profit = pnl > 75
-            close_on_loss = pnl < -50
+            # Enhanced position closing logic from the simulator
+            close_on_profit = pnl > 75  # Take profit at +$75
+            close_on_loss = pnl < -50   # Stop loss at -$50
+
+            # Time-based exit: close positions older than 4 hours
             position_age_hours = (now.replace(tzinfo=None) - position['time'].replace(tzinfo=None)).total_seconds() / 3600
             close_on_time = position_age_hours > 4
+
+            # Trailing stop: close if position has moved against us significantly from its peak profit
             close_on_trailing = peak_pnl > 30 and pnl < peak_pnl * 0.7
 
             if close_on_profit or close_on_loss or close_on_time or close_on_trailing:
@@ -294,6 +303,7 @@ class LiveTrader:
                     close_reason = "trailing stop"
                 self.log_event(f"🎯 Marking {position['symbol']} for closure: {close_reason} (P&L: ${pnl:.2f})")
 
+        # Close marked positions
         for ticket in positions_to_close:
             if self.trade_executor.close_trade(ticket):
                 if ticket in self.position_metadata:
@@ -355,9 +365,30 @@ class LiveTrader:
             return None
 
     def _log_enhanced_analysis(self, oscillation_analysis, uncertainty_metrics, coherence_analysis):
+        """Log the results of the enhanced UFO analysis."""
         try:
+            # Log market state summary
             for timeframe, metrics in uncertainty_metrics.items():
-                self.log_event(f"🔍 {timeframe}: {metrics.get('overall_state', 'N/A')} (confidence: {metrics.get('confidence_level', 'N/A')})")
+                state = metrics.get('overall_state', 'unknown')
+                confidence = metrics.get('confidence_level', 'unknown')
+                scaling = metrics.get('recommended_position_scaling', 1.0)
+                self.log_event(f"🔍 {timeframe}: {state} (confidence: {confidence}, scaling: {scaling:.2f})")
+
+            # Log coherence insights
+            if coherence_analysis:
+                strong_coherence_count = sum(1 for data in coherence_analysis.values() if data.get('coherence_level') == 'strong')
+                total_currencies = len(coherence_analysis)
+                if total_currencies > 0:
+                    coherence_ratio = strong_coherence_count / total_currencies
+                    self.log_event(f"📊 Timeframe Coherence: {strong_coherence_count}/{total_currencies} currencies show strong coherence ({coherence_ratio:.1%})")
+
+            # Log mean reversion signals
+            mean_reversion_signals = 0
+            if oscillation_analysis:
+                for tf_data in oscillation_analysis.values():
+                    mean_reversion_signals += sum(1 for data in tf_data.values() if data.get('mean_reversion_signal', False))
+                if mean_reversion_signals > 0:
+                    self.log_event(f"🔄 Mean Reversion Signals: {mean_reversion_signals} detected across timeframes")
         except Exception as e:
             self.log_event(f"⚠️ Error logging enhanced analysis: {e}")
 
@@ -374,16 +405,38 @@ class LiveTrader:
             return pd.DataFrame()
 
     def process_economic_events(self, raw_events):
+        """Process and enrich economic events with trading significance."""
         try:
-            if raw_events.empty: return pd.DataFrame()
+            if raw_events.empty:
+                return pd.DataFrame()
+
             raw_events['datetime'] = pd.to_datetime(raw_events['date'], utc=True)
             today = datetime.now(pytz.utc).date()
             daily_events = raw_events[raw_events['datetime'].dt.date == today].copy()
-            if daily_events.empty: return pd.DataFrame()
+
+            if daily_events.empty:
+                return pd.DataFrame()
+
+            # Add trading significance assessment
+            daily_events['trading_significance'] = daily_events['impact'].map({
+                'High': 'Major market mover - high volatility expected',
+                'Medium': 'Moderate market impact - monitor closely',
+                'Low': 'Minor impact - background noise',
+                'Holiday': 'Market holiday - reduced liquidity'
+            }).fillna('Not specified')
 
             daily_events['gmt_time'] = daily_events['datetime'].dt.tz_convert('GMT')
             daily_events['gmt_hour'] = daily_events['gmt_time'].dt.hour
             daily_events['gmt_minute'] = daily_events['gmt_time'].dt.minute
+
+            # Log high-impact events
+            high_impact_events = daily_events[daily_events['impact'] == 'High']
+            if not high_impact_events.empty:
+                self.log_event(f"⚠️ {len(high_impact_events)} HIGH IMPACT events scheduled for today:")
+                for _, event in high_impact_events.iterrows():
+                    event_time_str = event['gmt_time'].strftime('%H:%M')
+                    self.log_event(f"  📅 {event_time_str} GMT: {event['country']} {event['title']}")
+
             return daily_events.sort_values('gmt_time')
         except Exception as e:
             self.log_event(f"❌ Error processing economic events: {e}")
@@ -511,7 +564,10 @@ class LiveTrader:
         return 10000
 
     def validate_and_correct_currency_pair(self, pair):
-        """Validate and correct currency pair format"""
+        """
+        Validate and correct currency pair format.
+        Handles inverted pairs and common mistakes.
+        """
         valid_pairs = self.config['trading']['symbols'].split(',')
         clean_pair = pair.replace('-ECN', '').replace('/', '').upper()
 
@@ -522,23 +578,41 @@ class LiveTrader:
             base = clean_pair[:3]
             quote = clean_pair[3:6]
 
+            # Check for direct inversion
             inverted = quote + base
             if inverted in valid_pairs:
                 self.log_event(f"⚠️ Correcting inverted pair: {clean_pair} -> {inverted}")
                 return inverted
 
+            # Check for common inversions not caught by simple reversal
+            inversion_map = {
+                'CADUSD': 'USDCAD', 'CHFUSD': 'USDCHF', 'JPYUSD': 'USDJPY',
+                'USDEUR': 'EURUSD', 'USDGBP': 'GBPUSD', 'USDAUD': 'AUDUSD'
+            }
+            if clean_pair in inversion_map:
+                corrected = inversion_map[clean_pair]
+                self.log_event(f"⚠️ Correcting known inverted pair: {clean_pair} -> {corrected}")
+                return corrected
+
         self.log_event(f"❌ Invalid currency pair: {pair}")
         return None
 
     def calculate_ufo_entry_price(self, symbol, direction, ufo_data):
-        """Calculate optimal entry price based on UFO methodology and currency strength"""
+        """
+        Calculate optimal entry price based on UFO methodology and currency strength.
+        """
         try:
-            rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_M5, 0, 1)
-            if rates is None or len(rates) == 0:
-                self.log_event(f"⚠️ Could not get rates for {symbol}, using fallback price")
-                return 1.0850 if 'EUR' in symbol else 143.50 if 'JPY' in symbol else 1.2650
-
-            base_price = rates[0]['close']
+            # Get the current market price
+            tick_info = mt5.symbol_info_tick(symbol)
+            if not tick_info:
+                self.log_event(f"⚠️ Could not get tick info for {symbol}, using fallback price logic.")
+                # Fallback to historical rates if tick info is not available
+                rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_M1, 0, 1)
+                if rates is None or len(rates) == 0:
+                    return 1.0850 if 'EUR' in symbol else 143.50 if 'JPY' in symbol else 1.2650
+                base_price = rates[0]['close']
+            else:
+                base_price = tick_info.last
 
             if ufo_data:
                 clean_symbol = symbol.replace('-ECN', '')
@@ -551,32 +625,35 @@ class LiveTrader:
 
                     if primary_tf in raw_ufo_data:
                         strength_data = raw_ufo_data[primary_tf]
-
                         base_strength = 0.0
                         quote_strength = 0.0
 
+                        # Handle both DataFrame and dict formats
                         if hasattr(strength_data, 'columns'):
                             if base_currency in strength_data.columns:
                                 base_strength = strength_data[base_currency].iloc[-1]
                             if quote_currency in strength_data.columns:
                                 quote_strength = strength_data[quote_currency].iloc[-1]
-                        else:
+                        else: # Handle dict format
                             if base_currency in strength_data:
                                 base_strength = strength_data[base_currency][-1]
                             if quote_currency in strength_data:
                                 quote_strength = strength_data[quote_currency][-1]
 
                         strength_diff = base_strength - quote_strength
-
                         price_adjustment = 0.0
+
+                        # UFO-based price adjustment: seek better entry if strength is confirmed
                         if abs(strength_diff) > 1.0:
+                            # For a BUY, a strong base currency allows for a slightly lower entry
                             if direction == 'BUY' and strength_diff > 0:
-                                price_adjustment = -base_price * 0.0002
+                                price_adjustment = -base_price * 0.0002  # 2 pips adjustment
+                            # For a SELL, a weak base currency allows for a slightly higher entry
                             elif direction == 'SELL' and strength_diff < 0:
-                                price_adjustment = base_price * 0.0002
+                                price_adjustment = base_price * 0.0002   # 2 pips adjustment
 
                         optimal_price = base_price + price_adjustment
-                        return max(optimal_price, base_price * 0.95)
+                        return max(optimal_price, base_price * 0.95) # Safety net
 
             return base_price
 
@@ -592,80 +669,75 @@ class LiveTrader:
         return False, f"Portfolio healthy: {drawdown:.2f}% drawdown"
 
     def check_multi_timeframe_coherence(self, ufo_data):
-        """Check if currency strength is consistent across timeframes"""
-        coherence_issues = []
-
-        if len(ufo_data) < 2:
-            return coherence_issues
-
-        timeframes = list(ufo_data.keys())
-        currencies = list(ufo_data[timeframes[0]].columns)
-
-        for currency in currencies:
-            strengths_by_tf = {}
-
-            for tf in timeframes:
-                if currency in ufo_data[tf].columns:
-                    strengths_by_tf[tf] = ufo_data[tf][currency].iloc[-1]
-
-            if len(strengths_by_tf) < 2:
-                continue
-
-            values = list(strengths_by_tf.values())
-            all_positive = all(v > 0 for v in values)
-            all_negative = all(v < 0 for v in values)
-
-            if not (all_positive or all_negative):
-                coherence_issues.append({
-                    'currency': currency,
-                    'strengths': strengths_by_tf,
-                    'issue': 'Timeframe divergence',
-                    'recommendation': 'Consider closing positions'
-                })
-
-        return coherence_issues
+        """
+        Check if currency strength is consistent across timeframes.
+        This is a placeholder, as the main logic is now in UfoCalculator.
+        This method can be used for additional logging or checks if needed.
+        """
+        # The core logic is now in `ufo_calculator.detect_timeframe_coherence`
+        # This method can be kept for compatibility or extended for more specific live checks.
+        return [] # Returning empty list as primary check is done during indicator calculation.
 
     def analyze_ufo_exit_signals(self, current_ufo_data, previous_ufo_data):
+        """Analyze UFO data for exit signals based on significant currency strength changes."""
         exit_signals = []
-        if not previous_ufo_data: return exit_signals
+        if not previous_ufo_data:
+            return exit_signals
 
         current_raw = current_ufo_data.get('raw_data', {})
         previous_raw = previous_ufo_data.get('raw_data', {})
 
         for timeframe, current_strengths in current_raw.items():
-            if timeframe not in previous_raw: continue
+            if timeframe not in previous_raw:
+                continue
             previous_strengths = previous_raw[timeframe]
 
-            currency_list = current_strengths.keys() if isinstance(current_strengths, dict) else current_strengths.columns
+            currency_list = list(current_strengths.columns) if hasattr(current_strengths, 'columns') else list(current_strengths.keys())
 
             for currency in currency_list:
-                if currency not in previous_strengths: continue
+                if currency not in previous_strengths:
+                    continue
 
-                current_val = current_strengths[currency][-1] if isinstance(current_strengths, dict) else current_strengths[currency].iloc[-1]
-                prev_series = previous_strengths[currency][-5:]
-                avg_previous = sum(prev_series) / len(prev_series) if isinstance(prev_series, list) else prev_series.mean()
+                if hasattr(current_strengths, 'iloc'):
+                    current_val = current_strengths[currency].iloc[-1]
+                    prev_series = previous_strengths[currency].iloc[-5:]
+                    avg_previous = prev_series.mean()
+                else: # dict format
+                    current_val = current_strengths[currency][-1]
+                    prev_series = previous_strengths[currency][-5:]
+                    avg_previous = sum(prev_series) / len(prev_series)
 
+                # Signal on significant strength reversal
                 if abs(current_val - avg_previous) > 2.0:
                     change_dir = "strengthening" if current_val > avg_previous else "weakening"
-                    exit_signals.append({'currency': currency, 'reason': f"{currency} {change_dir} on {timeframe}"})
+                    exit_signals.append({
+                        'currency': currency,
+                        'reason': f"{currency} is rapidly {change_dir} on {timeframe}",
+                        'change': current_val - avg_previous
+                    })
         return exit_signals
 
     def close_affected_positions(self, exit_signals):
+        """Close positions affected by strong UFO exit signals."""
         positions_closed = 0
         currencies_to_close = {signal['currency'] for signal in exit_signals}
+
         open_positions = self.portfolio_manager.get_positions()
-        if open_positions.empty: return 0
+        if open_positions.empty:
+            return 0
 
         for _, position in open_positions.iterrows():
             symbol = position['symbol'].replace('-ECN', '')
             base, quote = symbol[:3], symbol[3:6]
+
             if base in currencies_to_close or quote in currencies_to_close:
-                self.log_event(f"🚨 Closing {symbol} due to exit signals for {base}/{quote}")
+                self.log_event(f"🚨 Closing {symbol} due to strong exit signals for {base} or {quote}")
                 if self.trade_executor.close_trade(position['ticket']):
                     positions_closed += 1
         return positions_closed
 
     def continuous_position_monitoring(self):
+        """Perform continuous monitoring and dynamic reinforcement between trading cycles."""
         now = datetime.now()
         if self.last_monitoring_time and (now - self.last_monitoring_time).total_seconds() / 60 < self.position_update_frequency_minutes:
             return
@@ -673,13 +745,32 @@ class LiveTrader:
 
         try:
             open_positions = self.portfolio_manager.get_positions()
-            if open_positions.empty: return
+            if open_positions.empty:
+                return
 
+            # Force portfolio value update and position management
             self.update_portfolio_value(force_update=True)
 
             current_market_data = self.get_real_time_market_data_for_positions(open_positions)
 
-            # UFO-Based Reinforcement
+            # Dynamic Reinforcement Engine checks
+            if self.dynamic_reinforcement_engine.enabled and self.dynamic_reinforcement_engine.should_check_reinforcement(now):
+                market_events = self.dynamic_reinforcement_engine.detect_market_events(
+                    open_positions, current_market_data, self.previous_ufo_data
+                )
+                if market_events:
+                    self.log_event(f"🎯 Dynamic Reinforcement: {len(market_events)} market events detected")
+                    for event in market_events:
+                        pos = event.get('position')
+                        if pos:
+                            plan, msg = self.dynamic_reinforcement_engine.calculate_dynamic_reinforcement(
+                                pos, event, current_market_data, self.previous_ufo_data
+                            )
+                            if plan:
+                                self.log_event(f"  ⚡ {pos['symbol']}: {msg}")
+                                self.execute_dynamic_reinforcement(pos, plan)
+
+            # UFO-Based Reinforcement checks
             if self.previous_ufo_data:
                 for _, position_series in open_positions.iterrows():
                     position_dict = position_series.to_dict()
@@ -690,48 +781,30 @@ class LiveTrader:
                         self.log_event(f"  🛸 UFO reinforcement suggestion: {position_dict['symbol']} - {reason}")
                         self.execute_dynamic_reinforcement(position_dict, plan)
 
-            # Dynamic Reinforcement
-            if self.dynamic_reinforcement_engine.enabled and self.dynamic_reinforcement_engine.should_check_reinforcement(now):
-                market_events = self.dynamic_reinforcement_engine.detect_market_events(
-                    open_positions, current_market_data, self.previous_ufo_data
-                )
-                if market_events:
-                    self.log_event(f"🎯 Dynamic Reinforcement: {len(market_events)} events detected")
-                    for event in market_events:
-                        pos = event.get('position')
-                        if pos is not None:
-                            plan, msg = self.dynamic_reinforcement_engine.calculate_dynamic_reinforcement(
-                                pos, event, current_market_data, self.previous_ufo_data
-                            )
-                            if plan:
-                                self.log_event(f"  ⚡ {pos['symbol']}: {msg}")
-                                self.execute_dynamic_reinforcement(pos, plan)
         except Exception as e:
-            self.log_event(f"❌ Error in continuous monitoring: {e}")
+            self.log_event(f"❌ Error in continuous position monitoring: {e}")
 
     def get_real_time_market_data_for_positions(self, open_positions):
+        """Collect real-time market data for all open positions."""
         current_market_data = {}
-        if open_positions.empty: return current_market_data
+        if open_positions.empty:
+            return current_market_data
 
-        for symbol in open_positions['symbol'].unique():
-            tick_info = mt5.symbol_info_tick(symbol)
+        symbols_to_fetch = open_positions['symbol'].unique()
+        for symbol in symbols_to_fetch:
+            tick_info = self.mt5_collector.get_tick_info(symbol)
             if tick_info:
                 current_market_data[symbol] = {
-                    'close': tick_info.last, 'ask': tick_info.ask, 'bid': tick_info.bid,
-                    'spread': tick_info.ask - tick_info.bid, 'timestamp': datetime.now()
+                    'close': tick_info.last,
+                    'ask': tick_info.ask,
+                    'bid': tick_info.bid,
+                    'spread': tick_info.ask - tick_info.bid,
+                    'timestamp': datetime.now()
                 }
             else:
-                self.log_event(f"⚠️ Could not get tick info for {symbol}, using fallback price")
-                base_prices = {
-                    'EURUSD-ECN': 1.0850, 'GBPUSD-ECN': 1.2650, 'USDJPY-ECN': 143.50,
-                    'AUDUSD-ECN': 0.6720, 'USDCAD-ECN': 1.3580, 'NZDUSD-ECN': 0.6250,
-                    'EURJPY-ECN': 155.20, 'GBPJPY-ECN': 180.50, 'AUDJPY-ECN': 96.30,
-                    'USDCHF-ECN': 0.9120, 'EURCHF-ECN': 0.9880, 'GBPCHF-ECN': 1.1520,
-                    'AUDCAD-ECN': 0.9080, 'NZDJPY-ECN': 89.60, 'CADCHF-ECN': 0.6730,
-                    'CHFJPY-ECN': 157.20, 'AUDNZD-ECN': 1.0750, 'EURGBP-ECN': 0.8590,
-                    'GBPCAD-ECN': 1.7180, 'XAUUSD-ECN': 1850.00, 'GBPAUD-ECN': 1.8820
-                }
-                fallback_price = base_prices.get(symbol, 1.0)
+                self.log_event(f"⚠️ Could not get tick info for {symbol}, using fallback price.")
+                # Basic fallback for live environment
+                fallback_price = 1.0
                 current_market_data[symbol] = {
                     'close': fallback_price, 'ask': fallback_price + 0.0001, 'bid': fallback_price,
                     'spread': 0.0001, 'timestamp': datetime.now()
@@ -739,8 +812,11 @@ class LiveTrader:
         return current_market_data
 
     def execute_dynamic_reinforcement(self, position, plan):
+        """Execute a dynamic reinforcement trade."""
         try:
+            # Determine trade type from the original position
             trade_type = mt5.ORDER_TYPE_BUY if position['type'] == 0 else mt5.ORDER_TYPE_SELL
+
             result = self.trade_executor.execute_ufo_trade(
                 symbol=position['symbol'],
                 trade_type=trade_type,
